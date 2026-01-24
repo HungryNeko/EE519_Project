@@ -10,6 +10,7 @@ model = whisper.load_model("large-v3")
 
 audio_path = "D:\Github\EE519_Project\preprocess\\two_languages.wav"  # 或 mixed_8k.wav
 
+
 # =====================
 # 2. 转写（自动切段）
 # =====================

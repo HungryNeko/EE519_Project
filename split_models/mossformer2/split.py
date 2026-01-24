@@ -27,9 +27,9 @@ def prepare_audio(input_path, target_sr=8000):
 
 
 def main():
-    # input_wav = "../../preprocess/mixed.wav"   # 原始混合语音
-    # processed_wav = prepare_audio(input_wav)
-    processed_wav= "../../preprocess/mixed_8k.wav"
+    input_wav = "../../preprocess/mixed.wav"   # 原始混合语音
+    processed_wav = prepare_audio(input_wav)
+    # processed_wav= "../../preprocess/mixed_8k.wav"
     # 官方 pipeline
     separation = pipeline(
         Tasks.speech_separation,
