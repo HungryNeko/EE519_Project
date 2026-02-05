@@ -47,10 +47,9 @@ async def main():
 
     assert sr_zh == sr_en, "Sample rate mismatch"
 
-    # 中间加 0.3 秒静音
-    silence = torch.zeros(1, int(0.3 * sr_zh))
 
-    combined = torch.cat([wav_zh, silence, wav_en], dim=1)
+
+    combined = torch.cat([wav_zh, wav_en], dim=1)
 
     # 输出路径：preprocess 目录
     out_path = os.path.join("preprocess", "same_voice_two_languages.wav")

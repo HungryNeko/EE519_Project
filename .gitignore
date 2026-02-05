@@ -1,1 +1,2 @@
-Corpus
+datasets/Corpus/**/*.wav
+*.zip
