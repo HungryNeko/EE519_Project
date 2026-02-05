@@ -23,3 +23,679 @@ datasets\Corpus\adult\audio\test_split\AD09072.wav,hi,0.000-15.640,"दाच �
 datasets\Corpus\adult\audio\test_split\AD09073.wav,en,0.000-2.460,There was one boy standing and looking.,There was one boy standing and looking.
 datasets\Corpus\adult\audio\test_split\AD09081.wav,hi,0.000-5.180,कि परेशानी की वजह से वह ऐसी जगह आया है ताकि उसे थोड़ा पीस मिल सके अ,I have placed it in such a way so that it can get some piece.
 datasets\Corpus\adult\audio\test_split\AD09099.wav,en,0.000-2.560,वो खाली है and he is jumping with joy,He is empty and jumping with joy.
+datasets\Corpus\adult\audio\test_split\AD09100.wav,hi,0.000-6.000,"है। कि पानसी, रोजरिकारां यो क्यौपीं का सवाहत्म करेंगा वाले छोटे-छोटे गांध में स्टाइल होना चाहिए",Next image is of Christmas tree.
+datasets\Corpus\adult\audio\test_split\AD09100.wav,hi,6.000-12.000,रोजरिकारां यो क्षस्मास को अच्छे और क्षाउदाणतिल ऑपंदिस डेकॉरेटी है। बाताइत,Christmas tree is decorated very nicely.
+datasets\Corpus\adult\audio\test_split\AD09100.wav,hi,12.000-14.380,तो इस प्राप्त लोग पर देखते हैं,Decorated with small toys. There are bells.
+datasets\Corpus\adult\audio\test_split\AD09102.wav,en,0.000-1.480,Golden balls are there.,Golden balls are there.
+datasets\Corpus\adult\audio\test_split\AD09105.wav,en,0.000-0.720,Thank you,Thank you.
+datasets\Corpus\adult\audio\test_split\AD13003.wav,hi,0.000-3.020,तो मेरा प्रेसिडेट फेस्टिवल है दिवाली,So my favorite festival is Diwali.
+datasets\Corpus\adult\audio\test_split\AD13015.wav,en,0.000-3.060,stranger things की बात करूँ stranger things काफी अच्छा लगा है,I like Stranger Things
+datasets\Corpus\adult\audio\test_split\AD13019.wav,ur,0.000-2.980,آگے چیلنجز آتے ہیں وہ سب چیزیں اس کے اندر دکھائی گئی ہیں,first challenges section
+datasets\Corpus\adult\audio\test_split\AD13028.wav,ur,0.000-3.600,اور وہاں کے لوگ کافی اچھے ہیں,and the people there are very nice
+datasets\Corpus\adult\audio\test_split\AD13034.wav,hi,0.000-9.420,डेश राजमा चावल राजमा चावल काफी पसंद है और अपार्ट फ्रॉम देट मिनट साइड लाइक स्वीट्स ऑल्सों,Rajma Chawal is my favourite dish
+datasets\Corpus\adult\audio\test_split\AD13035.wav,en,0.000-4.880,What is your favorite destination for the holiday? Why do you like that place?,What is your favorite destination for the holiday? Why do you like that place?
+datasets\Corpus\adult\audio\test_split\AD13036.wav,en,0.000-3.520,so favorite destination for the holidays,so favorite destination for the holidays
+datasets\Corpus\adult\audio\test_split\AD13040.wav,hi,0.000-6.200,इसे सुनके दोनों ने सोचा कि ये उनका नेक्स्ट अडवेंचर स्पोर्ट हो सकता है,"After hearing this, both thought that this could be their next adventure spot."
+datasets\Corpus\adult\audio\test_split\AD13040.wav,hi,6.200-13.720,सो चिंटू और राजू ने अपने जोले में कुछ स्नैक्स और पानी पैक किया और गुफा के तरफ चल दिये,So Chintu and Raju packed some snacks and water in their boats and headed towards the cave.
+datasets\Corpus\adult\audio\test_split\AD13046.wav,hi,0.000-5.600,इस गुफा का राज है साथ निभाना और एक दूसरे की मदद करना।,The rule of this cave is to help each other and to live together.
+datasets\Corpus\adult\audio\test_split\AD13057.wav,en,0.000-3.280,filled with the mysterious symbol and the ancient drawings.,filled with the mysterious symbol and the ancient drawings.
+datasets\Corpus\adult\audio\test_split\AD13060.wav,en,0.000-2.000,They explored the old house.,They explored the old house.
+datasets\Corpus\adult\audio\test_split\AD13063.wav,hi,0.000-5.760,कई घंटों के अनुविश्ण के बाद उन्हें जंगल के मद्दे में स्तित एक महल करता है।,"After several hours of exploration, he found a palace in the middle of the forest."
+datasets\Corpus\adult\audio\test_split\AD13065.wav,en,0.000-2.100,the wizard welcoming them.,"the wizard welcoming them,"
+datasets\Corpus\adult\audio\test_split\AD13067.wav,en,0.000-1.840,Can you describe this image?,Can you describe this image?
+datasets\Corpus\adult\audio\test_split\AD13069.wav,hi,0.000-11.240,कि में भी वह सोच रहा है कि वह कैसे इस रेगिस्थान के अंदर आ गया और अब वह क्या करेगा जिससे वह इस रेगिस्थान से बाहर निकल सके और अपने,I am also thinking how he came inside this desert and what he will do to get out of this desert.
+datasets\Corpus\adult\audio\test_split\AD13072.wav,hi,0.000-8.880,"एक दूसरी में जब मेरे सामनी उसमें दो बच्चे हैं, दोनों बच्चे खाना खा रहे हैं, एक बच्चा रो रहा है और एक बच्चा शांत बैठा है","In the other image, there are two children in front of me."
+datasets\Corpus\adult\audio\test_split\AD13079.wav,ur,0.000-2.500,یا اس کا آج برڈے ہے تو کافی خوش ہے وہ بچہ,"or it is his birthday today, then he is very happy."
+datasets\Corpus\adult\audio\test_split\AD15004.wav,hi,0.000-2.360,अपनापन जो फ्रेंड्स के बीच में होता है,The closeness that exists between friends
+datasets\Corpus\adult\audio\test_split\AD15008.wav,hi,0.000-3.300,"रोमांटिक पार्ट भी है, मतलब इतिस वेरी ब्यूटिफुल शोओ",It is a very beautiful show.
+datasets\Corpus\adult\audio\test_split\AD15014.wav,ur,0.000-3.020,آپ نے میو شوٹنگز اگر سنا ہے,"If you have heard of Mayur shootings and shootings, then all the yarns or shooting, shirting, clothes,"
+datasets\Corpus\adult\audio\test_split\AD15018.wav,hi,0.000-3.900,तो आप यह खरीद सकते हैं,I would recommend you to buy it from there.
+datasets\Corpus\adult\audio\test_split\AD15021.wav,en,0.000-4.080,it is a complete you know nutritions are complete in this dish,it is a complete you know nutritions are complete in this dish
+datasets\Corpus\adult\audio\test_split\AD15025.wav,en,0.000-2.060,sweetness and,sweetness and
+datasets\Corpus\adult\audio\test_split\AD15026.wav,en,0.000-3.040,"When I'm explaining it, it's mouth-watering.","When I'm explaining it, it's mouth-watering."
+datasets\Corpus\adult\audio\test_split\AD15036.wav,ne,0.000-1.440,एक छोटी सी गाउं,A small village
+datasets\Corpus\adult\audio\test_split\AD15038.wav,hi,0.000-4.880,चिंटू और राजू ने एक दिन सुना कि उनके पास के जंगल में एक जादूई गुफा है।,Chintu and Raju heard that there is a magical cave in the forest near them.
+datasets\Corpus\adult\audio\test_split\AD15039.wav,hi,0.000-4.820,इसे सुनके दोनों ने सोचा कि ये उनका नेक्स्ट अडवेंचर स्पॉट हो सकता है,"Hearing this, they both thought that this could be their next adventure spot."
+datasets\Corpus\adult\audio\test_split\AD15048.wav,hi,0.000-4.760,"ये गुफा उन दोनों के लिए है जो दोस्ती में, प्यार में और साथ में हमेशा साथ रहते हैं।","This cave is for those who live together in friendship, love and togetherness."
+datasets\Corpus\adult\audio\test_split\AD15050.wav,hi,0.000-3.780,तो बच्चों यही थी चिंटू और राजू की अगनोखी गुफा की कहानी,"So children, this was the story of Chintu and Raju's unique cave."
+datasets\Corpus\adult\audio\test_split\AD15051.wav,hi,0.000-2.440,दोस्ती और साथ में रहना ही असली खुशी है,Friendship and being with them is the real happiness.
+datasets\Corpus\adult\audio\test_split\AD15052.wav,hi,0.000-1.520,मिलते हैं अगली कहानी में,See you in the next episode.
+datasets\Corpus\adult\audio\test_split\AD15055.wav,hi,0.000-1.480,दो सिबलिंग रहते थे,They had two siblings.
+datasets\Corpus\adult\audio\test_split\AD15056.wav,en,0.000-8.560,"Veer and Diya. Veer, known for his curiosity and Diya, the younger sister, admired for her creativity.","Veer and Diya. Veer, known for his curiosity and Diya, the younger sister, admired for her creativity."
+datasets\Corpus\adult\audio\test_split\AD15059.wav,en,0.000-3.200,filled with mysterious symbols and ancient drawings.,filled with mysterious symbols and ancient drawings.
+datasets\Corpus\adult\audio\test_split\AD15063.wav,hi,0.000-5.640,आफ्टर सर्चिंग हाई और लो उन्हें सिटी के किनारे एक ओल्ड अबेंडन्ड हाउस खोज निकाला।,"After searching high and low, he found an old abandoned house on the banks of the city."
+datasets\Corpus\adult\audio\test_split\AD15065.wav,en,0.000-4.380,"They explored the old house, discovering a hidden passage behind a bookshelf.","They explored the old house, discovering a hidden passage behind a bookshelf."
+datasets\Corpus\adult\audio\test_split\AD15069.wav,en,0.000-4.880,"The wizard welcomed them, reminding them that the true magic lies within their hearts.","The wizard welcomed them, reminding them that the true magic lies within their hearts."
+datasets\Corpus\adult\audio\test_split\AD15071.wav,en,0.000-2.000,What are your thoughts about it?,What are your thoughts about it?
+datasets\Corpus\adult\audio\test_split\AD15082.wav,hi,0.000-1.360,सेट सी इमेज लग रही है,It looks like a sad image.
+datasets\Corpus\adult\audio\test_split\AD15084.wav,en,0.000-5.900,"In this image, there are two cute kids. They are having their food.","In this image, there are two cute kids. They are having their food."
+datasets\Corpus\adult\audio\test_split\AD15087.wav,hi,0.000-1.520,लेकिन जो दूसरा बच्चा है,But the second child
+datasets\Corpus\adult\audio\test_split\AD15089.wav,en,0.000-2.000,He is not happy about the food.,He is not happy about the food.
+datasets\Corpus\adult\audio\test_split\AD15091.wav,hi,0.000-6.940,प्लीडिंग कि मेरे को कुछ अच्छा सा खाने का दो चटपटा सा क्योंकि जो भी आपने प्लेट में दिया इट इस नॉट गुड आई,pleading for something to eat
+datasets\Corpus\adult\audio\test_split\AD15091.wav,hi,6.940-10.380,नॉट लाइकिंग एट सो यह पिक्चर उसको डिपिक कर रही है अ,because whatever you have given in the plate is not good
+datasets\Corpus\adult\audio\test_split\AD15099.wav,hi,0.000-3.600,किसी को एयरपोर्ट पर लेने आया है शायद और वो,He came to pick someone up at the airport.
+datasets\Corpus\adult\audio\test_split\AD15101.wav,fa,0.000-0.900,باید خوششه,I really like it
+datasets\Corpus\adult\audio\test_split\AD15115.wav,hi,0.000-7.960,"और joy, happiness, खुशियां, बहुत सारे relatives, बहुत सारे लोग जिनके साथ party कर सकते हैं","and joy, happiness, many relatives, many people with whom we can party."
+datasets\Corpus\adult\audio\test_split\AD16003.wav,hi,0.000-2.840,मेरा फेवरेट फेस्टिवल देवाली है,My favourite festival is Diwali
+datasets\Corpus\adult\audio\test_split\AD16008.wav,hi,0.000-2.900,फैमिली टाइम स्पेंड करने के लिए जादा मिलता है,is more for family time.
+datasets\Corpus\adult\audio\test_split\AD16014.wav,en,0.000-4.100,So what's your hometown? What's so special about the place?,So what's your hometown? What's so special about the place?
+datasets\Corpus\adult\audio\test_split\AD16014.wav,en,4.340-7.460,Would you like to recommend something from your place to everyone?,Would you like to recommend something from your place to everyone?
+datasets\Corpus\adult\audio\test_split\AD16015.wav,hi,0.000-2.900,"येस, सो मेरा होम टाउन है फरुखावाद","Yes, so my hometown is Farookhabad."
+datasets\Corpus\adult\audio\test_split\AD16027.wav,hi,0.000-9.080,"इसलिए अच्छा लगता है कि हम लोग जैसे कि दहरदून में रहते हैं, मसूरी पास में हैं, माउंटेंस बहुत हैं और एंड आई लव माउंटेंस",That's why I like it here.
+datasets\Corpus\adult\audio\test_split\AD16035.wav,hi,0.000-6.900,पर उन्होंने हिम्मत नहीं आ रही,"As they walked through the jungle, they felt as if someone was watching them."
+datasets\Corpus\adult\audio\test_split\AD16040.wav,hi,0.000-1.760,चिन्टू और राजू ने गार्डियन्स,Chintu and Raju have become guardians.
+datasets\Corpus\adult\audio\test_split\AD16042.wav,en,0.000-4.080,"steadily, the secrets of the cave began to unfold before them.","steadily, the secrets of the cave began to unfold before them."
+datasets\Corpus\adult\audio\test_split\AD16045.wav,hi,0.000-5.520,उन लोगों के लिए है जो दोस्ती में प्यार में और साथ में हमेशा रहते हैं,"It is for those people who are always in friendship, love and togetherness."
+datasets\Corpus\adult\audio\test_split\AD16046.wav,hi,0.000-2.640,चिंटू और राजू ने इस राज को समझा,Chintu and Raju understood this secret.
+datasets\Corpus\adult\audio\test_split\AD16050.wav,hi,0.000-1.880,मिलते हैं अगली कहानी में,See you in the next story.
+datasets\Corpus\adult\audio\test_split\AD16054.wav,de,0.000-1.300,Veer and Daya,Veer and Daya
+datasets\Corpus\adult\audio\test_split\AD16055.wav,hi,0.000-1.180,वीर बड़े भाई,"Veer, elder brother"
+datasets\Corpus\adult\audio\test_split\AD16065.wav,en,0.000-3.600,poke of a hidden portal to a magical world.,poke of a hidden portal to a magical world.
+datasets\Corpus\adult\audio\test_split\AD16067.wav,hi,0.000-5.500,इस छुपी गुफा को ढूनने की एक यात्रा पर निकलने का फैसला किया,decided to go on a journey to find this hidden cave.
+datasets\Corpus\adult\audio\test_split\AD16075.wav,hi,0.000-6.940,कई घंटों के अन्वेशन के बाद उन्हें जंगल के मध्य में स्थित एक महल को खोज निकाला।,"After several hours of exploration, he found a palace in the middle of the forest."
+datasets\Corpus\adult\audio\test_split\AD16080.wav,en,0.000-4.080,Can you describe this image? What are your thoughts about it?,Can you describe this image? What are your thoughts about it?
+datasets\Corpus\adult\audio\test_split\AD16081.wav,en,0.000-1.380,Seems to me,Seems to me
+datasets\Corpus\adult\audio\test_split\AD16083.wav,hi,0.000-1.500,घर की याद आ रही है,I miss home
+datasets\Corpus\adult\audio\test_split\AD16088.wav,hi,0.000-0.680,और,And
+datasets\Corpus\adult\audio\test_split\AD16090.wav,hi,0.000-2.340,कि आई थिंग उसको पानी चाहिए और,I think he needs water and
+datasets\Corpus\adult\audio\test_split\AD16091.wav,hi,0.000-6.700,और दूसरे बच्चे को पानी शायद पीना नहीं आता है उसके आसपास कोई नहीं है पानी देने वाला,and the other child may not know how to drink water
+datasets\Corpus\adult\audio\test_split\AD16093.wav,hi,0.000-3.540,"अरे मैं भी तो क्यूट हूँ, मेरा भी फोटो ले लो कोई","I am cute too, take a picture of me too"
+datasets\Corpus\adult\audio\test_split\AD16100.wav,hi,0.000-1.320,क्रिस्मस ट्री है,Christmas tree is
+datasets\Corpus\adult\audio\test_split\AD16101.wav,hi,0.000-7.100,और ऐसा लग रहा है कि शायद ये Christmas night का है और next day,And it feels like it's Christmas night and the next day...
+datasets\Corpus\adult\audio\test_split\AD21007.wav,hi,0.000-8.460,बेटर की होमटाउन पर और बाकी फील करो तो फैमिली वगैरह के साथ थोड़ा अपने मन का खाना बना देती मम्मी तो वह बेटर रहता है,It's better to stay in your hometown and feel the rest.
+datasets\Corpus\adult\audio\test_split\AD21010.wav,hi,0.000-2.160,जैसे अभी लास्ट मैंने सीडीज देखी है,Like the last series I watched
+datasets\Corpus\adult\audio\test_split\AD21021.wav,en,0.000-3.320,Exactly in Bhawari that is 38 Km,Exactly in Bhawari that is 38 Km
+datasets\Corpus\adult\audio\test_split\AD21022.wav,pl,0.000-2.640,away from Prayagraj towards Kanpur.,away from Prayagraj towards Kanpur.
+datasets\Corpus\adult\audio\test_split\AD21023.wav,en,0.000-2.720,what is so special about this place it's,What is so special about this place?
+datasets\Corpus\adult\audio\test_split\AD21032.wav,en,0.000-1.280,like metro cities and all.,like metro cities and all.
+datasets\Corpus\adult\audio\test_split\AD21034.wav,en,0.000-1.120,from your place.,from your place.
+datasets\Corpus\adult\audio\test_split\AD21044.wav,hi,0.000-5.220,पंजाबी मेन्यू सो उसमें पनीर की डिशेस अगर कोई है तो बेटर है,This is a Punjabi menu so it has paneer dishes
+datasets\Corpus\adult\audio\test_split\AD21053.wav,en,0.000-7.020,"So I can't say that this is any particular, I can't name any particular destination that",So I can't say that this is any particular destination that I could describe it as a favorite destination.
+datasets\Corpus\adult\audio\test_split\AD21055.wav,en,0.000-2.000,"Based on the past experience,","Based on the past experience,"
+datasets\Corpus\adult\audio\test_split\AD21056.wav,en,0.000-1.120,it actually varies.,it actually varies.
+datasets\Corpus\adult\audio\test_split\AD21063.wav,hi,0.000-6.360,वाइड यू लाइक देट टेस्ट आई जेनरेल लाइक टू हाइक एराउंड तो थोड़ा सा मतलब मेरे को आउटस्कॉट में रहना,Why do you like that place?
+datasets\Corpus\adult\audio\test_split\AD21073.wav,hi,0.000-7.340,तो चिंटू और राजू ने अपने जोलो में कुछ स्नैक्स और पानी पैक किया और गुफा के तरफ चले गए।,So Chintu and Raju packed some snacks and water in their carts and went towards the cave.
+datasets\Corpus\adult\audio\test_split\AD21093.wav,ro,0.000-0.960,We are Dia.,Veer Aur Dia
+datasets\Corpus\adult\audio\test_split\AD21095.wav,en,0.000-2.860,"known for his curiosity and the अच्छोटी बहन,",Known for his curiosity and the a choti bhen
+datasets\Corpus\adult\audio\test_split\AD21097.wav,hi,0.000-4.880,एक गर्मी के दिन के दुपहर में वाइल एक्सप्लोरिंग दे एटिक ओफ देर ओल्ड हाउस,"In the afternoon of a hot summer day,"
+datasets\Corpus\adult\audio\test_split\AD21107.wav,hi,0.000-3.200,उन्हें सिटी के किनारे एक ओल्ड अबैंडन्ड हाउस खोजा।,He found an old abandoned house on the side of the city.
+datasets\Corpus\adult\audio\test_split\AD21109.wav,en,0.000-4.720,"They explored the old house, discovering a hidden passage behind a bookshelf.","They explored the old house, discovering a hidden passage behind a bookshelf."
+datasets\Corpus\adult\audio\test_split\AD21112.wav,hi,0.000-3.380,कल्प वृक्षों और जादोई द्रिश्यों का सामना करें।,The
+datasets\Corpus\adult\audio\test_split\AD21114.wav,hi,0.000-29.980,कई घंटों के अन्वेशन के बाद उन्होंने जंगल के विश्वाने के पहले जंगल के पर प्रदार आपका ज़रूर है।,"After several hours of unvation, he went to the forest."
+datasets\Corpus\adult\audio\test_split\AD21121.wav,en,0.000-3.860,reminding them that the true magic lies within their heart,reminding them that the true magic lies within their heart
+datasets\Corpus\adult\audio\test_split\AD21121.wav,en,3.860-7.980,and the bond of siblings is the strongest magic of all.,and the bond of siblings is the strongest magic of all.
+datasets\Corpus\adult\audio\test_split\AD21125.wav,et,0.000-2.800,looks like a run of kutch or maybe like,looks like a run of kutch or maybe like
+datasets\Corpus\adult\audio\test_split\AD21127.wav,en,0.000-2.880,That is why the floor looks a little bit wet.,That is why the floor looks a little bit wet.
+datasets\Corpus\adult\audio\test_split\AD21130.wav,en,0.000-2.720,"are enjoying their food, one is crying and one is","are enjoying their food, one is crying and one is"
+datasets\Corpus\adult\audio\test_split\AD21133.wav,en,0.000-1.600,Looks happy child.,Looks happy child
+datasets\Corpus\adult\audio\test_split\AD21134.wav,en,0.000-1.760,who's happily posing for,who's happily posing for
+datasets\Corpus\adult\audio\test_split\AD21142.wav,id,0.000-2.000,jumping out,jumping out
+datasets\Corpus\adult\audio\test_split\AD21143.wav,en,0.000-2.980,"Christmas tree, this is the fifth image, looks like a Christmas tree","Christmas tree, this is the fifth image, looks like a Christmas tree"
+datasets\Corpus\adult\audio\test_split\AD22002.wav,en,0.000-5.280,and how do you celebrate your last festival i celebrated my last holy festival with,and how do you celebrate your last festival i celebrated my last holy festival with
+datasets\Corpus\adult\audio\test_split\AD22007.wav,en,0.000-1.600,What do you feel about that?,What do you feel about that?
+datasets\Corpus\adult\audio\test_split\AD22009.wav,hi,0.000-2.000,किलर्स के साथ में खेलना पसंद है,I like playing with killers.
+datasets\Corpus\adult\audio\test_split\AD22029.wav,ur,0.000-2.480,کچھ نہیں ہے صرف پہاڑوں میں جانا ہے مرکو,I have to go to the mountains.
+datasets\Corpus\adult\audio\test_split\AD22030.wav,en,0.000-1.060,Why do you like that place?,Why do you like that place?
+datasets\Corpus\adult\audio\test_split\AD22034.wav,hi,0.000-5.440,एक छोटे से गाउ में दो फ्रेंड्स रहते थे चिंटू और राजू दोनों ही बच्चे बहुत मस्ती करते थे,"There were two friends in a small village, Chintu and Raju. Both of them were very funny kids."
+datasets\Corpus\adult\audio\test_split\AD22034.wav,hi,5.440-10.460,उनकी फ्रेंड्शिप बिल्कुल चुट्कियों की तरह थी हमेशा पास हमेशा साथ,"Their friendship was like a pinch. Always close, always together."
+datasets\Corpus\adult\audio\test_split\AD22039.wav,hi,0.000-2.480,चिंटू और राजू ने अपने,So Chintu and Raju have
+datasets\Corpus\adult\audio\test_split\AD22043.wav,hi,0.000-2.060,जब वो गुफा तक पहुँच गए,"When they reached the cave,"
+datasets\Corpus\adult\audio\test_split\AD22048.wav,ko,0.000-1.400,둔둔 오고야,Don доہ now.
+datasets\Corpus\adult\audio\test_split\AD22051.wav,hi,0.000-9.640,चिंटू और राजू ने गारजियन के दिये गए टास्क कम्प्लीट कर लिये और हर एक टास्क के बाद उन्हें गुफा का सीकरित थोड़ा समझ आ गया।,Chintu and Raju completed the tasks given by the guardian and after each task they understood the secret of the cave a little.
+datasets\Corpus\adult\audio\test_split\AD22052.wav,en,0.000-1.380,slowly and steadily,slowly and steadily
+datasets\Corpus\adult\audio\test_split\AD22053.wav,en,0.000-3.680,the secrets of the cave began to unfold before them.,the secrets of the cave began to unfold before them.
+datasets\Corpus\adult\audio\test_split\AD22055.wav,hi,0.000-2.680,साथ निभाना और एक दूसरे की मदद करना,and help each other.
+datasets\Corpus\adult\audio\test_split\AD22056.wav,hi,0.000-3.000,ये गुफा उन लोगों के लिए है जो दोस्ती में प्रभाविक है।,This cave is for those who are in friendship
+datasets\Corpus\adult\audio\test_split\AD22058.wav,hi,0.000-4.160,चेंटू और राजू ने इस राज को समझा और इसके बाद,Chantu and Raju understood this secret and after that
+datasets\Corpus\adult\audio\test_split\AD22062.wav,ur,0.000-1.680,اور ساتھ میں رہنے کی,and to stay with them
+datasets\Corpus\adult\audio\test_split\AD22066.wav,mr,0.000-1.260,वीर एंड दयाव,Veer and Dayaan
+datasets\Corpus\adult\audio\test_split\AD22066.wav,hi,1.260-2.420,वीर बड़े भाई,"Veer, big brother"
+datasets\Corpus\adult\audio\test_split\AD22071.wav,en,0.000-2.000,excited by their discovery,excited by their discovery
+datasets\Corpus\adult\audio\test_split\AD22076.wav,hi,0.000-4.140,उन्हें सिटी के किनारे एक ओल अवेंडन्ड हाउस खोज निकाला।,He found an old abandoned house on the side of the city.
+datasets\Corpus\adult\audio\test_split\AD22079.wav,en,0.000-4.000,they found themselves in a lush magical forest.,they found themselves in a lush magical forest.
+datasets\Corpus\adult\audio\test_split\AD22083.wav,hi,0.000-5.220,महल के द्वार पर उनका एक पुराना बुद्धिमान विद्वान ने सौगत किया।,An old wise scholar welcomed him at the door of the palace.
+datasets\Corpus\adult\audio\test_split\AD22088.wav,en,0.000-3.320,Can you describe the image? What are your thoughts about it?,Can you describe the image? What are your thoughts about it?
+datasets\Corpus\adult\audio\test_split\AD22092.wav,hi,0.000-7.020,अपना खाना देखके क्योंकि एक को कम मिला एक को जादा मिला तभी वो अंसाइटिस्पाइट है उसके ड्रेसिंग सेंस और वो सब चीज़े भी अच्छी है,by looking at their food and other person's eating habits
+datasets\Corpus\adult\audio\test_split\AD22093.wav,hi,0.000-1.980,वो विचारा साटिस्पाइड अपनी लाइफ से,He is satisfied with his life.
+datasets\Corpus\adult\audio\test_split\AD22093.wav,hi,1.980-2.580,खुश है,He is very happy.
+datasets\Corpus\adult\audio\test_split\AD22096.wav,hi,0.000-3.820,सुन्दर जैसा लग रहा है तारक में तक उल्टा चेश्मा में एक सुन्दर होता था उसकी जैसा,It looks beautiful. I had a beautiful pair of glasses in the park.
+datasets\Corpus\adult\audio\test_split\AD22099.wav,uk,0.000-0.640,"Ну, коммент.",No comments.
+datasets\Corpus\adult\audio\test_split\AD22104.wav,en,0.000-0.400,Thank you.,Thank you.
+datasets\Corpus\adult\audio\test_split\AD23008.wav,en,0.000-1.840,What's so special about the place?,What's so special about the place? Would you like to recommend something from your place to everyone?
+datasets\Corpus\adult\audio\test_split\AD23017.wav,en,0.000-2.640,is your favorite destination for holidays,is your favorite destination for holidays.
+datasets\Corpus\adult\audio\test_split\AD23025.wav,hi,0.000-3.080,और उनकी फ्रेंडशिप बिलकुल चुटकीयों की तरह थी,and their friendship was like a pinch.
+datasets\Corpus\adult\audio\test_split\AD23035.wav,ur,0.000-1.680,جب وہ گفہ تک پہنچ گئے,"When they reached the cave, they heard a strange voice."
+datasets\Corpus\adult\audio\test_split\AD23036.wav,en,0.000-1.560,Welcome Chintu and Raju,Welcome Chin Toa Raju
+datasets\Corpus\adult\audio\test_split\AD23037.wav,hi,0.000-1.500,हूँ गुफा का गार्डियन,I am the guardian of the cave.
+datasets\Corpus\adult\audio\test_split\AD23042.wav,hi,0.000-2.780,निभाना और एक दूसरे की मदद करना,and help each other.
+datasets\Corpus\adult\audio\test_split\AD23044.wav,hi,0.000-3.880,"जो दोस्ती में, प्यार में और साथ में हमेशा रहते हैं","who are always in friendship, love and togetherness."
+datasets\Corpus\adult\audio\test_split\AD23048.wav,hi,0.000-3.080,दोस्ती और साथ में रहना ही असली खुशी है,Friendship and being together is the real happiness.
+datasets\Corpus\adult\audio\test_split\AD23050.wav,hi,0.000-2.600,और दोस्ती को हमेशा समझो,and understand friendship always
+datasets\Corpus\adult\audio\test_split\AD23050.wav,hi,2.600-3.300,अलविदा,Goodbye
+datasets\Corpus\adult\audio\test_split\AD23060.wav,en,0.000-2.280,filled with the mysterious symbols and,filled with the mysterious symbols and
+datasets\Corpus\adult\audio\test_split\AD23065.wav,en,0.000-2.240,"after searching high and low, उन्होंने","After searching high and low, he"
+datasets\Corpus\adult\audio\test_split\AD23069.wav,en,0.000-1.500,behind a book slip.,behind a book slip.
+datasets\Corpus\adult\audio\test_split\AD23071.wav,hi,0.000-3.200,उन्होंने जंगल के एक अंदर और गहरा प्रवेश किया,They entered deeper into the forest.
+datasets\Corpus\adult\audio\test_split\AD23073.wav,hi,0.000-1.220,कई घंटों के,for many hours.
+datasets\Corpus\adult\audio\test_split\AD23074.wav,hi,0.000-3.500,अन्वेशन के बाद उन्होंने जंगल के मध्या,After Running he ran through the forest
+datasets\Corpus\adult\audio\test_split\AD23080.wav,en,0.000-1.120,is the strongest,is the strongest
+datasets\Corpus\adult\audio\test_split\AD23081.wav,en,0.000-2.000,magic of oil,Magic of Ore.
+datasets\Corpus\adult\audio\test_split\AD23083.wav,en,0.000-1.500,of one man standing,of one man standing
+datasets\Corpus\adult\audio\test_split\AD23086.wav,hi,0.000-2.460,और एक image दो बच्चे बैठे हैं,and one image of two kids sitting
+datasets\Corpus\adult\audio\test_split\AD23091.wav,no,0.000-1.160,"Oho, flying jet!","Oho, flying jet!"
+datasets\Corpus\adult\audio\test_split\AD25001.wav,hi,0.000-1.880,फेवरेट फेस्टिवल दिपाउली है,My favourite festival is Diwali.
+datasets\Corpus\adult\audio\test_split\AD25005.wav,en,0.000-1.100,related with joy,related with joy
+datasets\Corpus\adult\audio\test_split\AD25017.wav,hi,0.000-2.060,इस सीरीज में डायलोग डिलिवरी है और उसका जो,In this series there is dialogue delivery
+datasets\Corpus\adult\audio\test_split\AD25020.wav,en,0.000-2.000,"family, parents and","family, parents and"
+datasets\Corpus\adult\audio\test_split\AD25022.wav,hi,0.000-3.200,मेरा प्राप्ति श्रजापुर है,My hometown is Shalyaapur.
+datasets\Corpus\adult\audio\test_split\AD25029.wav,hi,0.000-1.320,और हमारे यहाँ,and here we have
+datasets\Corpus\adult\audio\test_split\AD25034.wav,no,0.000-1.840,I like vegetarian food.,I like vegetarian food.
+datasets\Corpus\adult\audio\test_split\AD25039.wav,tl,0.000-0.820,E salto.,and jump!
+datasets\Corpus\adult\audio\test_split\AD25052.wav,hi,0.000-2.640,पर उन्होंने किहमत नहीं आरी जब वो गुफा में पहुँचे,but they didn't give up when they reached the cave
+datasets\Corpus\adult\audio\test_split\AD25059.wav,en,0.000-4.440,"Slowly and steadily, the secret of the cave began to unfold before them.","Slowly and steadily, the secret of the cave began to unfold before them."
+datasets\Corpus\adult\audio\test_split\AD25073.wav,en,0.000-1.220,"While exploring the attic,","While exploring the attic,"
+datasets\Corpus\adult\audio\test_split\AD25078.wav,en,0.000-2.320,the symbols finally translating a passage that,the symbols finally translating a passage that
+datasets\Corpus\adult\audio\test_split\AD25079.wav,en,0.000-1.800,Spoke of hidden portal to the magic world.,spoke of hidden portal to the magic world
+datasets\Corpus\adult\audio\test_split\AD25079.wav,id,1.920-3.240,Surah Asthanya par Veer or Dia.,Surah Astana par Veer or Dia
+datasets\Corpus\adult\audio\test_split\AD25083.wav,pa,0.000-3.300,ਉੱਨੇ ਸਿਟੀ ਕੀਨਾਰੇ ਏਕ ਓਲਡ ਅਮੇਡਨਿਟ ਹਾੱਸ ਕੋਜ ਨਿਕਾਲਾ,found an old abandoned house near the city.
+datasets\Corpus\adult\audio\test_split\AD25085.wav,en,0.000-2.640,They explored the old house discovering hidden passage beneath.,They explored the old house discovering hidden passage beneath.
+datasets\Corpus\adult\audio\test_split\AD25091.wav,hi,0.000-2.320,महल के द्वार पर उनका एक पुराना बुद्धिमान,"At the door of the palace, he saw an old wise man."
+datasets\Corpus\adult\audio\test_split\AD25093.wav,en,0.000-1.520,The wizard welcomed them.,The wizard welcomed them.
+datasets\Corpus\adult\audio\test_split\AD25096.wav,en,0.000-1.600,is the strongest magic of all.,is the strongest magic of all.
+datasets\Corpus\adult\audio\test_split\AD25097.wav,hi,0.000-4.620,इस इमेज में एक आदमी खड़ा हुआ है और एक सुनसान से इलाके में खड़ा हुआ है,"In this image, a man is standing in a deserted area."
+datasets\Corpus\adult\audio\test_split\AD25099.wav,hi,0.000-2.000,मुझे लगता है वो अपने घर को बहुत मिस्स करता है,I think he misses his home a lot.
+datasets\Corpus\adult\audio\test_split\AD25102.wav,hi,0.000-1.180,इस image में दो बच्चे हैं,in this image there are two children
+datasets\Corpus\adult\audio\test_split\AD25103.wav,hi,0.000-1.320,खाना खाने की कोशिश कर रहे हैं,trying to eat food
+datasets\Corpus\adult\audio\test_split\AD25117.wav,en,0.000-2.900,thing that he wanted very badly.,thing that he wanted very badly.
+datasets\Corpus\adult\audio\test_split\AD25125.wav,tl,0.000-1.040,hanging around it,hanging around it
+datasets\Corpus\adult\audio\test_split\AD26002.wav,hi,0.000-1.100,होली एंड दिवाली,Holi and Diwali
+datasets\Corpus\adult\audio\test_split\AD26006.wav,en,0.000-1.040,Festival of Colour.,Festival of Colour.
+datasets\Corpus\adult\audio\test_split\AD26013.wav,en,0.000-2.460,My hometown is Balia,My hometown is Balia
+datasets\Corpus\adult\audio\test_split\AD26021.wav,en,0.000-1.040,is typical,is typical
+datasets\Corpus\adult\audio\test_split\AD26024.wav,en,0.000-2.080,"Yes, of course, I will recommend.","Yes, of course, I will recommend"
+datasets\Corpus\adult\audio\test_split\AD26034.wav,en,0.000-1.560,which is suitable for worship.,which is suitable for worship.
+datasets\Corpus\adult\audio\test_split\AD26047.wav,hi,0.000-0.940,चिन्टू और राजू,Chintu and Raju.
+datasets\Corpus\adult\audio\test_split\AD26050.wav,hi,0.000-1.620,बिल्कुल चुटकीयों की तरह थी,was
+datasets\Corpus\adult\audio\test_split\AD26059.wav,en,0.000-2.000,they felt as if,They felt as if
+datasets\Corpus\adult\audio\test_split\AD26062.wav,hi,0.000-3.760,जब वो गुफा तक पहुँच गए उन्हें गुफा से एक अजीट सी आवाज आई।,"When they reached the cave, they heard a strange voice from the cave."
+datasets\Corpus\adult\audio\test_split\AD26064.wav,hi,0.000-0.880,चिन्टू और राजू,Chintu and Raju.
+datasets\Corpus\adult\audio\test_split\AD26070.wav,hi,0.000-2.300,उन्हें गुफा का सिक्रेट थोड़ा और समझा गया।,he understood the secret of the cave a little more.
+datasets\Corpus\adult\audio\test_split\AD26086.wav,hi,0.000-1.120,दो सिबलिंग्स रहते थे,Two siblings were left.
+datasets\Corpus\adult\audio\test_split\AD26091.wav,ur,0.000-0.760,ایک گرمی کے,a summer
+datasets\Corpus\adult\audio\test_split\AD26101.wav,hi,0.000-6.480,सूरज अस्थ होने पर वीर और दिया ने इस छुपी गुफा को ढूंढने की एक यात्रा पर निकलने का फैसला किया।,"After sunset, Veer and Diya decided to set out on a journey to find this hidden cave."
+datasets\Corpus\adult\audio\test_split\AD26106.wav,nl,0.000-2.040,discovering a hidden passage behind a,discovering a hidden passage behind a
+datasets\Corpus\adult\audio\test_split\AD26125.wav,hi,0.000-2.660,उनका एक पुराने बुद्धिमान विद्वान ने स्वागत किया,was welcomed by an old wise scholar.
+datasets\Corpus\adult\audio\test_split\AD26130.wav,en,0.000-1.200,is the strongest,is the strongest
+datasets\Corpus\adult\audio\test_split\AD26131.wav,fa,0.000-0.880,مزید گفال,That's all.
+datasets\Corpus\adult\audio\test_split\AD26134.wav,hi,0.000-0.920,तका हुआ है,This is what happened.
+datasets\Corpus\adult\audio\test_split\AD26137.wav,af,0.000-0.720,in his work.,in his work.
+datasets\Corpus\adult\audio\test_split\AD26155.wav,hi,0.000-2.540,वो किसी चीज के लिए खुश है,He is happy for something.
+datasets\Corpus\adult\audio\test_split\AD26156.wav,en,0.000-1.200,so is that,so is that
+datasets\Corpus\adult\audio\test_split\AD26169.wav,hi,0.000-1.620,उड़ने में या जो भी,in flying or whatever
+datasets\Corpus\adult\audio\test_split\AD26177.wav,en,0.000-1.640,artificially decorated.,artificially decorated.
+datasets\Corpus\adult\audio\test_split\AD27006.wav,ur,0.000-4.580,اور بہت سارے پتاکیں پھوڑے پوجا کر لچمی ماتا کی اور انجوئی کیا,"I blew a lot of crackers, prayed to Goddess Lakshmi and enjoyed."
+datasets\Corpus\adult\audio\test_split\AD27011.wav,en,0.000-1.780,What's so special about the place?,What's so special about the place?
+datasets\Corpus\adult\audio\test_split\AD27014.wav,ur,0.000-1.980,مطرہ بہت سپیسل پلیس ہے,Mathura is a very special place
+datasets\Corpus\adult\audio\test_split\AD27016.wav,hi,0.000-1.860,के बारे में सब कुछ,about this
+datasets\Corpus\adult\audio\test_split\AD27017.wav,hi,0.000-2.640,जन्ममी के अंदर मिलता है पूरी इनफॉर्मेशन,in Janmabhoomi
+datasets\Corpus\adult\audio\test_split\AD27024.wav,hi,0.000-1.520,ये मेरा favorite डिस है,So this is my favorite design
+datasets\Corpus\adult\audio\test_split\AD27030.wav,es,0.000-0.980,especially,especially
+datasets\Corpus\adult\audio\test_split\AD27042.wav,hi,0.000-2.280,इसे सुनके दोनों ने सुचा कि ये उनका next पर पर्वार नहीं है।,"After listening to this, they both thought that this was their next"
+datasets\Corpus\adult\audio\test_split\AD27055.wav,hi,0.000-2.620,तो बच्चो ये थी चिंटू राजू के अन्नो की गुफा की गहानी,"So, this was the story of Chintu Raju's Annauki Guffa."
+datasets\Corpus\adult\audio\test_split\AD27061.wav,en,0.000-2.520,with what if I known for his curiosity and the,with what if I known for his curiosity and the
+datasets\Corpus\adult\audio\test_split\AD27063.wav,pa,0.000-2.660,ਇੱ ਗਰਮੀ ਕੇ ਦੀਨ ਕੇ ਦੋਪੈਡ ਮੇ ਵਾਲ ਏਕਸਪੋਰਿਂਗ ਦਾ,"In the afternoon of a hot day, while exploring the"
+datasets\Corpus\adult\audio\test_split\AD27073.wav,en,0.000-3.360,"By stepping through the passage, they found themselves in a lush magical forest.","By stepping through the passage, they found themselves in a lush magical forest."
+datasets\Corpus\adult\audio\test_split\AD27075.wav,ur,0.000-2.520,جہاں انہیں قلب پرچوں جادی درشوں کو سامنا کیا,Where they saw empre 1969
+datasets\Corpus\adult\audio\test_split\AD27076.wav,ur,0.000-1.640,کئی گھنٹوں کے انویشر کے بعد,After several hours of innovation
+datasets\Corpus\adult\audio\test_split\AD27084.wav,en,0.000-2.160,is the strongest magic of all.,is the strongest magic of all.
+datasets\Corpus\adult\audio\test_split\AD27088.wav,ne,0.000-0.700,सुन्दर्ता को,Sundar Thakur
+datasets\Corpus\adult\audio\test_split\AD27092.wav,ur,0.000-1.720,کچھ کھا رہا ہے ٹیبل پر بیٹھ کر,Eating something on the table
+datasets\Corpus\adult\audio\test_split\AD27095.wav,hi,0.000-0.940,किसी चीज के लिए,for something
+datasets\Corpus\adult\audio\test_split\AD27098.wav,en,0.000-2.800,Can you describe this image? What are your thoughts about it?,Can you describe this image? What are your thoughts about it?
+datasets\Corpus\adult\audio\test_split\AD28004.wav,hi,0.000-1.720,यह हम रमजान के बाद मनाते हैं,We celebrate this after Ramzan
+datasets\Corpus\adult\audio\test_split\AD28007.wav,ur,0.000-2.800,ہم سوٹ ڈاؤن ڈا ویسٹ ڈاؤن اور ہم لوگ سوائیاں کھاتے ہیں,We sit down and eat the food.
+datasets\Corpus\adult\audio\test_split\AD28008.wav,en,0.000-1.120,It's a very good festival.,It's a very good festival.
+datasets\Corpus\adult\audio\test_split\AD28011.wav,hi,0.000-5.560,वाइटिंग सीरीज है लाइक वाइटिंग सीरीज बट नॉट ऑलवेज पहले मैं देखता हूं कौन सीरीज,I like watching series but not always
+datasets\Corpus\adult\audio\test_split\AD28020.wav,hi,0.000-5.500,या अब मैं होम टाइम शुरू आई बिलॉक फ्रॉम वारानसी यूपी जैसे आपको पता है यूपी वारानसी,"About my home town, I belong to Varanasi, UP"
+datasets\Corpus\adult\audio\test_split\AD28031.wav,hi,0.000-3.520,फूड के बारे में तो मैं बिसिकली मैं ब्रियानी प्रसिद्ध करता हूँ,I like Biryani for food.
+datasets\Corpus\adult\audio\test_split\AD28050.wav,ur,0.000-1.280,میں ہوں گفہ کا گارڈین,I am Guffa's guardian
+datasets\Corpus\adult\audio\test_split\AD28051.wav,ur,0.000-1.480,تم دونوں کی یہاں راج پیدا چلیں گے,You will find out the secret here.
+datasets\Corpus\adult\audio\test_split\AD28063.wav,ur,0.000-1.280,اور مضبوط ہو گئی,and became stronger.
+datasets\Corpus\adult\audio\test_split\AD28071.wav,en,0.000-3.120,known for its curiosity and the Choti Bank.,known for its curiosity and the Choti Bank.
+datasets\Corpus\adult\audio\test_split\AD28074.wav,en,0.000-2.000,कि दुपहर में while exploring the,in the afternoon while exploring the
+datasets\Corpus\adult\audio\test_split\AD28083.wav,ur,0.000-4.500,اگر وہ سوچنگ کرتے ہیں تو وہ سٹی کے کنارے ایک سال,"After searching high and low, he found an old"
+datasets\Corpus\adult\audio\test_split\AD28085.wav,sw,0.000-0.660,Kujinikala.,purple
+datasets\Corpus\adult\audio\test_split\AD28088.wav,en,0.000-3.520,discovering a hidden passage behind a bookshelf,discovering a hidden passage behind a bookshelf
+datasets\Corpus\adult\audio\test_split\AD28098.wav,hi,0.000-4.720,इस इमेज में मुझे यह लग रहा है कि एक आदमी है जो,So in this image I feel that there is a man who
+datasets\Corpus\adult\audio\test_split\AD28106.wav,ur,0.000-1.720,اداس ہے پرسانس ہے,Sadness or depressed
+datasets\Corpus\adult\audio\test_split\AD28112.wav,hi,0.000-1.800,और दूसरा लग काफी इंजॉय कर रहा है,and he is enjoying the other area
+datasets\Corpus\adult\audio\test_split\AD28113.wav,en,0.000-1.200,and,and
+datasets\Corpus\adult\audio\test_split\AD28120.wav,hi,0.000-1.580,एक बच्चा जो काफी हैपी मुदी में,This kid is in a very happy mood.
+datasets\Corpus\adult\audio\test_split\AD28121.wav,hi,0.000-3.200,"वह इसमाइल भी कर रहा है, आज वह किसी के सामने है",He is smiling too. I think he is in front of someone.
+datasets\Corpus\adult\audio\test_split\AD28124.wav,hi,0.000-1.500,कुछ इसी मुर्वें बच्चा लग रहा है कि,It looks like a baby at this point.
+datasets\Corpus\adult\audio\test_split\AD28126.wav,hi,0.000-1.900,मनी मिले,and get the money.
+datasets\Corpus\adult\audio\test_split\AD28129.wav,hi,0.000-3.600,जिसे होता है नहीं हो या हो कहकर प्लाई करना कुछ वैसा यह कह रहा है,it is like
+datasets\Corpus\adult\audio\test_split\AD30001.wav,da,0.000-2.000,so here i begin,so here i begin
+datasets\Corpus\adult\audio\test_split\AD30009.wav,en,0.000-1.900,तो उस टाइम पे we celebrate this,So at that time we celebrate this.
+datasets\Corpus\adult\audio\test_split\AD30010.wav,so,0.000-0.500,So,So
+datasets\Corpus\adult\audio\test_split\AD30011.wav,en,0.000-6.080,yeah i would say holy is the best festival or the my favorite festival and if i talk about the,yeah i would say holy is the best festival or the my favorite festival and if i talk about the
+datasets\Corpus\adult\audio\test_split\AD30015.wav,hi,0.000-1.820,इसे कैसे मैं भूलता हूं लेंगे लेकिन,how do i celebrate holy but
+datasets\Corpus\adult\audio\test_split\AD30017.wav,mr,0.000-0.640,धरीला,Dharila
+datasets\Corpus\adult\audio\test_split\AD30023.wav,en,0.000-2.000,and then we worship them,and then we worship them
+datasets\Corpus\adult\audio\test_split\AD30034.wav,en,0.000-1.640,Harilla festival then,Harilla festival then
+datasets\Corpus\adult\audio\test_split\AD30038.wav,af,0.000-1.760,is like somewhere,is like somewhere
+datasets\Corpus\adult\audio\test_split\AD30041.wav,en,0.000-0.960,This is what I feel.,This is what I feel it is the way which unites.
+datasets\Corpus\adult\audio\test_split\AD30052.wav,en,0.000-2.840,"If you like horror, it is in the series.","If you like horror, it is in the series."
+datasets\Corpus\adult\audio\test_split\AD30059.wav,en,0.000-2.100,"So, Nainital is my hometown.","So, Nainital is my hometown."
+datasets\Corpus\adult\audio\test_split\AD30060.wav,en,0.000-3.380,The best place what I'll say for Nainital is the,The best place what I'll say for Nainital is the
+datasets\Corpus\adult\audio\test_split\AD30064.wav,en,0.000-1.400,The reason for that is,The reason for that is
+datasets\Corpus\adult\audio\test_split\AD30068.wav,hi,0.000-0.980,वेदर ओफ ब्रिटेन,weather of britain
+datasets\Corpus\adult\audio\test_split\AD30069.wav,hi,0.000-1.720,तो इसलिए उन्होंने उसको डेवलप करा था,that's why they developed it
+datasets\Corpus\adult\audio\test_split\AD30073.wav,en,0.000-2.320,because they were colonizing India at that time.,because they were colonizing India at that time.
+datasets\Corpus\adult\audio\test_split\AD30074.wav,so,0.000-0.640,So,So
+datasets\Corpus\adult\audio\test_split\AD30084.wav,en,0.000-2.320,can suggest for my hometown is,can suggest for my hometown is
+datasets\Corpus\adult\audio\test_split\AD30102.wav,hi,0.000-2.660,इस प्रभाव लिटरली ज़्यानी है,Its sweetness is literally divine.
+datasets\Corpus\adult\audio\test_split\AD30106.wav,en,0.000-3.320,"And basically, like, I had dreamed to visit Northeast.",and basically like I have dream to visit northeast
+datasets\Corpus\adult\audio\test_split\AD30116.wav,en,0.000-4.800,and secondly i can go for like latak or the upper himalayas region,and secondly i can go for like latak or the upper himalayas region
+datasets\Corpus\adult\audio\test_split\AD30129.wav,hi,0.000-1.100,जब वो गुफा तक पहुचे,When he reached the cave
+datasets\Corpus\adult\audio\test_split\AD30136.wav,en,0.000-2.720,The secrets of the cave began to unfold before them.,The secrets of the cave began to unfold before them.
+datasets\Corpus\adult\audio\test_split\AD30137.wav,hi,0.000-3.520,इस गुफा का राज है साथ निवाना और एक दूसरे की मदद करना,The rule of this cave is to help each other and to live together.
+datasets\Corpus\adult\audio\test_split\AD30140.wav,hi,0.000-4.600,चिंटू और राजू ने इस राज को समझा और इसके बाद से उनकी रोष्टी और मजबूत हो गई।,Chintu and Raju understood this secret and their friendship became stronger.
+datasets\Corpus\adult\audio\test_split\AD30150.wav,en,0.000-2.640,that spoke of a hidden portal to a magical world.,that spoke of a hidden portal to a magical world.
+datasets\Corpus\adult\audio\test_split\AD30162.wav,en,0.000-3.840,hmm the first image which is in front of me,hmm the first image which is in front of me
+datasets\Corpus\adult\audio\test_split\AD30163.wav,en,0.000-1.320,What I feel is that,What I feel is that
+datasets\Corpus\adult\audio\test_split\AD30167.wav,en,0.000-3.120,hoping if he can find something or,hoping if he can find something or
+datasets\Corpus\adult\audio\test_split\AD30169.wav,en,0.000-1.680,like is so much,like is so much
+datasets\Corpus\adult\audio\test_split\AD30173.wav,en,0.000-4.640,man is standing side by probably a washing machine or a dishwasher,man is standing side by probably a washing machine or a dishwasher
+datasets\Corpus\adult\audio\test_split\AD30174.wav,en,0.000-1.180,that shows home.,that shows home.
+datasets\Corpus\adult\audio\test_split\AD30177.wav,en,0.000-1.360,and,and
+datasets\Corpus\adult\audio\test_split\AD30181.wav,en,0.000-4.400,there are two kids one is crying and second one is giving up some,there are two kids one is crying and second one is giving up some
+datasets\Corpus\adult\audio\test_split\AD30182.wav,fr,0.000-1.320,cute expressions,cute expressions
+datasets\Corpus\adult\audio\test_split\AD30201.wav,en,0.000-1.700,"Yeah, the person is...","Yeah, the person is..."
+datasets\Corpus\adult\audio\test_split\AD30203.wav,en,0.000-3.440,he finally got something which he wanted to have,he finally got something which he wanted to have
+datasets\Corpus\adult\audio\test_split\AD30206.wav,en,0.000-3.600,the tree is in a family house and the whole family,the tree is in a family house and the whole family
+datasets\Corpus\adult\audio\test_split\AD31007.wav,hi,0.000-2.000,हम रात को गए थे शौपिंग करने,We went to shop at night and then we brought the rakhi etc.
+datasets\Corpus\adult\audio\test_split\AD31012.wav,hi,0.000-4.300,मेरे भाईयों के साथ होता है जोगी शायद वो ही एक दिन होता है जब हम,"I mean, it happens with my brothers."
+datasets\Corpus\adult\audio\test_split\AD31015.wav,hi,0.000-2.380,फादर स्रे वैसे तो सारे दिन ही फामिलीज के होते हैं,Father's day is usually for families.
+datasets\Corpus\adult\audio\test_split\AD31026.wav,hi,0.000-6.540,और वह साइंस को लेकर बहुत ज्यादा क्योर क्योर सिटी है उसमें कि मैं देखूं क्या चीज हो रही है कैसे हो रही है,and it is very cure city for science
+datasets\Corpus\adult\audio\test_split\AD31027.wav,en,0.000-1.020,So that's why I,So that's why I
+datasets\Corpus\adult\audio\test_split\AD31034.wav,hi,0.000-2.500,ओके सो मेरा होम टाउन न्यू डैली है,My hometown is New Delhi
+datasets\Corpus\adult\audio\test_split\AD31037.wav,hi,0.000-7.380,ग्रेजुएशन पोस्ट ग्रेजुएशन दोनों वहां से हुई है तो एक समथिंग लाइक डिफरेंट बॉंड है मेरा न्यू दैली के साथ,I have a different bond with New Delhi.
+datasets\Corpus\adult\audio\test_split\AD31048.wav,en,0.000-2.000,that is special,that is special
+datasets\Corpus\adult\audio\test_split\AD31051.wav,af,0.000-0.960,I would like,I would like
+datasets\Corpus\adult\audio\test_split\AD31052.wav,en,0.000-3.440,to recommend lots of place and,to recommend lots of place and
+datasets\Corpus\adult\audio\test_split\AD31060.wav,en,0.000-1.120,and here,and here
+datasets\Corpus\adult\audio\test_split\AD31063.wav,en,0.000-3.920,and it is very beautiful during the night specifically,and it is very beautiful during the night specifically
+datasets\Corpus\adult\audio\test_split\AD31064.wav,hi,0.000-8.760,तो आई लाइक ऑल फूड लाइक इंडियन चाइनीज में तो इस तरह के फूड पर संज़ाए चुलिए फूडी हूं तो आई लाइक ऑल फूड बट मेरा कंफर्ट फूड है,"I like all the food like Indian, Chinese, I like all the food but I am a foodie so I like all the food but I like comfort food"
+datasets\Corpus\adult\audio\test_split\AD31066.wav,en,0.000-2.000,that is my favorite,that is my favorite
+datasets\Corpus\adult\audio\test_split\AD31079.wav,en,0.000-1.840,if i'm going anywhere like,if i'm going anywhere like
+datasets\Corpus\adult\audio\test_split\AD31081.wav,hi,0.000-4.600,तो मुझे अच्छा लगेगा अगर मेरे फ्रेंड्स मेरे साथ होंगे तो मुझे पसंद आएगा,I will like it if my friends will be with me.
+datasets\Corpus\adult\audio\test_split\AD31104.wav,hi,0.000-1.760,में रहना असली खुशी है,It is a real pleasure to stay in the garden.
+datasets\Corpus\adult\audio\test_split\AD31105.wav,hi,0.000-3.600,मिलते हैं अगली कहानी में तब तक अपना ख्याल रखो दोस्तों,See you in the next video. Take care.
+datasets\Corpus\adult\audio\test_split\AD31114.wav,hi,0.000-6.660,सूरज अस्थ होने पर वीर और दिया ने एक छुपी कुफा को ढूंढने की यादरा पर निकलने का फैसला किया।,"After the sun set, Veer and Daya decided to set out on a journey to find a hidden cave."
+datasets\Corpus\adult\audio\test_split\AD31114.wav,hi,6.660-10.340,अफ़र सर्चिंग हाई एंड लो उन्होंने सिटी के किनारे एक ओल्ड पर दिया।,"After searching high and low, they found an old temple on the edge of the city."
+datasets\Corpus\adult\audio\test_split\AD31123.wav,en,0.000-3.680,that the bond of siblings is the strongest magic of all.,that the bond of siblings is the strongest magic of all.
+datasets\Corpus\adult\audio\test_split\AD31125.wav,hi,0.000-4.020,तूटी हुई वाशिंग मशीन दिख रही है जिसमें होम लिखा हुआ है,I can see a broken washing machine with the name of home written on it.
+datasets\Corpus\adult\audio\test_split\AD31134.wav,hi,0.000-4.320,उनको लग रहा है कि उनकी मॉम उनको आगे हेल्प करे खाना खाने के लिए,He thinks that his mom will come and help him to eat food.
+datasets\Corpus\adult\audio\test_split\AD31137.wav,hi,0.000-3.640,यहाँ एक बच्चा है जो कि किसी को देख रहा है और वो बहुत खुश है,Here is a baby who is watching someone and he is very happy.
+datasets\Corpus\adult\audio\test_split\AD31140.wav,hi,0.000-4.680,ख्रिस्मस ट्री दिख रहा है बहुत अच्छे से सजाया हुआ है,You can see the Christmas tree.
+datasets\Corpus\adult\audio\test_split\AD31141.wav,hi,0.000-1.680,एरोप्लेन जैसे चीजे दिख रही है,These look like aeroplanes.
+datasets\Corpus\adult\audio\test_split\AD31143.wav,so,0.000-0.560,Thank you.,Thank you.
+datasets\Corpus\adult\audio\test_split\AD34001.wav,hi,0.000-3.600,में मेरे विशेष दिवाली है क्योंकि हम दिवाली में है,My favorite festival is Diwali
+datasets\Corpus\adult\audio\test_split\AD34002.wav,hi,0.000-8.360,बहुत सारे अपने सब रिविलेटिव्स आते हैं और सब हम बहुत इंचॉय करते हैं सब कजन्स सब भाई और सब भैन सब मिलकर बहुत,We all come here and enjoy a lot.
+datasets\Corpus\adult\audio\test_split\AD34014.wav,hi,0.000-2.300,रक्षामन दन बहुत सारे फेस्टिवल्स ये सब,"Rakshabandhan, many festivals"
+datasets\Corpus\adult\audio\test_split\AD34019.wav,hi,0.000-2.380,टीवी शोज में ऐसा कुछ नहीं होता क्योंकि,This is not the case in TV shows
+datasets\Corpus\adult\audio\test_split\AD34023.wav,hi,0.000-1.400,लाश में क्लायम एक्स मिलता है,Climax is found in the last.
+datasets\Corpus\adult\audio\test_split\AD34033.wav,hi,0.000-2.060,वहाँ पे ज्यादा ना रश है अभी,Russia is not there anymore
+datasets\Corpus\adult\audio\test_split\AD34040.wav,en,0.000-2.400,it is very important for the Hinduism.,it is very important for the Hinduism.
+datasets\Corpus\adult\audio\test_split\AD34045.wav,en,0.000-2.000,My favorite food is Dal Makhdi.,My favorite food is Dal Makhdi.
+datasets\Corpus\adult\audio\test_split\AD34052.wav,hi,0.000-1.460,मेरा फेवरेट टेक्स नेशन,My favorite destination.
+datasets\Corpus\adult\audio\test_split\AD34057.wav,hi,0.000-5.820,स्नोफॉल सबसे मेन बात होती है स्नोफॉल अगर जब भी माउंटेन लग रहते हो ने स्नोफॉल बहुत अच्छी लगती है,Snowfall is the main thing.
+datasets\Corpus\adult\audio\test_split\AD34058.wav,ro,0.000-2.620,उधर अपना cold temperature रहता है,There is a cold temperature.
+datasets\Corpus\adult\audio\test_split\AD34059.wav,hi,0.000-3.560,तो हम कोई भी कबड़ पहन सकते हैं अच्छे बिल्कुल,So we can wear any clothes
+datasets\Corpus\adult\audio\test_split\AD34060.wav,hi,0.000-2.640,जो हमारे ऊपर अच्छे रखते हैं कोई भी कबड़े जाते हैं,which we like
+datasets\Corpus\adult\audio\test_split\AD34071.wav,en,0.000-3.840,"As they walked through the jungle, they felt as if someone was watching them.","As they walked through the jungle, they felt as if someone was watching them."
+datasets\Corpus\adult\audio\test_split\AD34080.wav,hi,0.000-5.640,कि दिये गए टाक्स कमप्रीट कर लिये और हर एक टाक्स के बाद उन्हें कुफा का सिक्रेट थोड़ा और,that they completed the tasks given and after every task they have to
+datasets\Corpus\adult\audio\test_split\AD34083.wav,hi,0.000-4.560,"इस गुफा का राज है, साथ निभाना है और एक दूसरे की मदद करना।",The secret of this cave is to help each other.
+datasets\Corpus\adult\audio\test_split\AD34085.wav,hi,0.000-3.560,चिंटो राजो ने इस राज को हमें समझा और,Chintu and Raju explained this secret to us and
+datasets\Corpus\adult\audio\test_split\AD34086.wav,ur,0.000-2.880,اس کے بعد سے ان کی دوستی اور مضبوط ہو گئی,"After this, their friendship became stronger."
+datasets\Corpus\adult\audio\test_split\AD34087.wav,mr,0.000-2.140,तो बच्चो ये थी चिन्तो राजुगी,"So children, this was Chintu Raju."
+datasets\Corpus\adult\audio\test_split\AD34093.wav,hi,0.000-3.440,इन दी हट ओफ आ बसलिंग सिटी दो सिबलिंग रहते थे।,"In the heart of a bustling city, two siblings lived."
+datasets\Corpus\adult\audio\test_split\AD34096.wav,en,0.000-2.560,while exploring the attic of their old house.,while exploring the attic of their old house.
+datasets\Corpus\adult\audio\test_split\AD34099.wav,en,0.000-2.480,"Excited by their discovery, they spent hours","Excited by their discovery, they spent hours"
+datasets\Corpus\adult\audio\test_split\AD34103.wav,hi,0.000-2.520,यात्रा पर निकलने का फैसला किया,decided to go on a journey.
+datasets\Corpus\adult\audio\test_split\AD34105.wav,en,0.000-4.640,"With bated breath, they explored the old house, discovering a hidden passage behind a book","With bated breath, they explored the old house, discovering a hidden passage behind a book"
+datasets\Corpus\adult\audio\test_split\AD34115.wav,hi,0.000-1.400,विद्वान ने स्वागत किया,Vidwan welcomed him
+datasets\Corpus\adult\audio\test_split\AD34117.wav,en,0.000-2.780,True magic lies within their hearts.,true magic lies within their hearts and
+datasets\Corpus\adult\audio\test_split\AD34126.wav,hi,0.000-2.380,इस लोग नहीं है अदर ताने इस लोग नहीं है,There is no one in the image other than this man.
+datasets\Corpus\adult\audio\test_split\AD34130.wav,hi,0.000-2.880,और देपिक्ट की भूलिश्य के लिए,and depict the loneliness of the
+datasets\Corpus\adult\audio\test_split\AD34138.wav,en,0.000-1.820,and one is crying.,and one is crying
+datasets\Corpus\adult\audio\test_split\AD34140.wav,hi,0.000-1.520,वो अपने आपको कंट्रोल कर रहा है,He is controlling himself.
+datasets\Corpus\adult\audio\test_split\AD34141.wav,hi,0.000-1.400,जो पहला बच्चा है वो,The first child is...
+datasets\Corpus\adult\audio\test_split\AD34150.wav,ur,0.000-3.220,کچھ اچھا ہوا ہو اس کے ساتھ وہ بہت زیادہ خوش ہے آج,I am very happy with what has happened today.
+datasets\Corpus\adult\audio\test_split\AD34161.wav,hi,0.000-3.060,अभी जैसे क्रिस्मस का टाइम और उस टाइम पर ये सजावा है,"Like Christmas time, this is decorated at that time"
+datasets\Corpus\adult\audio\test_split\AD35003.wav,so,0.000-0.840,4-5 days,4-5 days
+datasets\Corpus\adult\audio\test_split\AD35007.wav,hi,0.000-1.160,वो मुझे काफी अच्छा लगता है,I like it a lot.
+datasets\Corpus\adult\audio\test_split\AD35010.wav,hi,0.000-2.980,सरकंस्टांसेस फेस्टिवल तो ऐसे सपोर्ट नहीं कर पाए थे,"circumstances, the festival couldn't support it."
+datasets\Corpus\adult\audio\test_split\AD35014.wav,ur,0.000-1.680,اس کے علاوہ تو ایسا کچھ کیا نہیں,I haven't done anything else.
+datasets\Corpus\adult\audio\test_split\AD35015.wav,hi,0.000-4.220,हर रात को मेरे डॉक काफी परिशान हो गया था 5 वर्क्स के कारण,Every night my dog was very worried due to fireworks.
+datasets\Corpus\adult\audio\test_split\AD35016.wav,hi,0.000-2.760,तो आपको लिमिट में फायरवर्क करना चाहिए,I think I should do some fireworks but in limit.
+datasets\Corpus\adult\audio\test_split\AD35021.wav,hi,0.000-2.700,कि जैसे बोलते हैं कि उससे पहले स्ट्राद होते हैं,who are called as Shraddhas before that.
+datasets\Corpus\adult\audio\test_split\AD35022.wav,hi,0.000-3.480,"कि आप ancestors को अपने see-off कर रहे हो, उनकी guidance के लिए हो रहा है।","that you are C-offing your ancestors, you are doing this for their guidance."
+datasets\Corpus\adult\audio\test_split\AD35024.wav,hi,0.000-3.700,"जैसे मेरा खुद का डॉग है, तो उसके साथ काफी इशू हो जाता है उन चीजों पे","like my own dog, so I have issues with those things."
+datasets\Corpus\adult\audio\test_split\AD35033.wav,en,0.000-2.960,"about things, it can give you, it can make you feel things.","about things, it can give you, it can make you feel things."
+datasets\Corpus\adult\audio\test_split\AD35035.wav,en,0.000-2.380,Can you tell about your favorite series or TV show?,Can you tell about your favorite series or TV show?
+datasets\Corpus\adult\audio\test_split\AD35035.wav,en,2.520-4.160,Favorite series or TV show?,Favorite series or TV show?
+datasets\Corpus\adult\audio\test_split\AD35040.wav,ca,0.000-1.600,meu background de química.,I come from a chemistry background.
+datasets\Corpus\adult\audio\test_split\AD35051.wav,en,0.000-2.500,What's your hometown? What's so special about the place?,What's your hometown? What's so special about the place?
+datasets\Corpus\adult\audio\test_split\AD35051.wav,en,2.600-5.200,Would you like to recommend something from your place to everyone?,Would you like to recommend something from your place to everyone?
+datasets\Corpus\adult\audio\test_split\AD35052.wav,hi,0.000-2.380,तो I think एक नए बार सबको वहाँ जाना चाहिए,So I think everyone should visit there once in a while.
+datasets\Corpus\adult\audio\test_split\AD35052.wav,en,2.380-3.780,T.D. is a beautiful place,T.D. is a beautiful place.
+datasets\Corpus\adult\audio\test_split\AD35056.wav,en,0.000-3.500,"यहाँ पे opportunity is better है, यहाँ पे place is better है","Here the opportunity is better, here the place is better."
+datasets\Corpus\adult\audio\test_split\AD35063.wav,en,0.000-1.440,What's so special about the place?,What's so special about the place?
+datasets\Corpus\adult\audio\test_split\AD35065.wav,hi,0.000-2.000,"लोग भी अभी ठीक हैं, आगे का तो पता नहीं।","People are also fine now, don't know about the future."
+datasets\Corpus\adult\audio\test_split\AD35066.wav,en,0.000-2.240,Would you like to recommend something from your place to everyone?,Would you like to recommend something from your place to everyone?
+datasets\Corpus\adult\audio\test_split\AD35082.wav,hi,0.000-1.100,मिर्च डाल सकते हो,You can add pepper.
+datasets\Corpus\adult\audio\test_split\AD35088.wav,en,0.000-2.000,But I think South Indian food is quite great.,but I think South Indian food is quite great.
+datasets\Corpus\adult\audio\test_split\AD35092.wav,en,0.000-4.320,"Sikkim? Yeah, I particularly enjoyed Sikkim when I went there in 20.","Sikkim? Yeah, I particularly enjoyed Sikkim when I went there in 20."
+datasets\Corpus\adult\audio\test_split\AD35099.wav,hi,0.000-3.160,इंफ्रस्ट्रक्चर और सिक्के में डाज़लिंग बॉर्डर एरिया होने के करण,infrastructure of Sikkim and Darjeeling border area.
+datasets\Corpus\adult\audio\test_split\AD35099.wav,hi,3.160-4.120,तैट इस अपने ग्रेट,That is also great.
+datasets\Corpus\adult\audio\test_split\AD35110.wav,hi,0.000-4.780,प्लीज रीज दिस लाइन एक छोटे से गाउं में दो फ्रेंड्स रहते थे चंटू और राजू दोनों ही बच्चे,Please read these lines.
+datasets\Corpus\adult\audio\test_split\AD35116.wav,en,0.000-2.000,as if someone was watching them.,as if someone was watching them
+datasets\Corpus\adult\audio\test_split\AD35118.wav,it,0.000-3.080,"Welcome to ORAJU, मैं हूँ गुफा का Guardian",Welcome to Ovo Raju. I am the guardian of the cave.
+datasets\Corpus\adult\audio\test_split\AD35121.wav,en,0.000-1.020,I turn full before them.,at an effort before them.
+datasets\Corpus\adult\audio\test_split\AD35122.wav,hi,0.000-3.600,इस गुफा का राज है साथ निपाना और एक दूसरे के मदद करना।,The rule of this cave is to help each other and to be together.
+datasets\Corpus\adult\audio\test_split\AD35125.wav,hi,0.000-3.920,चिंटू और आजू ने इस राज को समझा और इसके बाद भी उनकी दोस्ती और मजबूत हो गई है,Chintu and Raju understood Raju and even after that their friendship got stronger.
+datasets\Corpus\adult\audio\test_split\AD35131.wav,en,0.000-1.440,in the heart of bustling city.,in the heart of bustling city.
+datasets\Corpus\adult\audio\test_split\AD35134.wav,en,0.000-3.720,"एक गर्मी के दिन के दोपैर में, while exploring the attics of their old house.",in the afternoon of a hot summer day while exploring the attics of their old house.
+datasets\Corpus\adult\audio\test_split\AD35138.wav,hi,0.000-5.900,सूर्यास्थ होने पर वीर और दिया ने एक छुपी गुफा को ढूनने की एक यात्रा पर निकलने का फैसला किया।,"After sunset, Veer and Diya decided to go on a journey to find a hidden cave."
+datasets\Corpus\adult\audio\test_split\AD35140.wav,en,0.000-1.800,Old Abandoned House खोज निकाला।,I searched for the Old Abandoned House.
+datasets\Corpus\adult\audio\test_split\AD35147.wav,hi,0.000-5.080,कई गंटों के अन्वेशन के बाद उन्होंने जंगल के मद्द में स्थित एक महल को खोज निखाला।,"After several hours of anvation, he found a palace in the middle of the jungle."
+datasets\Corpus\adult\audio\test_split\AD35148.wav,hi,0.000-1.980,महल के द्वार पर उनका एक पुराने,"On the doorstep of the palace, he saw an old..."
+datasets\Corpus\adult\audio\test_split\AD35151.wav,en,0.000-3.280,and that the bond of fiddling is the strongest magic of all.,and that the bond of fiddling is the strongest magic of all.
+datasets\Corpus\adult\audio\test_split\AD35159.wav,en,0.000-2.320,So I don't think he is that homeless kind of a person.,So I don't think he is that homeless kind of a person.
+datasets\Corpus\adult\audio\test_split\AD35161.wav,en,0.000-2.000,"Basically, I think he's just chilling.","Basically, I think he's just chilling."
+datasets\Corpus\adult\audio\test_split\AD35172.wav,en,0.000-4.400,"as the old English saying, home is where the heart is.","as the old English saying, home is where the heart is."
+datasets\Corpus\adult\audio\test_split\AD35174.wav,hi,0.000-1.320,दो बच्चे हैं,Two kids.
+datasets\Corpus\adult\audio\test_split\AD35176.wav,hi,0.000-2.720,एक की बॉटल थोड़ी ज्यादा फैंसी है जो शांत है,I think one keyboard is a bit too fancy
+datasets\Corpus\adult\audio\test_split\AD35177.wav,hi,0.000-2.160,खाने में अगर उन्हें बराबर की चीज़े ही मिली है,I think they have got the right amount of food.
+datasets\Corpus\adult\audio\test_split\AD35184.wav,hi,0.000-0.940,पेलावाला लग रहा है,I look pale.
+datasets\Corpus\adult\audio\test_split\AD35185.wav,en,0.000-2.680,So I don't know. I think they're just having a picnic.,So I don't know. I think they're just having a picnic.
+datasets\Corpus\adult\audio\test_split\AD35187.wav,hi,0.000-1.780,क्योंकि पीछे फूटबॉल दिख रही है उसके अंदर,Because there is a football in it.
+datasets\Corpus\adult\audio\test_split\AD35190.wav,hi,0.000-2.900,एक जस्ट रोने वाला है दूसरे ने रो रो के बहाल कर रखा है,"One is about to cry, the other is crying and taking care of it."
+datasets\Corpus\adult\audio\test_split\AD35203.wav,hi,0.000-2.460,"इतनी खुशी बच्पन में ही होती है, बाद में तो होती है नहीं","This happiness is only in childhood, it is not in the future."
+datasets\Corpus\adult\audio\test_split\AD35212.wav,ro,0.000-0.640,Great jump.,Great jump.
+datasets\Corpus\adult\audio\test_split\AD35218.wav,hi,0.000-1.640,"नोट सो गुड़, जो लेटेस्ट आई है",Not so good. The latest one.
+datasets\Corpus\adult\audio\test_split\AD35220.wav,en,0.000-1.980,I think I enjoyed the decoration.,I think I enjoyed the decoration.
+datasets\Corpus\adult\audio\test_split\AD36005.wav,hi,0.000-7.080,"मेरे मॉम बच्चे बच्चे को बताएगी कि दिवाली एक फेस्टिवल पर शुरू हो चाहिए आप विशेष पर हो चाहिए अगर आप भी अपने पास फेस्टिवल पर रहे हैं, तो बच्चे बच्चे पर रहे हैं",my mom will always told that Diwali is like a home festival
+datasets\Corpus\adult\audio\test_split\AD36007.wav,en,0.000-4.280,major reason is because मुझे lights बहुत पसंद है I love all these दियाज,Major reason is because I love lights. I love all these lamps.
+datasets\Corpus\adult\audio\test_split\AD36010.wav,en,0.000-1.520,Like we have a joint family.,Like we have a joint family.
+datasets\Corpus\adult\audio\test_split\AD36015.wav,hi,0.000-2.960,"मैं और मेरे पास बहुत अच्छा हैं, हम एक बहुत अच्छा प्रदेश करेंगे",Mostly me and my cousins will play some good music.
+datasets\Corpus\adult\audio\test_split\AD36017.wav,hi,0.000-4.200,तो वह दिवाली पर बहुत साथ मज़े आते हैं विकॉट यह फैमिली गेट टोगेदर होता है,"Overall, we enjoy Diwali because it is a family get together."
+datasets\Corpus\adult\audio\test_split\AD36025.wav,hi,0.000-3.440,घर के जितने भी डोज होते हैं उन पर पत्तो और फूलों की मालाई लगाते हैं,I apply flower and leaves cream on all the doors of the house.
+datasets\Corpus\adult\audio\test_split\AD36041.wav,en,0.000-5.440,defense life so that is about a woman who goes to a special force training,defense life so that is about a woman who goes to a special force training
+datasets\Corpus\adult\audio\test_split\AD36042.wav,hi,0.000-4.640,"और इसमें वो स्ट्रगल दिखाया है because all जो भी उसके companions होते हैं, they are all our",and he has shown that struggle because all his companions are men
+datasets\Corpus\adult\audio\test_split\AD36053.wav,hi,0.000-2.320,और मैं यह बढ़ता हुआ था,And I completely enjoyed it.
+datasets\Corpus\adult\audio\test_split\AD36053.wav,hi,2.320-4.320,जितने भी विशेषण थे,I have watched all the seasons together.
+datasets\Corpus\adult\audio\test_split\AD36056.wav,en,0.000-2.480,shows that I really enjoyed watching.,shows that I really enjoyed watching.
+datasets\Corpus\adult\audio\test_split\AD36060.wav,en,0.000-4.660,Rewadi is basically in this beautiful Aravali range.,Rewadi is basically in this beautiful Aravali range
+datasets\Corpus\adult\audio\test_split\AD36064.wav,en,0.000-3.720,वो as a memorial बना है those people who lost,It has been made as a memorial for those people who lost their lives.
+datasets\Corpus\adult\audio\test_split\AD36085.wav,fr,0.000-2.120,उसके बाद destination मुझे,after that destination
+datasets\Corpus\adult\audio\test_split\AD36086.wav,hi,0.000-2.400,मुझे अमरित सर बहुत पसंद आये था,I liked Amritsar very much because
+datasets\Corpus\adult\audio\test_split\AD36092.wav,hi,0.000-2.700,तो वो time बहुत अच्छा था और उसके बाद,That was a great time.
+datasets\Corpus\adult\audio\test_split\AD36099.wav,hi,0.000-1.620,ममी पापा को भी वहाँ पे लेके जाओ,Take mom and dad there too.
+datasets\Corpus\adult\audio\test_split\AD36106.wav,hi,0.000-2.420,इसे सुनके दोनों ने सोचा ये है उपसेदारी,"After hearing this, both of them thought that this is"
+datasets\Corpus\adult\audio\test_split\AD36109.wav,hi,0.000-1.520,और गुफा की तरफ चले गए,and went towards the cave.
+datasets\Corpus\adult\audio\test_split\AD36109.wav,en,1.520-3.440,as they walked through the jungle,"As they walked through the jungle,"
+datasets\Corpus\adult\audio\test_split\AD36111.wav,hi,0.000-5.700,पर उन्होंने हिम्मत नहीं हारी। जब वो गुफा तक पहुँच गए उन्होंने गुफा में एक अजीब सी आवाज आई।,But he didn't lose his courage.
+datasets\Corpus\adult\audio\test_split\AD36125.wav,en,0.000-5.920,Veer bade bhai known for his curiosity and Diya chhoti bhen admired for her creativity.,Veer Badebhai known for his curiosity and Diya Choti Bhen admired for her creativity.
+datasets\Corpus\adult\audio\test_split\AD36132.wav,hi,0.000-1.360,"सूरज अस्थ होने पे,",The time of neste мужчatiques belonged to 2 neutral
+datasets\Corpus\adult\audio\test_split\AD36158.wav,hi,0.000-3.260,तो उसने कुछ चद्डर सी ले रखी है और वो उड़के दिखा रहा है,So he has taken some sand and he is showing it flying.
+datasets\Corpus\adult\audio\test_split\AD36158.wav,hi,3.260-5.600,तो अगर यह एक प्रिकार का प्रिकार है,So maybe it's like a stunt kind of picture.
+datasets\Corpus\adult\audio\test_split\AD36161.wav,en,0.000-4.440,"So it's like a very decorated Christmas tree with gifts on it, lights on it.","So it's like a very decorated Christmas tree with gifts on it, lights on it."
+datasets\Corpus\adult\audio\test_split\AD36163.wav,hi,0.000-0.660,ओके थेंक यू,Thank you.
+datasets\Corpus\adult\audio\test_split\AD40019.wav,ur,0.000-1.860,انٹیلیجنس لڑکیوں کی,"intelligence of girls, their studies, or their..."
+datasets\Corpus\adult\audio\test_split\AD40044.wav,hi,0.000-3.900,तो एंसी आर है तो देर इज नो,There is no NCR.
+datasets\Corpus\adult\audio\test_split\AD40049.wav,hi,0.000-9.060,पहाड़ी या फिर किसी आउट सेशन जैसे शहर में हो सकता है क्योंकि वहां पर बहुत डिफरेंट जगह के लोग होते हैं,It can be in a mountainous or outstation like city
+datasets\Corpus\adult\audio\test_split\AD40050.wav,hi,0.000-0.940,ऐसा नहीं है कि,It's not like...
+datasets\Corpus\adult\audio\test_split\AD40051.wav,hi,0.000-5.500,"जगह के लोग वहीं के हैं, इस मिक्स्चर, कहीं के भी कैसे भी लोग हो सकते हैं.",The people of this place are from there only.
+datasets\Corpus\adult\audio\test_split\AD40068.wav,hi,0.000-1.380,बहुत साफ सिटी है,it is a clean seat
+datasets\Corpus\adult\audio\test_split\AD40070.wav,hi,0.000-6.900,तो भीड बहुत ज़्यादा नहीं है जिसकी वजह से सब कुछ मेंटेन करना बहुत इजी पड़ जाता है जो,"There is not a lot of crowd, so it becomes easy to maintain everything."
+datasets\Corpus\adult\audio\test_split\AD40075.wav,hi,0.000-7.040,एक शहर के बीचों बीच एक नदी का पहना हमेशा एक खुबसूरत साइन होता है सीनिक ब्यूटी के लिए,Wearing a river in the middle of the city is always a beautiful sign for scenic beauty.
+datasets\Corpus\adult\audio\test_split\AD40076.wav,hi,0.000-3.980,कह सकते हैं कि दोनों तरफी बहुत जादा अच्छा व्यू,You can say that the view is much better on both sides.
+datasets\Corpus\adult\audio\test_split\AD40085.wav,ur,0.000-2.380,وہاں کی ایک خوبصورت چیز مجھے یہ لگی,I found one of the beautiful things there was that in one of the sculptures...
+datasets\Corpus\adult\audio\test_split\AD40103.wav,hi,0.000-5.960,चिंटू और राजू ने गार्जन के दिये गए task complete कर लिये और हर एक task के बाद,Chintu and Raju completed the tasks given by the guardian and after each task
+datasets\Corpus\adult\audio\test_split\AD40114.wav,en,0.000-2.740,"Veer Bade Bhai, known for his curiosity.","Veer Bade Bhai, known for his curiosity."
+datasets\Corpus\adult\audio\test_split\AD40119.wav,en,0.000-7.240,symbols finally translating a passage that spoke of a hidden portal to a magical world.,"symbols, finally translating a passage that spoke of a hidden portal to a magical world."
+datasets\Corpus\adult\audio\test_split\AD40121.wav,en,0.000-2.280,"after searching high and low,","After searching high and low, he found an old abandoned house near the city."
+datasets\Corpus\adult\audio\test_split\AD40124.wav,hi,0.000-9.200,अन्जियसली उन्होंने जंगल के अंदर और गहरा प्रविश किया जहां उन्हें कल्प प्रवक्षों और जादूई द्रश्यों का सामना किया,Goltz entered the forest during Which he encountered calimant flavoured and enchanting visions.
+datasets\Corpus\adult\audio\test_split\AD40130.wav,en,0.000-5.440,can you describe this image what are your thoughts okay so,can you describe this image what are your thoughts okay so
+datasets\Corpus\adult\audio\test_split\AD40131.wav,en,0.000-1.440,There is a guy.,There is a guy.
+datasets\Corpus\adult\audio\test_split\AD40144.wav,hi,0.000-4.220,"इतना खुश क्यों नहीं है, यह इतना रो क्यों रहा है, या फिर यह भी हो सकता है कि...",Why are you not so happy? Why are you crying so much?
+datasets\Corpus\adult\audio\test_split\AD40150.wav,hi,0.000-1.520,वो कुछ expect तो कर रहे हैं,but he is expecting something.
+datasets\Corpus\adult\audio\test_split\AD40157.wav,hi,0.000-1.160,उसके हाथ में एक कपड़ा है,She has a cloth in her hand.
+datasets\Corpus\adult\audio\test_split\AD40158.wav,hi,0.000-5.400,ऐसा लग रही है इसे सुपरमैन बनने की उचिश कर रहा है तो इस इमेज से यह भी कहा जा सकता है कि,It looks like Superman is trying to become a superhero.
+datasets\Corpus\adult\audio\test_split\AD40160.wav,hi,0.000-4.220,एक नॉर्मल फ्लोथ के कपड़े से भी आप सुपर मैन वाली फीलिंग लेके उड़ सकते हैं।,You can fly with a normal cloth with a superman feeling.
+datasets\Corpus\adult\audio\test_split\AD40169.wav,hi,0.000-4.240,और मेजरली स्पेसक्राफ्ट की जैसे दिखने वाली है,and looks like a measurly spacecraft
+datasets\Corpus\adult\audio\test_split\AD41001.wav,en,0.000-2.700,My favourite festival is Diwali.,My favourite festival is Diwali
+datasets\Corpus\adult\audio\test_split\AD41004.wav,ur,0.000-1.180,ملاقات ہو جاتی ہے,See you in the next video
+datasets\Corpus\adult\audio\test_split\AD41008.wav,en,0.000-1.740,for example I want to give,for example I want to give
+datasets\Corpus\adult\audio\test_split\AD41013.wav,hi,0.000-1.680,लाइक कर दमाले जाए,Like a Dhamma Lejar
+datasets\Corpus\adult\audio\test_split\AD41018.wav,hi,0.000-5.000,अगर आप हमारे तरफ विजिट करते हैं तो घी जरूर खाएं दही खाएं,"If you visit our place, then you must try this ghee and curd."
+datasets\Corpus\adult\audio\test_split\AD41025.wav,hi,0.000-2.680,लाइक आलू की जो प्रोडक्ट्स हैं पोटेटो प्रोडक्ट,like potato products
+datasets\Corpus\adult\audio\test_split\AD41026.wav,hi,0.000-2.160,चिप्स एंड ओल वो भी अच्छे लगते हैं,"Chips and all, they are also good."
+datasets\Corpus\adult\audio\test_split\AD41027.wav,hi,0.000-2.000,जलेबी ज़िस्से पर बताया हूँ,I told you that Jalebi is my favorite dish
+datasets\Corpus\adult\audio\test_split\AD41034.wav,hi,0.000-3.880,"बहुत ही पॉलिशन है, पॉपुलीशन भी बहुत है, तो लोगों से",There is a lot of pollution and a lot of population.
+datasets\Corpus\adult\audio\test_split\AD41051.wav,hi,0.000-6.220,हमेशा रहते हैं चिंटो राजु ने इस राज को समझा और उसके बाद से उनकी दोस्ती और मजबूत हो गई,Chintu and Raju understood this and their friendship became stronger.
+datasets\Corpus\adult\audio\test_split\AD41056.wav,hi,0.000-0.900,वीर बड़े भाई,"Veer, big brother."
+datasets\Corpus\adult\audio\test_split\AD41057.wav,en,0.000-4.800,known for his curiosity and the Choti band admire for her creativity.,known for his curiosity and the a choti bhen admire for her creativity.
+datasets\Corpus\adult\audio\test_split\AD41058.wav,en,0.000-4.980,एक गर्मी के दिन के दोपयर में while exploring the attic of their old house,in the afternoon of a summer day while exploring the attic of their old house
+datasets\Corpus\adult\audio\test_split\AD41062.wav,en,0.000-2.000,"Finally, translating a passage.","Finally, translating a passage."
+datasets\Corpus\adult\audio\test_split\AD41066.wav,en,0.000-5.660,"With a bated breath, they explored the old house, discovering a hidden passage behind a book.","With a breath of breath, they explored the old house, discovering a hidden passage behind a book."
+datasets\Corpus\adult\audio\test_split\AD41069.wav,hi,0.000-3.760,कई गंटों के अन्विशन के बाद उन्होंने जंगल के मद्य में,"After several hours of exploration, he found a small tree in the middle of the forest."
+datasets\Corpus\adult\audio\test_split\AD41073.wav,en,0.000-4.960,"The wizard welcomed them, reminding them that the true magic lies within their hearts.","The wizard welcomed them, reminding them that the true magic lies within their hearts."
+datasets\Corpus\adult\audio\test_split\AD41074.wav,en,0.000-5.280,and that the bond of siblings is the strongest magic of all.,and that the bond of siblings is the strongest magic of all.
+datasets\Corpus\adult\audio\test_split\AD41075.wav,id,0.000-3.000,"Okey, jadi bolehkah anda menjelaskan ini kepada saya?","Okay, so can you describe this to me?"
+datasets\Corpus\adult\audio\test_split\AD41077.wav,en,0.000-3.040,I think he is waiting to go home.,I think he is waiting to go home.
+datasets\Corpus\adult\audio\test_split\AD41080.wav,hi,0.000-2.120,जो घर जाने के लिए काफी उत्सुक दिखाई दे रहा है,"So, it looks very exciting to go home."
+datasets\Corpus\adult\audio\test_split\AD41081.wav,hi,0.000-4.520,और इस इमेज में दो बच्चे दिख रहे हैं खाना खाते हुए लेकिन,"In this image, two children are seen eating food."
+datasets\Corpus\adult\audio\test_split\AD41082.wav,hi,0.000-3.520,एक बच्चा रोता हुआ दिख रहा है थोड़ा सा अपसेट,"One child is crying, looks a bit upset."
+datasets\Corpus\adult\audio\test_split\AD41083.wav,hi,0.000-2.940,"दूसरा तो बड़ा सा अपसेट दिख रहा है, अरे एक बच्चा रो रहा है,",The other one is a little upset.
+datasets\Corpus\adult\audio\test_split\AD41084.wav,hi,0.000-3.420,खाने में इंटरेस्ट नहीं आ रहा या फिर उसको कुछ और चीज़ें खाने के लिए,He is not interested in food or he wants something else.
+datasets\Corpus\adult\audio\test_split\AD41085.wav,hi,0.000-1.860,वो अपनी मां के लिए भी रो रहा होगा,He must be crying for his mother too.
+datasets\Corpus\adult\audio\test_split\AD41089.wav,en,0.000-4.000,He is jumping in the air. So maybe he is happy.,He is jumping in the air. So maybe he is happy.
+datasets\Corpus\adult\audio\test_split\AD41091.wav,hi,0.000-5.240,उसने कुछ अचीव किया होगा जिस वजह से वो काफी खुश दिख रहा है,He must have achieved something and that's why he looks very happy.
+datasets\Corpus\adult\audio\test_split\AD41096.wav,no,0.000-2.480,someone loving guy,someone loving guy.
+datasets\Corpus\adult\audio\test_split\AD41097.wav,ko,0.000-0.640,땡큐,Thank you
+datasets\Corpus\adult\audio\test_split\AD42003.wav,en,0.000-6.480,What I like about Holi is that Holi is a festival of joy and color.,What I like about Holi is that Holi is a festival of joy and color.
+datasets\Corpus\adult\audio\test_split\AD42007.wav,en,0.000-5.760,What happened in this is that we get to interact with people more closely.,What happened in this is that we get to interact with people more closely.
+datasets\Corpus\adult\audio\test_split\AD42009.wav,en,0.000-4.480,when we put colors on each other,when we put colors on each other.
+datasets\Corpus\adult\audio\test_split\AD42015.wav,en,0.000-7.560,"snacks, gujiyas and all kind of things color","snacks, gujiyas and all kind of things color"
+datasets\Corpus\adult\audio\test_split\AD42019.wav,en,0.000-2.500,Do you like watching series or TV shows?,Do you like watching series or TV shows?
+datasets\Corpus\adult\audio\test_split\AD42019.wav,ca,2.500-3.940,Can you tell me?,Can you tell me?
+datasets\Corpus\adult\audio\test_split\AD42021.wav,en,0.000-5.000,TV shows and series I used to like very much when I was in my bachelor's.,TV shows and series I used to like very much when I was in my bachelor's.
+datasets\Corpus\adult\audio\test_split\AD42025.wav,en,0.000-2.920,And that time we used to watch movies a lot.,and that time we used to watch movies a lot
+datasets\Corpus\adult\audio\test_split\AD42027.wav,af,0.000-2.720,Nowadays Hindi movie series are also,Nowadays Hindi movie series are also
+datasets\Corpus\adult\audio\test_split\AD42034.wav,en,0.000-1.100,My favorite series.,My favorite series.
+datasets\Corpus\adult\audio\test_split\AD42036.wav,en,0.000-1.400,What is your hometown?,What is your hometown?
+datasets\Corpus\adult\audio\test_split\AD42047.wav,fr,0.000-3.060,passes you can visit and you can,passes you can visit and you can
+datasets\Corpus\adult\audio\test_split\AD42048.wav,en,0.000-2.960,scenic beauties you can have a gomukh trek,scenic beauties you can have a gomukh trek
+datasets\Corpus\adult\audio\test_split\AD42057.wav,fr,0.000-1.660,you can visit gangotree.com,you can visit gangotree.com
+datasets\Corpus\adult\audio\test_split\AD42058.wav,en,0.000-5.840,they are very good home stays and cottages also you will enjoy very much,they are very good home stays and cottages also you will enjoy very much
+datasets\Corpus\adult\audio\test_split\AD42059.wav,en,0.000-4.880,What kind of food do you like? Can you tell me about your favorite dish?,What kind of food do you like? Can you tell me about your favorite dish?
+datasets\Corpus\adult\audio\test_split\AD42072.wav,en,0.000-3.120,good place to visit.,good place to visit.
+datasets\Corpus\adult\audio\test_split\AD42083.wav,ur,0.000-5.980,پر انہوں نے حمد نہیں آئی جب وہ گفا تک پہنچے انہوں نے گفا سے ایک عجیب سی آواز آئی,But they couldn't hold back.
+datasets\Corpus\adult\audio\test_split\AD42094.wav,hi,0.000-4.360,दो सिब्लिंग रहते थे वी और दिया वीर बड़े भाई नोन फॉर इस,"Two siblings lived there, Veer and Diyaveer, the elder brother known for his"
+datasets\Corpus\adult\audio\test_split\AD42105.wav,en,0.000-4.880,"Stepping through the passes, they found themselves in a lush, magical forest.","Stepping through the passes, they found themselves in a lush, magical forest."
+datasets\Corpus\adult\audio\test_split\AD42110.wav,en,0.000-3.920,as looking at this image i can infer that,as looking at this image I can infer that
+datasets\Corpus\adult\audio\test_split\AD42114.wav,en,0.000-1.840,and lean behind it.,and lean behind it.
+datasets\Corpus\adult\audio\test_split\AD42115.wav,en,0.000-4.900,Just to think what he could do or where he could go.,just to think what he could do or where he could go.
+datasets\Corpus\adult\audio\test_split\AD42117.wav,en,0.000-4.880,"Looking at the two child, what I can infer is","Looking at the two child, what I can infer is"
+datasets\Corpus\adult\audio\test_split\AD42130.wav,en,0.000-2.000,school time where,school time where
+datasets\Corpus\adult\audio\test_split\AD42134.wav,af,0.000-2.060,and we get to meet,and we get to meet
+datasets\Corpus\adult\audio\test_split\AD42135.wav,en,0.000-3.440,the father and sister of the convent school.,the father and sister of the convent school.
+datasets\Corpus\adult\audio\test_split\AD43003.wav,hi,0.000-1.820,फेवरेट फेस्टिवल था वो,My favorite festival was
+datasets\Corpus\adult\audio\test_split\AD43009.wav,ur,0.000-1.160,وہ سب لے کے آیا تھا,other less expensive vehicle
+datasets\Corpus\adult\audio\test_split\AD43016.wav,hi,0.000-7.260,मतलब उनको जितने भी दोस्ते सबके घर हम एक-एक करके सबके घर गए और उस दिन सुबह 9 10 पजे से हम लोग निकले थे,We went to all the friends' houses one by one and left at 9-10 am that day.
+datasets\Corpus\adult\audio\test_split\AD43017.wav,ur,0.000-3.620,شام کو چار پانچ بجے تک سب دوستوں کے ساتھ ہولی وغیرہ کھیلا,I played Holi with all my friends until 4-5 pm.
+datasets\Corpus\adult\audio\test_split\AD43017.wav,ur,3.620-5.480,سب کے گھر والوں سے ملا,I met all my family members.
+datasets\Corpus\adult\audio\test_split\AD43020.wav,ur,0.000-1.160,ہم لوگوں نے کھائی,we ate and all that
+datasets\Corpus\adult\audio\test_split\AD43029.wav,ur,0.000-1.340,کافی ساری میں دیکھتا ہوں,I see many of them
+datasets\Corpus\adult\audio\test_split\AD43033.wav,de,0.000-1.560,Süper Lümen'e 3 of us.,I have 3 of them.
+datasets\Corpus\adult\audio\test_split\AD43038.wav,ur,0.000-3.060,میرا ہوم ٹاؤن بیکانے راجستان ہے یہ,"My hometown is Bikaner, Rajasthan"
+datasets\Corpus\adult\audio\test_split\AD43046.wav,hi,0.000-6.760,कचावरी जो बिकानेर की कचावरी है वह पसंद है वहां की भुजिया पसंद है घेवर पसंद है,"I like Bikaner's Kachori, Bhujia, Ghawar"
+datasets\Corpus\adult\audio\test_split\AD43049.wav,en,0.000-4.640,what is your favorite destination for holiday what do you like that place okay banaras,What is your favorite destination for holiday?
+datasets\Corpus\adult\audio\test_split\AD43052.wav,ur,0.000-3.020,مطلب وہاں لوگوں کے بیچ میں گھلنا ملنا چاہوں گا,I mean I want to meet people there
+datasets\Corpus\adult\audio\test_split\AD43053.wav,hi,0.000-5.280,"तो बनारस मुझे सबसे अच्छी जगह लगती है, वह जगह क्यों आपको पसंद है?",So I like the best place in Banaras.
+datasets\Corpus\adult\audio\test_split\AD43054.wav,ur,0.000-2.760,وہ جگہ مجھے اس لئے پسند ہے کیونکہ وہاں کچھ,I like that place because there is something
+datasets\Corpus\adult\audio\test_split\AD43055.wav,ur,0.000-1.560,وہاں کے لوگ وہاں جو,"the people there, the people there"
+datasets\Corpus\adult\audio\test_split\AD43058.wav,ur,0.000-3.720,ایک چھوٹے سے گاؤں میں دو فرینڈز رہتے تھے چنٹو اور راجو,Please read these lines.
+datasets\Corpus\adult\audio\test_split\AD43058.wav,ur,3.720-6.840,دونوں ہی بچے بہت مستی کرتے تھے اور ان کی فرینڈشپ بلکل چھوٹا,"There were two friends in a small village, Chintu and Raju."
+datasets\Corpus\adult\audio\test_split\AD43059.wav,ur,0.000-3.220,چنٹو اور راجہ نے ایک دن سنا کہ ان کے پاس کے جنگل میں ایک جادوی گفہ ہے,Chintu and Raja heard that there is a magical cave in the nearby jungle.
+datasets\Corpus\adult\audio\test_split\AD43059.wav,ur,3.220-6.840,اسے سن کے دونوں نے سوچا کہ ان کا نیکس ریزنچر سپورٹ ہو سکتا ہے,"After hearing this, both thought that their next adventure could be a sport."
+datasets\Corpus\adult\audio\test_split\AD43064.wav,ur,0.000-2.740,گارڈین کے دیئے گئے ٹاسک کمپلیٹ کر لیے,completed the task given by the guardian
+datasets\Corpus\adult\audio\test_split\AD43066.wav,ur,0.000-6.720,اس گفہ کا راج ہے ساتھ نبانا اور ایک دوسرے کی مدد کرنا,The secrets of the cave began to unfold before them.
+datasets\Corpus\adult\audio\test_split\AD43066.wav,ur,6.720-7.880,یہ گفہ ان لوگوں کے لئے ہے,The king of this cave is to help each other.
+datasets\Corpus\adult\audio\test_split\AD43087.wav,hi,0.000-1.400,पट्टियां भी दिख रही हैं,you can see the strips
+datasets\Corpus\adult\audio\test_split\AD43091.wav,en,0.000-3.600,Can you describe this image? What are the thoughts about it?,Can you describe this image? What are the thoughts about it?
+datasets\Corpus\adult\audio\test_split\AD43103.wav,ur,0.000-1.520,کہ کرسمس ٹری جو کی,Christmas tree
+datasets\Corpus\adult\audio\test_split\AD43105.wav,so,0.000-0.640,Thank you.,Thank you.
+datasets\Corpus\adult\audio\test_split\AD47001.wav,en,0.000-4.480,My favorite festival is Holi.,My favorite festival is Holi.
+datasets\Corpus\adult\audio\test_split\AD47005.wav,hi,0.000-4.200,जो खाने का preparation होता है celebration के पहले,The preparation of food before the celebration.
+datasets\Corpus\adult\audio\test_split\AD47007.wav,hi,0.000-2.420,इंप्रेशन अलग फीलिंग क्रिएट करती है हम,It creates a different feeling.
+datasets\Corpus\adult\audio\test_split\AD47013.wav,hi,0.000-1.640,गेट टोकेदर बहुत बड़ा हो जाता है,get together becomes very big and
+datasets\Corpus\adult\audio\test_split\AD47018.wav,hi,0.000-7.080,आज बहुत फॉंड नहीं हूँ मैं सीरीज या टीवी शोज देखने के बाद अ,I am not fond of watching TV shows or series but
+datasets\Corpus\adult\audio\test_split\AD47024.wav,en,0.000-4.640,they played their roles is awesome especially the manisha koirala and alam zaib,they played their roles is awesome especially the manisha koirala and alam zaib
+datasets\Corpus\adult\audio\test_split\AD47025.wav,en,0.000-4.720,and i really like this story and storyline was quite impressive,and I really like this story and storyline was quite impressive.
+datasets\Corpus\adult\audio\test_split\AD47026.wav,en,0.000-2.540,So that was the last series that I watched.,"So that was the last series that I watched, Heera Mandi. Mirzapur is still"
+datasets\Corpus\adult\audio\test_split\AD47030.wav,en,0.000-3.040,"प्रयागराज एक historical place है, but",Prayagraj is a historical place but
+datasets\Corpus\adult\audio\test_split\AD47031.wav,hi,0.000-6.320,इससे भी ज्यादा बेटर और इंटरेस्टिंग और मेरा जो फेवरेट प्लेस है वह है मेरा,My favorite place is
+datasets\Corpus\adult\audio\test_split\AD47032.wav,hi,0.000-4.080,birth place जो कि मद्यप्रदेश का एक छोटा सा टाउन है सिंग्रॉली,"birthplace which is a small town of Madhya Pradesh, Singrolli."
+datasets\Corpus\adult\audio\test_split\AD47038.wav,hi,0.000-7.260,मेरे सारे फ्रेंड्स वहीं से हैं मेरी फैमिली के साथ मतलब सारा टाइम मैंने वहीं पर स्पेंड किया है,"All my friends are from there, I have spent most of my time with my family there."
+datasets\Corpus\adult\audio\test_split\AD47049.wav,en,0.000-2.260,Indian food is my favorite,Indian food is my favorite
+datasets\Corpus\adult\audio\test_split\AD47050.wav,en,0.000-1.760,talking about the dish,talking about the dish
+datasets\Corpus\adult\audio\test_split\AD47053.wav,it,0.000-1.800,I can call my favorite dish.,I can call my favorite dish
+datasets\Corpus\adult\audio\test_split\AD47054.wav,tl,0.000-0.940,"Anything, anything.","Anything, anything."
+datasets\Corpus\adult\audio\test_split\AD47059.wav,en,0.000-6.000,"For example, we cook Undhiyu from Gujarat.","For example, we cook Undhiyu from Gujarat."
+datasets\Corpus\adult\audio\test_split\AD47062.wav,en,0.000-3.440,Any dish which goes through the traditional process of cooking,Any dish which goes through the traditional process of cooking
+datasets\Corpus\adult\audio\test_split\AD47066.wav,en,0.000-6.200,it is Australia yes again because it is related to the food,it is Australia yes again because it is related to the food
+datasets\Corpus\adult\audio\test_split\AD47068.wav,en,0.000-1.200,social medias and all.,social medias and all.
+datasets\Corpus\adult\audio\test_split\AD47069.wav,en,0.000-1.700,and from the various,and from the various
+datasets\Corpus\adult\audio\test_split\AD47075.wav,hi,0.000-1.220,चिंटू और राजू,Chintu and Raju
+datasets\Corpus\adult\audio\test_split\AD47075.wav,hi,1.220-3.800,दोनों ये बच्चे बहुत मस्ती करते थे,Both of them were very playful
+datasets\Corpus\adult\audio\test_split\AD47076.wav,hi,0.000-5.420,"और उनकी फ्रेंचिप बिलकुल चुट्टियों की तरह थी, हमेशा पास, हमेशा साथ।",And their friendship was like a little kiss.
+datasets\Corpus\adult\audio\test_split\AD47083.wav,en,0.000-3.060,"Welcome Chintu and Raju, मैं हूँ गुफा का Guardian",Welcome Chintu and Raju. I am the guardian of the cave.
+datasets\Corpus\adult\audio\test_split\AD47088.wav,en,0.000-1.680,began to unfold before them.,began to unfold before them.
+datasets\Corpus\adult\audio\test_split\AD47092.wav,hi,0.000-3.000,चिंटू और राजू ने इस राज को समझा।,Chintu and Raju understood this secret.
+datasets\Corpus\adult\audio\test_split\AD47094.wav,hi,0.000-2.580,ये थी चिंटू और राजू की अनोखी गुफा,This was Chintu and Raju's unique cave.
+datasets\Corpus\adult\audio\test_split\AD47095.wav,ur,0.000-4.580,کی انوکھی گفا کی کہانی دوستی اور ساتھ میں رہنا ہی اصلی خوشی ہے,"The story of a unique cave, friendship and being together is the real joy."
+datasets\Corpus\adult\audio\test_split\AD47103.wav,en,0.000-4.080,"Excited by their discovery, they spend hours deciphering the symbols.","Excited by their discovery, they spend hours deciphering the symbols."
+datasets\Corpus\adult\audio\test_split\AD47104.wav,en,0.000-5.100,finally translating a passage that spoke of a hidden portal to a magical world.,"Finally, translating a passage that spoke of a hidden portal to a magical world."
+datasets\Corpus\adult\audio\test_split\AD47112.wav,en,0.000-4.340,"Stepping through the passage, they found themselves in a lush magical forest.","Stepping through the passage, they found themselves in a lush magical forest."
+datasets\Corpus\adult\audio\test_split\AD47114.wav,hi,0.000-4.100,जहां उन्हें कल्प व्रिक्षों और जादोई द्रिश्यों का सामना किया।,where he faced those reactive trees and magical terraces.
+datasets\Corpus\adult\audio\test_split\AD47132.wav,en,0.000-2.400,He is totally exhausted. What to do next?,He is totally exhausted. What to do next?
+datasets\Corpus\adult\audio\test_split\AD47134.wav,hi,0.000-4.480,"दो बच्चे हैं, उनको उनके खाने का समान दिया गया हुआ है,","There are two kids, they have their food."
+datasets\Corpus\adult\audio\test_split\AD47156.wav,en,0.000-1.760,He's acting for something.,he's acting for something
+datasets\Corpus\adult\audio\test_split\AD47162.wav,en,0.000-1.280,another lead character,another lead character
+datasets\Corpus\adult\audio\test_split\AD47167.wav,en,0.000-3.480,I can see various other things like,I can see various other things like
+datasets\Corpus\adult\audio\test_split\AD59002.wav,en,0.000-3.040,My favorite festival is Janmashtami.,My favorite festival is Janmashtami.
+datasets\Corpus\adult\audio\test_split\AD59003.wav,hi,0.000-2.100,कैसे celebrate किया था,and how I celebrated it
+datasets\Corpus\adult\audio\test_split\AD59008.wav,en,0.000-2.000,"happy था, exciting था","It was happy, exciting and..."
+datasets\Corpus\adult\audio\test_split\AD59011.wav,hi,0.000-5.900,डांस किया काफी जो भजन हो रहे थे तो पार्टिसिपेट किया भजन कीर्तन में,I danced a lot during the bhajans and participated in the bhajans and kirtans.
+datasets\Corpus\adult\audio\test_split\AD59017.wav,en,0.000-3.040,and everyone was in their like best clothes,and everyone was in their like best clothes
+datasets\Corpus\adult\audio\test_split\AD59028.wav,hi,0.000-1.780,तो वो शो मुझे पसंद है,So I like that show and I watch it frequently. It's a family show.
+datasets\Corpus\adult\audio\test_split\AD59037.wav,en,0.000-7.000,"And even though they have gays in their family, gay marriages in their family,","And even though they have gays in their family, gay marriages in their family,"
+datasets\Corpus\adult\audio\test_split\AD59037.wav,en,7.340-11.140,they have also shown teenage pregnancy.,they have also shown teenage pregnancy.
+datasets\Corpus\adult\audio\test_split\AD59050.wav,en,0.000-2.800,it also showcases a mix of emotions.,It also showcases a mix of emotions.
+datasets\Corpus\adult\audio\test_split\AD59057.wav,en,0.000-2.000,Where is my hometown?,Where is my hometown?
+datasets\Corpus\adult\audio\test_split\AD59057.wav,en,2.000-4.000,What's so special about that place?,What's so special about that place?
+datasets\Corpus\adult\audio\test_split\AD59059.wav,en,0.000-3.680,Jim Gorbet which is quite famous,Jim Gorbet which is quite famous
+datasets\Corpus\adult\audio\test_split\AD59062.wav,af,0.000-1.480,और काफी green thumb,and a lot of green thumb
+datasets\Corpus\adult\audio\test_split\AD59066.wav,en,0.000-5.900,Pura Bachpan because I've spent there so it's quite a special place for me and the memories,the whole childhood because I have spent there
+datasets\Corpus\adult\audio\test_split\AD59066.wav,en,5.900-7.560,they were quite raw.,so it's quite a special place for me
+datasets\Corpus\adult\audio\test_split\AD59067.wav,en,0.000-2.240,So that's special about that place.,So that's special about that place.
+datasets\Corpus\adult\audio\test_split\AD59075.wav,en,0.000-5.600,"Okay, what kind of food do I like? Can I tell about my favorite dish?","Okay, what kind of food do I like? Can I tell about my favorite dish?"
+datasets\Corpus\adult\audio\test_split\AD59077.wav,ne,0.000-1.260,घर पे बनाओआ खाना,Homemade food
+datasets\Corpus\adult\audio\test_split\AD59079.wav,en,0.000-6.200,गोलगप्पे everything but अगर घर पे बने हो then I would like I would love to eat them,"golgappas, everything."
+datasets\Corpus\adult\audio\test_split\AD59084.wav,en,0.000-6.720,"And one food if I would say which I very much like is maybe Aloo Paratha, Ghar Ka.",One food which I like is Aloo Paratha
+datasets\Corpus\adult\audio\test_split\AD59090.wav,hi,0.000-4.480,शायद कुछ पालक या साग या पालक पनीर या ऐसा कुछ,Maybe some spinach or spinach and paneer or something like that
+datasets\Corpus\adult\audio\test_split\AD59090.wav,en,4.480-6.500,so that's my favorite dish,So that's my favorite dish
+datasets\Corpus\adult\audio\test_split\AD59095.wav,hi,0.000-4.980,और पहार ज़्यादा पसंद है राधर देन बीचेस बट तो,and I like mountains more
+datasets\Corpus\adult\audio\test_split\AD59099.wav,en,0.000-4.800,uh not much tourists they go towards or they flock towards the countryside,uh not much tourists they go towards or they flock towards the countryside
+datasets\Corpus\adult\audio\test_split\AD59100.wav,en,0.000-4.800,और population कफी कम है in the countryside and,and the population is very less in the countryside.
+datasets\Corpus\adult\audio\test_split\AD59101.wav,en,0.000-4.880,there is much more you know history and stories,there is much more you know history and stories
+datasets\Corpus\adult\audio\test_split\AD59112.wav,en,0.000-3.600,"As they walked through the jungle, they felt as if someone was watching them.",as they walked through the jungle they felt as if someone was watching them
+datasets\Corpus\adult\audio\test_split\AD59121.wav,hi,0.000-5.380,इस गुफा का राज है साथ निभाना और एक दूसरे की मदद करना,The secret of this cave is to help each other
+datasets\Corpus\adult\audio\test_split\AD59122.wav,hi,0.000-5.620,"ये गुफा उन लोगों के लिए है जो दोस्ती में, प्यार में और साथ में हमेशा रहते हैं","This cave is for those who live in friendship, love and togetherness"
+datasets\Corpus\adult\audio\test_split\AD59123.wav,hi,0.000-4.600,चिंटू और राजू ने इस राज को समझा और इसके बाद से उनकी दोस्ती और मजबूत हो गई,Chintu and Raju understood this and their friendship became stronger.
+datasets\Corpus\adult\audio\test_split\AD59130.wav,en,0.000-3.920,"Excited by their discovery, they spent hours deciphering the symbols,","Excited by their discovery, they spent hours deciphering the symbols,"
+datasets\Corpus\adult\audio\test_split\AD59130.wav,en,3.920-9.600,finally translating a passage that spoke of a hidden portal to a magical world.,finally translating a passage that spoke of a hidden portal to a magical world.
+datasets\Corpus\adult\audio\test_split\AD59134.wav,en,0.000-4.200,"Stepping through the passage, they found themselves in a lush magical forest.","Stepping through the passage, they found themselves in a lush magical forest."
+datasets\Corpus\adult\audio\test_split\AD59141.wav,en,0.000-6.320,"Okay, can you describe the image? What are your thoughts about it? So there is a guy","Okay, can you describe the image what are your thoughts about it? So there is a guy"
+datasets\Corpus\adult\audio\test_split\AD59145.wav,en,0.000-3.820,"पीछे पहार, मतलब those rocky mountains","behind, mountains, those rocky mountains"
+datasets\Corpus\adult\audio\test_split\AD59155.wav,en,0.000-5.200,and something is going on in his mind contemplating maybe his life or maybe,and something is going on in his mind contemplating maybe his life or maybe
+datasets\Corpus\adult\audio\test_split\AD59158.wav,en,0.000-7.840,the picture is presenting quite a scenic view of the whole rocky mountains and the vegetation.,The picture is presenting quite a scenic view of the whole rocky mountains and the vegetation.
+datasets\Corpus\adult\audio\test_split\AD59161.wav,en,0.000-1.720,"Both are boys, I guess.",both are boys i guess and
+datasets\Corpus\adult\audio\test_split\AD59162.wav,hi,0.000-2.900,"के सामने प्लेट्स हैं, प्लेट में खाना है",There are plates in front of the kitchen
+datasets\Corpus\adult\audio\test_split\AD59163.wav,hi,0.000-1.940,और बॉटल्स है उनकी,And these are their bottles.
+datasets\Corpus\adult\audio\test_split\AD59182.wav,hi,0.000-1.440,और सामने उनकी टॉइज रखे हैं,and toys in front of it
+datasets\Corpus\adult\audio\test_split\AD59184.wav,en,0.000-3.760,"He is around maybe seven, eight years.",he is around maybe seven eight years
+datasets\Corpus\adult\audio\test_split\AD59185.wav,en,0.000-3.040,And he's looking quite happy.,And he's looking quite happy.
+datasets\Corpus\adult\audio\test_split\AD59198.wav,en,0.000-2.080,when he is being clicked,when he is being clicked
+datasets\Corpus\adult\audio\test_split\AD59208.wav,en,0.000-6.080,and this guy is just clicking maybe pictures for his or her social social media apps maybe for,and this guy is just clicking maybe pictures for his or her social social media apps maybe for
+datasets\Corpus\adult\audio\test_split\AD59208.wav,sv,6.080-12.000,instagram,instagram
+datasets\Corpus\adult\audio\test_split\AD59212.wav,hi,0.000-6.620,उपर एक जीसस क्राइस्ट की एक जीसस है या मरिया है I don't know,On the top there is a Jesus Christ's...
+datasets\Corpus\adult\audio\test_split\AD60016.wav,en,0.000-4.040,Every single gestures we enjoy with our family food,Every single gestures we enjoy with our family food
+datasets\Corpus\adult\audio\test_split\AD60020.wav,en,0.000-6.080,once in a while i watch web series and very particular about series and very particular what i watch,once in a while i watch web series and very particular about series and very particular what i watch
+datasets\Corpus\adult\audio\test_split\AD60031.wav,en,0.000-3.440,My hometown is Faridabad,my hometown is Faridabad
+datasets\Corpus\adult\audio\test_split\AD60036.wav,en,0.000-2.880,taste matters and there is also,taste matters and there is also
+datasets\Corpus\adult\audio\test_split\AD60040.wav,en,0.000-4.840,Can recommend you the Faridabad malls are one of the good place good malls,Can recommend you the Faridabad malls are one of the good place good malls
+datasets\Corpus\adult\audio\test_split\AD60044.wav,en,0.000-2.820,Other places are also there you can visit like,Other places are also there you can visit like
+datasets\Corpus\adult\audio\test_split\AD60046.wav,en,0.000-2.640,There are some very good places you can visit there.,There are some very good places you can visit there.
+datasets\Corpus\adult\audio\test_split\AD60050.wav,en,0.000-5.440,"As Indians, we love eating spicy foods and I love eating.","As Indians, we love eating spicy foods and I love eating."
+datasets\Corpus\adult\audio\test_split\AD60064.wav,en,0.000-2.660,Exploration traveling purpose. I love going to,Exploration traveling purpose. I love going to
+datasets\Corpus\adult\audio\test_split\AD60074.wav,en,0.000-2.520,It's the best thing. I just love it.,It's the best thing. I just love it.
+datasets\Corpus\adult\audio\test_split\AD60081.wav,hi,0.000-2.580,"रात की समय में जब हम गंगोतरे पे बैठे हैं,",When we sit on the Gangotri at night...
+datasets\Corpus\adult\audio\test_split\AD60087.wav,en,0.000-4.240,"For me, nature is peace. For me, being in nature is peace.","For me, nature is peace. For me, being in nature is peace."
+datasets\Corpus\adult\audio\test_split\AD60089.wav,it,0.000-4.760,cafes and I love to I love dancing,cafes and I love dancing.
+datasets\Corpus\adult\audio\test_split\AD60096.wav,hi,0.000-4.700,इसे सुनके तो उन्होंने सोचा कि ये उनका next adventure spot हो सकता है,"After hearing this, they both thought that this could be their next adventure spot."
+datasets\Corpus\adult\audio\test_split\AD60097.wav,hi,0.000-29.980,चिंटू और राजू ने अपने जूल पर जूलाएंगे,So Chintu and Raju
+datasets\Corpus\adult\audio\test_split\AD60100.wav,ur,0.000-3.060,پر انہوں نے حمد نہیں ہاری جب وہ گفا تک پہنچے,But they didn't give up.
+datasets\Corpus\adult\audio\test_split\AD60100.wav,ur,3.060-3.920,انہیں گفا سے,"When they reached the cave, they saw"
+datasets\Corpus\adult\audio\test_split\AD60104.wav,en,0.000-4.880,Slowly and steadily the secrets of the cave begin to unfold before them.,Slowly and steadily the secrets of the cave begin to unfold before them.
+datasets\Corpus\adult\audio\test_split\AD60108.wav,hi,0.000-4.280,तो बच्चों ये थी चिंटू और आजू की अनूकी गुफा के गहाने,"So guys, this was Chintu and Raju's unique cave stories."
+datasets\Corpus\adult\audio\test_split\AD60112.wav,hi,0.000-6.060,एक अर्मी के दिन के दोपर में वाइल एक्सप्लोरिंग द एटिक ऑफ देर ओल्ड हाउस अ,in the afternoon of a hot summer day
+datasets\Corpus\adult\audio\test_split\AD60114.wav,en,0.000-2.600,Excited by their discovery they spent hours,Excited by their discovery they spent hours
+datasets\Corpus\adult\audio\test_split\AD60120.wav,hi,0.000-3.420,इंशियस्ली उन्होंने चंगल में,anxiously
+datasets\Corpus\adult\audio\test_split\AD60122.wav,hi,0.000-7.100,कई घंटों के अन्वेशन के पाथ उन्होंने जंगल के मत्य में एक महल को खूच निकाला,"After many hours of unvesion, he dug a palace in the middle of the forest."
+datasets\Corpus\adult\audio\test_split\AD60125.wav,en,0.000-4.000,and the bond of siblings is the strongest magic of all.,and the bond of siblings is the strongest magic of all.
+datasets\Corpus\adult\audio\test_split\AD60126.wav,en,0.000-3.920,this picture according to me a person is standing,this picture according to me a person is standing
+datasets\Corpus\adult\audio\test_split\AD60127.wav,hi,0.000-3.920,सेंडी एरिया लाइक दूर दूर तक कुछ नहीं है,sandy area like there is nothing far away
+datasets\Corpus\adult\audio\test_split\AD60130.wav,en,0.000-3.120,convalidated by things and,Convoluted by things and uh
+datasets\Corpus\adult\audio\test_split\AD60135.wav,en,0.000-3.840,coming across all and going across all the thoughts,coming across all and going across all the thoughts
+datasets\Corpus\adult\audio\test_split\AD60144.wav,en,0.000-7.760,pretty much looking nice in a probably a public area and he's just smiling all through,pretty much looking nice in a probably a public area and he's just smiling all through
+datasets\Corpus\adult\audio\test_split\AD60149.wav,en,0.000-2.400,"so beautifully, so many lights.","so beautifully, so many lights"
+datasets\Corpus\adult\audio\test_split\AD63012.wav,en,0.000-2.640,It's good. What do you feel about that?,It's good. What do you feel about that?
+datasets\Corpus\adult\audio\test_split\AD63018.wav,en,0.000-1.560,Actually मुझे Hollywood series,"Actually, I want to watch the Hollywood series."
+datasets\Corpus\adult\audio\test_split\AD63021.wav,hi,0.000-6.980,"बट यह है कि वो थोड़े अच्छे होने चाहिए, इंट्रेस्टिंग होने चाहिए, थोड़े जिनकी स्टोरी थोड़ी बाकियों से हट के हो",But it should be good and interesting and the story should be different from the rest.
+datasets\Corpus\adult\audio\test_split\AD63033.wav,hi,0.000-5.160,तो मैंने घंटों अपने रूम के विंडो से नैनिताल को देखते हुए बिता रखा है,So I spent hours looking at Nainital from my window.
+datasets\Corpus\adult\audio\test_split\AD63037.wav,ne,0.000-1.200,नेनी ताल को छोड़कर,街道ا詳細詳細 ascertaining definition
+datasets\Corpus\adult\audio\test_split\AD63038.wav,hi,0.000-7.080,वह डू लाइक टू रिप्लेंट समझ दिन अब आप प्लेस टू एवरीवन एक्शन मुझे लगता है कि वहां सबको जाना चाहिए पर,What do you like to recommend something about your place to everyone?
+datasets\Corpus\adult\audio\test_split\AD63039.wav,hi,0.000-4.600,वहाँ पे आप खुद को नेचर के बहुत करीब फिल्ड कर सकते हो,You can feel very close to nature there.
+datasets\Corpus\adult\audio\test_split\AD63040.wav,hi,0.000-2.580,और वो बहुत सुन्दर प्लेस है।,And it's a beautiful place.
+datasets\Corpus\adult\audio\test_split\AD63042.wav,hi,0.000-1.120,सुन्दर लगता है,It looks beautiful.
+datasets\Corpus\adult\audio\test_split\AD63046.wav,hi,0.000-5.980,जो की एक दाल होती है काला भट उससे बनती है जिसे बोलते हैं ज्वाला,which is made from a dal called Jwala
+datasets\Corpus\adult\audio\test_split\AD63053.wav,en,0.000-4.080,what is your favorite destination for holiday why do you like that place,what is your favorite destination for holiday why do you like that place
+datasets\Corpus\adult\audio\test_split\AD63059.wav,hi,0.000-4.860,इसलिए और एक्चुडी मेरी बहुत सारी मेमोरीज भी वहां से चुड़ी हुई है तो,"Actually, I have a lot of memories from there."
+datasets\Corpus\adult\audio\test_split\AD63060.wav,ro,0.000-1.840,वो place मेरी favorite है,that place is my favorite
+datasets\Corpus\adult\audio\test_split\AD63061.wav,en,0.000-2.000,okay please read these lines,okay please read these lines
+datasets\Corpus\adult\audio\test_split\AD63063.wav,hi,0.000-1.040,चिंटू और राजू,Chintu and Raju
+datasets\Corpus\adult\audio\test_split\AD63071.wav,hi,0.000-3.960,जब वो गुफा तक पहुँच गए उन्हें गुफा से एक अजीब सी हवाज आई।,"When they reached the cave, they heard a strange noise."
+datasets\Corpus\adult\audio\test_split\AD63074.wav,hi,0.000-9.340,चिन्टू और राजू ने गार्जियन के दिये गए टास्क कमप्लीट कर लिये और हर एक टास्क के बाद उन्हें गुफा का सिक्रेट थोड़ा और समझ आ गया।,Chintu and Raju completed the tasks given by the guardian and after each task they understood the secret of the cave a little more.
+datasets\Corpus\adult\audio\test_split\AD63077.wav,hi,0.000-5.380,"ये गुफा उन लोगों के लिए है जो दोस्ती में, प्यार में और साथ में हमेशा रहते हैं","This cave is for those who live in friendship, love and togetherness."
+datasets\Corpus\adult\audio\test_split\AD63081.wav,hi,0.000-1.880,मिलते हैं अगली कहानी में,See you in the next story.
+datasets\Corpus\adult\audio\test_split\AD63083.wav,en,0.000-1.600,Please read these lines.,Please read these lines.
+datasets\Corpus\adult\audio\test_split\AD63088.wav,en,0.000-3.680,filled with mysterious symbols and unseen drawings.,filled with mysterious symbols and unseen drawings.
+datasets\Corpus\adult\audio\test_split\AD63089.wav,en,0.000-2.720,"Excited by their discovery, they spent hours","Excited by their discovery, they spent hours"
+datasets\Corpus\adult\audio\test_split\AD63105.wav,tl,0.000-3.280,okay next image,okay next image
+datasets\Corpus\adult\audio\test_split\AD63119.wav,en,0.000-0.960,thank you,Thank you.
