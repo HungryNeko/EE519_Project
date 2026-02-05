@@ -178,16 +178,16 @@ if __name__ == "__main__":
             "./preprocess/speaker_en.wav", 1.5, 2.0),
         'diff speaker, same lang',
         compare_segments(
-            "preprocess\same_language_diff_voice.wav", 0.0, 1.0,
-            "preprocess\same_language_diff_voice.wav", 3.5, 4.5),
+            "./preprocess/same_language_diff_voice.wav", 0.0, 1.0,
+            "./preprocess/same_language_diff_voice.wav", 3.5, 4.5),
         'Same speaker, diff lang',
         compare_segments(
-            "preprocess\same_voice_two_languages.wav", 0.0, 1.0,
-            "preprocess\same_voice_two_languages.wav", 3.0, 4.0),
+            "./preprocess/same_voice_two_languages.wav", 0.0, 1.0,
+            "./preprocess/same_voice_two_languages.wav", 3.0, 4.0),
         'diff speaker, diff lang',
         compare_segments(
-            "preprocess/two_languages.wav", 0.0, 1.0,
-            "preprocess/two_languages.wav", 3.0, 4.0),
+            "./preprocess/two_languages.wav", 0.0, 1.0,
+            "./preprocess/two_languages.wav", 3.0, 4.0),
 
     ]
     for sims in exps:
