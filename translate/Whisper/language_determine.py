@@ -1,5 +1,5 @@
 import argparse
-from collections import defaultdict
+import csv
 from pathlib import Path
 from typing import Iterable, List, Optional
 
@@ -20,6 +20,11 @@ class MultiAudioLanguageRebuilder:
         self.device = device
         self.use_fp16 = device == "cuda"
         self.model = whisper.load_model(model_name, device=device)
+        if self.model.device.type != self.device:
+            print(
+                f"Warning: requested device '{self.device}' but model is on "
+                f"'{self.model.device.type}'."
+            )
 
     def _safe_detect(self, text: str) -> str:
         try:
@@ -69,29 +74,10 @@ class MultiAudioLanguageRebuilder:
 
         # Step 3: global time sort
         all_segments.sort(key=lambda x: x["start"])
+        return all_segments
 
-        # Step 4: rebuild by language (preserve time order)
-        lang_to_segments = defaultdict(list)
-
-        for seg in all_segments:
-            lang_to_segments[seg["lang"]].append(seg)
-
-        # Step 5: output
-        print("\n========== Final Output ==========")
-
-        for lang, segs in lang_to_segments.items():
-            print(f"\n--- Original Language: {lang} ---")
-
-            print("\n[Original Text]")
-            print(" ".join(s["orig_text"] for s in segs))
-
-            print("\n[English Translation]")
-            print(" ".join(s["en_text"] for s in segs))
-
-    def process_files(self, audio_paths: List[str]):
-        for audio_path in audio_paths:
-            print(f"\n========== File: {audio_path} ==========")
-            self.process([audio_path])
+    def process_file(self, audio_path: str):
+        return self.process([audio_path])
 
 
 def _collect_audio_files(audio_dir: str, exts: Iterable[str]):
@@ -105,35 +91,96 @@ def _collect_audio_files(audio_dir: str, exts: Iterable[str]):
     ]
     return sorted(files)
 
+def _load_processed_files(csv_path: Path) -> set:
+    if not csv_path.exists():
+        return set()
+    processed = set()
+    try:
+        with csv_path.open("r", newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                file_path = row.get("file_path")
+                if file_path:
+                    processed.add(file_path)
+    except Exception:
+        return set()
+    return processed
+
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description="Test Whisper language detection on a dataset.")
     parser.add_argument(
         "--data-dir",
-        default=r"Corpus\adult\audio\test_split",
+        default=r"datasets\Corpus\adult\audio\test_split",
         help="Directory containing audio files."
-    )
-    parser.add_argument(
-        "--max-files",
-        type=int,
-        default=5,
-        help="Limit the number of files for a quick test. Use 0 or negative for all files."
     )
     parser.add_argument(
         "--model",
         default="large-v3",
         help="Whisper model name."
     )
+    parser.add_argument(
+        "--device",
+        default="auto",
+        choices=["auto", "cuda", "cpu"],
+        help="Force device. 'auto' uses CUDA if available."
+    )
+    parser.add_argument(
+        "--output",
+        default="language_detect.csv",
+        help="CSV output path."
+    )
     args = parser.parse_args()
 
     audio_files = _collect_audio_files(args.data_dir, exts=(".wav", ".mp3", ".flac", ".m4a"))
-    if args.max_files and args.max_files > 0:
-        audio_files = audio_files[:args.max_files]
-
     if not audio_files:
         raise SystemExit(f"No audio files found in {args.data_dir}")
 
+    if args.device == "cuda" and not torch.cuda.is_available():
+        raise SystemExit("CUDA is not available in this Python environment.")
+    device = None if args.device == "auto" else args.device
+    translator = MultiAudioLanguageRebuilder(model_name=args.model, device=device)
+
+    print(f"torch: {torch.__version__}")
+    print(f"cuda available: {torch.cuda.is_available()}")
+    if torch.cuda.is_available():
+        print(f"gpu: {torch.cuda.get_device_name(0)}")
+    print(f"Using device: {translator.device}")
+    print(f"Whisper model device: {translator.model.device}")
+
+    output_path = Path(args.output)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
     print(f"Found {len(audio_files)} audio files in {args.data_dir}")
-    translator = MultiAudioLanguageRebuilder(model_name=args.model)
-    translator.process_files([str(p) for p in audio_files])
+    print(f"Writing CSV to {output_path}")
+
+    processed_files = _load_processed_files(output_path)
+    if processed_files:
+        print(f"Detected {len(processed_files)} processed files in CSV. Will skip them.")
+
+    file_exists = output_path.exists() and output_path.stat().st_size > 0
+    write_header = not file_exists
+    open_mode = "a" if file_exists else "w"
+
+    with output_path.open(open_mode, newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if write_header:
+            writer.writerow(["file_path", "language", "time_stamp", "content", "translation"])
+
+        for p in audio_files:
+            file_path = str(p)
+            if file_path in processed_files:
+                print(f"Skipping (already processed): {file_path}")
+                continue
+            print(f"Processing: {file_path}")
+            segments = translator.process_file(file_path)
+            for seg in segments:
+                time_stamp = f"{seg['start']:.3f}-{seg['end']:.3f}"
+                writer.writerow([
+                    file_path,
+                    seg["lang"],
+                    time_stamp,
+                    seg["orig_text"],
+                    seg["en_text"],
+                ])
 
