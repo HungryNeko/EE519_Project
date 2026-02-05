@@ -17,7 +17,6 @@ async def tts_to_tensor(text, voice):
         if msg.get("type") == "audio":
             audio_bytes.extend(msg["data"])
 
-    # 用 BytesIO 直接读成 tensor
     buf = io.BytesIO(audio_bytes)
     wav, sr = torchaudio.load(buf)
 
@@ -29,34 +28,33 @@ async def tts_to_tensor(text, voice):
 
 
 # =====================
-# 主逻辑：同一音色，两种语言，只存一个文件
+# 主逻辑：同一语言，不同文字，不同音色
 # =====================
 
 async def main():
-    voice = "zh-CN-YunxiNeural"  # 同一个音色
+    # 不同音色（同一语言：中文）
+    voice_1 = "zh-CN-YunxiNeural"
+    voice_2 = "zh-CN-XiaoxiaoNeural"
 
-    wav_zh, sr_zh = await tts_to_tensor(
-        "你好，这是中文。",
-        voice
+    wav_1, sr_1 = await tts_to_tensor(
+        "你好，这是第一段中文语音。",
+        voice_1
     )
 
-    wav_en, sr_en = await tts_to_tensor(
-        "Hello, this is English.",
-        voice
+    wav_2, sr_2 = await tts_to_tensor(
+        "这是一段不同音色的中文语音。",
+        voice_2
     )
 
-    assert sr_zh == sr_en, "Sample rate mismatch"
+    assert sr_1 == sr_2, "Sample rate mismatch"
 
-    # 中间加 0.3 秒静音
-    silence = torch.zeros(1, int(0.3 * sr_zh))
-
-    combined = torch.cat([wav_zh, silence, wav_en], dim=1)
+    combined = torch.cat([wav_1, wav_2], dim=1)
 
     # 输出路径：preprocess 目录
-    out_path = os.path.join("preprocess", "same_voice_two_languages.wav")
+    out_path = os.path.join("preprocess", "same_language_diff_voice.wav")
     os.makedirs("preprocess", exist_ok=True)
 
-    torchaudio.save(out_path, combined, sr_zh)
+    torchaudio.save(out_path, combined, sr_1)
     print("Saved:", out_path)
 
 

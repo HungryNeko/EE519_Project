@@ -5,6 +5,7 @@ conda create -n EE519_Project python=3.10 -y
 conda activate EE519_Project
 ```
 * SpeechBrain requires Windows Developer Mode to be enabled.  
+* whisper needs ffmpeg installed in your computer.
 
 ## Demo
 
