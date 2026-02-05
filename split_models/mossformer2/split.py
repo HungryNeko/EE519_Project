@@ -21,13 +21,13 @@ def prepare_audio(input_path, target_sr=8000):
     if sr != target_sr:
         audio = resampy.resample(audio, sr, target_sr)
 
-    out_path = "../../preprocess/mixed_8k.wav"
+    out_path = "C:/Users/Wei Xin/Desktop/USC/EE519/EE519_Project-main/EE519_Project/preprocess/mixed_8k.wav"
     sf.write(out_path, audio, target_sr)
     return out_path
 
 
 def main():
-    input_wav = "../../preprocess/mixed.wav"   # 原始混合语音
+    input_wav = "C:/Users/Wei Xin/Desktop/USC/EE519/EE519_Project-main/EE519_Project/preprocess/mixed.wav"   # 原始混合语音
     processed_wav = prepare_audio(input_wav)
     # processed_wav= "../../preprocess/mixed_8k.wav"
     # 官方 pipeline

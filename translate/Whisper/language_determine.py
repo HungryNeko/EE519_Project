@@ -1,8 +1,11 @@
+import argparse
+from collections import defaultdict
+from pathlib import Path
+from typing import Iterable, List, Optional
+
 import torch
 import whisper
 from langdetect import detect
-from collections import defaultdict
-from typing import List, Optional
 
 
 class MultiAudioLanguageRebuilder:
@@ -85,13 +88,52 @@ class MultiAudioLanguageRebuilder:
             print("\n[English Translation]")
             print(" ".join(s["en_text"] for s in segs))
 
+    def process_files(self, audio_paths: List[str]):
+        for audio_path in audio_paths:
+            print(f"\n========== File: {audio_path} ==========")
+            self.process([audio_path])
+
+
+def _collect_audio_files(audio_dir: str, exts: Iterable[str]):
+    audio_path = Path(audio_dir)
+    if not audio_path.exists():
+        raise FileNotFoundError(f"Audio directory not found: {audio_dir}")
+
+    files = [
+        p for p in audio_path.iterdir()
+        if p.is_file() and p.suffix.lower() in exts
+    ]
+    return sorted(files)
+
 
 if __name__=="__main__":
-    audio_files = [
-        "C:/Users/Wei Xin/Desktop/USC/EE519/EE519_Project-main/EE519_Project/output_spk0.wav",
-        "C:/Users/Wei Xin/Desktop/USC/EE519/EE519_Project-main/EE519_Project/output_spk1.wav"
-    ]
+    parser = argparse.ArgumentParser(description="Test Whisper language detection on a dataset.")
+    parser.add_argument(
+        "--data-dir",
+        default=r"Corpus\adult\audio\test_split",
+        help="Directory containing audio files."
+    )
+    parser.add_argument(
+        "--max-files",
+        type=int,
+        default=5,
+        help="Limit the number of files for a quick test. Use 0 or negative for all files."
+    )
+    parser.add_argument(
+        "--model",
+        default="large-v3",
+        help="Whisper model name."
+    )
+    args = parser.parse_args()
 
-    translator = MultiAudioLanguageRebuilder()
-    translator.process(audio_files)
+    audio_files = _collect_audio_files(args.data_dir, exts=(".wav", ".mp3", ".flac", ".m4a"))
+    if args.max_files and args.max_files > 0:
+        audio_files = audio_files[:args.max_files]
+
+    if not audio_files:
+        raise SystemExit(f"No audio files found in {args.data_dir}")
+
+    print(f"Found {len(audio_files)} audio files in {args.data_dir}")
+    translator = MultiAudioLanguageRebuilder(model_name=args.model)
+    translator.process_files([str(p) for p in audio_files])
 
