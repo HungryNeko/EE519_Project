@@ -16,7 +16,7 @@ CORPUS_ROOT = Path(r".\datasets\Corpus")
 OUTPUT_CSV = CORPUS_ROOT / "whisper_word_segments.csv"
 AUDIO_EXTS = {".wav", ".mp3", ".flac", ".m4a"}
 MODEL_NAME = "large-v3"
-DEVICE = "cpu"   # 强制 CPU（稳定）
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 # ======================
