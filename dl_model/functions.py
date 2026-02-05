@@ -2,8 +2,12 @@ import soundfile as sf
 import numpy as np
 import librosa
 
-#
+"""
+loudness:
+    energy
+pitch
 
+"""
 def slice_segment(waveform, sr, t_start, t_end):
     i_start = int(t_start * sr)
     i_end = int(t_end * sr)
