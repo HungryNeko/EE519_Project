@@ -110,7 +110,7 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser(description="Test Whisper language detection on a dataset.")
     parser.add_argument(
         "--data-dir",
-        default=r"Corpus\adult\audio\test_split",
+        default=r".\datasets\Corpus\adult\audio\test_split",
         help="Directory containing audio files."
     )
     parser.add_argument(
