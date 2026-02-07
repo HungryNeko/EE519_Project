@@ -1,0 +1,4654 @@
+[
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09001.wav",
+    "whisper_language": "en",
+    "whisper_result": {
+      "text": " So the question is, what's your favorite festival? How did you celebrate your last festival? What do you feel about that?",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.74,
+          "text": " So the question is, what's your favorite festival?",
+          "tokens": [
+            50365,
+            407,
+            264,
+            1168,
+            307,
+            11,
+            437,
+            311,
+            428,
+            2954,
+            12091,
+            30,
+            50502
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.18470917326031308,
+          "compression_ratio": 1.2346938775510203,
+          "no_speech_prob": 0.0035441333893686533
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 3.2600000000000002,
+          "end": 5.78,
+          "text": " How did you celebrate your last festival?",
+          "tokens": [
+            50528,
+            1012,
+            630,
+            291,
+            8098,
+            428,
+            1036,
+            12091,
+            30,
+            50654
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.18470917326031308,
+          "compression_ratio": 1.2346938775510203,
+          "no_speech_prob": 0.0035441333893686533
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 6.3,
+          "end": 7.86,
+          "text": " What do you feel about that?",
+          "tokens": [
+            50680,
+            708,
+            360,
+            291,
+            841,
+            466,
+            300,
+            30,
+            50758
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.18470917326031308,
+          "compression_ratio": 1.2346938775510203,
+          "no_speech_prob": 0.0035441333893686533
+        }
+      ],
+      "language": "en"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.76,
+          "text": " So the question is, what's your favorite festival?",
+          "words": [
+            {
+              "word": "So",
+              "start": 0.0,
+              "end": 0.264,
+              "score": 0.76
+            },
+            {
+              "word": "the",
+              "start": 0.304,
+              "end": 0.406,
+              "score": 0.928
+            },
+            {
+              "word": "question",
+              "start": 0.447,
+              "end": 0.913,
+              "score": 0.875
+            },
+            {
+              "word": "is,",
+              "start": 0.934,
+              "end": 1.096,
+              "score": 0.529
+            },
+            {
+              "word": "what's",
+              "start": 1.36,
+              "end": 1.685,
+              "score": 0.668
+            },
+            {
+              "word": "your",
+              "start": 1.705,
+              "end": 1.806,
+              "score": 0.503
+            },
+            {
+              "word": "favorite",
+              "start": 1.888,
+              "end": 2.293,
+              "score": 0.927
+            },
+            {
+              "word": "festival?",
+              "start": 2.334,
+              "end": 2.76,
+              "score": 0.494
+            }
+          ]
+        },
+        {
+          "start": 3.26,
+          "end": 5.8,
+          "text": " How did you celebrate your last festival?",
+          "words": [
+            {
+              "word": "How",
+              "start": 3.26,
+              "end": 3.565,
+              "score": 0.743
+            },
+            {
+              "word": "did",
+              "start": 3.646,
+              "end": 3.809,
+              "score": 0.991
+            },
+            {
+              "word": "you",
+              "start": 3.849,
+              "end": 3.971,
+              "score": 0.999
+            },
+            {
+              "word": "celebrate",
+              "start": 4.032,
+              "end": 4.581,
+              "score": 0.947
+            },
+            {
+              "word": "your",
+              "start": 4.622,
+              "end": 4.967,
+              "score": 0.866
+            },
+            {
+              "word": "last",
+              "start": 5.048,
+              "end": 5.333,
+              "score": 0.973
+            },
+            {
+              "word": "festival?",
+              "start": 5.394,
+              "end": 5.8,
+              "score": 0.539
+            }
+          ]
+        },
+        {
+          "start": 6.3,
+          "end": 7.881,
+          "text": " What do you feel about that?",
+          "words": [
+            {
+              "word": "What",
+              "start": 6.3,
+              "end": 6.608,
+              "score": 0.913
+            },
+            {
+              "word": "do",
+              "start": 6.711,
+              "end": 6.854,
+              "score": 0.952
+            },
+            {
+              "word": "you",
+              "start": 6.895,
+              "end": 7.018,
+              "score": 0.845
+            },
+            {
+              "word": "feel",
+              "start": 7.101,
+              "end": 7.326,
+              "score": 0.88
+            },
+            {
+              "word": "about",
+              "start": 7.408,
+              "end": 7.655,
+              "score": 0.958
+            },
+            {
+              "word": "that?",
+              "start": 7.716,
+              "end": 7.881,
+              "score": 0.914
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "So",
+          "start": 0.0,
+          "end": 0.264,
+          "score": 0.76
+        },
+        {
+          "word": "the",
+          "start": 0.304,
+          "end": 0.406,
+          "score": 0.928
+        },
+        {
+          "word": "question",
+          "start": 0.447,
+          "end": 0.913,
+          "score": 0.875
+        },
+        {
+          "word": "is,",
+          "start": 0.934,
+          "end": 1.096,
+          "score": 0.529
+        },
+        {
+          "word": "what's",
+          "start": 1.36,
+          "end": 1.685,
+          "score": 0.668
+        },
+        {
+          "word": "your",
+          "start": 1.705,
+          "end": 1.806,
+          "score": 0.503
+        },
+        {
+          "word": "favorite",
+          "start": 1.888,
+          "end": 2.293,
+          "score": 0.927
+        },
+        {
+          "word": "festival?",
+          "start": 2.334,
+          "end": 2.76,
+          "score": 0.494
+        },
+        {
+          "word": "How",
+          "start": 3.26,
+          "end": 3.565,
+          "score": 0.743
+        },
+        {
+          "word": "did",
+          "start": 3.646,
+          "end": 3.809,
+          "score": 0.991
+        },
+        {
+          "word": "you",
+          "start": 3.849,
+          "end": 3.971,
+          "score": 0.999
+        },
+        {
+          "word": "celebrate",
+          "start": 4.032,
+          "end": 4.581,
+          "score": 0.947
+        },
+        {
+          "word": "your",
+          "start": 4.622,
+          "end": 4.967,
+          "score": 0.866
+        },
+        {
+          "word": "last",
+          "start": 5.048,
+          "end": 5.333,
+          "score": 0.973
+        },
+        {
+          "word": "festival?",
+          "start": 5.394,
+          "end": 5.8,
+          "score": 0.539
+        },
+        {
+          "word": "What",
+          "start": 6.3,
+          "end": 6.608,
+          "score": 0.913
+        },
+        {
+          "word": "do",
+          "start": 6.711,
+          "end": 6.854,
+          "score": 0.952
+        },
+        {
+          "word": "you",
+          "start": 6.895,
+          "end": 7.018,
+          "score": 0.845
+        },
+        {
+          "word": "feel",
+          "start": 7.101,
+          "end": 7.326,
+          "score": 0.88
+        },
+        {
+          "word": "about",
+          "start": 7.408,
+          "end": 7.655,
+          "score": 0.958
+        },
+        {
+          "word": "that?",
+          "start": 7.716,
+          "end": 7.881,
+          "score": 0.914
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "So",
+        "start": 0.0,
+        "end": 0.264,
+        "score": 0.76
+      },
+      {
+        "word": "the",
+        "start": 0.304,
+        "end": 0.406,
+        "score": 0.928
+      },
+      {
+        "word": "question",
+        "start": 0.447,
+        "end": 0.913,
+        "score": 0.875
+      },
+      {
+        "word": "is,",
+        "start": 0.934,
+        "end": 1.096,
+        "score": 0.529
+      },
+      {
+        "word": "what's",
+        "start": 1.36,
+        "end": 1.685,
+        "score": 0.668
+      },
+      {
+        "word": "your",
+        "start": 1.705,
+        "end": 1.806,
+        "score": 0.503
+      },
+      {
+        "word": "favorite",
+        "start": 1.888,
+        "end": 2.293,
+        "score": 0.927
+      },
+      {
+        "word": "festival?",
+        "start": 2.334,
+        "end": 2.76,
+        "score": 0.494
+      },
+      {
+        "word": "How",
+        "start": 3.26,
+        "end": 3.565,
+        "score": 0.743
+      },
+      {
+        "word": "did",
+        "start": 3.646,
+        "end": 3.809,
+        "score": 0.991
+      },
+      {
+        "word": "you",
+        "start": 3.849,
+        "end": 3.971,
+        "score": 0.999
+      },
+      {
+        "word": "celebrate",
+        "start": 4.032,
+        "end": 4.581,
+        "score": 0.947
+      },
+      {
+        "word": "your",
+        "start": 4.622,
+        "end": 4.967,
+        "score": 0.866
+      },
+      {
+        "word": "last",
+        "start": 5.048,
+        "end": 5.333,
+        "score": 0.973
+      },
+      {
+        "word": "festival?",
+        "start": 5.394,
+        "end": 5.8,
+        "score": 0.539
+      },
+      {
+        "word": "What",
+        "start": 6.3,
+        "end": 6.608,
+        "score": 0.913
+      },
+      {
+        "word": "do",
+        "start": 6.711,
+        "end": 6.854,
+        "score": 0.952
+      },
+      {
+        "word": "you",
+        "start": 6.895,
+        "end": 7.018,
+        "score": 0.845
+      },
+      {
+        "word": "feel",
+        "start": 7.101,
+        "end": 7.326,
+        "score": 0.88
+      },
+      {
+        "word": "about",
+        "start": 7.408,
+        "end": 7.655,
+        "score": 0.958
+      },
+      {
+        "word": "that?",
+        "start": 7.716,
+        "end": 7.881,
+        "score": 0.914
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09004.wav",
+    "whisper_language": "en",
+    "whisper_result": {
+      "text": " How did you celebrate your last festival? I celebrate my last festival with my daughter. And my daughter loves Diwali. And as she loves crackers.",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.56,
+          "text": " How did you celebrate your last festival?",
+          "tokens": [
+            50365,
+            1012,
+            630,
+            291,
+            8098,
+            428,
+            1036,
+            12091,
+            30,
+            50493
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.36374671642596906,
+          "compression_ratio": 1.4356435643564356,
+          "no_speech_prob": 0.027349354699254036
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 3.18,
+          "end": 6.68,
+          "text": " I celebrate my last festival with my daughter.",
+          "tokens": [
+            50524,
+            286,
+            8098,
+            452,
+            1036,
+            12091,
+            365,
+            452,
+            4653,
+            13,
+            50699
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.36374671642596906,
+          "compression_ratio": 1.4356435643564356,
+          "no_speech_prob": 0.027349354699254036
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 7.58,
+          "end": 12.32,
+          "text": " And my daughter loves Diwali.",
+          "tokens": [
+            50744,
+            400,
+            452,
+            4653,
+            6752,
+            8789,
+            40054,
+            13,
+            50981
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.36374671642596906,
+          "compression_ratio": 1.4356435643564356,
+          "no_speech_prob": 0.027349354699254036
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 12.32,
+          "end": 15.22,
+          "text": " And as she loves crackers.",
+          "tokens": [
+            50981,
+            400,
+            382,
+            750,
+            6752,
+            41407,
+            13,
+            51126
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.36374671642596906,
+          "compression_ratio": 1.4356435643564356,
+          "no_speech_prob": 0.027349354699254036
+        }
+      ],
+      "language": "en"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.58,
+          "text": " How did you celebrate your last festival?",
+          "words": [
+            {
+              "word": "How",
+              "start": 0.0,
+              "end": 0.223,
+              "score": 0.942
+            },
+            {
+              "word": "did",
+              "start": 0.345,
+              "end": 0.528,
+              "score": 0.884
+            },
+            {
+              "word": "you",
+              "start": 0.752,
+              "end": 0.894,
+              "score": 0.987
+            },
+            {
+              "word": "celebrate",
+              "start": 0.955,
+              "end": 1.463,
+              "score": 0.937
+            },
+            {
+              "word": "your",
+              "start": 1.524,
+              "end": 1.707,
+              "score": 0.883
+            },
+            {
+              "word": "last",
+              "start": 1.829,
+              "end": 2.093,
+              "score": 0.908
+            },
+            {
+              "word": "festival?",
+              "start": 2.194,
+              "end": 2.58,
+              "score": 0.493
+            }
+          ]
+        },
+        {
+          "start": 3.18,
+          "end": 6.7,
+          "text": " I celebrate my last festival with my daughter.",
+          "words": [
+            {
+              "word": "I",
+              "start": 3.18,
+              "end": 3.585,
+              "score": 0.777
+            },
+            {
+              "word": "celebrate",
+              "start": 3.605,
+              "end": 4.232,
+              "score": 0.929
+            },
+            {
+              "word": "my",
+              "start": 4.272,
+              "end": 4.798,
+              "score": 0.76
+            },
+            {
+              "word": "last",
+              "start": 4.859,
+              "end": 5.142,
+              "score": 0.979
+            },
+            {
+              "word": "festival",
+              "start": 5.223,
+              "end": 5.689,
+              "score": 0.909
+            },
+            {
+              "word": "with",
+              "start": 5.729,
+              "end": 6.033,
+              "score": 0.933
+            },
+            {
+              "word": "my",
+              "start": 6.134,
+              "end": 6.296,
+              "score": 0.946
+            },
+            {
+              "word": "daughter.",
+              "start": 6.377,
+              "end": 6.7,
+              "score": 0.581
+            }
+          ]
+        },
+        {
+          "start": 7.58,
+          "end": 12.34,
+          "text": " And my daughter loves Diwali.",
+          "words": [
+            {
+              "word": "And",
+              "start": 7.58,
+              "end": 7.943,
+              "score": 0.724
+            },
+            {
+              "word": "my",
+              "start": 8.125,
+              "end": 8.346,
+              "score": 0.61
+            },
+            {
+              "word": "daughter",
+              "start": 8.528,
+              "end": 9.133,
+              "score": 0.578
+            },
+            {
+              "word": "loves",
+              "start": 9.294,
+              "end": 11.594,
+              "score": 0.67
+            },
+            {
+              "word": "Diwali.",
+              "start": 12.038,
+              "end": 12.34,
+              "score": 0.422
+            }
+          ]
+        },
+        {
+          "start": 12.32,
+          "end": 15.24,
+          "text": " And as she loves crackers.",
+          "words": [
+            {
+              "word": "And",
+              "start": 12.32,
+              "end": 13.375,
+              "score": 0.943
+            },
+            {
+              "word": "as",
+              "start": 13.395,
+              "end": 13.435,
+              "score": 0.496
+            },
+            {
+              "word": "she",
+              "start": 13.8,
+              "end": 14.165,
+              "score": 0.796
+            },
+            {
+              "word": "loves",
+              "start": 14.206,
+              "end": 14.571,
+              "score": 0.727
+            },
+            {
+              "word": "crackers.",
+              "start": 14.733,
+              "end": 15.24,
+              "score": 0.714
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "How",
+          "start": 0.0,
+          "end": 0.223,
+          "score": 0.942
+        },
+        {
+          "word": "did",
+          "start": 0.345,
+          "end": 0.528,
+          "score": 0.884
+        },
+        {
+          "word": "you",
+          "start": 0.752,
+          "end": 0.894,
+          "score": 0.987
+        },
+        {
+          "word": "celebrate",
+          "start": 0.955,
+          "end": 1.463,
+          "score": 0.937
+        },
+        {
+          "word": "your",
+          "start": 1.524,
+          "end": 1.707,
+          "score": 0.883
+        },
+        {
+          "word": "last",
+          "start": 1.829,
+          "end": 2.093,
+          "score": 0.908
+        },
+        {
+          "word": "festival?",
+          "start": 2.194,
+          "end": 2.58,
+          "score": 0.493
+        },
+        {
+          "word": "I",
+          "start": 3.18,
+          "end": 3.585,
+          "score": 0.777
+        },
+        {
+          "word": "celebrate",
+          "start": 3.605,
+          "end": 4.232,
+          "score": 0.929
+        },
+        {
+          "word": "my",
+          "start": 4.272,
+          "end": 4.798,
+          "score": 0.76
+        },
+        {
+          "word": "last",
+          "start": 4.859,
+          "end": 5.142,
+          "score": 0.979
+        },
+        {
+          "word": "festival",
+          "start": 5.223,
+          "end": 5.689,
+          "score": 0.909
+        },
+        {
+          "word": "with",
+          "start": 5.729,
+          "end": 6.033,
+          "score": 0.933
+        },
+        {
+          "word": "my",
+          "start": 6.134,
+          "end": 6.296,
+          "score": 0.946
+        },
+        {
+          "word": "daughter.",
+          "start": 6.377,
+          "end": 6.7,
+          "score": 0.581
+        },
+        {
+          "word": "And",
+          "start": 7.58,
+          "end": 7.943,
+          "score": 0.724
+        },
+        {
+          "word": "my",
+          "start": 8.125,
+          "end": 8.346,
+          "score": 0.61
+        },
+        {
+          "word": "daughter",
+          "start": 8.528,
+          "end": 9.133,
+          "score": 0.578
+        },
+        {
+          "word": "loves",
+          "start": 9.294,
+          "end": 11.594,
+          "score": 0.67
+        },
+        {
+          "word": "Diwali.",
+          "start": 12.038,
+          "end": 12.34,
+          "score": 0.422
+        },
+        {
+          "word": "And",
+          "start": 12.32,
+          "end": 13.375,
+          "score": 0.943
+        },
+        {
+          "word": "as",
+          "start": 13.395,
+          "end": 13.435,
+          "score": 0.496
+        },
+        {
+          "word": "she",
+          "start": 13.8,
+          "end": 14.165,
+          "score": 0.796
+        },
+        {
+          "word": "loves",
+          "start": 14.206,
+          "end": 14.571,
+          "score": 0.727
+        },
+        {
+          "word": "crackers.",
+          "start": 14.733,
+          "end": 15.24,
+          "score": 0.714
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "How",
+        "start": 0.0,
+        "end": 0.223,
+        "score": 0.942
+      },
+      {
+        "word": "did",
+        "start": 0.345,
+        "end": 0.528,
+        "score": 0.884
+      },
+      {
+        "word": "you",
+        "start": 0.752,
+        "end": 0.894,
+        "score": 0.987
+      },
+      {
+        "word": "celebrate",
+        "start": 0.955,
+        "end": 1.463,
+        "score": 0.937
+      },
+      {
+        "word": "your",
+        "start": 1.524,
+        "end": 1.707,
+        "score": 0.883
+      },
+      {
+        "word": "last",
+        "start": 1.829,
+        "end": 2.093,
+        "score": 0.908
+      },
+      {
+        "word": "festival?",
+        "start": 2.194,
+        "end": 2.58,
+        "score": 0.493
+      },
+      {
+        "word": "I",
+        "start": 3.18,
+        "end": 3.585,
+        "score": 0.777
+      },
+      {
+        "word": "celebrate",
+        "start": 3.605,
+        "end": 4.232,
+        "score": 0.929
+      },
+      {
+        "word": "my",
+        "start": 4.272,
+        "end": 4.798,
+        "score": 0.76
+      },
+      {
+        "word": "last",
+        "start": 4.859,
+        "end": 5.142,
+        "score": 0.979
+      },
+      {
+        "word": "festival",
+        "start": 5.223,
+        "end": 5.689,
+        "score": 0.909
+      },
+      {
+        "word": "with",
+        "start": 5.729,
+        "end": 6.033,
+        "score": 0.933
+      },
+      {
+        "word": "my",
+        "start": 6.134,
+        "end": 6.296,
+        "score": 0.946
+      },
+      {
+        "word": "daughter.",
+        "start": 6.377,
+        "end": 6.7,
+        "score": 0.581
+      },
+      {
+        "word": "And",
+        "start": 7.58,
+        "end": 7.943,
+        "score": 0.724
+      },
+      {
+        "word": "my",
+        "start": 8.125,
+        "end": 8.346,
+        "score": 0.61
+      },
+      {
+        "word": "daughter",
+        "start": 8.528,
+        "end": 9.133,
+        "score": 0.578
+      },
+      {
+        "word": "loves",
+        "start": 9.294,
+        "end": 11.594,
+        "score": 0.67
+      },
+      {
+        "word": "Diwali.",
+        "start": 12.038,
+        "end": 12.34,
+        "score": 0.422
+      },
+      {
+        "word": "And",
+        "start": 12.32,
+        "end": 13.375,
+        "score": 0.943
+      },
+      {
+        "word": "as",
+        "start": 13.395,
+        "end": 13.435,
+        "score": 0.496
+      },
+      {
+        "word": "she",
+        "start": 13.8,
+        "end": 14.165,
+        "score": 0.796
+      },
+      {
+        "word": "loves",
+        "start": 14.206,
+        "end": 14.571,
+        "score": 0.727
+      },
+      {
+        "word": "crackers.",
+        "start": 14.733,
+        "end": 15.24,
+        "score": 0.714
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09008.wav",
+    "whisper_language": "en",
+    "whisper_result": {
+      "text": " Yes, I do watching series.",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.7800000000000002,
+          "text": " Yes, I do watching series.",
+          "tokens": [
+            50365,
+            1079,
+            11,
+            286,
+            360,
+            1976,
+            2638,
+            13,
+            50504
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.3000117540359497,
+          "compression_ratio": 0.7647058823529411,
+          "no_speech_prob": 0.024143582209944725
+        }
+      ],
+      "language": "en"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.8,
+          "text": " Yes, I do watching series.",
+          "words": [
+            {
+              "word": "Yes,",
+              "start": 0.0,
+              "end": 0.304,
+              "score": 0.884
+            },
+            {
+              "word": "I",
+              "start": 1.015,
+              "end": 1.116,
+              "score": 0.984
+            },
+            {
+              "word": "do",
+              "start": 1.218,
+              "end": 1.38,
+              "score": 0.992
+            },
+            {
+              "word": "watching",
+              "start": 1.481,
+              "end": 1.928,
+              "score": 0.934
+            },
+            {
+              "word": "series.",
+              "start": 2.273,
+              "end": 2.8,
+              "score": 0.568
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "Yes,",
+          "start": 0.0,
+          "end": 0.304,
+          "score": 0.884
+        },
+        {
+          "word": "I",
+          "start": 1.015,
+          "end": 1.116,
+          "score": 0.984
+        },
+        {
+          "word": "do",
+          "start": 1.218,
+          "end": 1.38,
+          "score": 0.992
+        },
+        {
+          "word": "watching",
+          "start": 1.481,
+          "end": 1.928,
+          "score": 0.934
+        },
+        {
+          "word": "series.",
+          "start": 2.273,
+          "end": 2.8,
+          "score": 0.568
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "Yes,",
+        "start": 0.0,
+        "end": 0.304,
+        "score": 0.884
+      },
+      {
+        "word": "I",
+        "start": 1.015,
+        "end": 1.116,
+        "score": 0.984
+      },
+      {
+        "word": "do",
+        "start": 1.218,
+        "end": 1.38,
+        "score": 0.992
+      },
+      {
+        "word": "watching",
+        "start": 1.481,
+        "end": 1.928,
+        "score": 0.934
+      },
+      {
+        "word": "series.",
+        "start": 2.273,
+        "end": 2.8,
+        "score": 0.568
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09016.wav",
+    "whisper_language": "hi",
+    "whisper_result": {
+      "text": " और यह यूपी में आता है",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.38,
+          "text": " और यह यूपी में आता है",
+          "tokens": [
+            50365,
+            8485,
+            242,
+            25411,
+            8485,
+            107,
+            44500,
+            8485,
+            107,
+            8703,
+            224,
+            3941,
+            103,
+            31881,
+            48449,
+            21981,
+            31945,
+            8485,
+            228,
+            36158,
+            17937,
+            37139,
+            43372,
+            50484
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.13424245834350587,
+          "compression_ratio": 0.9298245614035088,
+          "no_speech_prob": 0.05144244804978371
+        }
+      ],
+      "language": "hi"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.4,
+          "text": " और यह यूपी में आता है",
+          "words": [
+            {
+              "word": "और",
+              "start": 0.0,
+              "end": 0.753,
+              "score": 0.786
+            },
+            {
+              "word": "यह",
+              "start": 1.343,
+              "end": 1.424,
+              "score": 0.827
+            },
+            {
+              "word": "यूपी",
+              "start": 1.526,
+              "end": 1.77,
+              "score": 0.946
+            },
+            {
+              "word": "में",
+              "start": 1.81,
+              "end": 1.912,
+              "score": 0.633
+            },
+            {
+              "word": "आता",
+              "start": 1.994,
+              "end": 2.238,
+              "score": 0.751
+            },
+            {
+              "word": "है",
+              "start": 2.278,
+              "end": 2.4,
+              "score": 0.317
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "और",
+          "start": 0.0,
+          "end": 0.753,
+          "score": 0.786
+        },
+        {
+          "word": "यह",
+          "start": 1.343,
+          "end": 1.424,
+          "score": 0.827
+        },
+        {
+          "word": "यूपी",
+          "start": 1.526,
+          "end": 1.77,
+          "score": 0.946
+        },
+        {
+          "word": "में",
+          "start": 1.81,
+          "end": 1.912,
+          "score": 0.633
+        },
+        {
+          "word": "आता",
+          "start": 1.994,
+          "end": 2.238,
+          "score": 0.751
+        },
+        {
+          "word": "है",
+          "start": 2.278,
+          "end": 2.4,
+          "score": 0.317
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "और",
+        "start": 0.0,
+        "end": 0.753,
+        "score": 0.786
+      },
+      {
+        "word": "यह",
+        "start": 1.343,
+        "end": 1.424,
+        "score": 0.827
+      },
+      {
+        "word": "यूपी",
+        "start": 1.526,
+        "end": 1.77,
+        "score": 0.946
+      },
+      {
+        "word": "में",
+        "start": 1.81,
+        "end": 1.912,
+        "score": 0.633
+      },
+      {
+        "word": "आता",
+        "start": 1.994,
+        "end": 2.238,
+        "score": 0.751
+      },
+      {
+        "word": "है",
+        "start": 2.278,
+        "end": 2.4,
+        "score": 0.317
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09021.wav",
+    "whisper_language": "en",
+    "whisper_result": {
+      "text": " What kind of food do you like? Can you tell me about your favorite dish?",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 4.74,
+          "text": " What kind of food do you like? Can you tell me about your favorite dish?",
+          "tokens": [
+            50365,
+            708,
+            733,
+            295,
+            1755,
+            360,
+            291,
+            411,
+            30,
+            1664,
+            291,
+            980,
+            385,
+            466,
+            428,
+            2954,
+            5025,
+            30,
+            50602
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.12062219381332398,
+          "compression_ratio": 1.0140845070422535,
+          "no_speech_prob": 0.016740884631872177
+        }
+      ],
+      "language": "en"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.856,
+          "text": " What kind of food do you like?",
+          "words": [
+            {
+              "word": "What",
+              "start": 0.0,
+              "end": 0.182,
+              "score": 0.671
+            },
+            {
+              "word": "kind",
+              "start": 0.363,
+              "end": 0.645,
+              "score": 0.765
+            },
+            {
+              "word": "of",
+              "start": 0.746,
+              "end": 0.807,
+              "score": 0.976
+            },
+            {
+              "word": "food",
+              "start": 0.908,
+              "end": 1.15,
+              "score": 0.951
+            },
+            {
+              "word": "do",
+              "start": 1.23,
+              "end": 1.351,
+              "score": 1.0
+            },
+            {
+              "word": "you",
+              "start": 1.392,
+              "end": 1.513,
+              "score": 0.641
+            },
+            {
+              "word": "like?",
+              "start": 1.573,
+              "end": 1.856,
+              "score": 0.848
+            }
+          ]
+        },
+        {
+          "start": 2.501,
+          "end": 4.76,
+          "text": "Can you tell me about your favorite dish?",
+          "words": [
+            {
+              "word": "Can",
+              "start": 2.501,
+              "end": 2.703,
+              "score": 0.989
+            },
+            {
+              "word": "you",
+              "start": 2.743,
+              "end": 2.864,
+              "score": 0.711
+            },
+            {
+              "word": "tell",
+              "start": 2.945,
+              "end": 3.187,
+              "score": 0.941
+            },
+            {
+              "word": "me",
+              "start": 3.247,
+              "end": 3.348,
+              "score": 0.919
+            },
+            {
+              "word": "about",
+              "start": 3.469,
+              "end": 3.752,
+              "score": 0.928
+            },
+            {
+              "word": "your",
+              "start": 3.812,
+              "end": 3.933,
+              "score": 0.84
+            },
+            {
+              "word": "favorite",
+              "start": 3.974,
+              "end": 4.478,
+              "score": 0.87
+            },
+            {
+              "word": "dish?",
+              "start": 4.518,
+              "end": 4.76,
+              "score": 0.699
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "What",
+          "start": 0.0,
+          "end": 0.182,
+          "score": 0.671
+        },
+        {
+          "word": "kind",
+          "start": 0.363,
+          "end": 0.645,
+          "score": 0.765
+        },
+        {
+          "word": "of",
+          "start": 0.746,
+          "end": 0.807,
+          "score": 0.976
+        },
+        {
+          "word": "food",
+          "start": 0.908,
+          "end": 1.15,
+          "score": 0.951
+        },
+        {
+          "word": "do",
+          "start": 1.23,
+          "end": 1.351,
+          "score": 1.0
+        },
+        {
+          "word": "you",
+          "start": 1.392,
+          "end": 1.513,
+          "score": 0.641
+        },
+        {
+          "word": "like?",
+          "start": 1.573,
+          "end": 1.856,
+          "score": 0.848
+        },
+        {
+          "word": "Can",
+          "start": 2.501,
+          "end": 2.703,
+          "score": 0.989
+        },
+        {
+          "word": "you",
+          "start": 2.743,
+          "end": 2.864,
+          "score": 0.711
+        },
+        {
+          "word": "tell",
+          "start": 2.945,
+          "end": 3.187,
+          "score": 0.941
+        },
+        {
+          "word": "me",
+          "start": 3.247,
+          "end": 3.348,
+          "score": 0.919
+        },
+        {
+          "word": "about",
+          "start": 3.469,
+          "end": 3.752,
+          "score": 0.928
+        },
+        {
+          "word": "your",
+          "start": 3.812,
+          "end": 3.933,
+          "score": 0.84
+        },
+        {
+          "word": "favorite",
+          "start": 3.974,
+          "end": 4.478,
+          "score": 0.87
+        },
+        {
+          "word": "dish?",
+          "start": 4.518,
+          "end": 4.76,
+          "score": 0.699
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "What",
+        "start": 0.0,
+        "end": 0.182,
+        "score": 0.671
+      },
+      {
+        "word": "kind",
+        "start": 0.363,
+        "end": 0.645,
+        "score": 0.765
+      },
+      {
+        "word": "of",
+        "start": 0.746,
+        "end": 0.807,
+        "score": 0.976
+      },
+      {
+        "word": "food",
+        "start": 0.908,
+        "end": 1.15,
+        "score": 0.951
+      },
+      {
+        "word": "do",
+        "start": 1.23,
+        "end": 1.351,
+        "score": 1.0
+      },
+      {
+        "word": "you",
+        "start": 1.392,
+        "end": 1.513,
+        "score": 0.641
+      },
+      {
+        "word": "like?",
+        "start": 1.573,
+        "end": 1.856,
+        "score": 0.848
+      },
+      {
+        "word": "Can",
+        "start": 2.501,
+        "end": 2.703,
+        "score": 0.989
+      },
+      {
+        "word": "you",
+        "start": 2.743,
+        "end": 2.864,
+        "score": 0.711
+      },
+      {
+        "word": "tell",
+        "start": 2.945,
+        "end": 3.187,
+        "score": 0.941
+      },
+      {
+        "word": "me",
+        "start": 3.247,
+        "end": 3.348,
+        "score": 0.919
+      },
+      {
+        "word": "about",
+        "start": 3.469,
+        "end": 3.752,
+        "score": 0.928
+      },
+      {
+        "word": "your",
+        "start": 3.812,
+        "end": 3.933,
+        "score": 0.84
+      },
+      {
+        "word": "favorite",
+        "start": 3.974,
+        "end": 4.478,
+        "score": 0.87
+      },
+      {
+        "word": "dish?",
+        "start": 4.518,
+        "end": 4.76,
+        "score": 0.699
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09028.wav",
+    "whisper_language": "hi",
+    "whisper_result": {
+      "text": " ये मेरे सारे फेवरिट फूड्स हैं",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.54,
+          "text": " ये मेरे सारे फेवरिट फूड्स हैं",
+          "tokens": [
+            50365,
+            8485,
+            107,
+            21981,
+            48449,
+            21981,
+            25411,
+            21981,
+            49316,
+            17937,
+            25411,
+            21981,
+            8485,
+            104,
+            21981,
+            3941,
+            113,
+            25411,
+            33279,
+            3941,
+            253,
+            8485,
+            104,
+            8703,
+            224,
+            3941,
+            94,
+            27099,
+            45938,
+            37139,
+            43372,
+            31945,
+            50492
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.19064969175002155,
+          "compression_ratio": 1.203125,
+          "no_speech_prob": 0.17586444318294525
+        }
+      ],
+      "language": "hi"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.56,
+          "text": " ये मेरे सारे फेवरिट फूड्स हैं",
+          "words": [
+            {
+              "word": "ये",
+              "start": 0.0,
+              "end": 0.305,
+              "score": 0.802
+            },
+            {
+              "word": "मेरे",
+              "start": 0.386,
+              "end": 0.569,
+              "score": 0.994
+            },
+            {
+              "word": "सारे",
+              "start": 0.671,
+              "end": 0.874,
+              "score": 0.903
+            },
+            {
+              "word": "फेवरिट",
+              "start": 0.996,
+              "end": 1.382,
+              "score": 0.626
+            },
+            {
+              "word": "फूड्स",
+              "start": 1.483,
+              "end": 1.768,
+              "score": 0.354
+            },
+            {
+              "word": "हैं",
+              "start": 1.788,
+              "end": 2.56,
+              "score": 0.857
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "ये",
+          "start": 0.0,
+          "end": 0.305,
+          "score": 0.802
+        },
+        {
+          "word": "मेरे",
+          "start": 0.386,
+          "end": 0.569,
+          "score": 0.994
+        },
+        {
+          "word": "सारे",
+          "start": 0.671,
+          "end": 0.874,
+          "score": 0.903
+        },
+        {
+          "word": "फेवरिट",
+          "start": 0.996,
+          "end": 1.382,
+          "score": 0.626
+        },
+        {
+          "word": "फूड्स",
+          "start": 1.483,
+          "end": 1.768,
+          "score": 0.354
+        },
+        {
+          "word": "हैं",
+          "start": 1.788,
+          "end": 2.56,
+          "score": 0.857
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "ये",
+        "start": 0.0,
+        "end": 0.305,
+        "score": 0.802
+      },
+      {
+        "word": "मेरे",
+        "start": 0.386,
+        "end": 0.569,
+        "score": 0.994
+      },
+      {
+        "word": "सारे",
+        "start": 0.671,
+        "end": 0.874,
+        "score": 0.903
+      },
+      {
+        "word": "फेवरिट",
+        "start": 0.996,
+        "end": 1.382,
+        "score": 0.626
+      },
+      {
+        "word": "फूड्स",
+        "start": 1.483,
+        "end": 1.768,
+        "score": 0.354
+      },
+      {
+        "word": "हैं",
+        "start": 1.788,
+        "end": 2.56,
+        "score": 0.857
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09032.wav",
+    "whisper_language": "hi",
+    "whisper_result": {
+      "text": " वहाँ पर रूप",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 0.88,
+          "text": " वहाँ पर रूप",
+          "tokens": [
+            50365,
+            8485,
+            113,
+            44500,
+            17937,
+            3941,
+            223,
+            8485,
+            103,
+            25411,
+            8485,
+            108,
+            8703,
+            224,
+            3941,
+            103,
+            50409
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.13232669565412733,
+          "compression_ratio": 0.7837837837837838,
+          "no_speech_prob": 0.7015349864959717
+        }
+      ],
+      "language": "hi"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.901,
+          "text": " वहाँ पर रूप",
+          "words": [
+            {
+              "word": "वहाँ",
+              "start": 0.0,
+              "end": 0.314,
+              "score": 0.887
+            },
+            {
+              "word": "पर",
+              "start": 0.461,
+              "end": 0.817,
+              "score": 0.868
+            },
+            {
+              "word": "रूप",
+              "start": 0.838,
+              "end": 0.901,
+              "score": 0.333
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "वहाँ",
+          "start": 0.0,
+          "end": 0.314,
+          "score": 0.887
+        },
+        {
+          "word": "पर",
+          "start": 0.461,
+          "end": 0.817,
+          "score": 0.868
+        },
+        {
+          "word": "रूप",
+          "start": 0.838,
+          "end": 0.901,
+          "score": 0.333
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "वहाँ",
+        "start": 0.0,
+        "end": 0.314,
+        "score": 0.887
+      },
+      {
+        "word": "पर",
+        "start": 0.461,
+        "end": 0.817,
+        "score": 0.868
+      },
+      {
+        "word": "रूप",
+        "start": 0.838,
+        "end": 0.901,
+        "score": 0.333
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09039.wav",
+    "whisper_language": "en",
+    "whisper_result": {
+      "text": " worth seeing and I have also visited the beaches of Andaman and Nicoba.",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 6.94,
+          "text": " worth seeing and I have also visited the beaches of Andaman and Nicoba.",
+          "tokens": [
+            50365,
+            3163,
+            2577,
+            293,
+            286,
+            362,
+            611,
+            11220,
+            264,
+            27560,
+            295,
+            400,
+            6147,
+            293,
+            14776,
+            19481,
+            13,
+            50712
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.470094781172903,
+          "compression_ratio": 0.9861111111111112,
+          "no_speech_prob": 0.1586655080318451
+        }
+      ],
+      "language": "en"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 6.96,
+          "text": " worth seeing and I have also visited the beaches of Andaman and Nicoba.",
+          "words": [
+            {
+              "word": "worth",
+              "start": 0.0,
+              "end": 0.603,
+              "score": 0.698
+            },
+            {
+              "word": "seeing",
+              "start": 0.684,
+              "end": 0.986,
+              "score": 0.672
+            },
+            {
+              "word": "and",
+              "start": 2.012,
+              "end": 2.112,
+              "score": 0.96
+            },
+            {
+              "word": "I",
+              "start": 2.193,
+              "end": 2.273,
+              "score": 0.615
+            },
+            {
+              "word": "have",
+              "start": 2.293,
+              "end": 2.434,
+              "score": 0.732
+            },
+            {
+              "word": "also",
+              "start": 2.675,
+              "end": 2.997,
+              "score": 0.992
+            },
+            {
+              "word": "visited",
+              "start": 3.078,
+              "end": 3.46,
+              "score": 0.955
+            },
+            {
+              "word": "the",
+              "start": 3.52,
+              "end": 3.641,
+              "score": 0.964
+            },
+            {
+              "word": "beaches",
+              "start": 3.681,
+              "end": 4.104,
+              "score": 0.925
+            },
+            {
+              "word": "of",
+              "start": 4.265,
+              "end": 4.385,
+              "score": 0.722
+            },
+            {
+              "word": "Andaman",
+              "start": 4.928,
+              "end": 5.492,
+              "score": 0.847
+            },
+            {
+              "word": "and",
+              "start": 6.256,
+              "end": 6.377,
+              "score": 0.479
+            },
+            {
+              "word": "Nicoba.",
+              "start": 6.397,
+              "end": 6.96,
+              "score": 0.842
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "worth",
+          "start": 0.0,
+          "end": 0.603,
+          "score": 0.698
+        },
+        {
+          "word": "seeing",
+          "start": 0.684,
+          "end": 0.986,
+          "score": 0.672
+        },
+        {
+          "word": "and",
+          "start": 2.012,
+          "end": 2.112,
+          "score": 0.96
+        },
+        {
+          "word": "I",
+          "start": 2.193,
+          "end": 2.273,
+          "score": 0.615
+        },
+        {
+          "word": "have",
+          "start": 2.293,
+          "end": 2.434,
+          "score": 0.732
+        },
+        {
+          "word": "also",
+          "start": 2.675,
+          "end": 2.997,
+          "score": 0.992
+        },
+        {
+          "word": "visited",
+          "start": 3.078,
+          "end": 3.46,
+          "score": 0.955
+        },
+        {
+          "word": "the",
+          "start": 3.52,
+          "end": 3.641,
+          "score": 0.964
+        },
+        {
+          "word": "beaches",
+          "start": 3.681,
+          "end": 4.104,
+          "score": 0.925
+        },
+        {
+          "word": "of",
+          "start": 4.265,
+          "end": 4.385,
+          "score": 0.722
+        },
+        {
+          "word": "Andaman",
+          "start": 4.928,
+          "end": 5.492,
+          "score": 0.847
+        },
+        {
+          "word": "and",
+          "start": 6.256,
+          "end": 6.377,
+          "score": 0.479
+        },
+        {
+          "word": "Nicoba.",
+          "start": 6.397,
+          "end": 6.96,
+          "score": 0.842
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "worth",
+        "start": 0.0,
+        "end": 0.603,
+        "score": 0.698
+      },
+      {
+        "word": "seeing",
+        "start": 0.684,
+        "end": 0.986,
+        "score": 0.672
+      },
+      {
+        "word": "and",
+        "start": 2.012,
+        "end": 2.112,
+        "score": 0.96
+      },
+      {
+        "word": "I",
+        "start": 2.193,
+        "end": 2.273,
+        "score": 0.615
+      },
+      {
+        "word": "have",
+        "start": 2.293,
+        "end": 2.434,
+        "score": 0.732
+      },
+      {
+        "word": "also",
+        "start": 2.675,
+        "end": 2.997,
+        "score": 0.992
+      },
+      {
+        "word": "visited",
+        "start": 3.078,
+        "end": 3.46,
+        "score": 0.955
+      },
+      {
+        "word": "the",
+        "start": 3.52,
+        "end": 3.641,
+        "score": 0.964
+      },
+      {
+        "word": "beaches",
+        "start": 3.681,
+        "end": 4.104,
+        "score": 0.925
+      },
+      {
+        "word": "of",
+        "start": 4.265,
+        "end": 4.385,
+        "score": 0.722
+      },
+      {
+        "word": "Andaman",
+        "start": 4.928,
+        "end": 5.492,
+        "score": 0.847
+      },
+      {
+        "word": "and",
+        "start": 6.256,
+        "end": 6.377,
+        "score": 0.479
+      },
+      {
+        "word": "Nicoba.",
+        "start": 6.397,
+        "end": 6.96,
+        "score": 0.842
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09051.wav",
+    "whisper_language": "hi",
+    "whisper_result": {
+      "text": " पर उन्होंने हिम्मत नहीं हारी",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 7.44,
+          "text": " पर उन्होंने हिम्मत नहीं हारी",
+          "tokens": [
+            50365,
+            8485,
+            103,
+            25411,
+            8485,
+            231,
+            35082,
+            27099,
+            44500,
+            33926,
+            31945,
+            35082,
+            21981,
+            37139,
+            33279,
+            48521,
+            27099,
+            48521,
+            36158,
+            8485,
+            101,
+            44500,
+            31881,
+            31945,
+            37139,
+            17937,
+            25411,
+            31881,
+            50737
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.09184133211771647,
+          "compression_ratio": 1.1692307692307693,
+          "no_speech_prob": 0.011372825130820274
+        }
+      ],
+      "language": "hi"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 7.46,
+          "text": " पर उन्होंने हिम्मत नहीं हारी",
+          "words": [
+            {
+              "word": "पर",
+              "start": 0.0,
+              "end": 0.744,
+              "score": 0.929
+            },
+            {
+              "word": "उन्होंने",
+              "start": 2.694,
+              "end": 6.535,
+              "score": 0.728
+            },
+            {
+              "word": "हिम्मत",
+              "start": 6.716,
+              "end": 6.917,
+              "score": 0.534
+            },
+            {
+              "word": "नहीं",
+              "start": 6.978,
+              "end": 7.098,
+              "score": 0.642
+            },
+            {
+              "word": "हारी",
+              "start": 7.179,
+              "end": 7.46,
+              "score": 0.972
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "पर",
+          "start": 0.0,
+          "end": 0.744,
+          "score": 0.929
+        },
+        {
+          "word": "उन्होंने",
+          "start": 2.694,
+          "end": 6.535,
+          "score": 0.728
+        },
+        {
+          "word": "हिम्मत",
+          "start": 6.716,
+          "end": 6.917,
+          "score": 0.534
+        },
+        {
+          "word": "नहीं",
+          "start": 6.978,
+          "end": 7.098,
+          "score": 0.642
+        },
+        {
+          "word": "हारी",
+          "start": 7.179,
+          "end": 7.46,
+          "score": 0.972
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "पर",
+        "start": 0.0,
+        "end": 0.744,
+        "score": 0.929
+      },
+      {
+        "word": "उन्होंने",
+        "start": 2.694,
+        "end": 6.535,
+        "score": 0.728
+      },
+      {
+        "word": "हिम्मत",
+        "start": 6.716,
+        "end": 6.917,
+        "score": 0.534
+      },
+      {
+        "word": "नहीं",
+        "start": 6.978,
+        "end": 7.098,
+        "score": 0.642
+      },
+      {
+        "word": "हारी",
+        "start": 7.179,
+        "end": 7.46,
+        "score": 0.972
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09055.wav",
+    "whisper_language": "hi",
+    "whisper_result": {
+      "text": " ये गुफा उन लोगों के लिए है जो दोस्ती में, प्यार में और साथ में हमेशा रहते हैं। चिंटू और राजू ने इस राज को समझा और इसके बाद से उनकी दोस्ती और मजबूत हो गई।",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 7.0,
+          "text": " ये गुफा उन लोगों के लिए है जो दोस्ती में, प्यार में और साथ में हमेशा रहते हैं।",
+          "tokens": [
+            50365,
+            8485,
+            107,
+            21981,
+            8485,
+            245,
+            8703,
+            223,
+            3941,
+            104,
+            17937,
+            8485,
+            231,
+            35082,
+            8485,
+            110,
+            33926,
+            3941,
+            245,
+            33926,
+            31945,
+            31970,
+            21981,
+            8485,
+            110,
+            33279,
+            3941,
+            237,
+            37139,
+            43372,
+            8485,
+            250,
+            33926,
+            8485,
+            99,
+            33926,
+            45938,
+            27099,
+            36158,
+            31881,
+            48449,
+            21981,
+            31945,
+            11,
+            8485,
+            103,
+            27099,
+            48268,
+            17937,
+            25411,
+            48449,
+            21981,
+            31945,
+            8485,
+            242,
+            25411,
+            49316,
+            17937,
+            3941,
+            98,
+            48449,
+            21981,
+            31945,
+            37139,
+            48521,
+            21981,
+            3941,
+            114,
+            17937,
+            8485,
+            108,
+            44500,
+            36158,
+            21981,
+            37139,
+            43372,
+            31945,
+            8703,
+            97,
+            50715
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.03309756192294034,
+          "compression_ratio": 2.036842105263158,
+          "no_speech_prob": 0.00801673624664545
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 7.0,
+          "end": 13.0,
+          "text": " चिंटू और राजू ने इस राज को समझा और इसके बाद से उनकी दोस्ती और मजबूत हो गई।",
+          "tokens": [
+            50715,
+            8485,
+            248,
+            33279,
+            31945,
+            3941,
+            253,
+            8703,
+            224,
+            8485,
+            242,
+            25411,
+            8485,
+            108,
+            17937,
+            3941,
+            250,
+            8703,
+            224,
+            8485,
+            101,
+            21981,
+            8485,
+            229,
+            45938,
+            8485,
+            108,
+            17937,
+            3941,
+            250,
+            31970,
+            33926,
+            49316,
+            48521,
+            3941,
+            251,
+            17937,
+            8485,
+            242,
+            25411,
+            8485,
+            229,
+            45938,
+            41858,
+            21981,
+            8485,
+            105,
+            17937,
+            3941,
+            99,
+            49316,
+            21981,
+            8485,
+            231,
+            35082,
+            41858,
+            31881,
+            8485,
+            99,
+            33926,
+            45938,
+            27099,
+            36158,
+            31881,
+            8485,
+            242,
+            25411,
+            48449,
+            3941,
+            250,
+            3941,
+            105,
+            8703,
+            224,
+            36158,
+            37139,
+            33926,
+            8485,
+            245,
+            3941,
+            230,
+            8703,
+            97,
+            51015
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.03309756192294034,
+          "compression_ratio": 2.036842105263158,
+          "no_speech_prob": 0.00801673624664545
+        }
+      ],
+      "language": "hi"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 7.02,
+          "text": " ये गुफा उन लोगों के लिए है जो दोस्ती में, प्यार में और साथ में हमेशा रहते हैं।",
+          "words": [
+            {
+              "word": "ये",
+              "start": 0.0,
+              "end": 0.261,
+              "score": 0.792
+            },
+            {
+              "word": "गुफा",
+              "start": 0.523,
+              "end": 0.724,
+              "score": 0.56
+            },
+            {
+              "word": "उन",
+              "start": 1.006,
+              "end": 1.066,
+              "score": 0.809
+            },
+            {
+              "word": "लोगों",
+              "start": 1.147,
+              "end": 1.428,
+              "score": 0.883
+            },
+            {
+              "word": "के",
+              "start": 1.489,
+              "end": 1.549,
+              "score": 0.998
+            },
+            {
+              "word": "लिए",
+              "start": 1.589,
+              "end": 1.851,
+              "score": 0.337
+            },
+            {
+              "word": "है",
+              "start": 1.871,
+              "end": 1.991,
+              "score": 0.96
+            },
+            {
+              "word": "जो",
+              "start": 2.132,
+              "end": 2.213,
+              "score": 0.997
+            },
+            {
+              "word": "दोस्ती",
+              "start": 2.353,
+              "end": 2.756,
+              "score": 0.972
+            },
+            {
+              "word": "में,",
+              "start": 2.836,
+              "end": 2.957,
+              "score": 0.852
+            },
+            {
+              "word": "प्यार",
+              "start": 3.118,
+              "end": 3.399,
+              "score": 0.659
+            },
+            {
+              "word": "में",
+              "start": 3.48,
+              "end": 3.56,
+              "score": 0.787
+            },
+            {
+              "word": "और",
+              "start": 3.721,
+              "end": 3.822,
+              "score": 0.505
+            },
+            {
+              "word": "साथ",
+              "start": 4.043,
+              "end": 4.345,
+              "score": 0.968
+            },
+            {
+              "word": "में",
+              "start": 4.466,
+              "end": 4.606,
+              "score": 0.944
+            },
+            {
+              "word": "हमेशा",
+              "start": 5.049,
+              "end": 6.236,
+              "score": 0.821
+            },
+            {
+              "word": "रहते",
+              "start": 6.256,
+              "end": 6.598,
+              "score": 0.911
+            },
+            {
+              "word": "हैं।",
+              "start": 6.638,
+              "end": 7.02,
+              "score": 0.696
+            }
+          ]
+        },
+        {
+          "start": 7.0,
+          "end": 13.02,
+          "text": " चिंटू और राजू ने इस राज को समझा और इसके बाद से उनकी दोस्ती और मजबूत हो गई।",
+          "words": [
+            {
+              "word": "चिंटू",
+              "start": 7.0,
+              "end": 7.362,
+              "score": 0.669
+            },
+            {
+              "word": "और",
+              "start": 7.383,
+              "end": 7.483,
+              "score": 0.488
+            },
+            {
+              "word": "राजू",
+              "start": 7.584,
+              "end": 7.886,
+              "score": 0.918
+            },
+            {
+              "word": "ने",
+              "start": 7.926,
+              "end": 8.027,
+              "score": 0.572
+            },
+            {
+              "word": "इस",
+              "start": 8.188,
+              "end": 8.248,
+              "score": 0.944
+            },
+            {
+              "word": "राज",
+              "start": 8.309,
+              "end": 8.53,
+              "score": 0.79
+            },
+            {
+              "word": "को",
+              "start": 8.591,
+              "end": 8.651,
+              "score": 0.987
+            },
+            {
+              "word": "समझा",
+              "start": 8.732,
+              "end": 9.114,
+              "score": 0.91
+            },
+            {
+              "word": "और",
+              "start": 9.295,
+              "end": 9.537,
+              "score": 0.82
+            },
+            {
+              "word": "इसके",
+              "start": 9.859,
+              "end": 10.161,
+              "score": 0.993
+            },
+            {
+              "word": "बाद",
+              "start": 10.302,
+              "end": 10.584,
+              "score": 0.968
+            },
+            {
+              "word": "से",
+              "start": 10.705,
+              "end": 10.846,
+              "score": 0.796
+            },
+            {
+              "word": "उनकी",
+              "start": 11.047,
+              "end": 11.289,
+              "score": 0.861
+            },
+            {
+              "word": "दोस्ती",
+              "start": 11.369,
+              "end": 11.711,
+              "score": 0.93
+            },
+            {
+              "word": "और",
+              "start": 11.852,
+              "end": 12.013,
+              "score": 0.747
+            },
+            {
+              "word": "मजबूत",
+              "start": 12.074,
+              "end": 12.497,
+              "score": 0.908
+            },
+            {
+              "word": "हो",
+              "start": 12.537,
+              "end": 12.617,
+              "score": 0.776
+            },
+            {
+              "word": "गई।",
+              "start": 12.718,
+              "end": 13.02,
+              "score": 0.902
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "ये",
+          "start": 0.0,
+          "end": 0.261,
+          "score": 0.792
+        },
+        {
+          "word": "गुफा",
+          "start": 0.523,
+          "end": 0.724,
+          "score": 0.56
+        },
+        {
+          "word": "उन",
+          "start": 1.006,
+          "end": 1.066,
+          "score": 0.809
+        },
+        {
+          "word": "लोगों",
+          "start": 1.147,
+          "end": 1.428,
+          "score": 0.883
+        },
+        {
+          "word": "के",
+          "start": 1.489,
+          "end": 1.549,
+          "score": 0.998
+        },
+        {
+          "word": "लिए",
+          "start": 1.589,
+          "end": 1.851,
+          "score": 0.337
+        },
+        {
+          "word": "है",
+          "start": 1.871,
+          "end": 1.991,
+          "score": 0.96
+        },
+        {
+          "word": "जो",
+          "start": 2.132,
+          "end": 2.213,
+          "score": 0.997
+        },
+        {
+          "word": "दोस्ती",
+          "start": 2.353,
+          "end": 2.756,
+          "score": 0.972
+        },
+        {
+          "word": "में,",
+          "start": 2.836,
+          "end": 2.957,
+          "score": 0.852
+        },
+        {
+          "word": "प्यार",
+          "start": 3.118,
+          "end": 3.399,
+          "score": 0.659
+        },
+        {
+          "word": "में",
+          "start": 3.48,
+          "end": 3.56,
+          "score": 0.787
+        },
+        {
+          "word": "और",
+          "start": 3.721,
+          "end": 3.822,
+          "score": 0.505
+        },
+        {
+          "word": "साथ",
+          "start": 4.043,
+          "end": 4.345,
+          "score": 0.968
+        },
+        {
+          "word": "में",
+          "start": 4.466,
+          "end": 4.606,
+          "score": 0.944
+        },
+        {
+          "word": "हमेशा",
+          "start": 5.049,
+          "end": 6.236,
+          "score": 0.821
+        },
+        {
+          "word": "रहते",
+          "start": 6.256,
+          "end": 6.598,
+          "score": 0.911
+        },
+        {
+          "word": "हैं।",
+          "start": 6.638,
+          "end": 7.02,
+          "score": 0.696
+        },
+        {
+          "word": "चिंटू",
+          "start": 7.0,
+          "end": 7.362,
+          "score": 0.669
+        },
+        {
+          "word": "और",
+          "start": 7.383,
+          "end": 7.483,
+          "score": 0.488
+        },
+        {
+          "word": "राजू",
+          "start": 7.584,
+          "end": 7.886,
+          "score": 0.918
+        },
+        {
+          "word": "ने",
+          "start": 7.926,
+          "end": 8.027,
+          "score": 0.572
+        },
+        {
+          "word": "इस",
+          "start": 8.188,
+          "end": 8.248,
+          "score": 0.944
+        },
+        {
+          "word": "राज",
+          "start": 8.309,
+          "end": 8.53,
+          "score": 0.79
+        },
+        {
+          "word": "को",
+          "start": 8.591,
+          "end": 8.651,
+          "score": 0.987
+        },
+        {
+          "word": "समझा",
+          "start": 8.732,
+          "end": 9.114,
+          "score": 0.91
+        },
+        {
+          "word": "और",
+          "start": 9.295,
+          "end": 9.537,
+          "score": 0.82
+        },
+        {
+          "word": "इसके",
+          "start": 9.859,
+          "end": 10.161,
+          "score": 0.993
+        },
+        {
+          "word": "बाद",
+          "start": 10.302,
+          "end": 10.584,
+          "score": 0.968
+        },
+        {
+          "word": "से",
+          "start": 10.705,
+          "end": 10.846,
+          "score": 0.796
+        },
+        {
+          "word": "उनकी",
+          "start": 11.047,
+          "end": 11.289,
+          "score": 0.861
+        },
+        {
+          "word": "दोस्ती",
+          "start": 11.369,
+          "end": 11.711,
+          "score": 0.93
+        },
+        {
+          "word": "और",
+          "start": 11.852,
+          "end": 12.013,
+          "score": 0.747
+        },
+        {
+          "word": "मजबूत",
+          "start": 12.074,
+          "end": 12.497,
+          "score": 0.908
+        },
+        {
+          "word": "हो",
+          "start": 12.537,
+          "end": 12.617,
+          "score": 0.776
+        },
+        {
+          "word": "गई।",
+          "start": 12.718,
+          "end": 13.02,
+          "score": 0.902
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "ये",
+        "start": 0.0,
+        "end": 0.261,
+        "score": 0.792
+      },
+      {
+        "word": "गुफा",
+        "start": 0.523,
+        "end": 0.724,
+        "score": 0.56
+      },
+      {
+        "word": "उन",
+        "start": 1.006,
+        "end": 1.066,
+        "score": 0.809
+      },
+      {
+        "word": "लोगों",
+        "start": 1.147,
+        "end": 1.428,
+        "score": 0.883
+      },
+      {
+        "word": "के",
+        "start": 1.489,
+        "end": 1.549,
+        "score": 0.998
+      },
+      {
+        "word": "लिए",
+        "start": 1.589,
+        "end": 1.851,
+        "score": 0.337
+      },
+      {
+        "word": "है",
+        "start": 1.871,
+        "end": 1.991,
+        "score": 0.96
+      },
+      {
+        "word": "जो",
+        "start": 2.132,
+        "end": 2.213,
+        "score": 0.997
+      },
+      {
+        "word": "दोस्ती",
+        "start": 2.353,
+        "end": 2.756,
+        "score": 0.972
+      },
+      {
+        "word": "में,",
+        "start": 2.836,
+        "end": 2.957,
+        "score": 0.852
+      },
+      {
+        "word": "प्यार",
+        "start": 3.118,
+        "end": 3.399,
+        "score": 0.659
+      },
+      {
+        "word": "में",
+        "start": 3.48,
+        "end": 3.56,
+        "score": 0.787
+      },
+      {
+        "word": "और",
+        "start": 3.721,
+        "end": 3.822,
+        "score": 0.505
+      },
+      {
+        "word": "साथ",
+        "start": 4.043,
+        "end": 4.345,
+        "score": 0.968
+      },
+      {
+        "word": "में",
+        "start": 4.466,
+        "end": 4.606,
+        "score": 0.944
+      },
+      {
+        "word": "हमेशा",
+        "start": 5.049,
+        "end": 6.236,
+        "score": 0.821
+      },
+      {
+        "word": "रहते",
+        "start": 6.256,
+        "end": 6.598,
+        "score": 0.911
+      },
+      {
+        "word": "हैं।",
+        "start": 6.638,
+        "end": 7.02,
+        "score": 0.696
+      },
+      {
+        "word": "चिंटू",
+        "start": 7.0,
+        "end": 7.362,
+        "score": 0.669
+      },
+      {
+        "word": "और",
+        "start": 7.383,
+        "end": 7.483,
+        "score": 0.488
+      },
+      {
+        "word": "राजू",
+        "start": 7.584,
+        "end": 7.886,
+        "score": 0.918
+      },
+      {
+        "word": "ने",
+        "start": 7.926,
+        "end": 8.027,
+        "score": 0.572
+      },
+      {
+        "word": "इस",
+        "start": 8.188,
+        "end": 8.248,
+        "score": 0.944
+      },
+      {
+        "word": "राज",
+        "start": 8.309,
+        "end": 8.53,
+        "score": 0.79
+      },
+      {
+        "word": "को",
+        "start": 8.591,
+        "end": 8.651,
+        "score": 0.987
+      },
+      {
+        "word": "समझा",
+        "start": 8.732,
+        "end": 9.114,
+        "score": 0.91
+      },
+      {
+        "word": "और",
+        "start": 9.295,
+        "end": 9.537,
+        "score": 0.82
+      },
+      {
+        "word": "इसके",
+        "start": 9.859,
+        "end": 10.161,
+        "score": 0.993
+      },
+      {
+        "word": "बाद",
+        "start": 10.302,
+        "end": 10.584,
+        "score": 0.968
+      },
+      {
+        "word": "से",
+        "start": 10.705,
+        "end": 10.846,
+        "score": 0.796
+      },
+      {
+        "word": "उनकी",
+        "start": 11.047,
+        "end": 11.289,
+        "score": 0.861
+      },
+      {
+        "word": "दोस्ती",
+        "start": 11.369,
+        "end": 11.711,
+        "score": 0.93
+      },
+      {
+        "word": "और",
+        "start": 11.852,
+        "end": 12.013,
+        "score": 0.747
+      },
+      {
+        "word": "मजबूत",
+        "start": 12.074,
+        "end": 12.497,
+        "score": 0.908
+      },
+      {
+        "word": "हो",
+        "start": 12.537,
+        "end": 12.617,
+        "score": 0.776
+      },
+      {
+        "word": "गई।",
+        "start": 12.718,
+        "end": 13.02,
+        "score": 0.902
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09061.wav",
+    "whisper_language": "en",
+    "whisper_result": {
+      "text": " Veerbade bhai, known for his curiosity and Diyachoti bhai, admired for her creativity.",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 6.5600000000000005,
+          "text": " Veerbade bhai, known for his curiosity and Diyachoti bhai, admired for her creativity.",
+          "tokens": [
+            50365,
+            9706,
+            260,
+            65,
+            762,
+            272,
+            18230,
+            11,
+            2570,
+            337,
+            702,
+            18769,
+            293,
+            413,
+            4727,
+            608,
+            8206,
+            272,
+            18230,
+            11,
+            39987,
+            337,
+            720,
+            12915,
+            13,
+            50693
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.4669668056346752,
+          "compression_ratio": 1.0886075949367089,
+          "no_speech_prob": 0.014077816158533096
+        }
+      ],
+      "language": "en"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 6.58,
+          "text": " Veerbade bhai, known for his curiosity and Diyachoti bhai, admired for her creativity.",
+          "words": [
+            {
+              "word": "Veerbade",
+              "start": 0.0,
+              "end": 0.845,
+              "score": 0.601
+            },
+            {
+              "word": "bhai,",
+              "start": 0.885,
+              "end": 1.127,
+              "score": 0.548
+            },
+            {
+              "word": "known",
+              "start": 1.469,
+              "end": 1.751,
+              "score": 0.842
+            },
+            {
+              "word": "for",
+              "start": 1.811,
+              "end": 1.972,
+              "score": 0.948
+            },
+            {
+              "word": "his",
+              "start": 2.012,
+              "end": 2.133,
+              "score": 0.881
+            },
+            {
+              "word": "curiosity",
+              "start": 2.455,
+              "end": 3.119,
+              "score": 0.893
+            },
+            {
+              "word": "and",
+              "start": 3.36,
+              "end": 3.481,
+              "score": 0.879
+            },
+            {
+              "word": "Diyachoti",
+              "start": 3.562,
+              "end": 4.286,
+              "score": 0.797
+            },
+            {
+              "word": "bhai,",
+              "start": 4.326,
+              "end": 4.528,
+              "score": 0.72
+            },
+            {
+              "word": "admired",
+              "start": 4.91,
+              "end": 5.333,
+              "score": 0.946
+            },
+            {
+              "word": "for",
+              "start": 5.413,
+              "end": 5.594,
+              "score": 0.945
+            },
+            {
+              "word": "her",
+              "start": 5.654,
+              "end": 5.775,
+              "score": 0.913
+            },
+            {
+              "word": "creativity.",
+              "start": 5.856,
+              "end": 6.58,
+              "score": 0.903
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "Veerbade",
+          "start": 0.0,
+          "end": 0.845,
+          "score": 0.601
+        },
+        {
+          "word": "bhai,",
+          "start": 0.885,
+          "end": 1.127,
+          "score": 0.548
+        },
+        {
+          "word": "known",
+          "start": 1.469,
+          "end": 1.751,
+          "score": 0.842
+        },
+        {
+          "word": "for",
+          "start": 1.811,
+          "end": 1.972,
+          "score": 0.948
+        },
+        {
+          "word": "his",
+          "start": 2.012,
+          "end": 2.133,
+          "score": 0.881
+        },
+        {
+          "word": "curiosity",
+          "start": 2.455,
+          "end": 3.119,
+          "score": 0.893
+        },
+        {
+          "word": "and",
+          "start": 3.36,
+          "end": 3.481,
+          "score": 0.879
+        },
+        {
+          "word": "Diyachoti",
+          "start": 3.562,
+          "end": 4.286,
+          "score": 0.797
+        },
+        {
+          "word": "bhai,",
+          "start": 4.326,
+          "end": 4.528,
+          "score": 0.72
+        },
+        {
+          "word": "admired",
+          "start": 4.91,
+          "end": 5.333,
+          "score": 0.946
+        },
+        {
+          "word": "for",
+          "start": 5.413,
+          "end": 5.594,
+          "score": 0.945
+        },
+        {
+          "word": "her",
+          "start": 5.654,
+          "end": 5.775,
+          "score": 0.913
+        },
+        {
+          "word": "creativity.",
+          "start": 5.856,
+          "end": 6.58,
+          "score": 0.903
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "Veerbade",
+        "start": 0.0,
+        "end": 0.845,
+        "score": 0.601
+      },
+      {
+        "word": "bhai,",
+        "start": 0.885,
+        "end": 1.127,
+        "score": 0.548
+      },
+      {
+        "word": "known",
+        "start": 1.469,
+        "end": 1.751,
+        "score": 0.842
+      },
+      {
+        "word": "for",
+        "start": 1.811,
+        "end": 1.972,
+        "score": 0.948
+      },
+      {
+        "word": "his",
+        "start": 2.012,
+        "end": 2.133,
+        "score": 0.881
+      },
+      {
+        "word": "curiosity",
+        "start": 2.455,
+        "end": 3.119,
+        "score": 0.893
+      },
+      {
+        "word": "and",
+        "start": 3.36,
+        "end": 3.481,
+        "score": 0.879
+      },
+      {
+        "word": "Diyachoti",
+        "start": 3.562,
+        "end": 4.286,
+        "score": 0.797
+      },
+      {
+        "word": "bhai,",
+        "start": 4.326,
+        "end": 4.528,
+        "score": 0.72
+      },
+      {
+        "word": "admired",
+        "start": 4.91,
+        "end": 5.333,
+        "score": 0.946
+      },
+      {
+        "word": "for",
+        "start": 5.413,
+        "end": 5.594,
+        "score": 0.945
+      },
+      {
+        "word": "her",
+        "start": 5.654,
+        "end": 5.775,
+        "score": 0.913
+      },
+      {
+        "word": "creativity.",
+        "start": 5.856,
+        "end": 6.58,
+        "score": 0.903
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09063.wav",
+    "whisper_language": "en",
+    "whisper_result": {
+      "text": " Dusty book Millie, old book Millie, filled with mysterious symbols and ancient drawings. Excited by their discovery, they spent hours",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 5.6000000000000005,
+          "text": " Dusty book Millie, old book Millie, filled with mysterious symbols and ancient drawings.",
+          "tokens": [
+            50365,
+            26483,
+            88,
+            1446,
+            7190,
+            414,
+            11,
+            1331,
+            1446,
+            7190,
+            414,
+            11,
+            6412,
+            365,
+            13831,
+            16944,
+            293,
+            7832,
+            18618,
+            13,
+            50645
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.24994685433127664,
+          "compression_ratio": 1.2429906542056075,
+          "no_speech_prob": 0.012329576537013054
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 6.32,
+          "end": 9.26,
+          "text": " Excited by their discovery, they spent hours",
+          "tokens": [
+            50681,
+            9368,
+            1226,
+            538,
+            641,
+            12114,
+            11,
+            436,
+            4418,
+            2496,
+            50828
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.24994685433127664,
+          "compression_ratio": 1.2429906542056075,
+          "no_speech_prob": 0.012329576537013054
+        }
+      ],
+      "language": "en"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.62,
+          "text": " Dusty book Millie, old book Millie, filled with mysterious symbols and ancient drawings.",
+          "words": [
+            {
+              "word": "Dusty",
+              "start": 0.0,
+              "end": 0.604,
+              "score": 0.951
+            },
+            {
+              "word": "book",
+              "start": 0.665,
+              "end": 0.846,
+              "score": 0.987
+            },
+            {
+              "word": "Millie,",
+              "start": 1.068,
+              "end": 1.39,
+              "score": 0.846
+            },
+            {
+              "word": "old",
+              "start": 1.591,
+              "end": 1.732,
+              "score": 0.835
+            },
+            {
+              "word": "book",
+              "start": 1.813,
+              "end": 1.994,
+              "score": 0.788
+            },
+            {
+              "word": "Millie,",
+              "start": 2.014,
+              "end": 2.317,
+              "score": 0.793
+            },
+            {
+              "word": "filled",
+              "start": 2.78,
+              "end": 3.022,
+              "score": 0.984
+            },
+            {
+              "word": "with",
+              "start": 3.102,
+              "end": 3.223,
+              "score": 0.938
+            },
+            {
+              "word": "mysterious",
+              "start": 3.263,
+              "end": 3.888,
+              "score": 0.802
+            },
+            {
+              "word": "symbols",
+              "start": 3.948,
+              "end": 4.311,
+              "score": 0.894
+            },
+            {
+              "word": "and",
+              "start": 4.432,
+              "end": 4.512,
+              "score": 0.711
+            },
+            {
+              "word": "ancient",
+              "start": 4.935,
+              "end": 5.298,
+              "score": 0.907
+            },
+            {
+              "word": "drawings.",
+              "start": 5.338,
+              "end": 5.62,
+              "score": 0.281
+            }
+          ]
+        },
+        {
+          "start": 6.32,
+          "end": 9.28,
+          "text": " Excited by their discovery, they spent hours",
+          "words": [
+            {
+              "word": "Excited",
+              "start": 6.32,
+              "end": 6.928,
+              "score": 0.93
+            },
+            {
+              "word": "by",
+              "start": 7.05,
+              "end": 7.212,
+              "score": 0.99
+            },
+            {
+              "word": "their",
+              "start": 7.232,
+              "end": 7.577,
+              "score": 0.923
+            },
+            {
+              "word": "discovery,",
+              "start": 7.658,
+              "end": 8.287,
+              "score": 0.922
+            },
+            {
+              "word": "they",
+              "start": 8.327,
+              "end": 8.49,
+              "score": 0.961
+            },
+            {
+              "word": "spent",
+              "start": 8.55,
+              "end": 8.814,
+              "score": 0.934
+            },
+            {
+              "word": "hours",
+              "start": 9.037,
+              "end": 9.28,
+              "score": 0.862
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "Dusty",
+          "start": 0.0,
+          "end": 0.604,
+          "score": 0.951
+        },
+        {
+          "word": "book",
+          "start": 0.665,
+          "end": 0.846,
+          "score": 0.987
+        },
+        {
+          "word": "Millie,",
+          "start": 1.068,
+          "end": 1.39,
+          "score": 0.846
+        },
+        {
+          "word": "old",
+          "start": 1.591,
+          "end": 1.732,
+          "score": 0.835
+        },
+        {
+          "word": "book",
+          "start": 1.813,
+          "end": 1.994,
+          "score": 0.788
+        },
+        {
+          "word": "Millie,",
+          "start": 2.014,
+          "end": 2.317,
+          "score": 0.793
+        },
+        {
+          "word": "filled",
+          "start": 2.78,
+          "end": 3.022,
+          "score": 0.984
+        },
+        {
+          "word": "with",
+          "start": 3.102,
+          "end": 3.223,
+          "score": 0.938
+        },
+        {
+          "word": "mysterious",
+          "start": 3.263,
+          "end": 3.888,
+          "score": 0.802
+        },
+        {
+          "word": "symbols",
+          "start": 3.948,
+          "end": 4.311,
+          "score": 0.894
+        },
+        {
+          "word": "and",
+          "start": 4.432,
+          "end": 4.512,
+          "score": 0.711
+        },
+        {
+          "word": "ancient",
+          "start": 4.935,
+          "end": 5.298,
+          "score": 0.907
+        },
+        {
+          "word": "drawings.",
+          "start": 5.338,
+          "end": 5.62,
+          "score": 0.281
+        },
+        {
+          "word": "Excited",
+          "start": 6.32,
+          "end": 6.928,
+          "score": 0.93
+        },
+        {
+          "word": "by",
+          "start": 7.05,
+          "end": 7.212,
+          "score": 0.99
+        },
+        {
+          "word": "their",
+          "start": 7.232,
+          "end": 7.577,
+          "score": 0.923
+        },
+        {
+          "word": "discovery,",
+          "start": 7.658,
+          "end": 8.287,
+          "score": 0.922
+        },
+        {
+          "word": "they",
+          "start": 8.327,
+          "end": 8.49,
+          "score": 0.961
+        },
+        {
+          "word": "spent",
+          "start": 8.55,
+          "end": 8.814,
+          "score": 0.934
+        },
+        {
+          "word": "hours",
+          "start": 9.037,
+          "end": 9.28,
+          "score": 0.862
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "Dusty",
+        "start": 0.0,
+        "end": 0.604,
+        "score": 0.951
+      },
+      {
+        "word": "book",
+        "start": 0.665,
+        "end": 0.846,
+        "score": 0.987
+      },
+      {
+        "word": "Millie,",
+        "start": 1.068,
+        "end": 1.39,
+        "score": 0.846
+      },
+      {
+        "word": "old",
+        "start": 1.591,
+        "end": 1.732,
+        "score": 0.835
+      },
+      {
+        "word": "book",
+        "start": 1.813,
+        "end": 1.994,
+        "score": 0.788
+      },
+      {
+        "word": "Millie,",
+        "start": 2.014,
+        "end": 2.317,
+        "score": 0.793
+      },
+      {
+        "word": "filled",
+        "start": 2.78,
+        "end": 3.022,
+        "score": 0.984
+      },
+      {
+        "word": "with",
+        "start": 3.102,
+        "end": 3.223,
+        "score": 0.938
+      },
+      {
+        "word": "mysterious",
+        "start": 3.263,
+        "end": 3.888,
+        "score": 0.802
+      },
+      {
+        "word": "symbols",
+        "start": 3.948,
+        "end": 4.311,
+        "score": 0.894
+      },
+      {
+        "word": "and",
+        "start": 4.432,
+        "end": 4.512,
+        "score": 0.711
+      },
+      {
+        "word": "ancient",
+        "start": 4.935,
+        "end": 5.298,
+        "score": 0.907
+      },
+      {
+        "word": "drawings.",
+        "start": 5.338,
+        "end": 5.62,
+        "score": 0.281
+      },
+      {
+        "word": "Excited",
+        "start": 6.32,
+        "end": 6.928,
+        "score": 0.93
+      },
+      {
+        "word": "by",
+        "start": 7.05,
+        "end": 7.212,
+        "score": 0.99
+      },
+      {
+        "word": "their",
+        "start": 7.232,
+        "end": 7.577,
+        "score": 0.923
+      },
+      {
+        "word": "discovery,",
+        "start": 7.658,
+        "end": 8.287,
+        "score": 0.922
+      },
+      {
+        "word": "they",
+        "start": 8.327,
+        "end": 8.49,
+        "score": 0.961
+      },
+      {
+        "word": "spent",
+        "start": 8.55,
+        "end": 8.814,
+        "score": 0.934
+      },
+      {
+        "word": "hours",
+        "start": 9.037,
+        "end": 9.28,
+        "score": 0.862
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09066.wav",
+    "whisper_language": "en",
+    "whisper_result": {
+      "text": " Betted-breathed, they explored the old house, discovering a hidden passage behind a bookshelf.",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 5.5600000000000005,
+          "text": " Betted-breathed, they explored the old house, discovering a hidden passage behind a bookshelf.",
+          "tokens": [
+            50365,
+            363,
+            46508,
+            12,
+            47674,
+            27096,
+            11,
+            436,
+            24016,
+            264,
+            1331,
+            1782,
+            11,
+            24773,
+            257,
+            7633,
+            11497,
+            2261,
+            257,
+            1446,
+            46626,
+            13,
+            50643
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.2896480957667033,
+          "compression_ratio": 1.1058823529411765,
+          "no_speech_prob": 0.006823024712502956
+        }
+      ],
+      "language": "en"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.58,
+          "text": " Betted-breathed, they explored the old house, discovering a hidden passage behind a bookshelf.",
+          "words": [
+            {
+              "word": "Betted-breathed,",
+              "start": 0.0,
+              "end": 1.309,
+              "score": 0.78
+            },
+            {
+              "word": "they",
+              "start": 1.33,
+              "end": 1.45,
+              "score": 0.997
+            },
+            {
+              "word": "explored",
+              "start": 1.511,
+              "end": 1.914,
+              "score": 0.895
+            },
+            {
+              "word": "the",
+              "start": 1.954,
+              "end": 2.055,
+              "score": 0.937
+            },
+            {
+              "word": "old",
+              "start": 2.216,
+              "end": 2.377,
+              "score": 0.621
+            },
+            {
+              "word": "house,",
+              "start": 2.417,
+              "end": 2.699,
+              "score": 0.982
+            },
+            {
+              "word": "discovering",
+              "start": 2.76,
+              "end": 3.324,
+              "score": 0.932
+            },
+            {
+              "word": "a",
+              "start": 3.404,
+              "end": 3.425,
+              "score": 0.985
+            },
+            {
+              "word": "hidden",
+              "start": 3.485,
+              "end": 3.747,
+              "score": 0.98
+            },
+            {
+              "word": "passage",
+              "start": 3.828,
+              "end": 4.271,
+              "score": 0.908
+            },
+            {
+              "word": "behind",
+              "start": 4.371,
+              "end": 4.774,
+              "score": 0.888
+            },
+            {
+              "word": "a",
+              "start": 4.815,
+              "end": 4.835,
+              "score": 1.0
+            },
+            {
+              "word": "bookshelf.",
+              "start": 5.036,
+              "end": 5.58,
+              "score": 0.778
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "Betted-breathed,",
+          "start": 0.0,
+          "end": 1.309,
+          "score": 0.78
+        },
+        {
+          "word": "they",
+          "start": 1.33,
+          "end": 1.45,
+          "score": 0.997
+        },
+        {
+          "word": "explored",
+          "start": 1.511,
+          "end": 1.914,
+          "score": 0.895
+        },
+        {
+          "word": "the",
+          "start": 1.954,
+          "end": 2.055,
+          "score": 0.937
+        },
+        {
+          "word": "old",
+          "start": 2.216,
+          "end": 2.377,
+          "score": 0.621
+        },
+        {
+          "word": "house,",
+          "start": 2.417,
+          "end": 2.699,
+          "score": 0.982
+        },
+        {
+          "word": "discovering",
+          "start": 2.76,
+          "end": 3.324,
+          "score": 0.932
+        },
+        {
+          "word": "a",
+          "start": 3.404,
+          "end": 3.425,
+          "score": 0.985
+        },
+        {
+          "word": "hidden",
+          "start": 3.485,
+          "end": 3.747,
+          "score": 0.98
+        },
+        {
+          "word": "passage",
+          "start": 3.828,
+          "end": 4.271,
+          "score": 0.908
+        },
+        {
+          "word": "behind",
+          "start": 4.371,
+          "end": 4.774,
+          "score": 0.888
+        },
+        {
+          "word": "a",
+          "start": 4.815,
+          "end": 4.835,
+          "score": 1.0
+        },
+        {
+          "word": "bookshelf.",
+          "start": 5.036,
+          "end": 5.58,
+          "score": 0.778
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "Betted-breathed,",
+        "start": 0.0,
+        "end": 1.309,
+        "score": 0.78
+      },
+      {
+        "word": "they",
+        "start": 1.33,
+        "end": 1.45,
+        "score": 0.997
+      },
+      {
+        "word": "explored",
+        "start": 1.511,
+        "end": 1.914,
+        "score": 0.895
+      },
+      {
+        "word": "the",
+        "start": 1.954,
+        "end": 2.055,
+        "score": 0.937
+      },
+      {
+        "word": "old",
+        "start": 2.216,
+        "end": 2.377,
+        "score": 0.621
+      },
+      {
+        "word": "house,",
+        "start": 2.417,
+        "end": 2.699,
+        "score": 0.982
+      },
+      {
+        "word": "discovering",
+        "start": 2.76,
+        "end": 3.324,
+        "score": 0.932
+      },
+      {
+        "word": "a",
+        "start": 3.404,
+        "end": 3.425,
+        "score": 0.985
+      },
+      {
+        "word": "hidden",
+        "start": 3.485,
+        "end": 3.747,
+        "score": 0.98
+      },
+      {
+        "word": "passage",
+        "start": 3.828,
+        "end": 4.271,
+        "score": 0.908
+      },
+      {
+        "word": "behind",
+        "start": 4.371,
+        "end": 4.774,
+        "score": 0.888
+      },
+      {
+        "word": "a",
+        "start": 4.815,
+        "end": 4.835,
+        "score": 1.0
+      },
+      {
+        "word": "bookshelf.",
+        "start": 5.036,
+        "end": 5.58,
+        "score": 0.778
+      }
+    ]
+  },
+  {
+    "path": "datasets\\Corpus\\adult\\audio\\test_split\\AD09067.wav",
+    "whisper_language": "en",
+    "whisper_result": {
+      "text": " Stepping through the passage, they found themselves in a lush magical forest and",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 5.48,
+          "text": " Stepping through the passage, they found themselves in a lush magical forest and",
+          "tokens": [
+            50365,
+            3592,
+            3759,
+            807,
+            264,
+            11497,
+            11,
+            436,
+            1352,
+            2969,
+            294,
+            257,
+            49729,
+            12066,
+            6719,
+            293,
+            50639
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.1873180998696221,
+          "compression_ratio": 1.0666666666666667,
+          "no_speech_prob": 0.006310479249805212
+        }
+      ],
+      "language": "en"
+    },
+    "whisperx_aligned": {
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.5,
+          "text": " Stepping through the passage, they found themselves in a lush magical forest and",
+          "words": [
+            {
+              "word": "Stepping",
+              "start": 0.0,
+              "end": 0.705,
+              "score": 0.934
+            },
+            {
+              "word": "through",
+              "start": 0.766,
+              "end": 0.987,
+              "score": 0.774
+            },
+            {
+              "word": "the",
+              "start": 1.007,
+              "end": 1.108,
+              "score": 0.952
+            },
+            {
+              "word": "passage,",
+              "start": 1.189,
+              "end": 1.974,
+              "score": 0.959
+            },
+            {
+              "word": "they",
+              "start": 1.995,
+              "end": 2.136,
+              "score": 0.867
+            },
+            {
+              "word": "found",
+              "start": 2.256,
+              "end": 2.498,
+              "score": 0.802
+            },
+            {
+              "word": "themselves",
+              "start": 2.619,
+              "end": 3.123,
+              "score": 0.892
+            },
+            {
+              "word": "in",
+              "start": 3.304,
+              "end": 3.385,
+              "score": 0.998
+            },
+            {
+              "word": "a",
+              "start": 3.465,
+              "end": 3.485,
+              "score": 0.999
+            },
+            {
+              "word": "lush",
+              "start": 3.566,
+              "end": 3.888,
+              "score": 0.879
+            },
+            {
+              "word": "magical",
+              "start": 4.211,
+              "end": 4.634,
+              "score": 0.986
+            },
+            {
+              "word": "forest",
+              "start": 4.735,
+              "end": 5.178,
+              "score": 0.866
+            },
+            {
+              "word": "and",
+              "start": 5.399,
+              "end": 5.5,
+              "score": 0.667
+            }
+          ]
+        }
+      ],
+      "word_segments": [
+        {
+          "word": "Stepping",
+          "start": 0.0,
+          "end": 0.705,
+          "score": 0.934
+        },
+        {
+          "word": "through",
+          "start": 0.766,
+          "end": 0.987,
+          "score": 0.774
+        },
+        {
+          "word": "the",
+          "start": 1.007,
+          "end": 1.108,
+          "score": 0.952
+        },
+        {
+          "word": "passage,",
+          "start": 1.189,
+          "end": 1.974,
+          "score": 0.959
+        },
+        {
+          "word": "they",
+          "start": 1.995,
+          "end": 2.136,
+          "score": 0.867
+        },
+        {
+          "word": "found",
+          "start": 2.256,
+          "end": 2.498,
+          "score": 0.802
+        },
+        {
+          "word": "themselves",
+          "start": 2.619,
+          "end": 3.123,
+          "score": 0.892
+        },
+        {
+          "word": "in",
+          "start": 3.304,
+          "end": 3.385,
+          "score": 0.998
+        },
+        {
+          "word": "a",
+          "start": 3.465,
+          "end": 3.485,
+          "score": 0.999
+        },
+        {
+          "word": "lush",
+          "start": 3.566,
+          "end": 3.888,
+          "score": 0.879
+        },
+        {
+          "word": "magical",
+          "start": 4.211,
+          "end": 4.634,
+          "score": 0.986
+        },
+        {
+          "word": "forest",
+          "start": 4.735,
+          "end": 5.178,
+          "score": 0.866
+        },
+        {
+          "word": "and",
+          "start": 5.399,
+          "end": 5.5,
+          "score": 0.667
+        }
+      ]
+    },
+    "words": [
+      {
+        "word": "Stepping",
+        "start": 0.0,
+        "end": 0.705,
+        "score": 0.934
+      },
+      {
+        "word": "through",
+        "start": 0.766,
+        "end": 0.987,
+        "score": 0.774
+      },
+      {
+        "word": "the",
+        "start": 1.007,
+        "end": 1.108,
+        "score": 0.952
+      },
+      {
+        "word": "passage,",
+        "start": 1.189,
+        "end": 1.974,
+        "score": 0.959
+      },
+      {
+        "word": "they",
+        "start": 1.995,
+        "end": 2.136,
+        "score": 0.867
+      },
+      {
+        "word": "found",
+        "start": 2.256,
+        "end": 2.498,
+        "score": 0.802
+      },
+      {
+        "word": "themselves",
+        "start": 2.619,
+        "end": 3.123,
+        "score": 0.892
+      },
+      {
+        "word": "in",
+        "start": 3.304,
+        "end": 3.385,
+        "score": 0.998
+      },
+      {
+        "word": "a",
+        "start": 3.465,
+        "end": 3.485,
+        "score": 0.999
+      },
+      {
+        "word": "lush",
+        "start": 3.566,
+        "end": 3.888,
+        "score": 0.879
+      },
+      {
+        "word": "magical",
+        "start": 4.211,
+        "end": 4.634,
+        "score": 0.986
+      },
+      {
+        "word": "forest",
+        "start": 4.735,
+        "end": 5.178,
+        "score": 0.866
+      },
+      {
+        "word": "and",
+        "start": 5.399,
+        "end": 5.5,
+        "score": 0.667
+      }
+    ]
+  }
+]
