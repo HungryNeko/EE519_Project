@@ -1,3 +1,4 @@
 datasets/Corpus/**/*.wav
 *.zip
 datasets/ascend/**/*.wav
+datasets/.cache
