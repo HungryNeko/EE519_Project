@@ -1,3 +1,0 @@
-split models:
-NEMO on Windows x
-speechbrain on Windows ok
