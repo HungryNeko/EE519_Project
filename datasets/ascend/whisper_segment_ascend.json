@@ -1,0 +1,387 @@
+[
+  {
+    "path": "datasets\\ascend\\audio\\test\\000000.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 0.64,
+        "text": "好的",
+        "scores": {
+          "avg_logprob": -0.4357150197029114,
+          "compression_ratio": 0.42857142857142855,
+          "no_speech_prob": 0.39715471863746643,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 0.661,
+            "text": "好 的",
+            "score": 0.448
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000001.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 0.8,
+        "text": "Uh,",
+        "scores": {
+          "avg_logprob": -0.7513144969940185,
+          "compression_ratio": 0.2727272727272727,
+          "no_speech_prob": 0.8371216654777527,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 0.822,
+            "text": "Uh,",
+            "score": 0.757
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000002.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.88,
+        "text": "what's your major and your hobbies",
+        "scores": {
+          "avg_logprob": -0.458067798614502,
+          "compression_ratio": 0.918918918918919,
+          "no_speech_prob": 0.18992041051387787,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 2.9,
+            "text": "what's your major and your hobbies",
+            "score": 0.501
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000003.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "easy",
+        "scores": {
+          "avg_logprob": -0.8800075650215149,
+          "compression_ratio": 0.3333333333333333,
+          "no_speech_prob": 0.45012345910072327,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 2.047,
+            "text": "easy",
+            "score": 0.78
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000004.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 1.36,
+        "text": "That was the...",
+        "scores": {
+          "avg_logprob": -0.7186241831098285,
+          "compression_ratio": 0.6521739130434783,
+          "no_speech_prob": 0.7458246350288391,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 1.381,
+            "text": "That was the...",
+            "score": 0.7136666666666667
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000005.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 0.72,
+        "text": "Okay, I see.",
+        "scores": {
+          "avg_logprob": -0.37015432119369507,
+          "compression_ratio": 0.6,
+          "no_speech_prob": 0.16437920928001404,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 0.741,
+            "text": "Okay, I see.",
+            "score": 0.512
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000006.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 0.84,
+        "text": "Yeah, I see.",
+        "scores": {
+          "avg_logprob": -0.3222142159938812,
+          "compression_ratio": 0.6,
+          "no_speech_prob": 0.08430099487304688,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 0.861,
+            "text": "Yeah, I see.",
+            "score": 0.5556666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000007.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.68,
+        "text": "我们专业专业课堂有一些人是那个你们那个专业的",
+        "scores": {
+          "avg_logprob": -0.18327030113765172,
+          "compression_ratio": 1.0153846153846153,
+          "no_speech_prob": 0.31531304121017456,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 4.7,
+            "text": "我 们 专 业 专 业 课 堂 有 一 些 人 是 那 个 你 们 那 个 专 业 的",
+            "score": 0.8014545454545455
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000008.wav",
+    "whisper_language": "pl",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 0.4,
+        "text": "...",
+        "scores": {
+          "avg_logprob": -0.8876897692680359,
+          "compression_ratio": 0.2727272727272727,
+          "no_speech_prob": 0.9012544751167297,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "pl",
+            "start": 0.0,
+            "end": 0.4,
+            "text": "...",
+            "score": -0.8876897692680359
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000009.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "我专业是ISM Information Systems Management",
+        "scores": {
+          "avg_logprob": -0.42797183990478516,
+          "compression_ratio": 0.8363636363636363,
+          "no_speech_prob": 0.15933331847190857,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 1.374,
+            "text": "我 专 业 是",
+            "score": 0.67525
+          },
+          {
+            "language": "en",
+            "start": 1.374,
+            "end": 4.02,
+            "text": "I S M I n f o r m a t i o n S y s t e m s M a n a g e m e n t",
+            "score": 0.042451612903225806
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000010.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 1.56,
+        "text": "No, business school.",
+        "scores": {
+          "avg_logprob": -0.2567794620990753,
+          "compression_ratio": 0.7142857142857143,
+          "no_speech_prob": 0.1091398075222969,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 1.581,
+            "text": "No, business school.",
+            "score": 0.44566666666666666
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000011.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 1.4000000000000001,
+        "text": "那",
+        "scores": {
+          "avg_logprob": -0.37136685848236084,
+          "compression_ratio": 0.2727272727272727,
+          "no_speech_prob": 0.7870228290557861,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 1.421,
+            "text": "那",
+            "score": 0.958
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000012.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.82,
+        "text": "Yeah, MSC, oh yeah, Master.",
+        "scores": {
+          "avg_logprob": -0.5199599266052246,
+          "compression_ratio": 0.9,
+          "no_speech_prob": 0.19686557352542877,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 2.84,
+            "text": "Yeah, MSC, oh yeah, Master.",
+            "score": 0.577
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets\\ascend\\audio\\test\\000013.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 1.0,
+        "text": "full-time student.",
+        "scores": {
+          "avg_logprob": -0.6335393786430359,
+          "compression_ratio": 0.6923076923076923,
+          "no_speech_prob": 0.16755442321300507,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 1.021,
+            "text": "full-time student.",
+            "score": 0.591
+          }
+        ]
+      }
+    ]
+  }
+]

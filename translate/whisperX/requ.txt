@@ -1,0 +1,31 @@
+{
+  "segment_id": 0,
+  "start": 0.0,
+  "end": 7.96,
+
+  "text": "और joy, happiness, खुशियां, बहुत सारे relatives, बहुत सारे लोग जिनके साथ party कर सकते हैं",
+
+  "scores": {
+    "avg_logprob": -0.05652722541023703,
+    "compression_ratio": 1.3740458015267176,
+    "no_speech_prob": 0.014498724602162838,
+    "temperature": 0.0
+  },
+
+  "language_spans": [
+    {
+      "language": "hi",
+      "start": 0.00,
+      "end": 7.96,
+      "text": "और खुशियां बहुत सारे बहुत सारे लोग जिनके साथ कर सकते हैं",
+      "score": -0.05
+    },
+    {
+      "language": "en",
+      "start": 1.42,
+      "end": 6.85,
+      "text": "joy happiness relatives party",
+      "score": -0.08
+    }
+  ]
+}
