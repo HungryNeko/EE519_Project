@@ -13,7 +13,7 @@ from tqdm import tqdm
 # Fixed configuration
 # ======================
 CORPUS_ROOT = Path(r".\datasets\Corpus")
-OUTPUT_CSV = CORPUS_ROOT / "whisper_word_segments.csv"
+OUTPUT_CSV = CORPUS_ROOT / "whisper_word_corpus.csv"
 AUDIO_EXTS = {".wav", ".mp3", ".flac", ".m4a"}
 MODEL_NAME = "large-v3"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
