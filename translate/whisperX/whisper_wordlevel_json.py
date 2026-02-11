@@ -1,9 +1,8 @@
 from pathlib import Path
 import json
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Set, Tuple
+from typing import Any, Dict, List, Set
 
-import torch
 import whisper
 import whisperx
 from tqdm import tqdm
@@ -43,13 +42,22 @@ def to_jsonable(x: Any):
     return x
 
 def canonical_path_for_storage(p: Path) -> str:
-    # 缁熶竴涓虹粷瀵?POSIX 灏忓啓瀛楃涓诧紝淇濊瘉 Windows/macOS/Linux 鍙瘮杈?
-    try:
-        return p.resolve().as_posix().lower()
-    except Exception:
-        # fallback: non-strict resolve
-        return p.expanduser().resolve(strict=False).as_posix().lower()
+    return p.resolve(strict=False).as_posix().replace("\\", "/").lower()
 
+# ======================
+# 核心：真实位置身份（只认 datasets/corpus 之后）
+# ======================
+def corpus_relative_identity(p: Path) -> str:
+    p_norm = p.resolve(strict=False).as_posix().replace("\\", "/").lower()
+    anchor = "/datasets/corpus/"
+    idx = p_norm.find(anchor)
+    if idx == -1:
+        raise ValueError(f"path not under datasets/corpus: {p}")
+    return p_norm[idx + 1:]
+
+# ======================
+# JSON IO
+# ======================
 def load_existing_records(path: Path) -> List[Dict[str, Any]]:
     if not path.exists():
         return []
@@ -65,40 +73,33 @@ def save_records(path: Path, records: List[Dict[str, Any]]):
         json.dump(records, f, ensure_ascii=False, indent=2)
 
 def read_processed_paths(path: Path) -> Set[str]:
-    """
-    浠庡凡鏈?JSON 璇诲彇宸插鐞嗚矾寰勶紝骞舵妸瀹冧滑 canonical 鍖栦负涓?canonical_path_for_storage 涓€鑷寸殑鏍煎紡銆?
-    浣跨敤 resolve(strict=False) 浠ラ伩鍏嶅巻鍙茶褰曚腑涓嶅瓨鍦ㄧ殑璺緞瀵艰嚧寮傚父銆?
-    """
     rows = load_existing_records(path)
-    processed = set()
+    out = set()
     for r in rows:
-        if not isinstance(r, dict):
-            continue
         raw = r.get("path")
         if not raw:
             continue
         try:
-            p = Path(raw)
-            canon = p.expanduser().resolve(strict=False).as_posix().lower()
+            out.add(corpus_relative_identity(Path(raw)))
         except Exception:
-            canon = str(raw).replace("\\", "/").lower()
-        processed.add(canon)
-    return processed
+            continue
+    return out
 
 def read_failed_paths(path: Path) -> Set[str]:
     rows = load_existing_records(path)
-    failed = set()
+    out = set()
     for r in rows:
-        if not isinstance(r, dict):
-            continue
         raw = r.get("path")
         if not raw:
             continue
-        failed.add(str(raw).replace("\\", "/").lower())
-    return failed
+        try:
+            out.add(corpus_relative_identity(Path(raw)))
+        except Exception:
+            continue
+    return out
 
 # ======================
-# Language detection by Unicode (绠€鍗?
+# Language detection
 # ======================
 def detect_lang_by_char(ch: str) -> str:
     o = ord(ch)
@@ -111,7 +112,7 @@ def detect_lang_by_char(ch: str) -> str:
     return "other"
 
 # ======================
-# Alignment cache (safe)
+# Alignment cache
 # ======================
 def get_align_resources(language_code: str, cache):
     if language_code in cache:
@@ -143,31 +144,29 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
 
     language = result.get("language", "unknown")
     all_words = []
+
     if USE_WHISPERX_ALIGN:
         align_model, metadata = get_align_resources(language, align_cache)
     else:
         align_model, metadata = (None, None)
 
     if align_model is not None:
-        try:
-            aligned = whisperx.align(
-                result.get("segments", []),
-                align_model,
-                metadata,
-                str(audio_path),
-                DEVICE,
-            )
-            for seg in aligned.get("segments", []):
-                for w in seg.get("words", []):
-                    if w.get("start") is not None and w.get("end") is not None:
-                        all_words.append({
-                            "word": w.get("word", "").strip(),
-                            "start": w["start"],
-                            "end": w["end"],
-                            "score": w.get("score", 0.0),
-                        })
-        except Exception:
-            all_words = []
+        aligned = whisperx.align(
+            result.get("segments", []),
+            align_model,
+            metadata,
+            str(audio_path),
+            DEVICE,
+        )
+        for seg in aligned.get("segments", []):
+            for w in seg.get("words", []):
+                if w.get("start") is not None and w.get("end") is not None:
+                    all_words.append({
+                        "word": w.get("word", "").strip(),
+                        "start": w["start"],
+                        "end": w["end"],
+                        "score": w.get("score", 0.0),
+                    })
     else:
         for seg in result.get("segments", []):
             for w in seg.get("words", []):
@@ -251,7 +250,6 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
             "language_spans": language_spans,
         })
 
-    # 杩斿洖鏃剁‘淇?path 瀛楁浣跨敤 canonical 瀛樺偍鏍煎紡
     return to_jsonable({
         "path": storage_path,
         "whisper_language": language,
@@ -264,15 +262,19 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
 def main():
     existing = load_existing_records(OUTPUT_JSON)
     failed_records = load_existing_records(FAILED_JSON)
+
+    processed_set = read_processed_paths(OUTPUT_JSON)
     failed_set = read_failed_paths(FAILED_JSON)
-    processed_set = read_processed_paths(OUTPUT_JSON)  # 璇诲彇骞?canonical 鍖栧凡淇濆瓨鐨?path
 
     audio_files = collect_all_audio_files(CORPUS_ROOT)
 
-    # 鍏堢敓鎴愭瘡涓枃浠跺搴旂殑鈥滃瓨鍌ㄨ矾寰勨€濓紝鍐嶄笌 JSON 涓瘮杈?
-    files_and_storage = [(p, canonical_path_for_storage(p)) for p in audio_files]
+    files_and_keys = [
+        (p, corpus_relative_identity(p))
+        for p in audio_files
+    ]
+
     skip_set = processed_set | failed_set
-    to_process = [p for p, storage in files_and_storage if storage not in skip_set]
+    to_process = [p for p, key in files_and_keys if key not in skip_set]
 
     whisper_model = whisper.load_model(MODEL_NAME, device=DEVICE)
     align_cache = {}
@@ -287,17 +289,16 @@ def main():
             existing.append(record)
             save_records(OUTPUT_JSON, existing)
         except Exception as e:
-            failed_path = canonical_path_for_storage(audio_path)
-            if failed_path not in failed_set:
+            key = corpus_relative_identity(audio_path)
+            if key not in failed_set:
                 failed_records.append({
-                    "path": failed_path,
+                    "path": canonical_path_for_storage(audio_path),
                     "error_type": type(e).__name__,
                     "error": str(e),
                     "time_utc": datetime.now(timezone.utc).isoformat(),
                 })
-                failed_set.add(failed_path)
+                failed_set.add(key)
                 save_records(FAILED_JSON, failed_records)
-            continue
 
 if __name__ == "__main__":
     main()
