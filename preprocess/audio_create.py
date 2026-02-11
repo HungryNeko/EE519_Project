@@ -13,7 +13,7 @@ async def tts(text, voice, out_wav):
 async def main():
     # 中文男声
     await tts(
-        "你好何时，欢迎来到语音处理课程,很高兴见到大家。",
+        "你好，欢迎来到语音处理课程,很高兴见到大家。",
         "zh-CN-YunxiNeural",
         "speaker_zh.wav"
     )
