@@ -17,21 +17,14 @@ def normalize_path(path: str) -> str:
     return path
 
 
-def get_languages(item: dict) -> set:
-    """Collect all languages appearing in segments + whisper_language"""
+def get_span_languages(item: dict) -> set:
+    """Collect zh/en languages from language_spans only"""
     langs = set()
-
-    # top-level whisper language
-    if "whisper_language" in item:
-        langs.add(item["whisper_language"])
-
-    # segment-level language spans
     for seg in item.get("segments", []):
         for span in seg.get("language_spans", []):
             lang = span.get("language")
-            if lang:
+            if lang in ALLOWED_LANGS:
                 langs.add(lang)
-
     return langs
 
 
@@ -42,23 +35,27 @@ same_language = []
 mixed_language = []
 
 for item in data:
-    # 1️⃣ normalize path
+    # 1️⃣ Normalize path
     if "path" in item:
         item["path"] = normalize_path(item["path"])
 
-    # 2️⃣ collect languages
-    langs = get_languages(item)
+    # 2️⃣ Determine language strictly from spans
+    span_langs = get_span_languages(item)
 
-    # optional: restrict to zh/en only
-    langs = {l for l in langs if l in ALLOWED_LANGS}
+    # Skip if no valid zh/en spans found
+    if not span_langs:
+        continue
 
-    # 3️⃣ split
-    if len(langs) <= 1:
+    # 3️⃣ Fix whisper_language
+    if len(span_langs) == 1:
+        item["whisper_language"] = list(span_langs)[0]
         same_language.append(item)
     else:
+        item["whisper_language"] = "mixed"
         mixed_language.append(item)
 
-# write outputs
+
+# Save outputs
 with open(OUT_SAME_LANG, "w", encoding="utf-8") as f:
     json.dump(same_language, f, ensure_ascii=False, indent=2)
 
