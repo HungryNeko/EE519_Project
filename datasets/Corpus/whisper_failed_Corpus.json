@@ -1,0 +1,56 @@
+[
+  {
+    "path": "c:/users/wei xin/desktop/usc/ee519/ee519_project-main/ee519_project/datasets/corpus/children/audio/train_split/ch08028.wav",
+    "error_type": "OSError",
+    "error": "[Errno 22] Invalid argument",
+    "time_utc": "2026-02-10T07:03:54.227009+00:00"
+  },
+  {
+    "path": "c:/users/wei xin/desktop/usc/ee519/ee519_project-main/ee519_project/datasets/corpus/children/audio/train_split/ch10001.wav",
+    "error_type": "RuntimeError",
+    "error": "Failed to load audio: ",
+    "time_utc": "2026-02-10T07:43:13.725822+00:00"
+  },
+  {
+    "path": "c:/users/wei xin/desktop/usc/ee519/ee519_project-main/ee519_project/datasets/corpus/children/audio/train_split/ch10002.wav",
+    "error_type": "RuntimeError",
+    "error": "Failed to load audio: ",
+    "time_utc": "2026-02-10T07:43:16.871709+00:00"
+  },
+  {
+    "path": "c:/users/wei xin/desktop/usc/ee519/ee519_project-main/ee519_project/datasets/corpus/children/audio/train_split/ch10003.wav",
+    "error_type": "RuntimeError",
+    "error": "Failed to load audio: ",
+    "time_utc": "2026-02-10T07:43:17.887203+00:00"
+  },
+  {
+    "path": "c:/users/wei xin/desktop/usc/ee519/ee519_project-main/ee519_project/datasets/corpus/children/audio/train_split/ch10005.wav",
+    "error_type": "RuntimeError",
+    "error": "Failed to load audio: ",
+    "time_utc": "2026-02-10T07:43:23.937190+00:00"
+  },
+  {
+    "path": "c:/users/wei xin/desktop/usc/ee519/ee519_project-main/ee519_project/datasets/corpus/children/audio/train_split/ch10006.wav",
+    "error_type": "RuntimeError",
+    "error": "Failed to load audio: ",
+    "time_utc": "2026-02-10T07:43:30.378963+00:00"
+  },
+  {
+    "path": "c:/users/wei xin/desktop/usc/ee519/ee519_project-main/ee519_project/datasets/corpus/children/audio/train_split/ch10008.wav",
+    "error_type": "RuntimeError",
+    "error": "Failed to load audio: ",
+    "time_utc": "2026-02-10T07:43:32.398974+00:00"
+  },
+  {
+    "path": "c:/users/wei xin/desktop/usc/ee519/ee519_project-main/ee519_project/datasets/corpus/children/audio/train_split/ch10009.wav",
+    "error_type": "RuntimeError",
+    "error": "Failed to load audio: ",
+    "time_utc": "2026-02-10T07:43:34.410998+00:00"
+  },
+  {
+    "path": "c:/users/wei xin/desktop/usc/ee519/ee519_project-main/ee519_project/datasets/corpus/children/audio/train_split/ch10012.wav",
+    "error_type": "RuntimeError",
+    "error": "Failed to load audio: ",
+    "time_utc": "2026-02-10T07:43:37.440675+00:00"
+  }
+]

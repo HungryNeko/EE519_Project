@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+from datetime import datetime, timezone
 from typing import Any, Dict, List, Set, Tuple
 
 import torch
@@ -10,13 +11,15 @@ from tqdm import tqdm
 # ======================
 # Configuration
 # ======================
-dataset = "ascend"
+dataset = "Corpus"
 CORPUS_ROOT = Path(f"./datasets/{dataset}")
 OUTPUT_JSON = CORPUS_ROOT / f"whisper_segment_{dataset}.json"
+FAILED_JSON = CORPUS_ROOT / f"whisper_failed_{dataset}.json"
 
 AUDIO_EXTS = {".wav", ".mp3", ".flac", ".m4a"}
 MODEL_NAME = "large-v3"
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+DEVICE = "cpu"
+USE_WHISPERX_ALIGN = False
 
 # ======================
 # Helpers
@@ -40,7 +43,7 @@ def to_jsonable(x: Any):
     return x
 
 def canonical_path_for_storage(p: Path) -> str:
-    # 统一为绝对 POSIX 小写字符串，保证 Windows/macOS/Linux 可比较
+    # 缁熶竴涓虹粷瀵?POSIX 灏忓啓瀛楃涓诧紝淇濊瘉 Windows/macOS/Linux 鍙瘮杈?
     try:
         return p.resolve().as_posix().lower()
     except Exception:
@@ -63,8 +66,8 @@ def save_records(path: Path, records: List[Dict[str, Any]]):
 
 def read_processed_paths(path: Path) -> Set[str]:
     """
-    从已有 JSON 读取已处理路径，并把它们 canonical 化为与 canonical_path_for_storage 一致的格式。
-    使用 resolve(strict=False) 以避免历史记录中不存在的路径导致异常。
+    浠庡凡鏈?JSON 璇诲彇宸插鐞嗚矾寰勶紝骞舵妸瀹冧滑 canonical 鍖栦负涓?canonical_path_for_storage 涓€鑷寸殑鏍煎紡銆?
+    浣跨敤 resolve(strict=False) 浠ラ伩鍏嶅巻鍙茶褰曚腑涓嶅瓨鍦ㄧ殑璺緞瀵艰嚧寮傚父銆?
     """
     rows = load_existing_records(path)
     processed = set()
@@ -82,8 +85,20 @@ def read_processed_paths(path: Path) -> Set[str]:
         processed.add(canon)
     return processed
 
+def read_failed_paths(path: Path) -> Set[str]:
+    rows = load_existing_records(path)
+    failed = set()
+    for r in rows:
+        if not isinstance(r, dict):
+            continue
+        raw = r.get("path")
+        if not raw:
+            continue
+        failed.add(str(raw).replace("\\", "/").lower())
+    return failed
+
 # ======================
-# Language detection by Unicode (简单)
+# Language detection by Unicode (绠€鍗?
 # ======================
 def detect_lang_by_char(ch: str) -> str:
     o = ord(ch)
@@ -122,12 +137,17 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
         task="transcribe",
         language=None,
         verbose=False,
+        fp16=False,
+        word_timestamps=not USE_WHISPERX_ALIGN,
     )
 
     language = result.get("language", "unknown")
-    align_model, metadata = get_align_resources(language, align_cache)
-
     all_words = []
+    if USE_WHISPERX_ALIGN:
+        align_model, metadata = get_align_resources(language, align_cache)
+    else:
+        align_model, metadata = (None, None)
+
     if align_model is not None:
         try:
             aligned = whisperx.align(
@@ -148,6 +168,16 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
                         })
         except Exception:
             all_words = []
+    else:
+        for seg in result.get("segments", []):
+            for w in seg.get("words", []):
+                if w.get("start") is not None and w.get("end") is not None:
+                    all_words.append({
+                        "word": w.get("word", "").strip(),
+                        "start": w["start"],
+                        "end": w["end"],
+                        "score": w.get("probability", 0.0),
+                    })
 
     def build_language_spans(words, seg_start, seg_end):
         spans = []
@@ -221,7 +251,7 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
             "language_spans": language_spans,
         })
 
-    # 返回时确保 path 字段使用 canonical 存储格式
+    # 杩斿洖鏃剁‘淇?path 瀛楁浣跨敤 canonical 瀛樺偍鏍煎紡
     return to_jsonable({
         "path": storage_path,
         "whisper_language": language,
@@ -233,13 +263,16 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
 # ======================
 def main():
     existing = load_existing_records(OUTPUT_JSON)
-    processed_set = read_processed_paths(OUTPUT_JSON)  # 读取并 canonical 化已保存的 path
+    failed_records = load_existing_records(FAILED_JSON)
+    failed_set = read_failed_paths(FAILED_JSON)
+    processed_set = read_processed_paths(OUTPUT_JSON)  # 璇诲彇骞?canonical 鍖栧凡淇濆瓨鐨?path
 
     audio_files = collect_all_audio_files(CORPUS_ROOT)
 
-    # 先生成每个文件对应的“存储路径”，再与 JSON 中比较
+    # 鍏堢敓鎴愭瘡涓枃浠跺搴旂殑鈥滃瓨鍌ㄨ矾寰勨€濓紝鍐嶄笌 JSON 涓瘮杈?
     files_and_storage = [(p, canonical_path_for_storage(p)) for p in audio_files]
-    to_process = [p for p, storage in files_and_storage if storage not in processed_set]
+    skip_set = processed_set | failed_set
+    to_process = [p for p, storage in files_and_storage if storage not in skip_set]
 
     whisper_model = whisper.load_model(MODEL_NAME, device=DEVICE)
     align_cache = {}
@@ -253,8 +286,17 @@ def main():
             )
             existing.append(record)
             save_records(OUTPUT_JSON, existing)
-        except Exception:
-            # 单文件异常直接跳过
+        except Exception as e:
+            failed_path = canonical_path_for_storage(audio_path)
+            if failed_path not in failed_set:
+                failed_records.append({
+                    "path": failed_path,
+                    "error_type": type(e).__name__,
+                    "error": str(e),
+                    "time_utc": datetime.now(timezone.utc).isoformat(),
+                })
+                failed_set.add(failed_path)
+                save_records(FAILED_JSON, failed_records)
             continue
 
 if __name__ == "__main__":
