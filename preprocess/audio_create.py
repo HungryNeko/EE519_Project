@@ -1,46 +1,87 @@
 import asyncio
+from pathlib import Path
+
 import edge_tts
 import torchaudio
 
-# =====================
-# 1. TTS：男女声
-# =====================
+# Output folder for all generated wav files.
+OUTPUT_DIR = Path("preprocess/generated_batch")
 
-async def tts(text, voice, out_wav):
+# Fill this list with your Chinese/English content later.
+# Each item generates 3 files:
+#   <id>_zh.wav, <id>_en.wav, <id>_mixed.wav
+SYNTH_CASES = [
+    {
+        "id": "sample_001",
+        "zh_text": "我是琳达，我非常喜欢学习",
+        "en_text": "My name is Linda, and I absolutely love learning.",
+        "zh_voice": "zh-CN-YunxiNeural",
+        "en_voice": "en-US-JennyNeural",
+    },
+    {
+        "id": "sample_002",
+        "zh_text": "谢谢你琳达，奖励你一台红色本田",
+        "en_text": "Thank you, Linda. Here's a red Honda for you as a reward.",
+        "zh_voice": "zh-CN-YunxiNeural",
+        "en_voice": "en-US-JennyNeural",
+    },
+    {
+    "id": "sample_003",
+    "zh_text": "这样可太好了，周末就可以和杨哥一起出去玩了",
+    "en_text": "That's great! I can go out with Brother Yang this weekend.",
+    "zh_voice": "zh-CN-YunxiNeural",
+    "en_voice": "en-US-JennyNeural",
+    },
+
+]
+
+
+async def tts_to_file(text: str, voice: str, out_wav: Path) -> None:
     communicate = edge_tts.Communicate(text=text, voice=voice)
-    await communicate.save(out_wav)
+    await communicate.save(str(out_wav))
 
-async def main():
-    # 中文男声
-    await tts(
-        "你好何时，欢迎来到语音处理课程,很高兴见到大家。",
-        "zh-CN-YunxiNeural",
-        "speaker_zh.wav"
-    )
 
-    # 英文女声
-    await tts(
-        "Hello, this is a multilingual speech processing demo, I am speaking English.",
-        "en-US-JennyNeural",
-        "speaker_en.wav"
-    )
+def mix_two_wavs(wav_a_path: Path, wav_b_path: Path, mixed_out_path: Path) -> None:
+    wav_a, sr_a = torchaudio.load(str(wav_a_path))
+    wav_b, sr_b = torchaudio.load(str(wav_b_path))
 
-asyncio.run(main())
+    if sr_a != sr_b:
+        raise ValueError(f"Sample rate mismatch: {sr_a} vs {sr_b}")
 
-# =====================
-# 2. 混音（同时说话）
-# =====================
+    min_len = min(wav_a.shape[1], wav_b.shape[1])
+    mixed = 0.5 * wav_a[:, :min_len] + 0.5 * wav_b[:, :min_len]
+    torchaudio.save(str(mixed_out_path), mixed, sr_a)
 
-wav1, sr1 = torchaudio.load("speaker_zh.wav")
-wav2, sr2 = torchaudio.load("speaker_en.wav")
-assert sr1 == sr2
 
-min_len = min(wav1.shape[1], wav2.shape[1])
-mixed = 0.5 * wav1[:, :min_len] + 0.5 * wav2[:, :min_len]
+async def generate_one_case(case: dict, output_dir: Path) -> tuple[Path, Path, Path]:
+    case_id = case["id"]
+    zh_path = output_dir / f"{case_id}_zh.wav"
+    en_path = output_dir / f"{case_id}_en.wav"
+    mixed_path = output_dir / f"{case_id}_mixed.wav"
 
-torchaudio.save("mixed.wav", mixed, sr1)
+    await tts_to_file(case["zh_text"], case["zh_voice"], zh_path)
+    await tts_to_file(case["en_text"], case["en_voice"], en_path)
+    mix_two_wavs(zh_path, en_path, mixed_path)
 
-print("Saved:")
-print(" - speaker_zh.wav (male)")
-print(" - speaker_en.wav (female)")
-print(" - mixed.wav")
+    return zh_path, en_path, mixed_path
+
+
+async def main() -> None:
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    if not SYNTH_CASES:
+        print("No synthesis cases found. Please add items to SYNTH_CASES.")
+        return
+
+    saved_files: list[Path] = []
+    for case in SYNTH_CASES:
+        zh_path, en_path, mixed_path = await generate_one_case(case, OUTPUT_DIR)
+        saved_files.extend([zh_path, en_path, mixed_path])
+
+    print(f"Saved {len(saved_files)} files to: {OUTPUT_DIR.resolve()}")
+    for p in saved_files:
+        print(f" - {p}")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
