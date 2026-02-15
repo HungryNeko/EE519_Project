@@ -1,0 +1,54 @@
+[
+  {
+    "task": "corpus_en_into_ascend_zh",
+    "source_json": "datasets/Corpus/corpus_en_language.json",
+    "target_json": "datasets/ascend/ascend_zh_language.json",
+    "target_total": 5391,
+    "processed": 5391,
+    "saved": 5167,
+    "skip_short_target": 224,
+    "skip_no_target_audio": 0,
+    "skip_no_source_clip": 0,
+    "errors": 0,
+    "output_json": "datasets/crossfade_insertions/corpus_en_into_ascend_zh/mixed_manifest.json"
+  },
+  {
+    "task": "corpus_hi_into_ascend_en",
+    "source_json": "datasets/Corpus/corpus_hi_language.json",
+    "target_json": "datasets/ascend/ascend_en_language.json",
+    "target_total": 4289,
+    "processed": 4289,
+    "saved": 3349,
+    "skip_short_target": 940,
+    "skip_no_target_audio": 0,
+    "skip_no_source_clip": 0,
+    "errors": 0,
+    "output_json": "datasets/crossfade_insertions/corpus_hi_into_ascend_en/mixed_manifest.json"
+  },
+  {
+    "task": "ascend_en_into_corpus_hi",
+    "source_json": "datasets/ascend/ascend_en_language.json",
+    "target_json": "datasets/Corpus/corpus_hi_language.json",
+    "target_total": 2727,
+    "processed": 2727,
+    "saved": 2714,
+    "skip_short_target": 13,
+    "skip_no_target_audio": 0,
+    "skip_no_source_clip": 0,
+    "errors": 0,
+    "output_json": "datasets/crossfade_insertions/ascend_en_into_corpus_hi/mixed_manifest.json"
+  },
+  {
+    "task": "ascend_zh_into_corpus_en",
+    "source_json": "datasets/ascend/ascend_zh_language.json",
+    "target_json": "datasets/Corpus/corpus_en_language.json",
+    "target_total": 1674,
+    "processed": 1674,
+    "saved": 1624,
+    "skip_short_target": 50,
+    "skip_no_target_audio": 0,
+    "skip_no_source_clip": 0,
+    "errors": 0,
+    "output_json": "datasets/crossfade_insertions/ascend_zh_into_corpus_en/mixed_manifest.json"
+  }
+]

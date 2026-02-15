@@ -1,4 +1,6 @@
 datasets/Corpus/**/*.wav
 *.zip
 datasets/ascend/**/*.wav
+datasets/ascend/audio/
+datasets/crossfade_insertions/**/*.wav
 datasets/.cache

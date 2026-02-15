@@ -564,13 +564,13 @@ def process_one_pair(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Batch cross-language insertion with random 0.2~0.5s voiced clips and crossfade. "
+            "Batch cross-language insertion with random 0.4~0.9s voiced clips and crossfade. "
             "Runs 4 fixed tasks by default."
         )
     )
     parser.add_argument("--output-root", type=Path, default=Path("datasets/crossfade_insertions"))
-    parser.add_argument("--insert-min-sec", type=float, default=0.2)
-    parser.add_argument("--insert-max-sec", type=float, default=0.5)
+    parser.add_argument("--insert-min-sec", type=float, default=0.4)
+    parser.add_argument("--insert-max-sec", type=float, default=0.9)
     parser.add_argument("--crossfade-ms", type=float, default=80.0)
     parser.add_argument("--noise-mix", type=float, default=0.0)
     parser.add_argument("--noise-window-sec", type=float, default=2.0)
