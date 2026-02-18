@@ -2,7 +2,7 @@ import torch
 import whisper
 import whisperx
 
-AUDIO_FILE = r"datasets\Corpus\adult\audio\test_split\AD15115.wav"
+AUDIO_FILE = r"D:\Github\EE519_Project\datasets\crossfade_insertions\corpus_en_into_ascend_zh\audio\000051_000187.wav"
 MODEL = "large-v3"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
