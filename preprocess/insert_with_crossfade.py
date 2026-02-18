@@ -262,6 +262,28 @@ def segment_windows(record_segments: Any, total_sec: float, min_sec: float) -> L
     return windows
 
 
+def overlap_seconds(a0: float, a1: float, b0: float, b1: float) -> float:
+    return max(0.0, min(a1, b1) - max(a0, b0))
+
+
+def segment_overlap_seconds(record_segments: Any, start_sec: float, end_sec: float) -> float:
+    if not isinstance(record_segments, list):
+        return 0.0
+    total = 0.0
+    for seg in record_segments:
+        if not isinstance(seg, dict):
+            continue
+        try:
+            s0 = float(seg.get("start", 0.0))
+            s1 = float(seg.get("end", 0.0))
+        except (TypeError, ValueError):
+            continue
+        if s1 <= s0:
+            continue
+        total += overlap_seconds(start_sec, end_sec, s0, s1)
+    return total
+
+
 def choose_voiced_from_segments(
     source: np.ndarray,
     sr: int,
@@ -270,17 +292,29 @@ def choose_voiced_from_segments(
     rng: random.Random,
 ) -> Tuple[Optional[np.ndarray], Optional[float], Optional[float]]:
     total_sec = source.size / sr
-    windows = segment_windows(segments, total_sec, clip_sec)
+    windows = segment_windows(segments, total_sec, min_sec=0.05)
     if not windows:
         return None, None, None
 
+    max_start_global = max(0.0, total_sec - clip_sec)
+    # Keep at least a small voiced region inside the insert clip.
+    min_voiced_inside = min(0.2, clip_sec * 0.35)
+
     for _ in range(20):
         w0, w1 = windows[rng.randrange(len(windows))]
-        max_start = w1 - clip_sec
-        if max_start < w0:
-            continue
-        start_sec = rng.uniform(w0, max_start) if max_start > w0 else w0
+        anchor_sec = rng.uniform(w0, w1)
+        speech_pos_in_clip = rng.uniform(0.0, clip_sec)
+        start_sec = anchor_sec - speech_pos_in_clip
+        if start_sec < 0.0:
+            start_sec = 0.0
+        if start_sec > max_start_global:
+            start_sec = max_start_global
         end_sec = start_sec + clip_sec
+        if end_sec > total_sec:
+            continue
+        if segment_overlap_seconds(segments, start_sec, end_sec) < min_voiced_inside:
+            continue
+
         s0 = to_samples(start_sec, sr, source.size)
         s1 = to_samples(end_sec, sr, source.size)
         if s1 <= s0:
@@ -319,10 +353,12 @@ def choose_voiced_by_energy(
         hot = [int(np.argmax(rms_values))]
     rng.shuffle(hot)
 
+    max_start = max(0, source.size - need)
     for idx in hot[:80]:
         center = idx * hop_len + frame_len // 2
-        s0 = center - need // 2
-        s0 = max(0, min(s0, source.size - need))
+        speech_pos = int(round(rng.uniform(0, need)))
+        s0 = center - speech_pos
+        s0 = max(0, min(s0, max_start))
         s1 = s0 + need
         clip = source[s0:s1].copy()
         if clip.size == need and rms(clip) >= max(1e-5, threshold * 0.45):
@@ -564,18 +600,19 @@ def process_one_pair(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Batch cross-language insertion with random 0.4~0.9s voiced clips and crossfade. "
+            "Batch cross-language insertion with random 1.0~2.0s clips that contain speech "
+            "at random in-window positions, with crossfade. "
             "Runs 4 fixed tasks by default."
         )
     )
     parser.add_argument("--output-root", type=Path, default=Path("datasets/crossfade_insertions"))
-    parser.add_argument("--insert-min-sec", type=float, default=0.4)
-    parser.add_argument("--insert-max-sec", type=float, default=0.9)
+    parser.add_argument("--insert-min-sec", type=float, default=1.0)
+    parser.add_argument("--insert-max-sec", type=float, default=2.0)
     parser.add_argument("--crossfade-ms", type=float, default=80.0)
     parser.add_argument("--noise-mix", type=float, default=0.0)
     parser.add_argument("--noise-window-sec", type=float, default=2.0)
     parser.add_argument("--max-gain-db", type=float, default=12.0)
-    parser.add_argument("--seed", type=int, default=519)
+    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--max-items-per-pair", type=int, default=None)
     parser.add_argument("--max-source-tries", type=int, default=60)
     return parser.parse_args()
@@ -592,6 +629,8 @@ def main() -> None:
     output_root = args.output_root if args.output_root.is_absolute() else (project_root / args.output_root)
     output_root.mkdir(parents=True, exist_ok=True)
 
+    random.seed(args.seed)
+    np.random.seed(args.seed)
     rng = random.Random(args.seed)
     all_stats: List[Dict[str, Any]] = []
 
