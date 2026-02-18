@@ -2,7 +2,7 @@ import torch
 import whisper
 import whisperx
 
-AUDIO_FILE = r"datasets\Corpus\adult\audio\test_split\AD15115.wav"
+AUDIO_FILE = r"preprocess\inserted_output.wav"
 MODEL = "large-v3"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
