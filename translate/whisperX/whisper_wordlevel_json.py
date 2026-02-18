@@ -10,7 +10,7 @@ from tqdm import tqdm
 # ======================
 # Configuration
 # ======================
-dataset = "Corpus"
+dataset = "crossfade_insertions"
 CORPUS_ROOT = Path(f"./datasets/{dataset}")
 OUTPUT_JSON = CORPUS_ROOT / f"whisper_segment_{dataset}.json"
 FAILED_JSON = CORPUS_ROOT / f"whisper_failed_{dataset}.json"
@@ -49,10 +49,10 @@ def canonical_path_for_storage(p: Path) -> str:
 # ======================
 def corpus_relative_identity(p: Path) -> str:
     p_norm = p.resolve(strict=False).as_posix().replace("\\", "/").lower()
-    anchor = "/datasets/corpus/"
+    anchor = f"/datasets/{dataset.lower()}/"
     idx = p_norm.find(anchor)
     if idx == -1:
-        raise ValueError(f"path not under datasets/corpus: {p}")
+        raise ValueError(f"path not under datasets/{dataset}: {p}")
     return p_norm[idx + 1:]
 
 # ======================

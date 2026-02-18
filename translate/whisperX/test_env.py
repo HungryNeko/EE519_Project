@@ -2,7 +2,7 @@ import torch
 import whisper
 import whisperx
 
-AUDIO_FILE = r"preprocess\inserted_output.wav"
+AUDIO_FILE = r"samples\output_spk0.wav"
 MODEL = "large-v3"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 

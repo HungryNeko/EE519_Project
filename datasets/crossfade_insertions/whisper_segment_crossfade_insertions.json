@@ -1,0 +1,629 @@
+[
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000000_ad09016.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 3.42,
+        "text": "और यह वाइपी में आता है",
+        "scores": {
+          "avg_logprob": -0.23744676663325384,
+          "compression_ratio": 0.9655172413793104,
+          "no_speech_prob": 0.0420997180044651,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 3.42,
+            "text": "और यह वाइपी में आता है",
+            "score": 0.8891897909343243
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000001_ad09028.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 3.14,
+        "text": "यह मेरे सारे फेब्रिट फूड्स हैं",
+        "scores": {
+          "avg_logprob": -0.3339005606515067,
+          "compression_ratio": 1.1594202898550725,
+          "no_speech_prob": 0.05013901740312576,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 3.14,
+            "text": "यह मेरे सारे फेब्रिट फूड्स हैं",
+            "score": 0.8593999852736792
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000003_ad09051.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.42,
+        "text": "As they walked through the jungle, they felt as if someone was watching them.",
+        "scores": {
+          "avg_logprob": -0.37133312225341797,
+          "compression_ratio": 1.1894736842105262,
+          "no_speech_prob": 0.07330065220594406,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 6.42,
+            "text": "As they walked through the jungle, they felt as if someone was watching them.",
+            "score": 0.9456450428281512
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 6.58,
+        "end": 8.58,
+        "text": "But they didn't lose their courage.",
+        "scores": {
+          "avg_logprob": -0.37133312225341797,
+          "compression_ratio": 1.1894736842105262,
+          "no_speech_prob": 0.07330065220594406,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 6.58,
+            "end": 8.58,
+            "text": "But they didn't lose their courage.",
+            "score": 0.7370819648106893
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000004_ad09055.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 8.62,
+        "text": "ये गुफा उन लोगों के लिए है जो दोस्ती में प्यार में और साथ में हमेशा रहते हैं।",
+        "scores": {
+          "avg_logprob": -0.036738878343163466,
+          "compression_ratio": 2.0864864864864865,
+          "no_speech_prob": 0.01715715043246746,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 9.02,
+            "text": "ये गुफा उन लोगों के लिए है जो दोस्ती में प्यार में और साथ में हमेशा रहते हैं। चिंटू",
+            "score": 0.9740434231166554
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 8.62,
+        "end": 14.54,
+        "text": "चिंटू और राजू ने इस राज को समझा और इसके बाद से उनकी दोस्ती और मजबूत हो गई।",
+        "scores": {
+          "avg_logprob": -0.036738878343163466,
+          "compression_ratio": 2.0864864864864865,
+          "no_speech_prob": 0.01715715043246746,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 8.14,
+            "end": 14.54,
+            "text": "हैं। चिंटू और राजू ने इस राज को समझा और इसके बाद से उनकी दोस्ती और मजबूत हो गई।",
+            "score": 0.9862450667640621
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000005_ad09081.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.52,
+        "text": "कि पर परेशानी के वजह से वह ऐसी जगह आया है ताकि उस अजय को इन थोड़ा पीस मिल सके अ",
+        "scores": {
+          "avg_logprob": -0.5244457591663707,
+          "compression_ratio": 1.9166666666666667,
+          "no_speech_prob": 0.28678566217422485,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 6.66,
+            "text": "कि पर परेशानी के वजह से वह ऐसी जगह आया है ताकि उस अजय को इन थोड़ा पीस मिल सके अ कर",
+            "score": 0.8083793905704763
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 6.52,
+        "end": 6.66,
+        "text": "कर दो",
+        "scores": {
+          "avg_logprob": -0.5244457591663707,
+          "compression_ratio": 1.9166666666666667,
+          "no_speech_prob": 0.28678566217422485,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 6.28,
+            "end": 6.66,
+            "text": "अ कर दो",
+            "score": 0.6341700421439277
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 6.66,
+        "end": 6.66,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.5244457591663707,
+          "compression_ratio": 1.9166666666666667,
+          "no_speech_prob": 0.28678566217422485,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 6.52,
+            "end": 6.66,
+            "text": "कर दो",
+            "score": 0.7338388810555141
+          }
+        ]
+      },
+      {
+        "segment_id": 3,
+        "start": 6.66,
+        "end": 6.66,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.5244457591663707,
+          "compression_ratio": 1.9166666666666667,
+          "no_speech_prob": 0.28678566217422485,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 6.52,
+            "end": 6.66,
+            "text": "कर दो",
+            "score": 0.7338388810555141
+          }
+        ]
+      },
+      {
+        "segment_id": 4,
+        "start": 6.66,
+        "end": 6.66,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.5244457591663707,
+          "compression_ratio": 1.9166666666666667,
+          "no_speech_prob": 0.28678566217422485,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 6.52,
+            "end": 6.66,
+            "text": "कर दो",
+            "score": 0.7338388810555141
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000006_ad13003.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 3.72,
+        "text": "मेरा प्यार फेस्टिवल है दिक्षित वाली",
+        "scores": {
+          "avg_logprob": -0.5510436534881592,
+          "compression_ratio": 1.2337662337662338,
+          "no_speech_prob": 0.008350753225386143,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 3.72,
+            "text": "मेरा प्यार फेस्टिवल है दिक्षित वाली",
+            "score": 0.6794335096773475
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000007_ad13034.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 10.54,
+        "text": "राजमा चावल राजमा चावल काफी पसंद है तो शुमिद ए अलाट्स एंड अपार्ट फ्रॉम देट मिनट साइड आई लाइक स्वीट्स ऑल्सू अ",
+        "scores": {
+          "avg_logprob": -0.31737637519836426,
+          "compression_ratio": 1.8724832214765101,
+          "no_speech_prob": 0.36900970339775085,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 10.54,
+            "text": "राजमा चावल राजमा चावल काफी पसंद है तो शुमिद ए अलाट्स एंड अपार्ट फ्रॉम देट मिनट साइड आई लाइक स्वीट्स ऑल्सू अ",
+            "score": 0.770163548166338
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000008_ad13040.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.54,
+        "text": "इसे सुनके दोनों ने सोचा कि ये उनका नेक्स्ट अडवेंचर स्पोर्ट हो सकता है।",
+        "scores": {
+          "avg_logprob": -0.08468719838196749,
+          "compression_ratio": 2.212871287128713,
+          "no_speech_prob": 0.01780325546860695,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 7.1,
+            "text": "इसे सुनके दोनों ने सोचा कि ये उनका नेक्स्ट अडवेंचर स्पोर्ट हो सकता है। अधिन्टू",
+            "score": 0.9477932733237141
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 6.54,
+        "end": 7.62,
+        "text": "अधिन्टू और कुप।",
+        "scores": {
+          "avg_logprob": -0.08468719838196749,
+          "compression_ratio": 2.212871287128713,
+          "no_speech_prob": 0.01780325546860695,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 5.9,
+            "end": 8.1,
+            "text": "है। अधिन्टू और कुप। सो",
+            "score": 0.8369471861428511
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 7.62,
+        "end": 15.08,
+        "text": "सो चिंटू और राजू ने अपने जोले में कुछ स्नैक्स और पानी पैक किया और गुफा के तरफ चल दिये।",
+        "scores": {
+          "avg_logprob": -0.08468719838196749,
+          "compression_ratio": 2.212871287128713,
+          "no_speech_prob": 0.01780325546860695,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 7.26,
+            "end": 15.08,
+            "text": "कुप। सो चिंटू और राजू ने अपने जोले में कुछ स्नैक्स और पानी पैक किया और गुफा के तरफ चल दिये।",
+            "score": 0.9693869743453943
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000009_ad13046.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.32,
+        "text": "इस गुफा का राज है साथ निभाना और एक दूसरे की मदद करना",
+        "scores": {
+          "avg_logprob": -0.0449112160452481,
+          "compression_ratio": 1.4193548387096775,
+          "no_speech_prob": 0.034813836216926575,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 6.32,
+            "text": "इस गुफा का राज है साथ निभाना और एक दूसरे की मदद करना",
+            "score": 0.9811563074807108
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000010_ad13063.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.58,
+        "text": "कई घंटों के अनुविश्वन के बाद उन्हें जंगल के मद्दे में स्पोर्ट इस तित्र एक महल",
+        "scores": {
+          "avg_logprob": -0.18166457905488856,
+          "compression_ratio": 1.6209677419354838,
+          "no_speech_prob": 0.1820404827594757,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 6.58,
+            "text": "कई घंटों के अनुविश्वन के बाद उन्हें जंगल के मद्दे में स्पोर्ट इस तित्र एक महल",
+            "score": 0.8817715558947787
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000011_ad13069.wav",
+    "whisper_language": "ur",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 12.68,
+        "text": "میری بھی وہ سوچتا ہے کہ وہ کیسے اس ریگستان کے اندر آ گیا اور اب وہ کیا کرے گا جس سے وہ اس ریگستان سے باہر نکل سکے اور اپنے",
+        "scores": {
+          "avg_logprob": -0.15292856586513234,
+          "compression_ratio": 1.633587786259542,
+          "no_speech_prob": 0.3575696051120758,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "ur",
+            "start": 0.0,
+            "end": 12.68,
+            "text": "میری بھی وہ سوچتا ہے کہ وہ کیسے اس ریگستان کے اندر آ گیا اور اب وہ کیا کرے گا جس سے وہ اس ریگستان سے باہر نکل سکے اور اپنے",
+            "score": -0.15292856586513234
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000012_ad13072.wav",
+    "whisper_language": "ur",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 8.600000000000001,
+        "end": 9.72,
+        "text": "اور میں نے سوچا کہ",
+        "scores": {
+          "avg_logprob": -0.6064642559398304,
+          "compression_ratio": 0.7441860465116279,
+          "no_speech_prob": 0.023654131218791008,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "ur",
+            "start": 8.600000000000001,
+            "end": 9.72,
+            "text": "اور میں نے سوچا کہ",
+            "score": -0.6064642559398304
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000013_ad15004.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.36,
+        "text": "अपनापन जो फ्रेंड्स के बीच में होता है",
+        "scores": {
+          "avg_logprob": -0.1130309802729909,
+          "compression_ratio": 1.2125,
+          "no_speech_prob": 0.13612748682498932,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 2.36,
+            "text": "अपनापन जो फ्रेंड्स के बीच में होता है",
+            "score": 0.9690963055524562
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000014_ad15008.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.3,
+        "text": "रोमांटिक पार्ट भी उस यह नहीं है मतलब इट इज वेरी ब्यूटिफुल शूट",
+        "scores": {
+          "avg_logprob": -0.21764288721857844,
+          "compression_ratio": 1.4454545454545455,
+          "no_speech_prob": 0.13242076337337494,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 4.3,
+            "text": "रोमांटिक पार्ट भी उस यह नहीं है मतलब इट इज वेरी ब्यूटिफुल शूट",
+            "score": 0.8221357245093738
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000015_ad15018.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.78,
+        "text": "तो आप यह रिकमेंट करेंगे",
+        "scores": {
+          "avg_logprob": -0.5262685644215551,
+          "compression_ratio": 1.0338983050847457,
+          "no_speech_prob": 0.16550275683403015,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 4.78,
+            "text": "तो आप यह रिकमेंट करेंगे",
+            "score": 0.6975049319248351
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000017_ad15038.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.56,
+        "text": "चिंटू और राजू ने एक दिन सुना कि उनके पास के जंगल में एक जादूई गुफा है।",
+        "scores": {
+          "avg_logprob": -0.06225676006740994,
+          "compression_ratio": 1.5084745762711864,
+          "no_speech_prob": 0.09195481985807419,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 6.56,
+            "text": "चिंटू और राजू ने एक दिन सुना कि उनके पास के जंगल में एक जादूई गुफा है।",
+            "score": 0.9790347739330637
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000018_ad15039.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.08,
+        "text": "इसे सुनके दोनों ने सोचा कि ये उनका नेक्स्ट अडवेंचर स्पॉट हो सकता है",
+        "scores": {
+          "avg_logprob": -0.05864601265894224,
+          "compression_ratio": 1.650943396226415,
+          "no_speech_prob": 0.004158564377576113,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 6.08,
+            "text": "इसे सुनके दोनों ने सोचा कि ये उनका नेक्स्ट अडवेंचर स्पॉट हो सकता है",
+            "score": 0.9703283418088205
+          }
+        ]
+      }
+    ]
+  }
+]
