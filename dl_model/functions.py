@@ -64,6 +64,12 @@ def mfcc_mean(seg, sr, n_mfcc=13):
     mfcc = librosa.feature.mfcc(y=seg, sr=sr, n_mfcc=n_mfcc)
     return np.mean(mfcc, axis=1).astype(np.float32)
 
+def mfcc_std(seg, sr, n_mfcc=13):
+    if len(seg) < int(0.05 * sr):
+        return np.zeros(n_mfcc, dtype=np.float32)
+    mfcc = librosa.feature.mfcc(y=seg, sr=sr, n_mfcc=n_mfcc)
+    return np.std(mfcc, axis=1).astype(np.float32)
+
 
 def silence_ratio(seg, sr, silence_db=-40.0, frame_len=0.025, hop_len=0.01):
     if len(seg) < int(frame_len * sr):
@@ -81,16 +87,28 @@ def silence_ratio(seg, sr, silence_db=-40.0, frame_len=0.025, hop_len=0.01):
             silent += 1
     return float(silent / total) if total > 0 else 1.0
 
+def spectral_centroid_mean(seg, sr):
+    if len(seg) < int(0.05 * sr):
+        return 0.0
+    sc = librosa.feature.spectral_centroid(y=seg, sr=sr)
+    return float(np.mean(sc))
+
+def spectral_bandwidth_mean(seg, sr):
+    sb = librosa.feature.spectral_bandwidth(y=seg, sr=sr)
+    return float(np.mean(sb))
+
+
 
 # ==================================================
 # Similarity functions (核心)
 # ==================================================
 
 def scalar_similarity(a, b, eps=1e-8):
-    if max(abs(a), abs(b)) < eps:
-        return 1.0
-    return float(1.0 - abs(a - b) / max(abs(a), abs(b), eps))
-
+    # if max(abs(a), abs(b)) < eps:
+    #     return 1.0
+    # return float(1.0 - abs(a - b) / max(abs(a), abs(b), eps))
+    scale = 1.0
+    return float(np.exp(-abs(a - b) / (scale + eps)))
 
 def vector_cosine_similarity(x, y, eps=1e-8):
     nx = np.linalg.norm(x)
@@ -98,7 +116,6 @@ def vector_cosine_similarity(x, y, eps=1e-8):
     if nx < eps or ny < eps:
         return 0.0
     return float(np.dot(x, y) / (nx * ny + eps))
-
 
 def vector_dimwise_similarity(x, y, eps=1e-8):
     sims = []
@@ -131,7 +148,10 @@ def compare_segments(path1, t1_start, t1_end,
         "energy_var": energy_variance(seg1, sr1),
         "pitch": pitch_mean(seg1, sr1),
         "zcr": zero_crossing_rate(seg1),
-        "mfcc": mfcc_mean(seg1, sr1, n_mfcc),
+        "mfcc_mean": mfcc_mean(seg1, sr1, n_mfcc),
+        "mfcc_std": mfcc_std(seg1, sr1, n_mfcc),
+        "centroid_mean": spectral_centroid_mean(seg1, sr1),
+        "bandwidth_mean": spectral_bandwidth_mean(seg1, sr1),        
         "silence_ratio": silence_ratio(seg1, sr1),
         "duration": t1_end - t1_start
     }
@@ -141,7 +161,10 @@ def compare_segments(path1, t1_start, t1_end,
         "energy_var": energy_variance(seg2, sr2),
         "pitch": pitch_mean(seg2, sr2),
         "zcr": zero_crossing_rate(seg2),
-        "mfcc": mfcc_mean(seg2, sr2, n_mfcc),
+        "mfcc_mean": mfcc_mean(seg2, sr2, n_mfcc),
+        "mfcc_std": mfcc_std(seg2, sr2, n_mfcc),
+        "centroid_mean": spectral_centroid_mean(seg2, sr2),
+        "bandwidth_mean": spectral_bandwidth_mean(seg2, sr2),
         "silence_ratio": silence_ratio(seg2, sr2),
         "duration": t2_end - t2_start
     }
@@ -154,8 +177,14 @@ def compare_segments(path1, t1_start, t1_end,
         "sim_zcr": scalar_similarity(f1["zcr"], f2["zcr"]),
         "sim_silence_ratio": scalar_similarity(f1["silence_ratio"], f2["silence_ratio"]),
         "sim_duration": scalar_similarity(f1["duration"], f2["duration"]),
-        "sim_mfcc_cos": vector_cosine_similarity(f1["mfcc"], f2["mfcc"]),
-        "sim_mfcc_dim": vector_dimwise_similarity(f1["mfcc"], f2["mfcc"]),
+        "sim_mfcc_mean_cos": vector_cosine_similarity(f1["mfcc_mean"], f2["mfcc_mean"]),
+        "sim_mfcc_mean_dim": vector_dimwise_similarity(f1["mfcc_mean"], f2["mfcc_mean"]),
+        "sim_mfcc_std_cos": vector_cosine_similarity(f1["mfcc_std"], f2["mfcc_std"]),
+        "sim_mfcc_std_dim": vector_dimwise_similarity(f1["mfcc_std"], f2["mfcc_std"]),
+        "centroid_mean_cos": vector_cosine_similarity(f1["centroid_mean"], f2["centroid_mean"]),
+        "centroid_meano_dim": vector_dimwise_similarity(f1["centroid_mean"], f2["centroid_mean"]),
+        "bandwidth_mean_cos": vector_cosine_similarity(f1["bandwidth_mean"], f2["bandwidth_mean"]),
+        "bandwidth_mean_dim": vector_dimwise_similarity(f1["bandwidth_mean"], f2["bandwidth_mean"]),
         "sim_time_gap": time_gap_similarity(t1_end, t2_start)
     }
 
