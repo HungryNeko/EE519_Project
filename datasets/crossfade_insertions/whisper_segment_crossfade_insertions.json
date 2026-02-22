@@ -1084,51 +1084,30 @@
           {
             "language": "en",
             "start": 0.0,
-            "end": 5.36,
-            "text": "Dusty book Millie, old book Millie, filled with mysterious symbols and ancient icus",
-            "score": 0.7850477284031854
+            "end": 5.16,
+            "text": "Dusty book Millie, old book Millie, filled with mysterious symbols and ancient ancient",
+            "score": 0.7850542437087055
           }
         ]
       },
       {
         "segment_id": 1,
         "start": 4.98,
-        "end": 10.48,
-        "text": "icus is Man Wei Fen excited by their discovery they spent more time",
+        "end": 10.26,
+        "text": "ancient rites. Excited by their discovery, they spent hours",
         "scores": {
-          "avg_logprob": -3.469937374717311,
-          "compression_ratio": 1.0142857142857142,
+          "avg_logprob": -0.9380673766136169,
+          "compression_ratio": 0.9672131147540983,
           "no_speech_prob": 0.03132454678416252,
-          "temperature": 1.0
+          "temperature": 0.2
         },
         "language_spans": [
           {
             "language": "en",
             "start": 4.38,
-            "end": 10.76,
-            "text": "ancient icus is Man Wei Fen excited by their discovery they spent more time map",
-            "score": 0.41435262031243764
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 10.48,
-        "end": 10.76,
-        "text": "map",
-        "scores": {
-          "avg_logprob": -3.469937374717311,
-          "compression_ratio": 1.0142857142857142,
-          "no_speech_prob": 0.03132454678416252,
-          "temperature": 1.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 10.04,
-            "end": 10.76,
-            "text": "time map",
-            "score": 0.166567250623757
+            "end": 10.26,
+            "text": "ancient ancient rites. Excited by their discovery, they spent hours",
+            "score": 0.7373723934892041
           }
         ]
       }
@@ -1869,20 +1848,20 @@
           {
             "language": "zh",
             "start": 0.0,
-            "end": 2.1,
-            "text": "你们 是 调 查 自己",
-            "score": 0.5903133193816756
+            "end": 2.04,
+            "text": "你们 是 调 查 一个",
+            "score": 0.5902861215537996
           }
         ]
       },
       {
         "segment_id": 1,
         "start": 1.94,
-        "end": 2.1,
-        "text": "自己",
+        "end": 3.18,
+        "text": "一个人来观赛",
         "scores": {
-          "avg_logprob": -5.306302547454834,
-          "compression_ratio": 0.42857142857142855,
+          "avg_logprob": -3.7017614576551647,
+          "compression_ratio": 0.6206896551724138,
           "no_speech_prob": 0.34410208463668823,
           "temperature": 1.0
         },
@@ -1890,9 +1869,9 @@
           {
             "language": "zh",
             "start": 1.84,
-            "end": 2.1,
-            "text": "查 自己",
-            "score": 0.49564669533720007
+            "end": 3.18,
+            "text": "查 一个 人 来 观 赛",
+            "score": 0.23494291876098336
           }
         ]
       }
@@ -2190,42 +2169,21 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 2.1,
-        "text": "लेकिन मुझे यह विभिन्न है",
+        "end": 3.22,
+        "text": "लेकिन मैं यह बहुत बहुत बार हूं जिसके बार तो",
         "scores": {
-          "avg_logprob": -0.5102399045770819,
-          "compression_ratio": 1.205128205128205,
+          "avg_logprob": -0.6993116537729899,
+          "compression_ratio": 1.4230769230769231,
           "no_speech_prob": 0.08432618528604507,
-          "temperature": 0.2
+          "temperature": 0.4
         },
         "language_spans": [
           {
             "language": "hi",
             "start": 0.0,
-            "end": 2.28,
-            "text": "लेकिन मुझे यह विभिन्न है एक",
-            "score": 0.6220043403682886
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.1,
-        "end": 3.18,
-        "text": "एक बॉटल में",
-        "scores": {
-          "avg_logprob": -0.5102399045770819,
-          "compression_ratio": 1.205128205128205,
-          "no_speech_prob": 0.08432618528604507,
-          "temperature": 0.2
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 2.08,
-            "end": 3.18,
-            "text": "है एक बॉटल में",
-            "score": 0.6727165329669202
+            "end": 3.22,
+            "text": "लेकिन मैं यह बहुत बहुत बार हूं जिसके बार तो",
+            "score": 0.6001895134647687
           }
         ]
       }
@@ -3048,63 +3006,21 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 0.38,
-        "text": "你呢?",
+        "end": 4.76,
+        "text": "你喜欢在香港还是深圳",
         "scores": {
-          "avg_logprob": -0.9655611731789329,
-          "compression_ratio": 0.9375,
+          "avg_logprob": -0.8649519140070135,
+          "compression_ratio": 0.7317073170731707,
           "no_speech_prob": 0.27069398760795593,
-          "temperature": 0.2
+          "temperature": 0.4
         },
         "language_spans": [
           {
             "language": "zh",
             "start": 0.0,
-            "end": 0.38,
-            "text": "你 呢?",
-            "score": 0.29151028394699097
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 0.64,
-        "end": 1.44,
-        "text": "你呢?",
-        "scores": {
-          "avg_logprob": -0.9655611731789329,
-          "compression_ratio": 0.9375,
-          "no_speech_prob": 0.27069398760795593,
-          "temperature": 0.2
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.64,
-            "end": 1.44,
-            "text": "你 呢?",
-            "score": 0.12827107589691877
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 1.78,
-        "end": 4.76,
-        "text": "你喜欢在香港还是深圳?",
-        "scores": {
-          "avg_logprob": -0.9655611731789329,
-          "compression_ratio": 0.9375,
-          "no_speech_prob": 0.27069398760795593,
-          "temperature": 0.2
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 1.78,
             "end": 4.76,
-            "text": "你 喜欢 在 香港 还是 深 圳?",
-            "score": 0.5832413818155017
+            "text": "你 喜欢 在 香港 还是 深 圳",
+            "score": 0.5655945837497711
           }
         ]
       }
@@ -3381,11 +3297,11 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 6.74,
-        "text": "इन दिन वे खुद बच्चे के लिए पूछते हैं।",
+        "end": 6.68,
+        "text": "इन इमेज शौरा हो थोड़े क्यूट से किड्स हैं दे आर हैविंग देर फूड अ",
         "scores": {
-          "avg_logprob": -0.6929209283057679,
-          "compression_ratio": 1.2337662337662338,
+          "avg_logprob": -0.46004613240559894,
+          "compression_ratio": 1.5046728971962617,
           "no_speech_prob": 0.13556122779846191,
           "temperature": 0.4
         },
@@ -3393,9 +3309,9 @@
           {
             "language": "hi",
             "start": 0.0,
-            "end": 6.74,
-            "text": "इन दिन वे खुद बच्चे के लिए पूछते हैं।",
-            "score": 0.5660886813300077
+            "end": 6.68,
+            "text": "इन इमेज शौरा हो थोड़े क्यूट से किड्स हैं दे आर हैविंग देर फूड अ",
+            "score": 0.7087208273273613
           }
         ]
       }
@@ -5148,42 +5064,630 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 0.92,
-        "text": "and for Kindaherby and Food and",
+        "end": 0.48,
+        "text": "Food,",
         "scores": {
-          "avg_logprob": -5.779605388641357,
-          "compression_ratio": 0.9375,
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
           "no_speech_prob": 0.5775105953216553,
-          "temperature": 1.0
+          "temperature": 0.4
         },
         "language_spans": [
           {
             "language": "en",
             "start": 0.0,
-            "end": 1.58,
-            "text": "and for Kindaherby and Food and Visa",
-            "score": 0.05135843463072628
+            "end": 0.48,
+            "text": "Food,",
+            "score": 0.27011772990226746
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 0.92,
-        "end": 2.94,
-        "text": "Visa vault...",
+        "start": 2.2199999999999998,
+        "end": 2.5,
+        "text": "Ismiamabazki,",
         "scores": {
-          "avg_logprob": -5.779605388641357,
-          "compression_ratio": 0.9375,
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
           "no_speech_prob": 0.5775105953216553,
-          "temperature": 1.0
+          "temperature": 0.4
         },
         "language_spans": [
           {
             "language": "en",
-            "start": 0.7,
+            "start": 2.2199999999999998,
+            "end": 2.62,
+            "text": "Ismiamabazki, or",
+            "score": 0.3096630508080125
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 2.5,
+        "end": 2.62,
+        "text": "or",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.2199999999999998,
+            "end": 2.84,
+            "text": "Ismiamabazki, or it's",
+            "score": 0.33366222120821476
+          }
+        ]
+      },
+      {
+        "segment_id": 3,
+        "start": 2.62,
+        "end": 2.84,
+        "text": "it's",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.5,
             "end": 2.94,
-            "text": "and Visa vault...",
-            "score": 0.05845980211059517
+            "text": "or it's a",
+            "score": 0.2578824358060956
+          }
+        ]
+      },
+      {
+        "segment_id": 4,
+        "start": 2.84,
+        "end": 2.94,
+        "text": "a",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.62,
+            "end": 3.18,
+            "text": "it's a little",
+            "score": 0.13536268286406994
+          }
+        ]
+      },
+      {
+        "segment_id": 5,
+        "start": 2.94,
+        "end": 3.18,
+        "text": "little",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.84,
+            "end": 3.26,
+            "text": "a little bit",
+            "score": 0.14218783813218275
+          }
+        ]
+      },
+      {
+        "segment_id": 6,
+        "start": 3.18,
+        "end": 3.26,
+        "text": "bit",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.94,
+            "end": 3.4,
+            "text": "little bit from",
+            "score": 0.15679047225664058
+          }
+        ]
+      },
+      {
+        "segment_id": 7,
+        "start": 3.26,
+        "end": 3.26,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.18,
+            "end": 3.4,
+            "text": "bit from",
+            "score": 0.23031830601394176
+          }
+        ]
+      },
+      {
+        "segment_id": 8,
+        "start": 3.26,
+        "end": 3.4,
+        "text": "from",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.18,
+            "end": 3.4,
+            "text": "bit from",
+            "score": 0.23031830601394176
+          }
+        ]
+      },
+      {
+        "segment_id": 9,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 10,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 11,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 12,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 13,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 14,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 15,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 16,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 17,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 18,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 19,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 20,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 21,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 22,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 23,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 24,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 25,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 26,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 27,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 28,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
+          }
+        ]
+      },
+      {
+        "segment_id": 29,
+        "start": 3.4,
+        "end": 3.4,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8296229815242266,
+          "compression_ratio": 1.2678571428571428,
+          "no_speech_prob": 0.5775105953216553,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.26,
+            "end": 3.4,
+            "text": "from",
+            "score": 0.058500584214925766
           }
         ]
       }
@@ -7551,11 +8055,11 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 3.62,
-        "text": "Keep helping and has the ability to shrimp together.",
+        "end": 3.76,
+        "text": "Very happy Orunda",
         "scores": {
-          "avg_logprob": -3.4554293705866885,
-          "compression_ratio": 0.9122807017543859,
+          "avg_logprob": -2.9832846323649087,
+          "compression_ratio": 0.68,
           "no_speech_prob": 0.24961553514003754,
           "temperature": 1.0
         },
@@ -7563,9 +8067,9 @@
           {
             "language": "en",
             "start": 0.0,
-            "end": 3.62,
-            "text": "Keep helping and has the ability to shrimp together.",
-            "score": 0.15265301755274172
+            "end": 3.76,
+            "text": "Very happy Orunda",
+            "score": 0.22706300458230544
           }
         ]
       }
@@ -7951,63 +8455,42 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 1.14,
-        "text": "वीर एंड देयाओ",
+        "end": 2.24,
+        "text": "वीर बड़े भाई",
         "scores": {
-          "avg_logprob": -0.3312028135572161,
-          "compression_ratio": 1.3866666666666667,
+          "avg_logprob": -0.21948778629302979,
+          "compression_ratio": 0.9848484848484849,
           "no_speech_prob": 0.10905413329601288,
-          "temperature": 0.4
+          "temperature": 0.2
         },
         "language_spans": [
           {
             "language": "hi",
             "start": 0.0,
-            "end": 1.68,
-            "text": "वीर एंड देयाओ वीर",
-            "score": 0.7672998112227236
+            "end": 2.58,
+            "text": "वीर बड़े भाई नहीं",
+            "score": 0.8907852271837848
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 1.14,
-        "end": 2.22,
-        "text": "वीर बड़े भाई",
+        "start": 2.24,
+        "end": 3.2,
+        "text": "नहीं लाइक यू",
         "scores": {
-          "avg_logprob": -0.3312028135572161,
-          "compression_ratio": 1.3866666666666667,
+          "avg_logprob": -0.21948778629302979,
+          "compression_ratio": 0.9848484848484849,
           "no_speech_prob": 0.10905413329601288,
-          "temperature": 0.4
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.8,
-            "end": 2.58,
-            "text": "देयाओ वीर बड़े भाई पहले",
-            "score": 0.8089753545182091
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 2.22,
-        "end": 3.3,
-        "text": "पहले बड़े भाई",
-        "scores": {
-          "avg_logprob": -0.3312028135572161,
-          "compression_ratio": 1.3866666666666667,
-          "no_speech_prob": 0.10905413329601288,
-          "temperature": 0.4
+          "temperature": 0.2
         },
         "language_spans": [
           {
             "language": "hi",
             "start": 1.96,
-            "end": 3.3,
-            "text": "भाई पहले बड़े भाई",
-            "score": 0.8035505712830595
+            "end": 3.2,
+            "text": "भाई नहीं लाइक यू",
+            "score": 0.8756079703569413
           }
         ]
       }
@@ -8436,42 +8919,63 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 3.9,
-        "text": "अपना खाना देखके क्योंकि एक को कम मिला, एक को जादा मिला, तभी वह अंसार है।",
+        "end": 3.94,
+        "text": "अपना खाना देखके क्योंकि एक को कम मिला एक को जादा मिला तभी वह अंसाइट है",
         "scores": {
-          "avg_logprob": -0.25433207161818877,
-          "compression_ratio": 1.9787234042553192,
+          "avg_logprob": -0.3014124508561759,
+          "compression_ratio": 2.090909090909091,
           "no_speech_prob": 0.15503168106079102,
-          "temperature": 0.2
+          "temperature": 0.4
         },
         "language_spans": [
           {
             "language": "hi",
             "start": 0.0,
-            "end": 4.12,
-            "text": "अपना खाना देखके क्योंकि एक को कम मिला, एक को जादा मिला, तभी वह अंसार है। फरी",
-            "score": 0.8916271571309962
+            "end": 4.14,
+            "text": "अपना खाना देखके क्योंकि एक को कम मिला एक को जादा मिला तभी वह अंसाइट है फोई",
+            "score": 0.86103782027292
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 3.9,
-        "end": 8.32,
-        "text": "फरी सैंपल फूर्ट एसपाइट है, उसके ड्रेसिंग सेंस और वह सब चीज़े भी अच्छी है।",
+        "start": 3.94,
+        "end": 4.74,
+        "text": "फोई सैंपल",
         "scores": {
-          "avg_logprob": -0.25433207161818877,
-          "compression_ratio": 1.9787234042553192,
+          "avg_logprob": -0.3014124508561759,
+          "compression_ratio": 2.090909090909091,
           "no_speech_prob": 0.15503168106079102,
-          "temperature": 0.2
+          "temperature": 0.4
         },
         "language_spans": [
           {
             "language": "hi",
-            "start": 3.6,
-            "end": 8.32,
-            "text": "है। फरी सैंपल फूर्ट एसपाइट है, उसके ड्रेसिंग सेंस और वह सब चीज़े भी अच्छी है।",
-            "score": 0.8154127564630471
+            "start": 3.42,
+            "end": 4.88,
+            "text": "अंसाइट है फोई सैंपल फोई",
+            "score": 0.6201005920767784
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 4.74,
+        "end": 8.24,
+        "text": "फोई सैंपल मुझे आज प्रतिश्वालित है उसके ड्रेसिंग सेंस और वह सब चीजें भी अच्छी है",
+        "scores": {
+          "avg_logprob": -0.3014124508561759,
+          "compression_ratio": 2.090909090909091,
+          "no_speech_prob": 0.15503168106079102,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 4.14,
+            "end": 8.24,
+            "text": "सैंपल फोई सैंपल मुझे आज प्रतिश्वालित है उसके ड्रेसिंग सेंस और वह सब चीजें भी अच्छी है",
+            "score": 0.8217848700450352
           }
         ]
       }
@@ -8893,21 +9397,42 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 0.84,
-        "text": "You look like you are having an affair...",
+        "end": 0.56,
+        "text": "You're saying Avengers.",
         "scores": {
-          "avg_logprob": -2.4526330629984536,
-          "compression_ratio": 0.8723404255319149,
+          "avg_logprob": -0.8649502860175239,
+          "compression_ratio": 0.9117647058823529,
           "no_speech_prob": 0.40179651975631714,
-          "temperature": 1.0
+          "temperature": 0.2
         },
         "language_spans": [
           {
             "language": "en",
             "start": 0.0,
-            "end": 0.84,
-            "text": "You look like you are having an affair...",
-            "score": 0.22942483016231563
+            "end": 0.56,
+            "text": "You're saying Avengers.",
+            "score": 0.43930663789312047
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 1.0,
+        "end": 3.06,
+        "text": "And their friendship was like a pinch.",
+        "scores": {
+          "avg_logprob": -0.8649502860175239,
+          "compression_ratio": 0.9117647058823529,
+          "no_speech_prob": 0.40179651975631714,
+          "temperature": 0.2
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 1.0,
+            "end": 3.06,
+            "text": "And their friendship was like a pinch.",
+            "score": 0.5614605333123889
           }
         ]
       }
@@ -16070,20 +16595,20 @@
         "segment_id": 0,
         "start": 0.0,
         "end": 6.66,
-        "text": "सूरज अस्थ होने पर वीर और दिया ने एक छुपी कुफा को ढूंढने की यादरा पर निकलने का फैसला किया।",
+        "text": "सूरज अस्थ होने पर वीर और दिया ने एक छुपी गुफा को ढूंढने की यादरा पर निकलने का फैसला किया।",
         "scores": {
-          "avg_logprob": -0.21194205033151728,
-          "compression_ratio": 2.036529680365297,
+          "avg_logprob": -0.1510206927423892,
+          "compression_ratio": 2.0970873786407767,
           "no_speech_prob": 0.15182851254940033,
-          "temperature": 0.4
+          "temperature": 0.2
         },
         "language_spans": [
           {
             "language": "hi",
             "start": 0.0,
-            "end": 6.86,
-            "text": "सूरज अस्थ होने पर वीर और दिया ने एक छुपी कुफा को ढूंढने की यादरा पर निकलने का फैसला किया। आफ्टर",
-            "score": 0.9618490103871554
+            "end": 6.94,
+            "text": "सूरज अस्थ होने पर वीर और दिया ने एक छुपी गुफा को ढूंढने की यादरा पर निकलने का फैसला किया। अफ़र",
+            "score": 0.9576587211540589
           }
         ]
       },
@@ -16091,20 +16616,20 @@
         "segment_id": 1,
         "start": 6.66,
         "end": 11.22,
-        "text": "आफ्टर सुरकंवीनियन लाइक लर्चिंग हाई एंड लो उन्होंने सिटी के किनारे एक ओलट जरूर लगा.",
+        "text": "अफ़र सुरकंवीनियन लाइक लर्चिंग हाई एंड लो उन्होंने सिटी के किनारे एक ओल लेगा।",
         "scores": {
-          "avg_logprob": -0.21194205033151728,
-          "compression_ratio": 2.036529680365297,
+          "avg_logprob": -0.1510206927423892,
+          "compression_ratio": 2.0970873786407767,
           "no_speech_prob": 0.15182851254940033,
-          "temperature": 0.4
+          "temperature": 0.2
         },
         "language_spans": [
           {
             "language": "hi",
             "start": 6.32,
             "end": 11.22,
-            "text": "किया। आफ्टर सुरकंवीनियन लाइक लर्चिंग हाई एंड लो उन्होंने सिटी के किनारे एक ओलट जरूर लगा.",
-            "score": 0.8535151049411164
+            "text": "किया। अफ़र सुरकंवीनियन लाइक लर्चिंग हाई एंड लो उन्होंने सिटी के किनारे एक ओल लेगा।",
+            "score": 0.8902651977957532
           }
         ]
       }
@@ -17513,41 +18038,41 @@
         "segment_id": 0,
         "start": 0.0,
         "end": 1.48,
-        "text": "czy jeszyjka.",
+        "text": "czy jeszy ika",
         "scores": {
-          "avg_logprob": -0.7425899028778076,
-          "compression_ratio": 0.8055555555555556,
+          "avg_logprob": -3.133986790974935,
+          "compression_ratio": 0.8108108108108109,
           "no_speech_prob": 0.1874571293592453,
-          "temperature": 0.2
+          "temperature": 1.0
         },
         "language_spans": [
           {
             "language": "en",
             "start": 0.0,
-            "end": 1.48,
-            "text": "czy jeszyjka.",
-            "score": 0.3320926360785961
+            "end": 1.78,
+            "text": "czy jeszy ika okej,",
+            "score": 0.2527259301897781
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 1.66,
-        "end": 2.38,
-        "text": "Chajny bukszyn.",
+        "start": 1.48,
+        "end": 2.32,
+        "text": "okej, na Boksíp",
         "scores": {
-          "avg_logprob": -0.7425899028778076,
-          "compression_ratio": 0.8055555555555556,
+          "avg_logprob": -3.133986790974935,
+          "compression_ratio": 0.8108108108108109,
           "no_speech_prob": 0.1874571293592453,
-          "temperature": 0.2
+          "temperature": 1.0
         },
         "language_spans": [
           {
             "language": "en",
-            "start": 1.66,
-            "end": 2.38,
-            "text": "Chajny bukszyn.",
-            "score": 0.6370104638238748
+            "start": 1.34,
+            "end": 2.32,
+            "text": "ika okej, na Boksíp",
+            "score": 0.1776005943701572
           }
         ]
       }
@@ -17587,63 +18112,21 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 1.14,
-        "text": "Wah pejabat Piyer",
+        "end": 2.56,
+        "text": "Mereka memanfaatkan dana daripada Rusia.",
         "scores": {
-          "avg_logprob": -2.391929414537218,
-          "compression_ratio": 0.7777777777777778,
+          "avg_logprob": -0.8282103538513184,
+          "compression_ratio": 0.8695652173913043,
           "no_speech_prob": 0.26744797825813293,
-          "temperature": 1.0
+          "temperature": 0.2
         },
         "language_spans": [
           {
             "language": "en",
             "start": 0.0,
-            "end": 1.58,
-            "text": "Wah pejabat Piyer Dana",
-            "score": 0.18636396472963193
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.14,
-        "end": 1.58,
-        "text": "Dana",
-        "scores": {
-          "avg_logprob": -2.391929414537218,
-          "compression_ratio": 0.7777777777777778,
-          "no_speech_prob": 0.26744797825813293,
-          "temperature": 1.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.56,
-            "end": 2.52,
-            "text": "Piyer Dana Desir",
-            "score": 0.059337870201690956
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 1.58,
-        "end": 2.52,
-        "text": "Desir",
-        "scores": {
-          "avg_logprob": -2.391929414537218,
-          "compression_ratio": 0.7777777777777778,
-          "no_speech_prob": 0.26744797825813293,
-          "temperature": 1.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 1.14,
-            "end": 2.52,
-            "text": "Dana Desir",
-            "score": 0.03315772734640632
+            "end": 2.56,
+            "text": "Mereka memanfaatkan dana daripada Rusia.",
+            "score": 0.5817213948567709
           }
         ]
       }
@@ -18125,11 +18608,11 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 0.64,
-        "text": "it should",
+        "end": 2.92,
+        "text": "to get staff into it.",
         "scores": {
-          "avg_logprob": -2.988739252090454,
-          "compression_ratio": 1.0217391304347827,
+          "avg_logprob": -2.927813424004449,
+          "compression_ratio": 0.7241379310344828,
           "no_speech_prob": 0.4144738018512726,
           "temperature": 1.0
         },
@@ -18137,51 +18620,9 @@
           {
             "language": "en",
             "start": 0.0,
-            "end": 0.64,
-            "text": "it should",
-            "score": 0.05784699320793152
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.3800000000000008,
-        "end": 2.14,
-        "text": "you should",
-        "scores": {
-          "avg_logprob": -2.988739252090454,
-          "compression_ratio": 1.0217391304347827,
-          "no_speech_prob": 0.4144738018512726,
-          "temperature": 1.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 1.3800000000000008,
-            "end": 2.24,
-            "text": "you should get your",
-            "score": 0.2790810656733811
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 2.14,
-        "end": 2.88,
-        "text": "get your hands on internet",
-        "scores": {
-          "avg_logprob": -2.988739252090454,
-          "compression_ratio": 1.0217391304347827,
-          "no_speech_prob": 0.4144738018512726,
-          "temperature": 1.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 1.7600000000000005,
-            "end": 2.88,
-            "text": "should get your hands on internet",
-            "score": 0.3124660357522468
+            "end": 2.92,
+            "text": "to get staff into it.",
+            "score": 0.15043793760341942
           }
         ]
       }
@@ -18891,42 +19332,21 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 2.0,
-        "text": "- 之前其实-",
+        "end": 3.44,
+        "text": "之前有看过电视剧吗?",
         "scores": {
-          "avg_logprob": -0.896630048751831,
-          "compression_ratio": 0.7857142857142857,
+          "avg_logprob": -0.7888631087083083,
+          "compression_ratio": 0.717948717948718,
           "no_speech_prob": 0.4417492151260376,
-          "temperature": 0.4
+          "temperature": 0.2
         },
         "language_spans": [
           {
             "language": "zh",
-            "start": 0.24,
-            "end": 1.54,
-            "text": "之前 其实",
-            "score": 0.5614713728427887
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.0,
-        "end": 4.76,
-        "text": "- Can you tell me-",
-        "scores": {
-          "avg_logprob": -0.896630048751831,
-          "compression_ratio": 0.7857142857142857,
-          "no_speech_prob": 0.4417492151260376,
-          "temperature": 0.4
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.06,
-            "end": 4.68,
-            "text": "Can you tell me",
-            "score": 0.7511109272018075
+            "start": 0.0,
+            "end": 3.44,
+            "text": "之前 有 看 过 电 视 剧 吗?",
+            "score": 0.5136523013934493
           }
         ]
       }
@@ -19377,11 +19797,11 @@
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 1.44,
-        "text": "और एक हिस्सा पर दिखाओ",
+        "end": 4.02,
+        "text": "और अगर आपको अपनी लोग विशेष के पास आप देखते हैं, तो आप भी जरूर देख सकते हैं।",
         "scores": {
-          "avg_logprob": -0.9349381862542568,
-          "compression_ratio": 1.125,
+          "avg_logprob": -0.8264818739617008,
+          "compression_ratio": 1.588235294117647,
           "no_speech_prob": 0.28796330094337463,
           "temperature": 0.4
         },
@@ -19389,30 +19809,9 @@
           {
             "language": "hi",
             "start": 0.0,
-            "end": 1.44,
-            "text": "और एक हिस्सा पर दिखाओ",
-            "score": 0.4574794217323264
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.54,
-        "end": 3.36,
-        "text": "अच्छा मैं",
-        "scores": {
-          "avg_logprob": -0.9349381862542568,
-          "compression_ratio": 1.125,
-          "no_speech_prob": 0.28796330094337463,
-          "temperature": 0.4
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 2.54,
-            "end": 3.36,
-            "text": "अच्छा मैं",
-            "score": 0.6739397418374817
+            "end": 4.02,
+            "text": "और अगर आपको अपनी लोग विशेष के पास आप देखते हैं, तो आप भी जरूर देख सकते हैं।",
+            "score": 0.5782880562446302
           }
         ]
       }
@@ -21231,2983 +21630,6 @@
             "end": 6.74,
             "text": "data issue like it will be recorded and it is like someone monitor",
             "score": 0.8645598177726452
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000177_ad35148.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.8,
-        "text": "महल के द्वार पर उन्हें पोग्रम रेंडिंग एक पुरानी",
-        "scores": {
-          "avg_logprob": -0.18127944734361437,
-          "compression_ratio": 1.3736263736263736,
-          "no_speech_prob": 0.18894115090370178,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 2.8,
-            "text": "महल के द्वार पर उन्हें पोग्रम रेंडिंग एक पुरानी",
-            "score": 0.894239097001849
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000217_ad43049.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.08,
-        "text": "What is your favorite destination for holiday?",
-        "scores": {
-          "avg_logprob": -0.5152862448441354,
-          "compression_ratio": 1.0857142857142856,
-          "no_speech_prob": 0.15543553233146667,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 2.08,
-            "text": "What is your favorite destination for holiday?",
-            "score": 0.8731643046651568
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.22,
-        "end": 2.42,
-        "text": "What?",
-        "scores": {
-          "avg_logprob": -0.5152862448441354,
-          "compression_ratio": 1.0857142857142856,
-          "no_speech_prob": 0.15543553233146667,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.22,
-            "end": 2.42,
-            "text": "What?",
-            "score": 0.3404485881328583
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 2.48,
-        "end": 3.58,
-        "text": "So I don't understand.",
-        "scores": {
-          "avg_logprob": -0.5152862448441354,
-          "compression_ratio": 1.0857142857142856,
-          "no_speech_prob": 0.15543553233146667,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.48,
-            "end": 3.58,
-            "text": "So I don't understand.",
-            "score": 0.6394335180521011
-          }
-        ]
-      },
-      {
-        "segment_id": 3,
-        "start": 3.8,
-        "end": 5.04,
-        "text": "Do you like that place?",
-        "scores": {
-          "avg_logprob": -0.5152862448441354,
-          "compression_ratio": 1.0857142857142856,
-          "no_speech_prob": 0.15543553233146667,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 3.8,
-            "end": 5.04,
-            "text": "Do you like that place?",
-            "score": 0.9553126215934753
-          }
-        ]
-      },
-      {
-        "segment_id": 4,
-        "start": 5.16,
-        "end": 5.76,
-        "text": "Okay, Banaras.",
-        "scores": {
-          "avg_logprob": -0.5152862448441354,
-          "compression_ratio": 1.0857142857142856,
-          "no_speech_prob": 0.15543553233146667,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 5.16,
-            "end": 5.76,
-            "text": "Okay, Banaras.",
-            "score": 0.8163760453462601
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000257_000721.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 0.06,
-        "text": "对",
-        "scores": {
-          "avg_logprob": -0.3863993269024473,
-          "compression_ratio": 0.8607594936708861,
-          "no_speech_prob": 0.11256936192512512,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 0.06,
-            "text": "对",
-            "score": 0.16049110889434814
-          },
-          {
-            "language": "en",
-            "start": 0.06,
-            "end": 0.66,
-            "text": "So",
-            "score": 0.02258281223475933
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 0.06,
-        "end": 0.66,
-        "text": "So",
-        "scores": {
-          "avg_logprob": -0.3863993269024473,
-          "compression_ratio": 0.8607594936708861,
-          "no_speech_prob": 0.11256936192512512,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 0.06,
-            "text": "对",
-            "score": 0.16049110889434814
-          },
-          {
-            "language": "en",
-            "start": 0.06,
-            "end": 0.66,
-            "text": "So",
-            "score": 0.02258281223475933
-          },
-          {
-            "language": "zh",
-            "start": 0.66,
-            "end": 1.4,
-            "text": "那",
-            "score": 0.09280840307474136
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 0.66,
-        "end": 2.24,
-        "text": "那是我的家乡",
-        "scores": {
-          "avg_logprob": -0.3863993269024473,
-          "compression_ratio": 0.8607594936708861,
-          "no_speech_prob": 0.11256936192512512,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.06,
-            "end": 0.66,
-            "text": "So",
-            "score": 0.02258281223475933
-          },
-          {
-            "language": "zh",
-            "start": 0.66,
-            "end": 2.4,
-            "text": "那 是 我的 家 乡 我",
-            "score": 0.5590432025492191
-          }
-        ]
-      },
-      {
-        "segment_id": 3,
-        "start": 2.24,
-        "end": 3.94,
-        "text": "我感觉他们配合的时候",
-        "scores": {
-          "avg_logprob": -0.3863993269024473,
-          "compression_ratio": 0.8607594936708861,
-          "no_speech_prob": 0.11256936192512512,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 2.12,
-            "end": 4.4,
-            "text": "乡 我 感 觉 他们 配 合 的时候 默",
-            "score": 0.8915752487050163
-          }
-        ]
-      },
-      {
-        "segment_id": 4,
-        "start": 3.94,
-        "end": 5.28,
-        "text": "默契特别好",
-        "scores": {
-          "avg_logprob": -0.3863993269024473,
-          "compression_ratio": 0.8607594936708861,
-          "no_speech_prob": 0.11256936192512512,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 3.7,
-            "end": 5.28,
-            "text": "的时候 默 契 特 别 好",
-            "score": 0.9944656193256378
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000485_000008.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 5.12,
-        "text": "We have the seashore in the city and we have a lot of",
-        "scores": {
-          "avg_logprob": -0.23704197671678331,
-          "compression_ratio": 1.0192307692307692,
-          "no_speech_prob": 0.3700598478317261,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 5.12,
-            "text": "We have the seashore in the city and we have a lot of",
-            "score": 0.8679334758183894
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000179_ad35176.wav",
-    "whisper_language": "ur",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.48,
-        "text": "ایک کیپورٹ لائٹ پوشن چیلیمنٹ",
-        "scores": {
-          "avg_logprob": -0.3843752254139293,
-          "compression_ratio": 1.1595744680851063,
-          "no_speech_prob": 0.25097498297691345,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "ur",
-            "start": 0.0,
-            "end": 1.48,
-            "text": "ایک کیپورٹ لائٹ پوشن چیلیمنٹ",
-            "score": -0.3843752254139293
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.48,
-        "end": 3.76,
-        "text": "تھوڑی زیادہ فینسی ہے جو شانت ہے",
-        "scores": {
-          "avg_logprob": -0.3843752254139293,
-          "compression_ratio": 1.1595744680851063,
-          "no_speech_prob": 0.25097498297691345,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "ur",
-            "start": 1.48,
-            "end": 3.76,
-            "text": "تھوڑی زیادہ فینسی ہے جو شانت ہے",
-            "score": -0.3843752254139293
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000218_ad43091.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.42,
-        "text": "Can you describe this image? What are the thoughts about it?",
-        "scores": {
-          "avg_logprob": -0.2206868827342987,
-          "compression_ratio": 0.9523809523809523,
-          "no_speech_prob": 0.02744397334754467,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 2.42,
-            "text": "Can you describe this image? What are the thoughts about it?",
-            "score": 0.9019353335553949
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000259_000726.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.82,
-        "text": "中国是讲的born and brought这个游戏",
-        "scores": {
-          "avg_logprob": -0.26037092208862306,
-          "compression_ratio": 0.7962962962962963,
-          "no_speech_prob": 0.4236849844455719,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 1.36,
-            "text": "中国 是 讲 的",
-            "score": 0.6663340926170349
-          },
-          {
-            "language": "en",
-            "start": 1.36,
-            "end": 2.16,
-            "text": "born and brought",
-            "score": 0.8343583544095358
-          },
-          {
-            "language": "zh",
-            "start": 2.16,
-            "end": 2.82,
-            "text": "这个 游 戏",
-            "score": 0.9296920696894327
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000488_000014.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.5,
-        "text": "watch some movies",
-        "scores": {
-          "avg_logprob": -0.47755380471547443,
-          "compression_ratio": 0.68,
-          "no_speech_prob": 0.2956107258796692,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 1.5,
-            "text": "watch some movies",
-            "score": 0.7962982853253683
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000180_ad35177.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.08,
-        "text": "खानी में इतनी को नियुक्त पर साइंस पर बड़की जीजें मिली है",
-        "scores": {
-          "avg_logprob": -0.45156933466593424,
-          "compression_ratio": 1.4747474747474747,
-          "no_speech_prob": 0.12757454812526703,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 3.08,
-            "text": "खानी में इतनी को नियुक्त पर साइंस पर बड़की जीजें मिली है",
-            "score": 0.7012800653088128
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000220_ad47001.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 5.78,
-        "text": "My favorite festival is Holi.",
-        "scores": {
-          "avg_logprob": -0.40874385833740234,
-          "compression_ratio": 0.7837837837837838,
-          "no_speech_prob": 0.4580780863761902,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 5.78,
-            "text": "My favorite festival is Holi.",
-            "score": 0.7927433133125306
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000260_000728.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 1.6800000000000002,
-        "end": 3.08,
-        "text": "你听过中国式教育?",
-        "scores": {
-          "avg_logprob": -0.43995459874471027,
-          "compression_ratio": 0.6944444444444444,
-          "no_speech_prob": 0.5216056704521179,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 1.6800000000000002,
-            "end": 3.08,
-            "text": "你听过中国式教育?",
-            "score": 0.795041024684906
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000489_000018.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 1.12,
-        "end": 2.78,
-        "text": "ये गर्मी के दिन नहीं है",
-        "scores": {
-          "avg_logprob": -0.3284746170043945,
-          "compression_ratio": 0.9833333333333333,
-          "no_speech_prob": 0.4977690577507019,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 1.12,
-            "end": 2.78,
-            "text": "ये गर्मी के दिन नहीं है",
-            "score": 0.8308063664370113
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000183_ad35190.wav",
-    "whisper_language": "ur",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.92,
-        "text": "ایک جسٹو نے رو رو کے بہال کر رکھا ہے",
-        "scores": {
-          "avg_logprob": -0.30242490768432617,
-          "compression_ratio": 0.9545454545454546,
-          "no_speech_prob": 0.07832388579845428,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "ur",
-            "start": 0.0,
-            "end": 3.92,
-            "text": "ایک جسٹو نے رو رو کے بہال کر رکھا ہے",
-            "score": -0.30242490768432617
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000221_ad47024.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 5.94,
-        "text": "they played their roles is awesome especially the manisha koirala and alam zaib",
-        "scores": {
-          "avg_logprob": -0.3376056807381766,
-          "compression_ratio": 1.1126760563380282,
-          "no_speech_prob": 0.17728355526924133,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 5.94,
-            "text": "they played their roles is awesome especially the manisha koirala and alam zaib",
-            "score": 0.8418868466829642
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000265_000745.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.24,
-        "text": "因为像你说可能当时的难度比较低",
-        "scores": {
-          "avg_logprob": -0.3465702112983255,
-          "compression_ratio": 0.9560439560439561,
-          "no_speech_prob": 0.41161471605300903,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 3.56,
-            "text": "因为 像 你说 可能 当 时 的 难 度 比 较 低 空",
-            "score": 0.7914461333018082
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 3.24,
-        "end": 6.36,
-        "text": "空运时间比较多",
-        "scores": {
-          "avg_logprob": -0.3465702112983255,
-          "compression_ratio": 0.9560439560439561,
-          "no_speech_prob": 0.41161471605300903,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 3.0,
-            "end": 6.62,
-            "text": "低 空 运 时间 比 较 多 可以",
-            "score": 0.7107913102954626
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 6.36,
-        "end": 7.24,
-        "text": "可以多一点",
-        "scores": {
-          "avg_logprob": -0.3465702112983255,
-          "compression_ratio": 0.9560439560439561,
-          "no_speech_prob": 0.41161471605300903,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 6.2,
-            "end": 7.54,
-            "text": "多 可以 多 一点 而且",
-            "score": 0.8540228128433227
-          }
-        ]
-      },
-      {
-        "segment_id": 3,
-        "start": 7.24,
-        "end": 7.54,
-        "text": "而且",
-        "scores": {
-          "avg_logprob": -0.3465702112983255,
-          "compression_ratio": 0.9560439560439561,
-          "no_speech_prob": 0.41161471605300903,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 6.98,
-            "end": 7.54,
-            "text": "一点 而且",
-            "score": 0.8742392361164093
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000492_000024.wav",
-    "whisper_language": "ur",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.98,
-        "text": "تو اپا میں",
-        "scores": {
-          "avg_logprob": -0.832413945879255,
-          "compression_ratio": 1.103448275862069,
-          "no_speech_prob": 0.12782616913318634,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "ur",
-            "start": 0.0,
-            "end": 1.98,
-            "text": "تو اپا میں",
-            "score": -0.832413945879255
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 3.08,
-        "end": 4.16,
-        "text": "اپا میں",
-        "scores": {
-          "avg_logprob": -0.832413945879255,
-          "compression_ratio": 1.103448275862069,
-          "no_speech_prob": 0.12782616913318634,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "ur",
-            "start": 3.08,
-            "end": 4.16,
-            "text": "اپا میں",
-            "score": -0.832413945879255
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000184_ad35203.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.28,
-        "text": "इतनी खुशी बच्पद में यू हबाद माई फूलती है",
-        "scores": {
-          "avg_logprob": -0.2240428151311101,
-          "compression_ratio": 1.6565656565656566,
-          "no_speech_prob": 0.3066635727882385,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 2.74,
-            "text": "इतनी खुशी बच्पद में यू हबाद माई फूलती है बाद",
-            "score": 0.834087408892219
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.28,
-        "end": 3.42,
-        "text": "बाद में तो होती है नहीं",
-        "scores": {
-          "avg_logprob": -0.2240428151311101,
-          "compression_ratio": 1.6565656565656566,
-          "no_speech_prob": 0.3066635727882385,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 2.14,
-            "end": 3.42,
-            "text": "है बाद में तो होती है नहीं",
-            "score": 0.9435881370589847
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000222_ad47025.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 5.74,
-        "text": "and i really like this story and uh so from my generation the storyline was quite impressive",
-        "scores": {
-          "avg_logprob": -0.6033876419067383,
-          "compression_ratio": 1.1948051948051948,
-          "no_speech_prob": 0.13006363809108734,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 5.74,
-            "text": "and i really like this story and uh so from my generation the storyline was quite impressive",
-            "score": 0.7043107064331279
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000266_000746.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.1,
-        "text": "因为小学生的自制力比较差嘛",
-        "scores": {
-          "avg_logprob": -0.23996679484844208,
-          "compression_ratio": 0.78,
-          "no_speech_prob": 0.30685847997665405,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 3.1,
-            "text": "因为 小 学 生 的 自 制 力 比 较 差 嘛",
-            "score": 0.8429325545827547
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000493_000025.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 4.42,
-        "text": "I like to do some sports with my friends.",
-        "scores": {
-          "avg_logprob": -0.43145238436185396,
-          "compression_ratio": 0.8367346938775511,
-          "no_speech_prob": 0.31659644842147827,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 4.42,
-            "text": "I like to do some sports with my friends.",
-            "score": 0.8978680272897085
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000186_ad36005.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.06,
-        "text": "my mom always told me that Diwali is a home festival",
-        "scores": {
-          "avg_logprob": -1.4239205121994019,
-          "compression_ratio": 1.3,
-          "no_speech_prob": 0.09524928033351898,
-          "temperature": 1.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 3.22,
-            "text": "my mom always told me that Diwali is a home festival and",
-            "score": 0.5509482367585102
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 3.06,
-        "end": 5.32,
-        "text": "and it should be at home",
-        "scores": {
-          "avg_logprob": -1.4239205121994019,
-          "compression_ratio": 1.3,
-          "no_speech_prob": 0.09524928033351898,
-          "temperature": 1.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.58,
-            "end": 5.8,
-            "text": "festival and it should be at home Otherwise",
-            "score": 0.5642879097722471
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 5.32,
-        "end": 7.4,
-        "text": "Otherwise you stay at any home festival",
-        "scores": {
-          "avg_logprob": -1.4239205121994019,
-          "compression_ratio": 1.3,
-          "no_speech_prob": 0.09524928033351898,
-          "temperature": 1.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 5.06,
-            "end": 7.4,
-            "text": "home Otherwise you stay at any home festival",
-            "score": 0.39332585921511054
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000223_ad47026.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.4,
-        "text": "So that was the last series that I watched.",
-        "scores": {
-          "avg_logprob": -0.5648229262408089,
-          "compression_ratio": 1.1071428571428572,
-          "no_speech_prob": 0.09140479564666748,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 2.4,
-            "text": "So that was the last series that I watched.",
-            "score": 0.9307264222039117
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.56,
-        "end": 4.88,
-        "text": "That is, the real Heera Mandi.",
-        "scores": {
-          "avg_logprob": -0.5648229262408089,
-          "compression_ratio": 1.1071428571428572,
-          "no_speech_prob": 0.09140479564666748,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.56,
-            "end": 4.88,
-            "text": "That is, the real Heera Mandi.",
-            "score": 0.4453144334256649
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 5.22,
-        "end": 6.14,
-        "text": "Mirzapur is still.",
-        "scores": {
-          "avg_logprob": -0.5648229262408089,
-          "compression_ratio": 1.1071428571428572,
-          "no_speech_prob": 0.09140479564666748,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 5.22,
-            "end": 6.14,
-            "text": "Mirzapur is still.",
-            "score": 0.9588569800059
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000268_000749.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.9,
-        "text": "然后到高中的时候",
-        "scores": {
-          "avg_logprob": -0.14231398900349934,
-          "compression_ratio": 0.9,
-          "no_speech_prob": 0.5662122964859009,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 3.42,
-            "text": "然后 到 高 中 的时候 我觉得",
-            "score": 0.9302415649096171
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.9,
-        "end": 5.28,
-        "text": "我觉得作业还是有必要的",
-        "scores": {
-          "avg_logprob": -0.14231398900349934,
-          "compression_ratio": 0.9,
-          "no_speech_prob": 0.5662122964859009,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 1.34,
-            "end": 5.6,
-            "text": "的时候 我觉得 作 业 还是 有 必 要 的 用",
-            "score": 0.9099771648645401
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 5.28,
-        "end": 6.88,
-        "text": "用某种程度上来说",
-        "scores": {
-          "avg_logprob": -0.14231398900349934,
-          "compression_ratio": 0.9,
-          "no_speech_prob": 0.5662122964859009,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 5.22,
-            "end": 6.88,
-            "text": "的 用 某 种 程 度 上 来 说",
-            "score": 0.9285187787479825
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000495_000029.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 0.76,
-        "text": "Is it funny?",
-        "scores": {
-          "avg_logprob": -0.6548816204071045,
-          "compression_ratio": 0.8222222222222222,
-          "no_speech_prob": 0.39345499873161316,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 0.76,
-            "text": "Is it funny?",
-            "score": 0.7978309790293375
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 0.92,
-        "end": 1.92,
-        "text": "He's alright, Agnes.",
-        "scores": {
-          "avg_logprob": -0.6548816204071045,
-          "compression_ratio": 0.8222222222222222,
-          "no_speech_prob": 0.39345499873161316,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.92,
-            "end": 1.92,
-            "text": "He's alright, Agnes.",
-            "score": 0.4651299590865771
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 2.04,
-        "end": 2.2,
-        "text": "No.",
-        "scores": {
-          "avg_logprob": -0.6548816204071045,
-          "compression_ratio": 0.8222222222222222,
-          "no_speech_prob": 0.39345499873161316,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.04,
-            "end": 2.2,
-            "text": "No.",
-            "score": 0.9162487983703613
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000187_ad36015.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 4.2,
-        "text": "ज़रूरी तो मैं और मेरे कट लाइक रिजन्स है विल प्ले सम गुड थे",
-        "scores": {
-          "avg_logprob": -0.6466980576515198,
-          "compression_ratio": 1.3962264150943395,
-          "no_speech_prob": 0.08782334625720978,
-          "temperature": 0.4
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 4.2,
-            "text": "ज़रूरी तो मैं और मेरे कट लाइक रिजन्स है विल प्ले सम गुड थे",
-            "score": 0.6450740356212631
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000224_ad47049.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.38,
-        "text": "Indian food is my favorite",
-        "scores": {
-          "avg_logprob": -0.3382050096988678,
-          "compression_ratio": 0.7647058823529411,
-          "no_speech_prob": 0.29848092794418335,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 1.38,
-            "text": "Indian food is my favorite",
-            "score": 0.847674286365509
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000269_000751.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 4.12,
-        "text": "知道怎么去理解和掌握",
-        "scores": {
-          "avg_logprob": -0.1653521628606887,
-          "compression_ratio": 0.8225806451612904,
-          "no_speech_prob": 0.4225699305534363,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 4.3,
-            "text": "知道 怎么 去 理 解 和 掌 握 但是",
-            "score": 0.8321531845463647
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 4.12,
-        "end": 6.08,
-        "text": "但是不应该太多",
-        "scores": {
-          "avg_logprob": -0.1653521628606887,
-          "compression_ratio": 0.8225806451612904,
-          "no_speech_prob": 0.4225699305534363,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 3.94,
-            "end": 6.08,
-            "text": "握 但是 不 应 该 太 多",
-            "score": 0.8949672877788544
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000496_000030.wav",
-    "whisper_language": "en",
-    "segments": []
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000188_ad36017.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.24,
-        "text": "because you don't have progress.",
-        "scores": {
-          "avg_logprob": -0.4211338412377142,
-          "compression_ratio": 1.0869565217391304,
-          "no_speech_prob": 0.21914824843406677,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 1.24,
-            "text": "because you don't have progress.",
-            "score": 0.8328312575817108
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.56,
-        "end": 5.14,
-        "text": "Overall, Diwali is a lot of fun because it's a family get-together.",
-        "scores": {
-          "avg_logprob": -0.4211338412377142,
-          "compression_ratio": 1.0869565217391304,
-          "no_speech_prob": 0.21914824843406677,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 1.56,
-            "end": 4.76,
-            "text": "Overall, Diwali is a lot of fun because it's a family get",
-            "score": 0.7488804397483667
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000228_ad47059.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.42,
-        "text": "跟他差異特別大的人接",
-        "scores": {
-          "avg_logprob": -0.49062955379486084,
-          "compression_ratio": 0.7317073170731707,
-          "no_speech_prob": 0.29257437586784363,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 2.42,
-            "text": "跟 他 差 異 特別 大 的人 接",
-            "score": 0.838708184659481
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000270_000752.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.18,
-        "text": "就是还是要留出一些时间让我们自己去",
-        "scores": {
-          "avg_logprob": -0.35407887186322895,
-          "compression_ratio": 0.8225806451612904,
-          "no_speech_prob": 0.5249534845352173,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 3.18,
-            "text": "就是 还是 要 留 出 一些 时间 让 我们 自己 去",
-            "score": 0.858546411449259
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000498_000033.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.26,
-        "text": "a bit but depends.",
-        "scores": {
-          "avg_logprob": -0.6722535389225658,
-          "compression_ratio": 1.1401869158878504,
-          "no_speech_prob": 0.2354896515607834,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 1.26,
-            "text": "a bit but depends.",
-            "score": 0.6519469693303108
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.14,
-        "end": 3.54,
-        "text": "How good is the Nihame Odorai?",
-        "scores": {
-          "avg_logprob": -0.6722535389225658,
-          "compression_ratio": 1.1401869158878504,
-          "no_speech_prob": 0.2354896515607834,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.14,
-            "end": 3.54,
-            "text": "How good is the Nihame Odorai?",
-            "score": 0.3154659362302886
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 3.66,
-        "end": 4.38,
-        "text": "You want to...",
-        "scores": {
-          "avg_logprob": -0.6722535389225658,
-          "compression_ratio": 1.1401869158878504,
-          "no_speech_prob": 0.2354896515607834,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 3.66,
-            "end": 4.62,
-            "text": "You want to... For",
-            "score": 0.5986809823662043
-          }
-        ]
-      },
-      {
-        "segment_id": 3,
-        "start": 4.38,
-        "end": 8.18,
-        "text": "For some books, very interesting books I can read like...",
-        "scores": {
-          "avg_logprob": -0.6722535389225658,
-          "compression_ratio": 1.1401869158878504,
-          "no_speech_prob": 0.2354896515607834,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 4.2,
-            "end": 8.18,
-            "text": "to... For some books, very interesting books I can read like...",
-            "score": 0.8043133867057887
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000189_ad36025.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.14,
-        "text": "घर के जितने भी डोज होते हैं उन पर पत्तों और फूलों की मालाई लगाते हैं",
-        "scores": {
-          "avg_logprob": -0.1930091103842092,
-          "compression_ratio": 1.735042735042735,
-          "no_speech_prob": 0.14512810111045837,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 3.94,
-            "text": "घर के जितने भी डोज होते हैं उन पर पत्तों और फूलों की मालाई लगाते हैं पिपोस",
-            "score": 0.8673465456782268
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 3.14,
-        "end": 4.3,
-        "text": "पिपोस लाइट",
-        "scores": {
-          "avg_logprob": -0.1930091103842092,
-          "compression_ratio": 1.735042735042735,
-          "no_speech_prob": 0.14512810111045837,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 3.12,
-            "end": 4.3,
-            "text": "हैं पिपोस लाइट",
-            "score": 0.8253505367135245
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000229_ad47062.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 4.32,
-        "text": "Any dish which goes through the traditional process of cooking.",
-        "scores": {
-          "avg_logprob": -0.2878057616097586,
-          "compression_ratio": 0.9545454545454546,
-          "no_speech_prob": 0.1830643117427826,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 4.32,
-            "text": "Any dish which goes through the traditional process of cooking.",
-            "score": 0.9018577873706818
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000273_000755.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.7199999999999995,
-        "end": 2.34,
-        "text": "其实我到大学才发现",
-        "scores": {
-          "avg_logprob": -0.26692110841924493,
-          "compression_ratio": 0.8225806451612904,
-          "no_speech_prob": 0.6431713104248047,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.7199999999999995,
-            "end": 2.64,
-            "text": "其实 我 到 大 学 才 发 现 学",
-            "score": 0.7800833798117108
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.34,
-        "end": 4.62,
-        "text": "学习不应该是整天",
-        "scores": {
-          "avg_logprob": -0.26692110841924493,
-          "compression_ratio": 0.8225806451612904,
-          "no_speech_prob": 0.6431713104248047,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 2.08,
-            "end": 4.62,
-            "text": "现 学 习 不 应 该 是 整 天",
-            "score": 0.9641658299499087
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000501_000039.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.28,
-        "text": "So 勤都 .",
-        "scores": {
-          "avg_logprob": -0.6809232711791993,
-          "compression_ratio": 0.84,
-          "no_speech_prob": 0.25371289253234863,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 0.46,
-            "text": "So",
-            "score": 0.34824180603027344
-          },
-          {
-            "language": "zh",
-            "start": 0.46,
-            "end": 1.08,
-            "text": "勤都",
-            "score": 0.49354009330272675
-          },
-          {
-            "language": "en",
-            "start": 1.28,
-            "end": 1.92,
-            "text": "When",
-            "score": 0.4384794235229492
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.28,
-        "end": 4.28,
-        "text": "When I'm very busy, maybe I...",
-        "scores": {
-          "avg_logprob": -0.6809232711791993,
-          "compression_ratio": 0.84,
-          "no_speech_prob": 0.25371289253234863,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 1.28,
-            "end": 4.28,
-            "text": "When I'm very busy, maybe I...",
-            "score": 0.8345788692434629
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000190_ad36053.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.24,
-        "text": "और मैं यह बच्चे को बच्चे के लिए प्रभाव कर रहा था",
-        "scores": {
-          "avg_logprob": -0.48700139429662137,
-          "compression_ratio": 2.104294478527607,
-          "no_speech_prob": 0.030902480706572533,
-          "temperature": 0.2
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 2.58,
-            "text": "और मैं यह बच्चे को बच्चे के लिए प्रभाव कर रहा था जैसे",
-            "score": 0.6158766524722943
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.24,
-        "end": 3.96,
-        "text": "जैसे कि उसमें जितने भी सीजन",
-        "scores": {
-          "avg_logprob": -0.48700139429662137,
-          "compression_ratio": 2.104294478527607,
-          "no_speech_prob": 0.030902480706572533,
-          "temperature": 0.2
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 2.1,
-            "end": 4.6,
-            "text": "था जैसे कि उसमें जितने भी सीजन विश्वाद",
-            "score": 0.7032150844676477
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 3.96,
-        "end": 5.7,
-        "text": "विश्वाद विश्वाद विश्वाद",
-        "scores": {
-          "avg_logprob": -0.48700139429662137,
-          "compression_ratio": 2.104294478527607,
-          "no_speech_prob": 0.030902480706572533,
-          "temperature": 0.2
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 3.56,
-            "end": 6.34,
-            "text": "सीजन विश्वाद विश्वाद विश्वाद मैंने",
-            "score": 0.6926250670714811
-          }
-        ]
-      },
-      {
-        "segment_id": 3,
-        "start": 5.7,
-        "end": 7.7,
-        "text": "मैंने यह सब एक साथ बैठकर देखा है",
-        "scores": {
-          "avg_logprob": -0.48700139429662137,
-          "compression_ratio": 2.104294478527607,
-          "no_speech_prob": 0.030902480706572533,
-          "temperature": 0.2
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 5.28,
-            "end": 7.7,
-            "text": "विश्वाद मैंने यह सब एक साथ बैठकर देखा है",
-            "score": 0.7637249747059162
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000230_ad47066.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 5.38,
-        "text": "it is Australia. Yes again because it is related to the food.",
-        "scores": {
-          "avg_logprob": -0.4822546454036937,
-          "compression_ratio": 0.953125,
-          "no_speech_prob": 0.267291784286499,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 5.38,
-            "text": "it is Australia. Yes again because it is related to the food.",
-            "score": 0.7777210014561812
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000276_000759.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.64,
-        "text": "高中 不是 考 高考好像還改了",
-        "scores": {
-          "avg_logprob": -0.5691744653802169,
-          "compression_ratio": 0.9320388349514563,
-          "no_speech_prob": 0.5527846217155457,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 4.4,
-            "text": "高 中 不是 考 高 考 好像 還 改 了 就是",
-            "score": 0.7897948703982614
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 3.64,
-        "end": 5.12,
-        "text": "就是改",
-        "scores": {
-          "avg_logprob": -0.5691744653802169,
-          "compression_ratio": 0.9320388349514563,
-          "no_speech_prob": 0.5527846217155457,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 3.44,
-            "end": 5.12,
-            "text": "了 就是 改",
-            "score": 0.6244369943936666
-          },
-          {
-            "language": "en",
-            "start": 5.12,
-            "end": 5.3,
-            "text": "watch",
-            "score": 0.11402304470539093
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 5.12,
-        "end": 6.32,
-        "text": "watching series or",
-        "scores": {
-          "avg_logprob": -0.5691744653802169,
-          "compression_ratio": 0.9320388349514563,
-          "no_speech_prob": 0.5527846217155457,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 4.4,
-            "end": 5.12,
-            "text": "改",
-            "score": 0.1671653389930725
-          },
-          {
-            "language": "en",
-            "start": 5.12,
-            "end": 6.32,
-            "text": "watch ing series or",
-            "score": 0.5444003604352474
-          },
-          {
-            "language": "zh",
-            "start": 6.32,
-            "end": 6.7,
-            "text": "什麼",
-            "score": 0.4707464873790741
-          }
-        ]
-      },
-      {
-        "segment_id": 3,
-        "start": 6.32,
-        "end": 7.72,
-        "text": "什麼幾加幾",
-        "scores": {
-          "avg_logprob": -0.5691744653802169,
-          "compression_ratio": 0.9320388349514563,
-          "no_speech_prob": 0.5527846217155457,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 5.94,
-            "end": 6.32,
-            "text": "or",
-            "score": 0.4257005751132965
-          },
-          {
-            "language": "zh",
-            "start": 6.32,
-            "end": 8.62,
-            "text": "什麼 幾 加 幾 不",
-            "score": 0.5847525656223297
-          }
-        ]
-      },
-      {
-        "segment_id": 4,
-        "start": 7.72,
-        "end": 9.46,
-        "text": "不分文理科",
-        "scores": {
-          "avg_logprob": -0.5691744653802169,
-          "compression_ratio": 0.9320388349514563,
-          "no_speech_prob": 0.5527846217155457,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 7.4,
-            "end": 9.46,
-            "text": "幾 不 分 文 理 科",
-            "score": 0.823682834704717
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000504_000051.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 1.0400000000000027,
-        "end": 3.84,
-        "text": "Actually, I didn't read a lot of books.",
-        "scores": {
-          "avg_logprob": -0.6573582887649536,
-          "compression_ratio": 0.9342105263157895,
-          "no_speech_prob": 0.12907859683036804,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 1.0400000000000027,
-            "end": 3.84,
-            "text": "Actually, I didn't read a lot of books.",
-            "score": 0.8048198968172073
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 3.9,
-        "end": 6.18,
-        "text": "But I'm excited about Jin Yong.",
-        "scores": {
-          "avg_logprob": -0.6573582887649536,
-          "compression_ratio": 0.9342105263157895,
-          "no_speech_prob": 0.12907859683036804,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 3.9,
-            "end": 6.18,
-            "text": "But I'm excited about Jin Yong.",
-            "score": 0.5151208328704039
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000192_ad36106.wav",
-    "whisper_language": "ur",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.74,
-        "text": "اسے سننے کے دونوں نے سوچا",
-        "scores": {
-          "avg_logprob": -0.40934862409319195,
-          "compression_ratio": 1.0204081632653061,
-          "no_speech_prob": 0.41634178161621094,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "ur",
-            "start": 0.0,
-            "end": 1.74,
-            "text": "اسے سننے کے دونوں نے سوچا",
-            "score": -0.40934862409319195
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.74,
-        "end": 1.92,
-        "text": "کہ",
-        "scores": {
-          "avg_logprob": -0.40934862409319195,
-          "compression_ratio": 1.0204081632653061,
-          "no_speech_prob": 0.41634178161621094,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "ur",
-            "start": 1.74,
-            "end": 1.92,
-            "text": "کہ",
-            "score": -0.40934862409319195
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000234_ad47103.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 4.86,
-        "text": "Excited by their discovery they spent hours deciphering the symbols",
-        "scores": {
-          "avg_logprob": -0.4260183016459147,
-          "compression_ratio": 1.0307692307692307,
-          "no_speech_prob": 0.1275380253791809,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 4.86,
-            "text": "Excited by their discovery they spent hours deciphering the symbols",
-            "score": 0.7123043954372406
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000280_000800.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 0.92,
-        "text": "But I think Southern",
-        "scores": {
-          "avg_logprob": -0.5062844488355849,
-          "compression_ratio": 1.0350877192982457,
-          "no_speech_prob": 0.22157695889472961,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 1.12,
-            "text": "But I think Southern I",
-            "score": 0.6036888897418976
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 0.92,
-        "end": 2.42,
-        "text": "I think it will be better in Hong Kong",
-        "scores": {
-          "avg_logprob": -0.5062844488355849,
-          "compression_ratio": 1.0350877192982457,
-          "no_speech_prob": 0.22157695889472961,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.6,
-            "end": 2.42,
-            "text": "Southern I think it will be better in Hong Kong",
-            "score": 0.6238283634185791
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000505_000056.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.24,
-        "text": "For girls, we don't...",
-        "scores": {
-          "avg_logprob": -0.580269660949707,
-          "compression_ratio": 0.9137931034482759,
-          "no_speech_prob": 0.11239080131053925,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 1.42,
-            "text": "For girls, we don't... Happy,",
-            "score": 0.7370209932327271
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.24,
-        "end": 2.0,
-        "text": "Happy, happy Mooliming.",
-        "scores": {
-          "avg_logprob": -0.580269660949707,
-          "compression_ratio": 0.9137931034482759,
-          "no_speech_prob": 0.11239080131053925,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.96,
-            "end": 2.0,
-            "text": "don't... Happy, happy Mooliming.",
-            "score": 0.7444749483838677
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 2.14,
-        "end": 2.52,
-        "text": "I bet.",
-        "scores": {
-          "avg_logprob": -0.580269660949707,
-          "compression_ratio": 0.9137931034482759,
-          "no_speech_prob": 0.11239080131053925,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.14,
-            "end": 2.52,
-            "text": "I bet.",
-            "score": 0.6681778728961945
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000193_ad36111.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.58,
-        "text": "पर उन्होंने हिम्मत नहीं हारी",
-        "scores": {
-          "avg_logprob": -0.09917916370039227,
-          "compression_ratio": 1.6257668711656441,
-          "no_speech_prob": 0.04768117889761925,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 2.22,
-            "text": "पर उन्होंने हिम्मत नहीं हारी जब",
-            "score": 0.8646443647642931
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.58,
-        "end": 3.36,
-        "text": "जब वो गुफा तक पहुँच गए",
-        "scores": {
-          "avg_logprob": -0.09917916370039227,
-          "compression_ratio": 1.6257668711656441,
-          "no_speech_prob": 0.04768117889761925,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 1.28,
-            "end": 3.78,
-            "text": "हारी जब वो गुफा तक पहुँच गए उन्होंने",
-            "score": 0.9438224438252666
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 3.36,
-        "end": 5.38,
-        "text": "उन्होंने गुफा में एक अजीब सी आवाई",
-        "scores": {
-          "avg_logprob": -0.09917916370039227,
-          "compression_ratio": 1.6257668711656441,
-          "no_speech_prob": 0.04768117889761925,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 3.14,
-            "end": 5.38,
-            "text": "गए उन्होंने गुफा में एक अजीब सी आवाई",
-            "score": 0.956744772603824
-          },
-          {
-            "language": "en",
-            "start": 5.38,
-            "end": 5.5,
-            "text": "Sometimes",
-            "score": 0.18095852434635162
-          }
-        ]
-      },
-      {
-        "segment_id": 3,
-        "start": 5.38,
-        "end": 6.92,
-        "text": "Sometimes you feel like you're",
-        "scores": {
-          "avg_logprob": -0.09917916370039227,
-          "compression_ratio": 1.6257668711656441,
-          "no_speech_prob": 0.04768117889761925,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 4.96,
-            "end": 5.38,
-            "text": "आवाई",
-            "score": 0.7507749902350562
-          },
-          {
-            "language": "en",
-            "start": 5.38,
-            "end": 6.92,
-            "text": "Sometimes you feel like you're",
-            "score": 0.647017240524292
-          },
-          {
-            "language": "hi",
-            "start": 6.92,
-            "end": 7.3,
-            "text": "आजाई",
-            "score": 0.930674169744764
-          }
-        ]
-      },
-      {
-        "segment_id": 4,
-        "start": 6.92,
-        "end": 7.3,
-        "text": "आजाई",
-        "scores": {
-          "avg_logprob": -0.09917916370039227,
-          "compression_ratio": 1.6257668711656441,
-          "no_speech_prob": 0.04768117889761925,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 6.68,
-            "end": 6.92,
-            "text": "you're",
-            "score": 0.4811711758375168
-          },
-          {
-            "language": "hi",
-            "start": 6.92,
-            "end": 7.3,
-            "text": "आजाई",
-            "score": 0.930674169744764
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000235_ad47104.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 6.5,
-        "text": "finally translating a passage that spoke of a hidden portal to a magical world.",
-        "scores": {
-          "avg_logprob": -0.2017804119322035,
-          "compression_ratio": 1.0972222222222223,
-          "no_speech_prob": 0.03487936034798622,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 6.5,
-            "text": "finally translating a passage that spoke of a hidden portal to a magical world.",
-            "score": 0.9370447929416384
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000285_000805.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.56,
-        "text": "可能局限我的是在有些公司",
-        "scores": {
-          "avg_logprob": -0.2321466849400447,
-          "compression_ratio": 0.7659574468085106,
-          "no_speech_prob": 0.5041347742080688,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 3.56,
-            "text": "可能 局 限 我的 是 在 有 些 公 司",
-            "score": 0.8833324611186981
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000506_000057.wav",
-    "whisper_language": "id",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 4.06,
-        "text": "Tapi, kalian harus interrupt ya faire, menekan sekarang",
-        "scores": {
-          "avg_logprob": -4.8545384724934895,
-          "compression_ratio": 0.9166666666666666,
-          "no_speech_prob": 0.16645412147045135,
-          "temperature": 1.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 4.06,
-            "text": "Tapi, kalian harus interrupt ya faire, menekan sekarang",
-            "score": 0.06496807569428617
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000195_ad36158.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.26,
-        "text": "तो उसने कुछ चद्डर सी ले रखी है और वो उड़के दिखा रहा है",
-        "scores": {
-          "avg_logprob": -0.281518922435294,
-          "compression_ratio": 2.1013513513513513,
-          "no_speech_prob": 0.022961333394050598,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 3.42,
-            "text": "तो उसने कुछ चद्डर सी ले रखी है और वो उड़के दिखा रहा है तो",
-            "score": 0.9085996080769433
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 3.26,
-        "end": 5.24,
-        "text": "तो वो बदल नहीं रहा है, वो बदल नहीं रहा है",
-        "scores": {
-          "avg_logprob": -0.281518922435294,
-          "compression_ratio": 2.1013513513513513,
-          "no_speech_prob": 0.022961333394050598,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 3.12,
-            "end": 5.58,
-            "text": "है तो वो बदल नहीं रहा है, वो बदल नहीं रहा है इस",
-            "score": 0.7327570199202268
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 5.24,
-        "end": 7.3,
-        "text": "इस लिए एक पिक्चर बदल नहीं है",
-        "scores": {
-          "avg_logprob": -0.281518922435294,
-          "compression_ratio": 2.1013513513513513,
-          "no_speech_prob": 0.022961333394050598,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 5.04,
-            "end": 7.3,
-            "text": "है इस लिए एक पिक्चर बदल नहीं है",
-            "score": 0.7414303926751018
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000236_ad47112.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.66,
-        "text": "步行过来后,他们找到他们的身体",
-        "scores": {
-          "avg_logprob": -0.9519647359848022,
-          "compression_ratio": 0.8941176470588236,
-          "no_speech_prob": 0.09979809075593948,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 3.78,
-            "text": "步 行 过 来 后, 他们 找 到 他们 的 身 体 在",
-            "score": 0.34856439467806083
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 3.66,
-        "end": 5.74,
-        "text": "在一个荒凉的魔术森林中",
-        "scores": {
-          "avg_logprob": -0.9519647359848022,
-          "compression_ratio": 0.8941176470588236,
-          "no_speech_prob": 0.09979809075593948,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 2.14,
-            "end": 5.74,
-            "text": "体 在 一个 荒 凉 的 魔 术 森 林 中",
-            "score": 0.6208760870451276
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000288_000808.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 1.1599999999999995,
-        "end": 4.9,
-        "text": "但是對我來說,我當初不選擇在",
-        "scores": {
-          "avg_logprob": -0.38772767782211304,
-          "compression_ratio": 0.7843137254901961,
-          "no_speech_prob": 0.6804186701774597,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 1.1599999999999995,
-            "end": 4.9,
-            "text": "但是 對 我 來說, 我 當 初 不 選 擇 在",
-            "score": 0.8655995211818002
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000507_000072.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 3.02,
-        "text": "In Chinese, it means three bodies.",
-        "scores": {
-          "avg_logprob": -0.4779204455288974,
-          "compression_ratio": 0.8095238095238095,
-          "no_speech_prob": 0.20201602578163147,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 3.02,
-            "text": "In Chinese, it means three bodies.",
-            "score": 0.5993028804659843
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000197_ad40044.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 5.04,
-        "text": "तो एंसी आर है तो था इस विकॉर देविज नो",
-        "scores": {
-          "avg_logprob": -0.43392820136491644,
-          "compression_ratio": 1.2567567567567568,
-          "no_speech_prob": 0.044645749032497406,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 5.04,
-            "text": "तो एंसी आर है तो था इस विकॉर देविज नो",
-            "score": 0.7511834866943812
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000237_ad47132.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.22,
-        "text": "He's totally exhausted. What to do next?",
-        "scores": {
-          "avg_logprob": -0.3015878200531006,
-          "compression_ratio": 0.851063829787234,
-          "no_speech_prob": 0.021655986085534096,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 2.22,
-            "text": "He's totally exhausted. What to do next?",
-            "score": 0.9412075877189636
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000289_000809.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.64,
-        "text": "大陆念研究生的原因就是不想念三年",
-        "scores": {
-          "avg_logprob": -0.14650067975444178,
-          "compression_ratio": 0.9130434782608695,
-          "no_speech_prob": 0.6484237909317017,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 2.82,
-            "text": "大 陆 念 研 究 生 的 原因 就是 不 想 念 三 年 我觉得",
-            "score": 0.9160538097222646
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.64,
-        "end": 5.44,
-        "text": "我觉得三年对我来说太长了",
-        "scores": {
-          "avg_logprob": -0.14650067975444178,
-          "compression_ratio": 0.9130434782608695,
-          "no_speech_prob": 0.6484237909317017,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 2.34,
-            "end": 5.44,
-            "text": "年 我觉得 三 年 对 我 来 说 太 长 了",
-            "score": 0.9393467198718678
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000508_000076.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.96,
-        "text": "Black Forest",
-        "scores": {
-          "avg_logprob": -0.6907094717025757,
-          "compression_ratio": 0.7241379310344828,
-          "no_speech_prob": 0.6616172194480896,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 3.72,
-            "text": "Black Forest Ethereum",
-            "score": 0.4992659091949463
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.96,
-        "end": 3.72,
-        "text": "Ethereum",
-        "scores": {
-          "avg_logprob": -0.6907094717025757,
-          "compression_ratio": 0.7241379310344828,
-          "no_speech_prob": 0.6616172194480896,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.64,
-            "end": 3.72,
-            "text": "Forest Ethereum",
-            "score": 0.5517108738422394
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000198_ad40049.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.06,
-        "text": "पहाड़ी या फिर",
-        "scores": {
-          "avg_logprob": -0.18754240282538798,
-          "compression_ratio": 1.9090909090909092,
-          "no_speech_prob": 0.12644058465957642,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 1.28,
-            "text": "पहाड़ी या फिर जी",
-            "score": 0.8339056298136711
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.06,
-        "end": 2.38,
-        "text": "जी में ने स्टुदेंस देखें",
-        "scores": {
-          "avg_logprob": -0.18754240282538798,
-          "compression_ratio": 1.9090909090909092,
-          "no_speech_prob": 0.12644058465957642,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.74,
-            "end": 2.78,
-            "text": "फिर जी में ने स्टुदेंस देखें उन्दी",
-            "score": 0.6103817647900122
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 2.38,
-        "end": 2.78,
-        "text": "उन्दी",
-        "scores": {
-          "avg_logprob": -0.18754240282538798,
-          "compression_ratio": 1.9090909090909092,
-          "no_speech_prob": 0.12644058465957642,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 2.0,
-            "end": 3.1,
-            "text": "देखें उन्दी इसी",
-            "score": 0.6187663007350195
-          }
-        ]
-      },
-      {
-        "segment_id": 3,
-        "start": 2.78,
-        "end": 6.56,
-        "text": "इसी आउट सेशन जैसे शहर में हो सकता है",
-        "scores": {
-          "avg_logprob": -0.18754240282538798,
-          "compression_ratio": 1.9090909090909092,
-          "no_speech_prob": 0.12644058465957642,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 2.38,
-            "end": 7.18,
-            "text": "उन्दी इसी आउट सेशन जैसे शहर में हो सकता है क्योंकि",
-            "score": 0.9140334905355008
-          }
-        ]
-      },
-      {
-        "segment_id": 4,
-        "start": 6.56,
-        "end": 10.38,
-        "text": "क्योंकि वहाँ पे बहुत डिफरेंट जगह के लोग होते हैं",
-        "scores": {
-          "avg_logprob": -0.18754240282538798,
-          "compression_ratio": 1.9090909090909092,
-          "no_speech_prob": 0.12644058465957642,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 6.42,
-            "end": 10.38,
-            "text": "है क्योंकि वहाँ पे बहुत डिफरेंट जगह के लोग होते हैं",
-            "score": 0.9418554035358099
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000238_ad47156.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.2,
-        "text": "he's acting for something",
-        "scores": {
-          "avg_logprob": -0.4920329451560974,
-          "compression_ratio": 0.8064516129032258,
-          "no_speech_prob": 0.07808367162942886,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 1.2,
-            "text": "he's acting for something",
-            "score": 0.799399696290493
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000293_000819.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 1.9,
-        "text": "平台接触更多的平台",
-        "scores": {
-          "avg_logprob": -0.43399549299670803,
-          "compression_ratio": 0.9746835443037974,
-          "no_speech_prob": 0.698978841304779,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 0.0,
-            "end": 1.9,
-            "text": "平 台 接 触 更 多 的 平 台",
-            "score": 0.8420883309510019
-          },
-          {
-            "language": "en",
-            "start": 1.9,
-            "end": 2.0,
-            "text": "C",
-            "score": 0.08500490337610245
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 1.9,
-        "end": 3.22,
-        "text": "Celebrity loss festival",
-        "scores": {
-          "avg_logprob": -0.43399549299670803,
-          "compression_ratio": 0.9746835443037974,
-          "no_speech_prob": 0.698978841304779,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "zh",
-            "start": 1.64,
-            "end": 1.9,
-            "text": "台",
-            "score": 0.9981092214584351
-          },
-          {
-            "language": "en",
-            "start": 1.9,
-            "end": 3.22,
-            "text": "C e lebr ity loss festival",
-            "score": 0.5815024139980475
-          },
-          {
-            "language": "zh",
-            "start": 3.22,
-            "end": 3.58,
-            "text": "然后",
-            "score": 0.8730190396308899
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 3.22,
-        "end": 4.82,
-        "text": "然后了解更多的东西",
-        "scores": {
-          "avg_logprob": -0.43399549299670803,
-          "compression_ratio": 0.9746835443037974,
-          "no_speech_prob": 0.698978841304779,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 2.8,
-            "end": 3.22,
-            "text": "festival",
-            "score": 0.7015934586524963
-          },
-          {
-            "language": "zh",
-            "start": 3.22,
-            "end": 4.82,
-            "text": "然后 了 解 更 多 的 东 西",
-            "score": 0.8178557343780994
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000509_000077.wav",
-    "whisper_language": "en",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 2.16,
-        "text": "Something like that. I really think it's...",
-        "scores": {
-          "avg_logprob": -0.7877206802368164,
-          "compression_ratio": 1.0470588235294118,
-          "no_speech_prob": 0.08125057816505432,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 2.66,
-            "text": "Something like that. I really think it's... It's very good.",
-            "score": 0.6365220547964175
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 2.16,
-        "end": 3.34,
-        "text": "It's very good. It's in my air.",
-        "scores": {
-          "avg_logprob": -0.7877206802368164,
-          "compression_ratio": 1.0470588235294118,
-          "no_speech_prob": 0.08125057816505432,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 1.82,
-            "end": 3.34,
-            "text": "it's... It's very good. It's in my air.",
-            "score": 0.35828927919889486
-          }
-        ]
-      },
-      {
-        "segment_id": 2,
-        "start": 3.9799999999999995,
-        "end": 4.94,
-        "text": "Oh, creative!",
-        "scores": {
-          "avg_logprob": -0.7877206802368164,
-          "compression_ratio": 1.0470588235294118,
-          "no_speech_prob": 0.08125057816505432,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 3.9799999999999995,
-            "end": 4.94,
-            "text": "Oh, creative!",
-            "score": 0.8147072196006775
           }
         ]
       }
