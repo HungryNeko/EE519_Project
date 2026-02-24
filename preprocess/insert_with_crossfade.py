@@ -1,7 +1,10 @@
 import argparse
 import json
 import math
+import os
 import random
+import stat
+import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -499,12 +502,18 @@ def process_one_pair(
             continue
 
         target_sec = target_wav.size / target_sr
-        max_allowed = min(insert_max_sec, target_sec * 0.5)
-        if max_allowed < insert_min_sec:
+        if 3.0 <= target_sec <= 5.0:
+            insert_sec = insert_min_sec
+        elif target_sec > 5.0:
+            insert_sec = insert_max_sec
+        else:
             stats["skip_short_target"] += 1
             continue
 
-        insert_sec = rng.uniform(insert_min_sec, max_allowed)
+        if insert_sec > target_sec * 0.5:
+            stats["skip_short_target"] += 1
+            continue
+
         source_pick = choose_insert_segment(
             source_records=source_records,
             source_json_path=source_json_path,
@@ -523,7 +532,7 @@ def process_one_pair(
             max_insert_samples = max(1, target_wav.size // 2)
             if insert_seg.size > max_insert_samples:
                 insert_seg = insert_seg[:max_insert_samples].copy()
-            min_insert_samples = max(1, int(math.ceil(insert_min_sec * target_sr)))
+            min_insert_samples = max(1, int(math.ceil(insert_sec * target_sr)))
             if insert_seg.size < min_insert_samples:
                 stats["skip_no_source_clip"] += 1
                 continue
@@ -600,13 +609,13 @@ def process_one_pair(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Batch cross-language insertion with random 1.0~2.0s clips that contain speech "
-            "at random in-window positions, with crossfade. "
+            "Batch cross-language insertion with rule-based insert duration: "
+            "3~5s targets use 1.3s, >5s targets use 2.0s, with crossfade. "
             "Runs 4 fixed tasks by default."
         )
     )
     parser.add_argument("--output-root", type=Path, default=Path("datasets/crossfade_insertions"))
-    parser.add_argument("--insert-min-sec", type=float, default=1.0)
+    parser.add_argument("--insert-min-sec", type=float, default=1.3)
     parser.add_argument("--insert-max-sec", type=float, default=2.0)
     parser.add_argument("--crossfade-ms", type=float, default=80.0)
     parser.add_argument("--noise-mix", type=float, default=0.0)
@@ -615,7 +624,101 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--max-items-per-pair", type=int, default=None)
     parser.add_argument("--max-source-tries", type=int, default=60)
+    parser.add_argument(
+        "--clean-output",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Delete existing output-root before generation (default: True).",
+    )
+    parser.add_argument("--clean-retries", type=int, default=8)
+    parser.add_argument("--clean-wait-sec", type=float, default=0.5)
     return parser.parse_args()
+
+
+def _make_writable(path: Path) -> None:
+    try:
+        os.chmod(str(path), stat.S_IWRITE)
+    except OSError:
+        pass
+
+
+def _delete_path(path: Path, retries: int, wait_sec: float) -> None:
+    total_tries = max(1, retries)
+    for attempt in range(1, total_tries + 1):
+        try:
+            if path.is_dir() and not path.is_symlink():
+                for child in list(path.iterdir()):
+                    _delete_path(child, retries=retries, wait_sec=wait_sec)
+                path.rmdir()
+            else:
+                _make_writable(path)
+                path.unlink()
+            return
+        except FileNotFoundError:
+            return
+        except OSError:
+            if attempt < total_tries:
+                _make_writable(path)
+                time.sleep(max(0.0, wait_sec))
+                continue
+            raise
+
+
+def _sample_remaining_entries(root: Path, project_root: Path, limit: int = 5) -> List[str]:
+    if not root.exists():
+        return []
+    out: List[str] = []
+    try:
+        for p in root.rglob("*"):
+            out.append(format_path(p, project_root))
+            if len(out) >= limit:
+                break
+    except OSError:
+        pass
+    return out
+
+
+def clean_output_directory(output_root: Path, project_root: Path, retries: int, wait_sec: float) -> None:
+    if not output_root.exists():
+        return
+
+    output_root_resolved = output_root.resolve()
+    project_root_resolved = project_root.resolve()
+    if output_root_resolved == project_root_resolved:
+        raise ValueError("Refusing to delete project root. Please set --output-root to a subdirectory.")
+
+    print(f"[Info] Cleaning output directory: {format_path(output_root_resolved, project_root)}")
+    last_err: Optional[Exception] = None
+    total_tries = max(1, retries)
+    per_path_retries = 2
+    for attempt in range(1, total_tries + 1):
+        try:
+            _delete_path(output_root_resolved, retries=per_path_retries, wait_sec=wait_sec)
+            return
+        except FileNotFoundError:
+            return
+        except OSError as exc:
+            last_err = exc
+            if attempt < total_tries:
+                print(
+                    f"[Warn] Cleanup failed ({type(exc).__name__}: {exc}). "
+                    + f"Retry {attempt}/{total_tries - 1} in {wait_sec:.1f}s..."
+                )
+                time.sleep(max(0.0, wait_sec))
+                continue
+            break
+
+    remain = _sample_remaining_entries(output_root_resolved, project_root, limit=5)
+    remain_hint = ""
+    if remain:
+        remain_hint = " Remaining paths (sample): " + ", ".join(remain)
+
+    raise RuntimeError(
+        "Failed to clean output directory because some files are still in use by another program. "
+        + "Close file explorers/audio players/other Python processes that may open output wav files and retry. "
+        + "If needed, run once with --no-clean-output."
+        + remain_hint
+    ) from last_err
 
 
 def main() -> None:
@@ -624,9 +727,23 @@ def main() -> None:
         raise ValueError("insert-min-sec and insert-max-sec must be positive.")
     if args.insert_min_sec > args.insert_max_sec:
         raise ValueError("insert-min-sec must be <= insert-max-sec.")
+    if args.clean_retries <= 0:
+        raise ValueError("clean-retries must be positive.")
+    if args.clean_wait_sec < 0:
+        raise ValueError("clean-wait-sec must be >= 0.")
 
     project_root = Path(__file__).resolve().parents[1]
     output_root = args.output_root if args.output_root.is_absolute() else (project_root / args.output_root)
+    if output_root.exists() and args.clean_output:
+        try:
+            clean_output_directory(
+                output_root=output_root,
+                project_root=project_root,
+                retries=int(args.clean_retries),
+                wait_sec=float(args.clean_wait_sec),
+            )
+        except RuntimeError as exc:
+            raise SystemExit(f"[Error] {exc}") from None
     output_root.mkdir(parents=True, exist_ok=True)
 
     random.seed(args.seed)
