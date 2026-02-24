@@ -1,13 +1,13 @@
 [
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000000_ad09016.wav",
-    "whisper_language": "hi",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 3.42,
-        "text": "और यह वाइपी में आता है",
+        "end": 3.48,
+        "text": "और यह विकस वाइपी में आता है",
         "scores": {
           "avg_logprob": -0.23744676663325384,
           "compression_ratio": 0.9655172413793104,
@@ -18,9 +18,9 @@
           {
             "language": "hi",
             "start": 0.0,
-            "end": 3.42,
-            "text": "और यह वाइपी में आता है",
-            "score": 0.8891897909343243
+            "end": 3.4,
+            "text": "और यह विकस वाइपी में आता है",
+            "score": 0.8630581770624434
           }
         ]
       }
@@ -28,13 +28,13 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000000_ad09001.wav",
-    "whisper_language": "zh",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 7.74,
-        "text": "所以问题是,你最喜欢的节目是什么?你最后一项节目是如何庆祝的?你对这些节目的感受是什么?",
+        "end": 8.0,
+        "text": "So the question is, what's your favorite festival? How did you celebrate your last festival? What do you feel about that?",
         "scores": {
           "avg_logprob": -0.5634945071473414,
           "compression_ratio": 1.1239669421487604,
@@ -43,18 +43,18 @@
         },
         "language_spans": [
           {
-            "language": "zh",
+            "language": "en",
             "start": 0.0,
-            "end": 8.14,
-            "text": "所以 问题 是, 你 最 喜欢 的 节 目 是 什么? 你 最 后 一 项 节 目 是 如何 庆 祝 的? 你 对 这 些 节 目 的 感 受 是 什么? 像",
-            "score": 0.6470884014453206
+            "end": 7.64,
+            "text": "So the question is, what's your favorite festival? How did you celebrate your last festival? What do you feel about that?",
+            "score": 0.9682889424619221
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 7.74,
-        "end": 8.58,
+        "start": 8.0,
+        "end": 9.0,
         "text": "像我一些",
         "scores": {
           "avg_logprob": -0.5634945071473414,
@@ -65,10 +65,10 @@
         "language_spans": [
           {
             "language": "zh",
-            "start": 7.66,
+            "start": 8.0,
             "end": 8.58,
-            "text": "些 节 目 的 感 受 是 什么? 像 我 一些",
-            "score": 0.6878966120156375
+            "text": "像 我 一些",
+            "score": 0.9752395947774252
           }
         ]
       }
@@ -76,13 +76,13 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000001_000007.wav",
-    "whisper_language": "en",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
-        "start": 0.5599999999999997,
-        "end": 1.7,
-        "text": "See, this is the fifth image.",
+        "start": 0.0,
+        "end": 1.8,
+        "text": "and join this is the fifth image",
         "scores": {
           "avg_logprob": -0.5164525725624778,
           "compression_ratio": 0.9,
@@ -92,18 +92,18 @@
         "language_spans": [
           {
             "language": "en",
-            "start": 0.5599999999999997,
-            "end": 1.7,
-            "text": "See, this is the fifth image.",
-            "score": 0.8521318833033243
+            "start": 0.0,
+            "end": 1.66,
+            "text": "and join this is the fifth image",
+            "score": 0.5550832759056773
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 1.82,
-        "end": 2.36,
-        "text": "It looks like a...",
+        "start": 1.96,
+        "end": 2.46,
+        "text": "lijkt",
         "scores": {
           "avg_logprob": -0.5164525725624778,
           "compression_ratio": 0.9,
@@ -113,18 +113,18 @@
         "language_spans": [
           {
             "language": "en",
-            "start": 1.82,
-            "end": 2.5,
-            "text": "It looks like a... Yeah.",
-            "score": 0.7941531479358673
+            "start": 1.96,
+            "end": 2.26,
+            "text": "lijkt",
+            "score": 0.49856792390346527
           }
         ]
       },
       {
         "segment_id": 2,
-        "start": 2.36,
+        "start": 2.46,
         "end": 2.5,
-        "text": "Yeah.",
+        "text": "Thank you.",
         "scores": {
           "avg_logprob": -0.5164525725624778,
           "compression_ratio": 0.9,
@@ -134,10 +134,10 @@
         "language_spans": [
           {
             "language": "en",
-            "start": 2.14,
-            "end": 2.5,
-            "text": "a... Yeah.",
-            "score": 0.7985903173685074
+            "start": 2.46,
+            "end": 2.48,
+            "text": "Thank you.",
+            "score": 0.5747219920158386
           }
         ]
       }
@@ -145,12 +145,12 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000001_000002.wav",
-    "whisper_language": "en",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 1.24,
+        "end": 1.44,
         "text": "What's your major?",
         "scores": {
           "avg_logprob": -0.547290219200982,
@@ -162,17 +162,17 @@
           {
             "language": "en",
             "start": 0.0,
-            "end": 1.24,
+            "end": 1.18,
             "text": "What's your major?",
-            "score": 0.7165484627087911
+            "score": 0.6811670362949371
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 1.42,
-        "end": 3.78,
-        "text": "What's your major and your hobbies?",
+        "start": 1.44,
+        "end": 4.0,
+        "text": "Would you have a person letter and your home?",
         "scores": {
           "avg_logprob": -0.547290219200982,
           "compression_ratio": 1.255813953488372,
@@ -182,10 +182,10 @@
         "language_spans": [
           {
             "language": "en",
-            "start": 1.42,
-            "end": 3.78,
-            "text": "What's your major and your hobbies?",
-            "score": 0.7439340303341547
+            "start": 1.44,
+            "end": 3.76,
+            "text": "Would you have a person letter and your home?",
+            "score": 0.5880921069118712
           }
         ]
       }
@@ -193,13 +193,13 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000001_ad09028.wav",
-    "whisper_language": "hi",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 3.14,
-        "text": "यह मेरे सारे फेब्रिट फूड्स हैं",
+        "end": 3.5,
+        "text": "ये मेरे सारे फेब्रिया फूड्स हैं",
         "scores": {
           "avg_logprob": -0.3339005606515067,
           "compression_ratio": 1.1594202898550725,
@@ -211,8 +211,8 @@
             "language": "hi",
             "start": 0.0,
             "end": 3.14,
-            "text": "यह मेरे सारे फेब्रिट फूड्स हैं",
-            "score": 0.8593999852736792
+            "text": "ये मेरे सारे फेब्रिया फूड्स हैं",
+            "score": 0.8560969662335185
           }
         ]
       }
@@ -220,12 +220,12 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000001_ad09004.wav",
-    "whisper_language": "en",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 2.46,
+        "end": 2.56,
         "text": "How did you celebrate your last festival?",
         "scores": {
           "avg_logprob": -0.4306525695018279,
@@ -237,17 +237,17 @@
           {
             "language": "en",
             "start": 0.0,
-            "end": 2.46,
+            "end": 2.22,
             "text": "How did you celebrate your last festival?",
-            "score": 0.9382462586675372
+            "score": 0.9736359460013253
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 2.7,
-        "end": 8.22,
-        "text": "I celebrate my last festival with my daughter.",
+        "start": 3.2,
+        "end": 8.34,
+        "text": "I celebrate my last festival with my daughter",
         "scores": {
           "avg_logprob": -0.4306525695018279,
           "compression_ratio": 1.4356435643564356,
@@ -257,18 +257,18 @@
         "language_spans": [
           {
             "language": "en",
-            "start": 2.7,
-            "end": 8.22,
-            "text": "I celebrate my last festival with my daughter.",
-            "score": 0.9119642600417137
+            "start": 3.2,
+            "end": 8.120000000000001,
+            "text": "I celebrate my last festival with my daughter",
+            "score": 0.8008595108985901
           }
         ]
       },
       {
         "segment_id": 2,
-        "start": 8.4,
-        "end": 13.94,
-        "text": "And my daughter loves Diwali.",
+        "start": 9.28,
+        "end": 13.98,
+        "text": "और जो मेरी daughter है उसको बहुत पसंद है देवाली",
         "scores": {
           "avg_logprob": -0.4306525695018279,
           "compression_ratio": 1.4356435643564356,
@@ -277,19 +277,33 @@
         },
         "language_spans": [
           {
+            "language": "hi",
+            "start": 9.28,
+            "end": 9.92,
+            "text": "और जो मेरी",
+            "score": 0.9361671308676401
+          },
+          {
             "language": "en",
-            "start": 8.4,
-            "end": 13.94,
-            "text": "And my daughter loves Diwali.",
-            "score": 0.641286301612854
+            "start": 9.92,
+            "end": 10.28,
+            "text": "daughter",
+            "score": 0.8429361581802368
+          },
+          {
+            "language": "hi",
+            "start": 10.28,
+            "end": 13.959999999999999,
+            "text": "है उसको बहुत पसंद है देवाली",
+            "score": 0.9869499797622363
           }
         ]
       },
       {
         "segment_id": 3,
-        "start": 14.02,
-        "end": 16.42,
-        "text": "And as she loves crackers.",
+        "start": 13.98,
+        "end": 16.9,
+        "text": "and as she loves crackers",
         "scores": {
           "avg_logprob": -0.4306525695018279,
           "compression_ratio": 1.4356435643564356,
@@ -299,10 +313,10 @@
         "language_spans": [
           {
             "language": "en",
-            "start": 14.02,
-            "end": 16.42,
-            "text": "And as she loves crackers.",
-            "score": 0.8526921749114991
+            "start": 13.98,
+            "end": 16.4,
+            "text": "and as she loves crackers",
+            "score": 0.9016031503677369
           }
         ]
       }
@@ -310,12 +324,12 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000006_000022.wav",
-    "whisper_language": "zh",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
-        "start": 1.640000000000001,
-        "end": 4.06,
+        "start": 0.0,
+        "end": 4.24,
         "text": "因為感覺香港好多都深圳人",
         "scores": {
           "avg_logprob": -0.3164547039912297,
@@ -329,7 +343,7 @@
             "start": 1.640000000000001,
             "end": 4.06,
             "text": "因為 感覺 香港 好 多 都 深 圳 人",
-            "score": 0.8863006399737464
+            "score": 0.8853701717323728
           }
         ]
       }
@@ -337,13 +351,13 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000007_000012.wav",
-    "whisper_language": "en",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 2.9,
-        "text": "Yeah. MSC and I am a master.",
+        "end": 3.84,
+        "text": "Ja, MS og hjemme. Skabt en aktual råd.",
         "scores": {
           "avg_logprob": -0.8823457864614633,
           "compression_ratio": 0.7777777777777778,
@@ -354,9 +368,9 @@
           {
             "language": "en",
             "start": 0.0,
-            "end": 2.9,
-            "text": "Yeah. MSC and I am a master.",
-            "score": 0.507325970700809
+            "end": 3.4,
+            "text": "Ja, MS og hjemme. Skabt en aktual råd.",
+            "score": 0.5876126987859608
           }
         ]
       }
@@ -364,12 +378,12 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000003_ad09051.wav",
-    "whisper_language": "en",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 6.42,
+        "end": 6.62,
         "text": "As they walked through the jungle, they felt as if someone was watching them.",
         "scores": {
           "avg_logprob": -0.37133312225341797,
@@ -383,15 +397,15 @@
             "start": 0.0,
             "end": 6.42,
             "text": "As they walked through the jungle, they felt as if someone was watching them.",
-            "score": 0.9456450428281512
+            "score": 0.9498774749892098
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 6.58,
-        "end": 8.58,
-        "text": "But they didn't lose their courage.",
+        "start": 6.62,
+        "end": 9.28,
+        "text": "پر انہوں نے ہمت نہیں ہاری",
         "scores": {
           "avg_logprob": -0.37133312225341797,
           "compression_ratio": 1.1894736842105262,
@@ -400,11 +414,11 @@
         },
         "language_spans": [
           {
-            "language": "en",
-            "start": 6.58,
-            "end": 8.58,
-            "text": "But they didn't lose their courage.",
-            "score": 0.7370819648106893
+            "language": "ur",
+            "start": 6.62,
+            "end": 9.28,
+            "text": "پر انہوں نے ہمت نہیں ہاری",
+            "score": -0.37133312225341797
           }
         ]
       }
@@ -412,12 +426,12 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000002_ad09008.wav",
-    "whisper_language": "en",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 3.32,
+        "end": 3.74,
         "text": "Yes, I do watch the watching series.",
         "scores": {
           "avg_logprob": -0.3183551828066508,
@@ -431,7 +445,7 @@
             "start": 0.0,
             "end": 3.32,
             "text": "Yes, I do watch the watching series.",
-            "score": 0.8023494737488883
+            "score": 0.7879141654287066
           }
         ]
       }
@@ -439,13 +453,13 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000009_000031.wav",
-    "whisper_language": "zh",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 1.44,
-        "text": "你看着我像分不清嘛",
+        "end": 1.54,
+        "text": "你看着我像分不清吗",
         "scores": {
           "avg_logprob": -0.38731510298592703,
           "compression_ratio": 0.8450704225352113,
@@ -456,16 +470,16 @@
           {
             "language": "zh",
             "start": 0.0,
-            "end": 1.62,
-            "text": "你看 着 我 像 分 不 清 嘛 你",
-            "score": 0.9213940501213074
+            "end": 1.4,
+            "text": "你看 着 我 像 分 不 清 吗",
+            "score": 0.9262933060526848
           }
         ]
       },
       {
         "segment_id": 1,
-        "start": 1.44,
-        "end": 2.06,
+        "start": 1.54,
+        "end": 2.2,
         "text": "你都说",
         "scores": {
           "avg_logprob": -0.38731510298592703,
@@ -476,18 +490,18 @@
         "language_spans": [
           {
             "language": "zh",
-            "start": 1.26,
-            "end": 2.42,
-            "text": "嘛 你 都 说 是",
-            "score": 0.7525285392999649
+            "start": 1.54,
+            "end": 2.06,
+            "text": "你 都 说",
+            "score": 0.9424941937128702
           }
         ]
       },
       {
         "segment_id": 2,
-        "start": 2.06,
-        "end": 3.1,
-        "text": "是那个比较",
+        "start": 2.2,
+        "end": 3.14,
+        "text": "scenic view",
         "scores": {
           "avg_logprob": -0.38731510298592703,
           "compression_ratio": 0.8450704225352113,
@@ -496,19 +510,19 @@
         },
         "language_spans": [
           {
-            "language": "zh",
-            "start": 1.74,
-            "end": 3.24,
-            "text": "说 是 那个 比 较 是",
-            "score": 0.43514100772639114
+            "language": "en",
+            "start": 2.2,
+            "end": 2.92,
+            "text": "scenic view",
+            "score": 0.6183868497610092
           }
         ]
       },
       {
         "segment_id": 3,
-        "start": 3.1,
-        "end": 3.56,
-        "text": "是北方",
+        "start": 3.14,
+        "end": 3.62,
+        "text": "perfect form.",
         "scores": {
           "avg_logprob": -0.38731510298592703,
           "compression_ratio": 0.8450704225352113,
@@ -517,11 +531,11 @@
         },
         "language_spans": [
           {
-            "language": "zh",
-            "start": 3.04,
-            "end": 3.56,
-            "text": "较 是 北 方",
-            "score": 0.6415927084162831
+            "language": "en",
+            "start": 3.14,
+            "end": 3.5,
+            "text": "perfect form.",
+            "score": 0.2754553556442261
           }
         ]
       }
@@ -529,12 +543,12 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000013_000025.wav",
-    "whisper_language": "en",
+    "whisper_language": "segment_based",
     "segments": [
       {
         "segment_id": 0,
         "start": 0.0,
-        "end": 2.28,
+        "end": 4.5600000000000005,
         "text": "really close to Guangdong province.",
         "scores": {
           "avg_logprob": -0.7226863861083984,
@@ -548,90 +562,10 @@
             "start": 0.0,
             "end": 2.28,
             "text": "really close to Guangdong province.",
-            "score": 0.6759229898452759
+            "score": 0.677860701084137
           }
         ]
       }
     ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000004_ad09055.wav",
-    "whisper_language": "hi",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 8.62,
-        "text": "ये गुफा उन लोगों के लिए है जो दोस्ती में प्यार में और साथ में हमेशा रहते हैं।",
-        "scores": {
-          "avg_logprob": -0.036738878343163466,
-          "compression_ratio": 2.0864864864864865,
-          "no_speech_prob": 0.01715715043246746,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 0.0,
-            "end": 9.02,
-            "text": "ये गुफा उन लोगों के लिए है जो दोस्ती में प्यार में और साथ में हमेशा रहते हैं। चिंटू",
-            "score": 0.9740434231166554
-          }
-        ]
-      },
-      {
-        "segment_id": 1,
-        "start": 8.62,
-        "end": 14.54,
-        "text": "चिंटू और राजू ने इस राज को समझा और इसके बाद से उनकी दोस्ती और मजबूत हो गई।",
-        "scores": {
-          "avg_logprob": -0.036738878343163466,
-          "compression_ratio": 2.0864864864864865,
-          "no_speech_prob": 0.01715715043246746,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "hi",
-            "start": 8.14,
-            "end": 14.54,
-            "text": "हैं। चिंटू और राजू ने इस राज को समझा और इसके बाद से उनकी दोस्ती और मजबूत हो गई।",
-            "score": 0.9862450667640621
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000003_ad09021.wav",
-    "whisper_language": "zh",
-    "segments": [
-      {
-        "segment_id": 0,
-        "start": 0.0,
-        "end": 6.18,
-        "text": "What kind of food do you like? Can you tell me about your favorite dish?",
-        "scores": {
-          "avg_logprob": -0.19268207550048827,
-          "compression_ratio": 1.0140845070422535,
-          "no_speech_prob": 0.1419287770986557,
-          "temperature": 0.0
-        },
-        "language_spans": [
-          {
-            "language": "en",
-            "start": 0.0,
-            "end": 6.18,
-            "text": "What kind of food do you like? Can you tell me about your favorite dish?",
-            "score": 0.8726701259613037
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000013_000038.wav",
-    "whisper_language": "en",
-    "segments": []
   }
 ]

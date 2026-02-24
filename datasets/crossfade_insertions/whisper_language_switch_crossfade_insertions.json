@@ -6,8 +6,16 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000000_ad09001.wav",
-    "switch_count": 0,
-    "switch_positions": []
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 8.0,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000001_000007.wav",
@@ -26,8 +34,37 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000001_ad09004.wav",
-    "switch_count": 0,
-    "switch_positions": []
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 9.28,
+        "from_segment_id": 1,
+        "to_segment_id": 2
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 9.92,
+        "from_segment_id": 2,
+        "to_segment_id": 2
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 10.28,
+        "from_segment_id": 2,
+        "to_segment_id": 2
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 13.98,
+        "from_segment_id": 2,
+        "to_segment_id": 3
+      }
+    ]
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000006_000022.wav",
@@ -41,8 +78,16 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000003_ad09051.wav",
-    "switch_count": 0,
-    "switch_positions": []
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "en",
+        "to_language": "ur",
+        "switch_time": 6.62,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000002_ad09008.wav",
@@ -51,26 +96,19 @@
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000009_000031.wav",
-    "switch_count": 0,
-    "switch_positions": []
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.2,
+        "from_segment_id": 1,
+        "to_segment_id": 2
+      }
+    ]
   },
   {
     "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_hi_into_ascend_en/audio/000013_000025.wav",
-    "switch_count": 0,
-    "switch_positions": []
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_en_into_corpus_hi/audio/000004_ad09055.wav",
-    "switch_count": 0,
-    "switch_positions": []
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/ascend_zh_into_corpus_en/audio/000003_ad09021.wav",
-    "switch_count": 0,
-    "switch_positions": []
-  },
-  {
-    "path": "d:/github/ee519_project/datasets/crossfade_insertions/corpus_en_into_ascend_zh/audio/000013_000038.wav",
     "switch_count": 0,
     "switch_positions": []
   }
