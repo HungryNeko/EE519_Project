@@ -19,7 +19,7 @@ SWITCH_JSON = CORPUS_ROOT / f"whisper_language_switch_{dataset}.json"
 
 AUDIO_EXTS = {".wav", ".mp3", ".flac", ".m4a"}
 MODEL_NAME = "large-v3"
-DEVICE = "cpu"
+DEVICE = "cuda"
 USE_WHISPERX_ALIGN = False
 
 # ======================
