@@ -13,4 +13,4 @@ conda activate whisperx
 
 cd /scratch1/shihe/github/EE519_Project
 
-python -u translate/whisperX/whisper_wordlevel_json_corss_new.py --dataset ascend
+python -u translate/whisperX/whisper_wordlevel_json_corss_new.py --dataset Corpus

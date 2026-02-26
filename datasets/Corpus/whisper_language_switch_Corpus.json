@@ -1,0 +1,3337 @@
+[
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09001.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09002.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09006.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03006.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03001.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03004.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09004.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 7.58,
+        "from_segment_id": 1,
+        "to_segment_id": 2
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 8.3,
+        "from_segment_id": 2,
+        "to_segment_id": 2
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 8.620000000000001,
+        "from_segment_id": 2,
+        "to_segment_id": 2
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 12.32,
+        "from_segment_id": 2,
+        "to_segment_id": 3
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09003.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09025.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03012.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03002.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03009.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.2,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 0.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.4,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09008.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09005.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09045.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03016.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03003.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03014.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09016.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09007.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09049.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03017.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03005.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03030.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "te",
+        "switch_time": 1.9000000000000001,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09021.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09009.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 8.0,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09050.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03021.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03007.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03036.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09028.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09011.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09071.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03022.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03008.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03067.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.02,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09032.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09012.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "ur",
+        "to_language": "en",
+        "switch_time": 1.96,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09075.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03037.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03010.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03075.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09039.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09013.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09085.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03039.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03011.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03091.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09051.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09014.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09095.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03045.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03013.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05027.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09055.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09015.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09097.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 3.2,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03047.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "ur",
+        "to_language": "en",
+        "switch_time": 3.1,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03015.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05032.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09061.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09017.wav",
+    "switch_count": 8,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 2.3,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.84,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 4.92,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 5.26,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 6.92,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 7.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13009.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03049.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03018.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05041.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09063.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09018.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13016.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03059.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03019.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05042.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09066.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09019.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13033.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.4,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 5.76,
+        "from_segment_id": 1,
+        "to_segment_id": 2
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03062.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03020.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05051.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09067.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09020.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13051.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03066.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 2.66,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03023.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05054.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09072.wav",
+    "switch_count": 6,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 5.2,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 7.78,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 8.7,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 9.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 9.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 11.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09022.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13052.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03068.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03024.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05063.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09073.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09023.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13053.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03069.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03025.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05066.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09081.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 9.040000000000001,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09024.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13058.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03077.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03026.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05075.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09099.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09026.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13066.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03083.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03027.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05092.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09100.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09027.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13070.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03085.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03028.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05110.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09102.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09029.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15003.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03087.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03029.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05112.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09105.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09030.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15006.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03088.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03031.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05119.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13003.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09031.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 11.48,
+        "from_segment_id": 2,
+        "to_segment_id": 2
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 13.08,
+        "from_segment_id": 2,
+        "to_segment_id": 2
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 13.46,
+        "from_segment_id": 2,
+        "to_segment_id": 2
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15012.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05002.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03032.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05125.wav",
+    "switch_count": 6,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.96,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.4,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.76,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.94,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 4.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 4.66,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13015.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 0.74,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.06,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09033.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15040.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05003.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03033.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05130.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13019.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09034.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15042.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05005.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03034.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch06005.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13028.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09035.wav",
+    "switch_count": 7,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 0.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 2.0,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 4.78,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 5.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 6.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15047.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05008.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03035.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch06016.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13034.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09036.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "en",
+        "to_language": "ur",
+        "switch_time": 14.7,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15054.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05033.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03040.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch06018.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13035.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09037.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15075.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.42,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05038.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03041.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch06019.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13036.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09038.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 10.24,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15076.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05046.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03042.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch06020.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13040.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09040.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15080.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.72,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05059.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03043.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch06042.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13046.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09041.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15088.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05064.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03044.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07001.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13057.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09042.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15104.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05070.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03046.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07021.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13060.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09043.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15108.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05071.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03048.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07027.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13063.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09044.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 11.24,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15113.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05079.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03050.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07029.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13065.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09046.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16007.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05080.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03051.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07032.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13067.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09047.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16010.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 4.9,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05083.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03052.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07036.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13069.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09048.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16013.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.4,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 0.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05085.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03053.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07043.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13072.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09052.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16019.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05095.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03054.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07044.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13079.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 2.5,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09053.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16025.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05099.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03055.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07051.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15004.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09054.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 6.0,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16028.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05102.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03056.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07053.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15008.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09056.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "ur",
+        "switch_time": 4.34,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16029.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05104.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03057.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch07061.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15014.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09057.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16058.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05117.wav",
+    "switch_count": 6,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.78,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 2.42,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.72,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 5.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 7.12,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03058.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08003.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15018.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09058.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16068.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05118.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03060.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08007.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15021.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09059.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16070.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05123.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03061.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08018.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15025.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09060.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16073.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05131.wav",
+    "switch_count": 6,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.76,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.2,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 4.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 5.1,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03063.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08030.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15026.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09062.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16076.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05132.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.92,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03064.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08037.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15036.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09064.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16079.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05134.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03065.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08046.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15038.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09065.wav",
+    "switch_count": 6,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 8.48,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 10.100000000000001,
+        "from_segment_id": 1,
+        "to_segment_id": 1
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 10.72,
+        "from_segment_id": 1,
+        "to_segment_id": 1
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 10.9,
+        "from_segment_id": 1,
+        "to_segment_id": 1
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 12.26,
+        "from_segment_id": 1,
+        "to_segment_id": 1
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 13.58,
+        "from_segment_id": 1,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16082.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06008.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03070.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08053.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15039.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09068.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16099.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06009.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03071.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08062.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15048.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09069.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21014.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06010.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03072.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08064.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15050.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09070.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21043.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06011.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03073.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08067.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15051.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09074.wav",
+    "switch_count": 5,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 2.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 2.92,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21060.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06030.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03074.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08085.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15052.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09076.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21087.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06031.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03076.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08087.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15055.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09077.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21088.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06035.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03078.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08091.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15056.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09078.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21091.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "ko",
+        "switch_time": 4.12,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06036.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03079.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08095.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "ur",
+        "switch_time": 0.84,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      },
+      {
+        "from_language": "ur",
+        "to_language": "en",
+        "switch_time": 3.3000000000000003,
+        "from_segment_id": 1,
+        "to_segment_id": 2
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15059.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09079.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21105.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06037.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03080.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08096.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15063.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09080.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21115.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06039.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03082.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch08104.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15065.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09082.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21122.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06046.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03084.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10004.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.26,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15069.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09083.wav",
+    "switch_count": 5,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 2.38,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 4.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 6.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 8.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 9.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21128.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch06049.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03086.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10007.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15071.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09084.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21129.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07004.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03089.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10010.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15082.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09086.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21138.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07011.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch03090.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10011.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15084.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09087.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22022.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07016.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05001.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10018.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15087.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09088.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22049.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07020.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05004.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10032.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15089.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09089.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22059.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07033.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05006.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10039.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15091.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09090.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 6.78,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22060.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07048.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "ur",
+        "to_language": "hi",
+        "switch_time": 4.36,
+        "from_segment_id": 1,
+        "to_segment_id": 2
+      },
+      {
+        "from_language": "hi",
+        "to_language": "ur",
+        "switch_time": 6.32,
+        "from_segment_id": 2,
+        "to_segment_id": 3
+      },
+      {
+        "from_language": "ur",
+        "to_language": "en",
+        "switch_time": 7.54,
+        "from_segment_id": 3,
+        "to_segment_id": 4
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05007.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10044.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15099.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09091.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 3.56,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 9.62,
+        "from_segment_id": 1,
+        "to_segment_id": 1
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 11.860000000000001,
+        "from_segment_id": 1,
+        "to_segment_id": 1
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 12.120000000000001,
+        "from_segment_id": 1,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22061.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07054.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05009.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10046.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15101.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09092.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22068.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07058.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05010.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10059.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15115.wav",
+    "switch_count": 6,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 2.12,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 4.1,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 4.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 6.7,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 6.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09093.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 4.5,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22070.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07072.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05011.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10078.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16003.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.44,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09094.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22082.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07073.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "en",
+        "to_language": "ur",
+        "switch_time": 0.78,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05012.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch11011.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16008.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09096.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22084.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07078.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05013.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch11014.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16014.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09098.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad22094.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch07079.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05014.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch11021.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16015.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09101.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad23001.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch08002.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05015.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch11026.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16027.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 7.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09103.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 2.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 3.38,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad23006.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch08009.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05016.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch11029.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16035.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09104.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad23009.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch08011.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05017.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 3.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 3.96,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch11052.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16040.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad13001.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad23010.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch08013.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05018.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch11059.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16042.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad13002.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad23012.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch08015.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05019.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch11066.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16045.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad13004.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad23016.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch08024.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05020.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch11075.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16046.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad13005.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad23063.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch08025.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05021.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch12018.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16050.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad13006.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 0.94,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 1.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "hi",
+        "to_language": "en",
+        "switch_time": 1.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "hi",
+        "switch_time": 3.1,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad23082.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch08031.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05022.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch12019.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16054.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad13007.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad25014.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  }
+]

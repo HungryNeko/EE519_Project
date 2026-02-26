@@ -3,6 +3,7 @@ import json
 from datetime import datetime, timezone
 from collections import deque
 from typing import Any, Dict, List, Set
+import argparse
 
 import whisper
 import whisperx
@@ -11,12 +12,6 @@ from tqdm import tqdm
 # ======================
 # Configuration
 # ======================
-dataset = "crossfade_insertions"
-CORPUS_ROOT = Path(f"./datasets/{dataset}")
-OUTPUT_JSON = CORPUS_ROOT / f"whisper_segment_{dataset}.json"
-FAILED_JSON = CORPUS_ROOT / f"whisper_failed_{dataset}.json"
-SWITCH_JSON = CORPUS_ROOT / f"whisper_language_switch_{dataset}.json"
-
 AUDIO_EXTS = {".wav", ".mp3", ".flac", ".m4a"}
 MODEL_NAME = "large-v3"
 DEVICE = "cuda"
@@ -75,10 +70,7 @@ def to_jsonable(x: Any):
 def canonical_path_for_storage(p: Path) -> str:
     return p.resolve(strict=False).as_posix().replace("\\", "/").lower()
 
-# ======================
-# 核心：真实位置身份（只认 datasets/corpus 之后）
-# ======================
-def corpus_relative_identity(p: Path) -> str:
+def corpus_relative_identity(p: Path, dataset: str) -> str:
     p_norm = p.resolve(strict=False).as_posix().replace("\\", "/").lower()
     anchor = f"/datasets/{dataset.lower()}/"
     idx = p_norm.find(anchor)
@@ -103,7 +95,7 @@ def save_records(path: Path, records: List[Dict[str, Any]]):
     with path.open("w", encoding="utf-8") as f:
         json.dump(records, f, ensure_ascii=False, indent=2)
 
-def read_processed_paths(path: Path) -> Set[str]:
+def read_paths_from_records(path: Path, dataset: str) -> Set[str]:
     rows = load_existing_records(path)
     out = set()
     for r in rows:
@@ -111,33 +103,7 @@ def read_processed_paths(path: Path) -> Set[str]:
         if not raw:
             continue
         try:
-            out.add(corpus_relative_identity(Path(raw)))
-        except Exception:
-            continue
-    return out
-
-def read_failed_paths(path: Path) -> Set[str]:
-    rows = load_existing_records(path)
-    out = set()
-    for r in rows:
-        raw = r.get("path")
-        if not raw:
-            continue
-        try:
-            out.add(corpus_relative_identity(Path(raw)))
-        except Exception:
-            continue
-    return out
-
-def read_paths_from_records(path: Path) -> Set[str]:
-    rows = load_existing_records(path)
-    out = set()
-    for r in rows:
-        raw = r.get("path")
-        if not raw:
-            continue
-        try:
-            out.add(corpus_relative_identity(Path(raw)))
+            out.add(corpus_relative_identity(Path(raw), dataset))
         except Exception:
             continue
     return out
@@ -156,28 +122,11 @@ def detect_lang_by_char(ch: str) -> str:
     return "other"
 
 # ======================
-# Alignment cache
-# ======================
-def get_align_resources(language_code: str, cache):
-    if language_code in cache:
-        return cache[language_code]
-    try:
-        cache[language_code] = whisperx.load_align_model(
-            language_code=language_code,
-            device=DEVICE,
-        )
-        return cache[language_code]
-    except Exception:
-        cache[language_code] = (None, None)
-        return (None, None)
-
-# ======================
 # Core processing
 # ======================
-def process_single_audio(whisper_model, align_cache, audio_path: Path):
+def process_single_audio(whisper_model, audio_path: Path):
     storage_path = canonical_path_for_storage(audio_path)
 
-    # 第一次整体转写（仅用于粗分段）
     base_result = whisper_model.transcribe(
         str(audio_path),
         task="transcribe",
@@ -188,14 +137,11 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
     )
 
     segments_out = []
-    all_words = []
 
     for i, seg in enumerate(base_result.get("segments", [])):
         seg_start = seg.get("start")
         seg_end = seg.get("end")
 
-        # -------- 核心改动 --------
-        # 对每个 segment 单独重新转写
         seg_audio = whisper.load_audio(str(audio_path))
         sr = whisper.audio.SAMPLE_RATE
         seg_audio = seg_audio[int(seg_start * sr): int(seg_end * sr)]
@@ -203,14 +149,13 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
         seg_result = whisper_model.transcribe(
             seg_audio,
             task="transcribe",
-            language=None,          # 不锁语言
+            language=None,
             verbose=False,
             fp16=False,
-            temperature=0.2,        # 降低语言锁死
-            beam_size=1,            # 减少语言 bias
+            temperature=0.2,
+            beam_size=1,
             word_timestamps=True,
         )
-        # -------------------------
 
         seg_language = seg_result.get("language", "unknown")
 
@@ -221,12 +166,11 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
                     continue
                 words.append({
                     "word": w.get("word", "").strip(),
-                    "start": seg_start + w["start"],  # 还原全局时间
+                    "start": seg_start + w["start"],
                     "end": seg_start + w["end"],
                     "score": w.get("probability", 0.0),
                 })
 
-        # 构建语言 span（保持原逻辑）
         language_spans = []
         cur = None
 
@@ -293,6 +237,7 @@ def process_single_audio(whisper_model, align_cache, audio_path: Path):
         "whisper_language": "segment_based",
         "segments": segments_out,
     })
+
 def build_language_switch_summary(record: Dict[str, Any]) -> Dict[str, Any]:
     spans = []
     for seg in record.get("segments", []):
@@ -337,44 +282,46 @@ def build_language_switch_summary(record: Dict[str, Any]) -> Dict[str, Any]:
 # Main
 # ======================
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset", type=str, required=True)
+    args = parser.parse_args()
+    dataset = args.dataset
+
+    CORPUS_ROOT = Path(f"./datasets/{dataset}")
+    OUTPUT_JSON = CORPUS_ROOT / f"whisper_segment_{dataset}.json"
+    FAILED_JSON = CORPUS_ROOT / f"whisper_failed_{dataset}.json"
+    SWITCH_JSON = CORPUS_ROOT / f"whisper_language_switch_{dataset}.json"
+
     existing = load_existing_records(OUTPUT_JSON)
     failed_records = load_existing_records(FAILED_JSON)
     switch_records = load_existing_records(SWITCH_JSON)
 
-    processed_set = read_processed_paths(OUTPUT_JSON)
-    failed_set = read_failed_paths(FAILED_JSON)
-    switch_set = read_paths_from_records(SWITCH_JSON)
+    processed_set = read_paths_from_records(OUTPUT_JSON, dataset)
+    failed_set = read_paths_from_records(FAILED_JSON, dataset)
+    switch_set = read_paths_from_records(SWITCH_JSON, dataset)
 
     audio_files = collect_all_audio_files(CORPUS_ROOT)
-
-    files_and_keys = [
-        (p, corpus_relative_identity(p))
-        for p in audio_files
-    ]
+    files_and_keys = [(p, corpus_relative_identity(p, dataset)) for p in audio_files]
 
     skip_set = processed_set | failed_set
     to_process = [p for p, key in files_and_keys if key not in skip_set]
 
     whisper_model = whisper.load_model(MODEL_NAME, device=DEVICE)
-    align_cache = {}
 
     for audio_path in tqdm(to_process, desc="Processing", unit="file"):
         try:
-            record = process_single_audio(
-                whisper_model,
-                align_cache,
-                audio_path,
-            )
+            record = process_single_audio(whisper_model, audio_path)
             existing.append(record)
             save_records(OUTPUT_JSON, existing)
 
-            key = corpus_relative_identity(audio_path)
+            key = corpus_relative_identity(audio_path, dataset)
             if key not in switch_set:
                 switch_records.append(build_language_switch_summary(record))
                 switch_set.add(key)
                 save_records(SWITCH_JSON, switch_records)
+
         except Exception as e:
-            key = corpus_relative_identity(audio_path)
+            key = corpus_relative_identity(audio_path, dataset)
             if key not in failed_set:
                 failed_records.append({
                     "path": canonical_path_for_storage(audio_path),
