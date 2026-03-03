@@ -4,3 +4,10 @@ datasets/ascend/**/*.wav
 datasets/ascend/audio/
 datasets/crossfade_insertions/**/*.wav
 datasets/.cache
+
+# ---- Hinglish dataset: ignore everything except metadata/manifest ----
+datasets/hinglish/data/**
+!datasets/hinglish/data/metadata.csv
+!datasets/hinglish/data/metadata-test.csv
+!datasets/hinglish/data/manifest_train.jsonl
+!datasets/hinglish/data/manifest_test.jsonl
