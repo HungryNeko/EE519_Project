@@ -11,3 +11,39 @@ datasets/hinglish/data/**
 !datasets/hinglish/data/metadata-test.csv
 !datasets/hinglish/data/manifest_train.jsonl
 !datasets/hinglish/data/manifest_test.jsonl
+
+
+# -----------------------------
+# OUTPUT / LOGS
+# -----------------------------
+
+*.out
+*.log
+*.bak
+
+old_output/
+samples/
+
+
+# -----------------------------
+# PYTHON
+# -----------------------------
+
+__pycache__/
+*.pyc
+
+
+# -----------------------------
+# MODEL FILES
+# -----------------------------
+
+*.pt
+*.pth
+*.ckpt
+
+
+# -----------------------------
+# SYSTEM
+# -----------------------------
+
+.DS_Store
