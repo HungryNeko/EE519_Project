@@ -17,14 +17,34 @@ EPS = 1e-9
 
 DEFAULT_TASKS = [
     {
-        "name": "corpus_en_into_ascend_zh",
-        "source_json": Path("datasets/Corpus/corpus_en_language.json"),
-        "target_json": Path("datasets/ascend/ascend_zh_language.json"),
-    },
-    {
         "name": "corpus_hi_into_ascend_en",
         "source_json": Path("datasets/Corpus/corpus_hi_language.json"),
         "target_json": Path("datasets/ascend/ascend_en_language.json"),
+    },
+    {
+        "name": "corpus_hi_into_hinglish_en",
+        "source_json": Path("datasets/Corpus/corpus_hi_language.json"),
+        "target_json": Path("datasets/hinglish/hinglish_en_language.json"),
+    },
+    {
+        "name": "ascend_zh_into_corpus_en",
+        "source_json": Path("datasets/ascend/ascend_zh_language.json"),
+        "target_json": Path("datasets/Corpus/corpus_en_language.json"),
+    },
+    {
+        "name": "ascend_zh_into_hinglish_en",
+        "source_json": Path("datasets/ascend/ascend_zh_language.json"),
+        "target_json": Path("datasets/hinglish/hinglish_en_language.json"),
+    },
+    {
+        "name": "hinglish_hi_into_ascend_en",
+        "source_json": Path("datasets/hinglish/hinglish_hi_language.json"),
+        "target_json": Path("datasets/ascend/ascend_en_language.json"),
+    },
+    {
+        "name": "hinglish_hi_into_corpus_en",
+        "source_json": Path("datasets/hinglish/hinglish_hi_language.json"),
+        "target_json": Path("datasets/Corpus/corpus_en_language.json"),
     },
     {
         "name": "ascend_en_into_corpus_hi",
@@ -32,9 +52,29 @@ DEFAULT_TASKS = [
         "target_json": Path("datasets/Corpus/corpus_hi_language.json"),
     },
     {
-        "name": "ascend_zh_into_corpus_en",
-        "source_json": Path("datasets/ascend/ascend_zh_language.json"),
-        "target_json": Path("datasets/Corpus/corpus_en_language.json"),
+        "name": "hinglish_en_into_corpus_hi",
+        "source_json": Path("datasets/hinglish/hinglish_en_language.json"),
+        "target_json": Path("datasets/Corpus/corpus_hi_language.json"),
+    },
+    {
+        "name": "ascend_en_into_hinglish_hi",
+        "source_json": Path("datasets/ascend/ascend_en_language.json"),
+        "target_json": Path("datasets/hinglish/hinglish_hi_language.json"),
+    },
+    {
+        "name": "corpus_en_into_hinglish_hi",
+        "source_json": Path("datasets/Corpus/corpus_en_language.json"),
+        "target_json": Path("datasets/hinglish/hinglish_hi_language.json"),
+    },
+    {
+        "name": "hinglish_en_into_ascend_zh",
+        "source_json": Path("datasets/hinglish/hinglish_en_language.json"),
+        "target_json": Path("datasets/ascend/ascend_zh_language.json"),
+    },
+    {
+        "name": "corpus_en_into_ascend_zh",
+        "source_json": Path("datasets/Corpus/corpus_en_language.json"),
+        "target_json": Path("datasets/ascend/ascend_zh_language.json"),
     },
 ]
 
@@ -611,7 +651,7 @@ def parse_args() -> argparse.Namespace:
         description=(
             "Batch cross-language insertion with rule-based insert duration: "
             "3~5s targets use 1.3s, >5s targets use 2.0s, with crossfade. "
-            "Runs 4 fixed tasks by default."
+            "Runs 12 fixed tasks by default."
         )
     )
     parser.add_argument("--output-root", type=Path, default=Path("datasets/crossfade_insertions"))
@@ -624,12 +664,28 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--max-items-per-pair", type=int, default=None)
     parser.add_argument("--max-source-tries", type=int, default=60)
-    parser.add_argument(
-        "--clean-output",
-        action=argparse.BooleanOptionalAction,
-        default=True,
-        help="Delete existing output-root before generation (default: True).",
-    )
+    if hasattr(argparse, "BooleanOptionalAction"):
+        parser.add_argument(
+            "--clean-output",
+            action=argparse.BooleanOptionalAction,
+            default=True,
+            help="Delete existing output-root before generation (default: True).",
+        )
+    else:
+        clean_group = parser.add_mutually_exclusive_group()
+        clean_group.add_argument(
+            "--clean-output",
+            dest="clean_output",
+            action="store_true",
+            help="Delete existing output-root before generation (default: True).",
+        )
+        clean_group.add_argument(
+            "--no-clean-output",
+            dest="clean_output",
+            action="store_false",
+            help="Keep existing output-root before generation.",
+        )
+        parser.set_defaults(clean_output=True)
     parser.add_argument("--clean-retries", type=int, default=8)
     parser.add_argument("--clean-wait-sec", type=float, default=0.5)
     return parser.parse_args()
