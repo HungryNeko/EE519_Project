@@ -14,6 +14,8 @@ from scipy import signal
 
 
 EPS = 1e-9
+DIR_CASE_CACHE: Dict[str, Dict[str, Path]] = {}
+DATASET_FILE_INDEX_CACHE: Dict[str, Dict[str, List[Path]]] = {}
 
 DEFAULT_TASKS = [
     {
@@ -243,6 +245,131 @@ def normalize_dataset_tail(raw_path: str) -> Optional[Path]:
     return None
 
 
+def _dir_case_map(directory: Path) -> Dict[str, Path]:
+    key = str(directory)
+    cached = DIR_CASE_CACHE.get(key)
+    if cached is not None:
+        return cached
+
+    mapping: Dict[str, Path] = {}
+    try:
+        for child in directory.iterdir():
+            mapping[child.name.lower()] = child
+    except OSError:
+        mapping = {}
+
+    DIR_CASE_CACHE[key] = mapping
+    return mapping
+
+
+def resolve_case_insensitive(path: Path) -> Optional[Path]:
+    try:
+        if path.exists():
+            return path
+    except OSError:
+        pass
+
+    parts = path.parts
+    if not parts:
+        return None
+
+    if path.is_absolute():
+        current = Path(path.anchor)
+        parts = parts[1:]
+    else:
+        current = Path(".")
+
+    for part in parts:
+        candidate = current / part
+        try:
+            if candidate.exists():
+                current = candidate
+                continue
+        except OSError:
+            pass
+
+        try:
+            if not current.is_dir():
+                return None
+        except OSError:
+            return None
+
+        match = _dir_case_map(current).get(part.lower())
+        if match is None:
+            return None
+        current = match
+
+    try:
+        if current.exists():
+            return current
+    except OSError:
+        return None
+    return None
+
+
+def get_dataset_root(raw_path: str, project_root: Path, json_path: Path) -> Optional[Path]:
+    ds_tail = normalize_dataset_tail(raw_path)
+    if ds_tail is not None:
+        parts = ds_tail.parts
+        if len(parts) >= 2 and parts[0].lower() == "datasets":
+            dataset_root = resolve_case_insensitive(project_root / parts[0] / parts[1])
+            if dataset_root is not None:
+                return dataset_root
+
+    parent = resolve_case_insensitive(json_path.parent)
+    if parent is not None:
+        return parent
+    return None
+
+
+def _dataset_file_index(dataset_root: Path) -> Dict[str, List[Path]]:
+    key = str(dataset_root)
+    cached = DATASET_FILE_INDEX_CACHE.get(key)
+    if cached is not None:
+        return cached
+
+    mapping: Dict[str, List[Path]] = {}
+    try:
+        for path in dataset_root.rglob("*"):
+            if path.is_file():
+                mapping.setdefault(path.name.lower(), []).append(path)
+    except OSError:
+        mapping = {}
+
+    DATASET_FILE_INDEX_CACHE[key] = mapping
+    return mapping
+
+
+def _suffix_match_score(candidate: Path, requested: Path) -> Tuple[int, int]:
+    cand_parts = [part.lower() for part in candidate.parts]
+    req_parts = [part.lower() for part in requested.parts]
+
+    matched = 0
+    while matched < len(cand_parts) and matched < len(req_parts):
+        if cand_parts[-1 - matched] != req_parts[-1 - matched]:
+            break
+        matched += 1
+
+    return matched, -len(cand_parts)
+
+
+def find_audio_by_basename(raw_path: str, project_root: Path, json_path: Path) -> Optional[Path]:
+    dataset_root = get_dataset_root(raw_path, project_root, json_path)
+    if dataset_root is None:
+        return None
+
+    requested = Path(str(raw_path).replace("\\", "/").lstrip("/"))
+    basename = requested.name.lower()
+    if not basename:
+        return None
+
+    candidates = _dataset_file_index(dataset_root).get(basename)
+    if not candidates:
+        return None
+
+    return max(candidates, key=lambda path: _suffix_match_score(path, requested))
+
+
 def resolve_audio_path(raw_path: str, project_root: Path, json_path: Path) -> Optional[Path]:
     raw_path = str(raw_path).strip()
     if not raw_path:
@@ -272,11 +399,14 @@ def resolve_audio_path(raw_path: str, project_root: Path, json_path: Path) -> Op
         if key in seen:
             continue
         seen.add(key)
-        try:
-            if c.exists():
-                return c
-        except OSError:
-            continue
+
+        resolved = resolve_case_insensitive(c)
+        if resolved is not None:
+            return resolved
+
+    fallback = find_audio_by_basename(raw_path, project_root, json_path)
+    if fallback is not None:
+        return fallback
     return None
 
 
