@@ -11,7 +11,8 @@ datasets/hinglish/data/**
 !datasets/hinglish/data/metadata-test.csv
 !datasets/hinglish/data/manifest_train.jsonl
 !datasets/hinglish/data/manifest_test.jsonl
-
+!datasets/hinglish/whisper_language_switch_hinglish.json
+!datasets/hinglish/whisper_segment_hinglish.json
 
 # -----------------------------
 # OUTPUT / LOGS
