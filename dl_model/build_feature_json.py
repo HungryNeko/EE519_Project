@@ -9,18 +9,6 @@ import librosa
 from functions import SpeakerFeatureExtractor
 
 
-FEATURE_NAMES = [
-    "emb_cos",
-    "emb_l2",
-    "emb_ratio",
-    "pitch_mean_diff",
-    "pitch_std_diff",
-    "voiced_diff",
-    "duration_diff",
-    "time_gap",
-]
-
-
 def project_root():
     return Path(__file__).resolve().parents[1]
 
@@ -130,13 +118,12 @@ def build_record(extractor, wav, audio_path: Path, source_json: Path, sample, wi
     seg1 = extract_window(wav, extractor.sr, switch_time - window_sec, switch_time)
     seg2 = extract_window(wav, extractor.sr, switch_time, switch_time + window_sec)
 
-    feature_vector = extractor.build_features(
+    feature_values = extractor.build_raw_features(
         seg1,
         seg2,
         t1_end=sample["gap_start"],
         t2_start=sample["gap_end"],
     )
-    feature_values = {name: float(value) for name, value in zip(FEATURE_NAMES, feature_vector.tolist())}
 
     root = project_root()
     source_json_str = source_json.relative_to(root).as_posix()

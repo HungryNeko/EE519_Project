@@ -45,6 +45,18 @@ class SpeakerFeatureExtractor:
     def norm_diff(self, a, b):
         return abs(a - b) / (abs(a) + abs(b) + 1e-6)
 
+    def extract_segment_features(self, seg: np.ndarray) -> dict:
+        embedding = self.extract_embedding(seg)
+        pitch_mean, pitch_std, voiced_ratio = self.pitch_stats(seg)
+        duration = len(seg) / self.sr
+        return {
+            "embedding": embedding.tolist(),
+            "pitch_mean": float(pitch_mean),
+            "pitch_std": float(pitch_std),
+            "voiced_ratio": float(voiced_ratio),
+            "duration": float(duration),
+        }
+
     # =========================
     # Core feature (8D)
     # numpy array
@@ -85,6 +97,15 @@ class SpeakerFeatureExtractor:
         ], dtype=np.float32)
 
         return feat
+
+    def build_raw_features(self, seg1: np.ndarray, seg2: np.ndarray,
+                           t1_end: float = 1.0, t2_start: float = 1.0) -> dict:
+        gap = max(0.0, t2_start - t1_end)
+        return {
+            "left": self.extract_segment_features(seg1),
+            "right": self.extract_segment_features(seg2),
+            "time_gap_seconds": float(gap),
+        }
 
     # =========================
     # dict for json.dumps
