@@ -5,6 +5,7 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 import librosa
+from tqdm import tqdm
 
 from functions import SpeakerFeatureExtractor
 
@@ -13,9 +14,6 @@ def project_root():
     return Path(__file__).resolve().parents[1]
 
 
-# =========================
-# NEW: case-insensitive path resolver
-# =========================
 def resolve_case_insensitive(path: Path):
     if path.exists():
         return path
@@ -144,14 +142,6 @@ def load_existing_state(output_path: Path, progress_path: Path):
     records = []
     completed_keys = set()
 
-    if output_path.exists():
-        try:
-            loaded = json.loads(output_path.read_text(encoding="utf-8"))
-            if isinstance(loaded, list):
-                records = loaded
-        except Exception:
-            records = []
-
     if progress_path.exists():
         try:
             loaded = json.loads(progress_path.read_text(encoding="utf-8"))
@@ -162,65 +152,79 @@ def load_existing_state(output_path: Path, progress_path: Path):
     return records, completed_keys
 
 
-def dedupe_records_by_json_name(records):
-    deduped = {}
-    for record in records:
-        json_name = record.get("json_name")
-        if json_name:
-            deduped[json_name] = record
-    return list(deduped.values())
-
-
-def save_state(output_path: Path, progress_path: Path, records, completed_keys):
-    output_path.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
-    progress = {"completed_keys": sorted(completed_keys)}
-    progress_path.write_text(json.dumps(progress, ensure_ascii=False, indent=2), encoding="utf-8")
+# =========================
+# 🔴 修改1：去掉排序 + 只写progress
+# =========================
+def save_progress(progress_path: Path, completed_keys):
+    progress = {"completed_keys": list(completed_keys)}  # 不排序
+    progress_path.write_text(json.dumps(progress, ensure_ascii=False), encoding="utf-8")
 
 
 def process_json_file(extractor, json_path: Path, records, completed_keys,
                       output_path: Path, progress_path: Path,
-                      test_mode=False, window_sec=1.0):
+                      test_mode=False, window_sec=1.0, pbar=None):
+
     data = json.loads(json_path.read_text(encoding="utf-8"))
     root = project_root()
     new_count = 0
 
-    for item in data:
-        audio_rel = item.get("path")
-        if not audio_rel:
-            continue
+    with open(output_path, "a", encoding="utf-8") as f:  # 打开一次文件
 
-        audio_path = resolve_case_insensitive(root / audio_rel)
-        if audio_path is None:
-            print(f"missing audio: {audio_rel}")
-            continue
-
-        try:
-            wav = load_audio(audio_path, sr=extractor.sr)
-        except Exception:
-            print(f"failed audio load: {audio_rel}")
-            continue
-
-        for sample in iter_switch_samples(item):
-            sample_key = make_sample_key(json_path, audio_path, sample)
-            if sample_key in completed_keys:
+        for item in data:
+            audio_rel = item.get("path")
+            if not audio_rel:
                 continue
 
-            records.append(build_record(extractor, wav, audio_path, json_path, sample, window_sec=window_sec))
-            completed_keys.add(sample_key)
-            new_count += 1
-            save_state(output_path, progress_path, records, completed_keys)
+            audio_path = resolve_case_insensitive(root / audio_rel)
+            if audio_path is None:
+                print(f"missing audio: {audio_rel}")
+                continue
 
-            if test_mode:
-                return new_count
+            try:
+                wav = load_audio(audio_path, sr=extractor.sr)
+            except Exception:
+                print(f"failed audio load: {audio_rel}")
+                continue
+
+            for sample in iter_switch_samples(item):
+                sample_key = make_sample_key(json_path, audio_path, sample)
+                if sample_key in completed_keys:
+                    continue
+
+                record = build_record(extractor, wav, audio_path, json_path, sample, window_sec=window_sec)
+
+                records.append(record)
+                completed_keys.add(sample_key)
+                new_count += 1
+
+                # JSONL写入（线性）
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+                # =========================
+                # 🔴 修改2：降低progress写入频率
+                # =========================
+                if new_count % 100 == 0:
+                    save_progress(progress_path, completed_keys)
+
+                if pbar is not None:
+                    pbar.update(1)
+
+                if test_mode:
+                    save_progress(progress_path, completed_keys)
+                    return new_count
+
+    # 最后写一次progress
+    if new_count > 0:
+        save_progress(progress_path, completed_keys)
 
     return new_count
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Build cached MLP training JSON from used_json.txt")
+    parser = argparse.ArgumentParser()
     parser.add_argument("--used-json", default="dl_model/used_json.txt")
     parser.add_argument("--output", default=None)
-    parser.add_argument("--test", action="store_true", help="Keep one sample from each source JSON file")
+    parser.add_argument("--test", action="store_true")
     parser.add_argument("--window-sec", type=float, default=1.0)
     args = parser.parse_args()
 
@@ -229,7 +233,7 @@ def main():
     json_files = load_used_json_list(used_json_path)
 
     if args.output is None:
-        output_name = "mlp_feature_cache_test.json" if args.test else "mlp_feature_cache.json"
+        output_name = "mlp_feature_cache.jsonl"
         output_path = root / "dl_model" / output_name
     else:
         output_path = root / args.output
@@ -239,38 +243,52 @@ def main():
     extractor = SpeakerFeatureExtractor(sr=16000)
     all_records, completed_keys = load_existing_state(output_path, progress_path)
 
-    if args.test:
-        all_records = dedupe_records_by_json_name(all_records)
-
-    total_new = 0
+    total_remaining_samples = 0
+    resolved_jsons_for_processing = []
 
     for rel_path in json_files:
         json_path = resolve_case_insensitive(root / rel_path)
         if json_path is None:
-            print(f"skip missing json: {rel_path}")
             continue
 
-        new_count = process_json_file(
-            extractor=extractor,
-            json_path=json_path,
-            records=all_records,
-            completed_keys=completed_keys,
-            output_path=output_path,
-            progress_path=progress_path,
-            test_mode=args.test,
-            window_sec=args.window_sec,
-        )
+        try:
+            data = json.loads(json_path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
 
-        if new_count == 0:
-            print(f"no valid sample found for {json_path}")
+        for item in data:
+            audio_rel = item.get("path")
+            if not audio_rel:
+                continue
+            audio_path = resolve_case_insensitive(root / audio_rel)
+            if audio_path is None:
+                continue
 
-        total_new += new_count
+            for sample in iter_switch_samples(item):
+                sample_key = make_sample_key(json_path, audio_path, sample)
+                if sample_key not in completed_keys:
+                    total_remaining_samples += 1
 
-    save_state(output_path, progress_path, all_records, completed_keys)
+        resolved_jsons_for_processing.append(json_path)
 
-    print(f"saved {len(all_records)} total records to {output_path}")
-    print(f"added {total_new} new records")
-    print(f"progress file: {progress_path}")
+    print(f"Total remaining samples: {total_remaining_samples}")
+
+    total_new = 0
+    with tqdm(total=total_remaining_samples, desc="Processing") as pbar:
+        for json_path in resolved_jsons_for_processing:
+            total_new += process_json_file(
+                extractor,
+                json_path,
+                all_records,
+                completed_keys,
+                output_path,
+                progress_path,
+                args.test,
+                args.window_sec,
+                pbar,
+            )
+
+    print(f"added {total_new} samples")
 
 
 if __name__ == "__main__":

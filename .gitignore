@@ -4,6 +4,7 @@ datasets/ascend/**/*.wav
 datasets/ascend/audio/
 datasets/crossfade_insertions/**/*.wav
 datasets/.cache
+dl_model/mlp_feature_cache.jsonl
 
 # ---- Hinglish dataset: ignore everything except metadata/manifest ----
 datasets/hinglish/data/**
