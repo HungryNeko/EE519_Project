@@ -37,6 +37,21 @@ def load_corpus_path_map(root: Path) -> dict[str, str]:
     return mapping
 
 
+def load_crossfade_path_map(root: Path) -> dict[str, str]:
+    mapping = {}
+    crossfade_root = root / "datasets" / "crossfade_insertions"
+    for manifest_path in crossfade_root.rglob("mixed_manifest.json"):
+        data = json.loads(manifest_path.read_text(encoding="utf-8"))
+        for item in data:
+            rel_path = item.get("path", "").replace("\\", "/")
+            if rel_path:
+                mapping[rel_path.lower()] = rel_path
+    for wav_path in crossfade_root.rglob("*.wav"):
+        rel_path = wav_path.relative_to(root).as_posix()
+        mapping.setdefault(rel_path.lower(), rel_path)
+    return mapping
+
+
 def normalize_dataset_path(raw_path: str, dataset_prefix: str) -> str:
     path = raw_path.replace("\\", "/")
     path_lower = path.lower()
@@ -99,12 +114,16 @@ def standardize_item(
     dataset_prefix: str,
     hinglish_name_map: dict[str, str],
     corpus_path_map: dict[str, str],
+    crossfade_path_map: dict[str, str],
 ) -> dict:
     if dataset_prefix == "datasets/hinglish":
         path = normalize_hinglish_path(item.get("path", ""), dataset_prefix, hinglish_name_map)
     elif dataset_prefix == "datasets/Corpus":
         path = normalize_dataset_path(item.get("path", ""), dataset_prefix)
         path = corpus_path_map.get(path.lower(), path)
+    elif dataset_prefix == "datasets/crossfade_insertions":
+        path = normalize_dataset_path(item.get("path", ""), dataset_prefix)
+        path = crossfade_path_map.get(path.lower(), path)
     else:
         path = normalize_dataset_path(item.get("path", ""), dataset_prefix)
     return {
@@ -129,6 +148,7 @@ def main():
     json_paths = load_used_json_list(used_json_path)
     hinglish_name_map = load_hinglish_name_map(root)
     corpus_path_map = load_corpus_path_map(root)
+    crossfade_path_map = load_crossfade_path_map(root)
 
     for rel_path in json_paths:
         json_path = root / rel_path
@@ -136,7 +156,13 @@ def main():
 
         data = json.loads(json_path.read_text(encoding="utf-8"))
         standardized = [
-            standardize_item(item, dataset_prefix, hinglish_name_map, corpus_path_map)
+            standardize_item(
+                item,
+                dataset_prefix,
+                hinglish_name_map,
+                corpus_path_map,
+                crossfade_path_map,
+            )
             for item in data
         ]
 
