@@ -1,6 +1,7 @@
 [
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09004.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad09004.wav",
+    "audio_name": "ad09004.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -104,7 +105,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03009.wav",
+    "path": "datasets/Corpus/children/audio/val_split/ch03009.wav",
+    "audio_name": "ch03009.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -166,7 +168,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09009.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09009.wav",
+    "audio_name": "ad09009.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -214,7 +217,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch03067.wav",
+    "path": "datasets/Corpus/children/audio/val_split/ch03067.wav",
+    "audio_name": "ch03067.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -269,7 +273,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad09097.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad09097.wav",
+    "audio_name": "ad09097.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -317,7 +322,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09017.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09017.wav",
+    "audio_name": "ad09017.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -400,7 +406,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad13033.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad13033.wav",
+    "audio_name": "ad13033.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -483,7 +490,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch03066.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch03066.wav",
+    "audio_name": "ch03066.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -531,7 +539,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09072.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad09072.wav",
+    "audio_name": "ad09072.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -600,7 +609,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad09081.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad09081.wav",
+    "audio_name": "ad09081.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -753,7 +763,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09031.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09031.wav",
+    "audio_name": "ad09031.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -843,7 +854,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch05125.wav",
+    "path": "datasets/Corpus/children/audio/val_split/ch05125.wav",
+    "audio_name": "ch05125.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -912,7 +924,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13015.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad13015.wav",
+    "audio_name": "ad13015.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -960,7 +973,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09035.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09035.wav",
+    "audio_name": "ad09035.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1036,7 +1050,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15075.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad15075.wav",
+    "audio_name": "ad15075.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1077,7 +1092,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09038.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09038.wav",
+    "audio_name": "ad09038.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1188,7 +1204,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad15080.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad15080.wav",
+    "audio_name": "ad15080.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1236,7 +1253,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09044.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09044.wav",
+    "audio_name": "ad09044.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1347,7 +1365,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16010.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad16010.wav",
+    "audio_name": "ad16010.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1395,7 +1414,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad16013.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad16013.wav",
+    "audio_name": "ad16013.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1436,7 +1456,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad13079.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad13079.wav",
+    "audio_name": "ad13079.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1484,7 +1505,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09054.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09054.wav",
+    "audio_name": "ad09054.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1532,7 +1554,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05117.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch05117.wav",
+    "audio_name": "ch05117.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1601,7 +1624,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05131.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch05131.wav",
+    "audio_name": "ch05131.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1670,7 +1694,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch05132.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch05132.wav",
+    "audio_name": "ch05132.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1711,7 +1736,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09065.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09065.wav",
+    "audio_name": "ad09065.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1794,7 +1820,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09074.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09074.wav",
+    "audio_name": "ad09074.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1856,7 +1883,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09079.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09079.wav",
+    "audio_name": "ad09079.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1911,7 +1939,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch10004.wav",
+    "path": "datasets/Corpus/children/audio/val_split/ch10004.wav",
+    "audio_name": "ch10004.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -1952,7 +1981,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09083.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09083.wav",
+    "audio_name": "ad09083.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2014,7 +2044,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad21128.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad21128.wav",
+    "audio_name": "ad21128.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2048,7 +2079,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09090.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09090.wav",
+    "audio_name": "ad09090.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2096,7 +2128,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09091.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09091.wav",
+    "audio_name": "ad09091.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2165,7 +2198,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad15115.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad15115.wav",
+    "audio_name": "ad15115.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2234,7 +2268,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09093.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09093.wav",
+    "audio_name": "ad09093.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2282,7 +2317,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16003.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad16003.wav",
+    "audio_name": "ad16003.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2323,7 +2359,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad16027.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad16027.wav",
+    "audio_name": "ad16027.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2357,7 +2394,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad09103.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad09103.wav",
+    "audio_name": "ad09103.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2398,7 +2436,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05017.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch05017.wav",
+    "audio_name": "ch05017.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2439,7 +2478,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad13006.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad13006.wav",
+    "audio_name": "ad13006.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2494,7 +2534,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad25016.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad25016.wav",
+    "audio_name": "ad25016.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2535,7 +2576,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05043.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch05043.wav",
+    "audio_name": "ch05043.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2576,7 +2618,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05055.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch05055.wav",
+    "audio_name": "ch05055.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2631,7 +2674,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05057.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch05057.wav",
+    "audio_name": "ch05057.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2686,7 +2730,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad21095.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad21095.wav",
+    "audio_name": "ad21095.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2720,7 +2765,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch16122.wav",
+    "path": "datasets/Corpus/children/audio/val_split/ch16122.wav",
+    "audio_name": "ch16122.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2789,7 +2835,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05069.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch05069.wav",
+    "audio_name": "ch05069.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2872,7 +2919,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad28001.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad28001.wav",
+    "audio_name": "ad28001.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -2941,7 +2989,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch18082.wav",
+    "path": "datasets/Corpus/children/audio/val_split/ch18082.wav",
+    "audio_name": "ch18082.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3010,7 +3059,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad13084.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad13084.wav",
+    "audio_name": "ad13084.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3051,7 +3101,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch05098.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch05098.wav",
+    "audio_name": "ch05098.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3099,7 +3150,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch12010.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch12010.wav",
+    "audio_name": "ch12010.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3140,7 +3192,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad22066.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad22066.wav",
+    "audio_name": "ad22066.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3188,7 +3241,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/val_split/ch23064.wav",
+    "path": "datasets/Corpus/children/audio/val_split/ch23064.wav",
+    "audio_name": "ch23064.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3243,7 +3297,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad23065.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad23065.wav",
+    "audio_name": "ad23065.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3277,7 +3332,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch15054.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch15054.wav",
+    "audio_name": "ch15054.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3346,7 +3402,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad23086.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad23086.wav",
+    "audio_name": "ad23086.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3387,7 +3444,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad15046.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad15046.wav",
+    "audio_name": "ad15046.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3435,7 +3493,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad31011.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad31011.wav",
+    "audio_name": "ad31011.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3546,7 +3605,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch06023.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch06023.wav",
+    "audio_name": "ch06023.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3678,7 +3738,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad34136.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad34136.wav",
+    "audio_name": "ad34136.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3719,7 +3780,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad25102.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad25102.wav",
+    "audio_name": "ad25102.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3760,7 +3822,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad35018.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad35018.wav",
+    "audio_name": "ad35018.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3822,7 +3885,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad15095.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad15095.wav",
+    "audio_name": "ad15095.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3856,7 +3920,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad35059.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad35059.wav",
+    "audio_name": "ad35059.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3904,7 +3969,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad35061.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad35061.wav",
+    "audio_name": "ad35061.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3945,7 +4011,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad15105.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad15105.wav",
+    "audio_name": "ad15105.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -3979,7 +4046,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad15114.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad15114.wav",
+    "audio_name": "ad15114.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4013,7 +4081,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad16004.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad16004.wav",
+    "audio_name": "ad16004.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4054,7 +4123,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad16005.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad16005.wav",
+    "audio_name": "ad16005.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4109,7 +4179,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad36006.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad36006.wav",
+    "audio_name": "ad36006.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4157,7 +4228,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad27024.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad27024.wav",
+    "audio_name": "ad27024.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4198,7 +4270,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch18030.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch18030.wav",
+    "audio_name": "ch18030.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4239,7 +4312,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad36149.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad36149.wav",
+    "audio_name": "ad36149.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4322,7 +4396,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch18060.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch18060.wav",
+    "audio_name": "ch18060.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4370,7 +4445,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch18101.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch18101.wav",
+    "audio_name": "ch18101.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4425,7 +4501,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad16053.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad16053.wav",
+    "audio_name": "ad16053.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4466,7 +4543,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad16061.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad16061.wav",
+    "audio_name": "ad16061.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4514,7 +4592,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad42096.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad42096.wav",
+    "audio_name": "ad42096.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4548,7 +4627,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch19045.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch19045.wav",
+    "audio_name": "ch19045.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4589,7 +4669,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad42103.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad42103.wav",
+    "audio_name": "ad42103.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4623,7 +4704,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad30009.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad30009.wav",
+    "audio_name": "ad30009.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4657,7 +4739,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch19053.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch19053.wav",
+    "audio_name": "ch19053.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4726,7 +4809,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch19058.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch19058.wav",
+    "audio_name": "ch19058.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4795,7 +4879,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad16095.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad16095.wav",
+    "audio_name": "ad16095.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4857,7 +4942,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad16102.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad16102.wav",
+    "audio_name": "ad16102.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4891,7 +4977,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad47008.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad47008.wav",
+    "audio_name": "ad47008.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -4953,7 +5040,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch21079.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch21079.wav",
+    "audio_name": "ch21079.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5022,7 +5110,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad21004.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad21004.wav",
+    "audio_name": "ad21004.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5070,7 +5159,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch21103.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch21103.wav",
+    "audio_name": "ch21103.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5111,7 +5201,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch22003.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch22003.wav",
+    "audio_name": "ch22003.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5152,7 +5243,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad21019.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad21019.wav",
+    "audio_name": "ad21019.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5186,7 +5278,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad59040.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad59040.wav",
+    "audio_name": "ad59040.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5241,7 +5334,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad59148.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad59148.wav",
+    "audio_name": "ad59148.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5303,7 +5397,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad59195.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad59195.wav",
+    "audio_name": "ad59195.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5372,7 +5467,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad60004.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad60004.wav",
+    "audio_name": "ad60004.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5413,7 +5509,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch23066.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch23066.wav",
+    "audio_name": "ch23066.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5482,7 +5579,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad21050.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad21050.wav",
+    "audio_name": "ad21050.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5530,7 +5628,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad31081.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad31081.wav",
+    "audio_name": "ad31081.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5571,7 +5670,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad63034.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad63034.wav",
+    "audio_name": "ad63034.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5619,7 +5719,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad21062.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad21062.wav",
+    "audio_name": "ad21062.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5653,7 +5754,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad63057.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad63057.wav",
+    "audio_name": "ad63057.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5694,7 +5796,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/val_split/ad63070.wav",
+    "path": "datasets/Corpus/adult/audio/val_split/ad63070.wav",
+    "audio_name": "ad63070.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5735,7 +5838,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch24095.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch24095.wav",
+    "audio_name": "ch24095.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5790,7 +5894,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad34058.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad34058.wav",
+    "audio_name": "ad34058.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5831,7 +5936,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch25020.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch25020.wav",
+    "audio_name": "ch25020.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5872,7 +5978,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch25051.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch25051.wav",
+    "audio_name": "ch25051.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5920,7 +6027,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch25095.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch25095.wav",
+    "audio_name": "ch25095.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -5989,7 +6097,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/test_split/ch26011.wav",
+    "path": "datasets/Corpus/children/audio/test_split/ch26011.wav",
+    "audio_name": "ch26011.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6037,7 +6146,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch10037.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch10037.wav",
+    "audio_name": "ch10037.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6099,7 +6209,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad35010.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad35010.wav",
+    "audio_name": "ad35010.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6147,7 +6258,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad35015.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad35015.wav",
+    "audio_name": "ad35015.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6188,7 +6300,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad35022.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad35022.wav",
+    "audio_name": "ad35022.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6257,7 +6370,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad35024.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad35024.wav",
+    "audio_name": "ad35024.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6312,7 +6426,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad35052.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad35052.wav",
+    "audio_name": "ad35052.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6374,7 +6489,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad35056.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad35056.wav",
+    "audio_name": "ad35056.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6429,7 +6545,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad35099.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad35099.wav",
+    "audio_name": "ad35099.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6477,7 +6594,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad35134.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad35134.wav",
+    "audio_name": "ad35134.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6511,7 +6629,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad22025.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad22025.wav",
+    "audio_name": "ad22025.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6545,7 +6664,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch11031.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch11031.wav",
+    "audio_name": "ch11031.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6579,7 +6699,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad36007.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad36007.wav",
+    "audio_name": "ad36007.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6641,7 +6762,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad36042.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad36042.wav",
+    "audio_name": "ad36042.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6703,7 +6825,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad36053.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad36053.wav",
+    "audio_name": "ad36053.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6772,7 +6895,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad36064.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad36064.wav",
+    "audio_name": "ad36064.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6820,7 +6944,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad22069.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad22069.wav",
+    "audio_name": "ad22069.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6868,7 +6993,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad36158.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad36158.wav",
+    "audio_name": "ad36158.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6916,7 +7042,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch11056.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch11056.wav",
+    "audio_name": "ch11056.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -6964,7 +7091,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad40044.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad40044.wav",
+    "audio_name": "ad40044.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7012,7 +7140,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad40103.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad40103.wav",
+    "audio_name": "ad40103.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7067,7 +7196,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad40121.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad40121.wav",
+    "audio_name": "ad40121.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7115,7 +7245,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad40150.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad40150.wav",
+    "audio_name": "ad40150.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7156,7 +7287,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad41058.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad41058.wav",
+    "audio_name": "ad41058.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7190,7 +7322,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad23059.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad23059.wav",
+    "audio_name": "ad23059.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7231,7 +7364,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch12090.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch12090.wav",
+    "audio_name": "ch12090.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7300,7 +7434,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad25035.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad25035.wav",
+    "audio_name": "ad25035.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7341,7 +7476,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad47005.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad47005.wav",
+    "audio_name": "ad47005.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7396,7 +7532,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad47013.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad47013.wav",
+    "audio_name": "ad47013.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7444,7 +7581,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad47026.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad47026.wav",
+    "audio_name": "ad47026.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7513,7 +7651,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad47030.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad47030.wav",
+    "audio_name": "ad47030.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7561,7 +7700,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad47032.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad47032.wav",
+    "audio_name": "ad47032.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7595,7 +7735,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad25057.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad25057.wav",
+    "audio_name": "ad25057.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7636,7 +7777,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch15015.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch15015.wav",
+    "audio_name": "ch15015.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7691,7 +7833,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad47083.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad47083.wav",
+    "audio_name": "ad47083.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7732,7 +7875,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch15026.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch15026.wav",
+    "audio_name": "ch15026.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7794,7 +7938,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad25075.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad25075.wav",
+    "audio_name": "ad25075.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7835,7 +7980,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch15035.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch15035.wav",
+    "audio_name": "ch15035.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -7988,7 +8134,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch15038.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch15038.wav",
+    "audio_name": "ch15038.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8043,7 +8190,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad59003.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad59003.wav",
+    "audio_name": "ad59003.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8084,7 +8232,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch15044.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch15044.wav",
+    "audio_name": "ch15044.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8118,7 +8267,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad59062.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad59062.wav",
+    "audio_name": "ad59062.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8152,7 +8302,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch15057.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch15057.wav",
+    "audio_name": "ch15057.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8284,7 +8435,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad59079.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad59079.wav",
+    "audio_name": "ad59079.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8332,7 +8484,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad59090.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad59090.wav",
+    "audio_name": "ad59090.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8380,7 +8533,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad59100.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad59100.wav",
+    "audio_name": "ad59100.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8428,7 +8582,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad59145.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad59145.wav",
+    "audio_name": "ad59145.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8462,7 +8617,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch15083.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch15083.wav",
+    "audio_name": "ch15083.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8594,7 +8750,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad26008.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad26008.wav",
+    "audio_name": "ad26008.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8649,7 +8806,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad59212.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad59212.wav",
+    "audio_name": "ad59212.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8683,7 +8841,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch16027.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch16027.wav",
+    "audio_name": "ch16027.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8724,7 +8883,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad60096.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad60096.wav",
+    "audio_name": "ad60096.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8765,7 +8925,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad26043.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad26043.wav",
+    "audio_name": "ad26043.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8806,7 +8967,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad63018.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad63018.wav",
+    "audio_name": "ad63018.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8847,7 +9009,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/test_split/ad63060.wav",
+    "path": "datasets/Corpus/adult/audio/test_split/ad63060.wav",
+    "audio_name": "ad63060.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8902,7 +9065,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch16091.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch16091.wav",
+    "audio_name": "ch16091.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -8971,7 +9135,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch16092.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch16092.wav",
+    "audio_name": "ch16092.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9012,7 +9177,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad26092.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad26092.wav",
+    "audio_name": "ad26092.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9046,7 +9212,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad26093.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad26093.wav",
+    "audio_name": "ad26093.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9087,7 +9254,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch16099.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch16099.wav",
+    "audio_name": "ch16099.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9156,7 +9324,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad26146.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad26146.wav",
+    "audio_name": "ad26146.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9190,7 +9359,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad26148.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad26148.wav",
+    "audio_name": "ad26148.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9231,7 +9401,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch17073.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch17073.wav",
+    "audio_name": "ch17073.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9300,7 +9471,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch18002.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch18002.wav",
+    "audio_name": "ch18002.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9334,7 +9506,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad27043.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad27043.wav",
+    "audio_name": "ad27043.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9368,7 +9541,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch18028.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch18028.wav",
+    "audio_name": "ch18028.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9423,7 +9597,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad27103.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad27103.wav",
+    "audio_name": "ad27103.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9471,7 +9646,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch18065.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch18065.wav",
+    "audio_name": "ch18065.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9519,7 +9695,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad27111.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad27111.wav",
+    "audio_name": "ad27111.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9553,7 +9730,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad27113.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad27113.wav",
+    "audio_name": "ad27113.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9587,7 +9765,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch18073.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch18073.wav",
+    "audio_name": "ch18073.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9635,7 +9814,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad28025.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad28025.wav",
+    "audio_name": "ad28025.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9690,7 +9870,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch18088.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch18088.wav",
+    "audio_name": "ch18088.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9759,7 +9940,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch18093.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch18093.wav",
+    "audio_name": "ch18093.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9828,7 +10010,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch18103.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch18103.wav",
+    "audio_name": "ch18103.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9876,7 +10059,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch18109.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch18109.wav",
+    "audio_name": "ch18109.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -9945,7 +10129,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch19067.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch19067.wav",
+    "audio_name": "ch19067.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10014,7 +10199,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch19072.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch19072.wav",
+    "audio_name": "ch19072.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10083,7 +10269,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch19075.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch19075.wav",
+    "audio_name": "ch19075.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10124,7 +10311,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad30087.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad30087.wav",
+    "audio_name": "ad30087.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10172,7 +10360,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch21073.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch21073.wav",
+    "audio_name": "ch21073.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10213,7 +10402,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch21085.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch21085.wav",
+    "audio_name": "ch21085.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10282,7 +10472,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch21090.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch21090.wav",
+    "audio_name": "ch21090.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10351,7 +10542,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad30146.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad30146.wav",
+    "audio_name": "ad30146.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10399,7 +10591,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad30147.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad30147.wav",
+    "audio_name": "ad30147.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10433,7 +10626,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad30148.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad30148.wav",
+    "audio_name": "ad30148.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10481,7 +10675,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch22032.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch22032.wav",
+    "audio_name": "ch22032.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10522,7 +10717,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31001.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31001.wav",
+    "audio_name": "ad31001.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10563,7 +10759,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31002.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31002.wav",
+    "audio_name": "ad31002.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10681,7 +10878,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch22075.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch22075.wav",
+    "audio_name": "ch22075.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10750,7 +10948,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31005.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31005.wav",
+    "audio_name": "ad31005.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10791,7 +10990,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31014.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31014.wav",
+    "audio_name": "ad31014.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10916,7 +11116,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31016.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31016.wav",
+    "audio_name": "ad31016.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10957,7 +11158,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31031.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31031.wav",
+    "audio_name": "ad31031.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -10991,7 +11193,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31035.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31035.wav",
+    "audio_name": "ad31035.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11046,7 +11249,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31036.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31036.wav",
+    "audio_name": "ad31036.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11157,7 +11361,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31041.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31041.wav",
+    "audio_name": "ad31041.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11198,7 +11403,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31046.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31046.wav",
+    "audio_name": "ad31046.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11253,7 +11459,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch23039.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch23039.wav",
+    "audio_name": "ch23039.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11308,7 +11515,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch23046.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch23046.wav",
+    "audio_name": "ch23046.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11356,7 +11564,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch23053.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch23053.wav",
+    "audio_name": "ch23053.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11390,7 +11599,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch23060.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch23060.wav",
+    "audio_name": "ch23060.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11445,7 +11655,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch23062.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch23062.wav",
+    "audio_name": "ch23062.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11486,7 +11697,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31082.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31082.wav",
+    "audio_name": "ad31082.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11527,7 +11739,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch23072.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch23072.wav",
+    "audio_name": "ch23072.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11596,7 +11809,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad31109.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad31109.wav",
+    "audio_name": "ad31109.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11630,7 +11844,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34008.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34008.wav",
+    "audio_name": "ad34008.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11671,7 +11886,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34010.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34010.wav",
+    "audio_name": "ad34010.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11705,7 +11921,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34012.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34012.wav",
+    "audio_name": "ad34012.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11746,7 +11963,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34013.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34013.wav",
+    "audio_name": "ad34013.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11787,7 +12005,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34020.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34020.wav",
+    "audio_name": "ad34020.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11828,7 +12047,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34037.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34037.wav",
+    "audio_name": "ad34037.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11869,7 +12089,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch24091.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch24091.wav",
+    "audio_name": "ch24091.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11938,7 +12159,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch24096.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch24096.wav",
+    "audio_name": "ch24096.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -11979,7 +12201,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34053.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34053.wav",
+    "audio_name": "ad34053.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12013,7 +12236,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34056.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34056.wav",
+    "audio_name": "ad34056.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12061,7 +12285,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34061.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34061.wav",
+    "audio_name": "ad34061.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12109,7 +12334,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch25013.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch25013.wav",
+    "audio_name": "ch25013.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12164,7 +12390,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34137.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34137.wav",
+    "audio_name": "ad34137.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12205,7 +12432,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch25089.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch25089.wav",
+    "audio_name": "ch25089.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12260,7 +12488,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch25090.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch25090.wav",
+    "audio_name": "ch25090.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12301,7 +12530,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34146.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34146.wav",
+    "audio_name": "ad34146.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12335,7 +12565,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad34148.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad34148.wav",
+    "audio_name": "ad34148.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12376,7 +12607,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35002.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35002.wav",
+    "audio_name": "ad35002.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12445,7 +12677,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35004.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35004.wav",
+    "audio_name": "ad35004.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12486,7 +12719,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35006.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35006.wav",
+    "audio_name": "ad35006.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12541,7 +12775,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch26010.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch26010.wav",
+    "audio_name": "ch26010.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12673,7 +12908,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35011.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35011.wav",
+    "audio_name": "ad35011.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12714,7 +12950,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35019.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35019.wav",
+    "audio_name": "ad35019.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12748,7 +12985,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35020.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35020.wav",
+    "audio_name": "ad35020.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12796,7 +13034,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35028.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35028.wav",
+    "audio_name": "ad35028.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12844,7 +13083,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35029.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35029.wav",
+    "audio_name": "ad35029.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12899,7 +13139,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35031.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35031.wav",
+    "audio_name": "ad35031.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -12982,7 +13223,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35036.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35036.wav",
+    "audio_name": "ad35036.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13037,7 +13279,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35039.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35039.wav",
+    "audio_name": "ad35039.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13078,7 +13321,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35046.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35046.wav",
+    "audio_name": "ad35046.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13161,7 +13405,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35047.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35047.wav",
+    "audio_name": "ad35047.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13202,7 +13447,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch26050.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch26050.wav",
+    "audio_name": "ch26050.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13250,7 +13496,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35050.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35050.wav",
+    "audio_name": "ad35050.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13333,7 +13580,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch26051.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch26051.wav",
+    "audio_name": "ch26051.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13388,7 +13636,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35055.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35055.wav",
+    "audio_name": "ad35055.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13457,7 +13706,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35057.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35057.wav",
+    "audio_name": "ad35057.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13498,7 +13748,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35058.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35058.wav",
+    "audio_name": "ad35058.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13553,7 +13804,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35070.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35070.wav",
+    "audio_name": "ad35070.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13587,7 +13839,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch26068.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch26068.wav",
+    "audio_name": "ch26068.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13628,7 +13881,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35078.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35078.wav",
+    "audio_name": "ad35078.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13662,7 +13916,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35080.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35080.wav",
+    "audio_name": "ad35080.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13731,7 +13986,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch26088.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch26088.wav",
+    "audio_name": "ch26088.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13772,7 +14028,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35098.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35098.wav",
+    "audio_name": "ad35098.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13820,7 +14077,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch26089.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch26089.wav",
+    "audio_name": "ch26089.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13861,7 +14119,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/children/audio/train_split/ch26102.wav",
+    "path": "datasets/Corpus/children/audio/train_split/ch26102.wav",
+    "audio_name": "ch26102.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13895,7 +14154,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35115.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35115.wav",
+    "audio_name": "ad35115.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -13943,7 +14203,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35120.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35120.wav",
+    "audio_name": "ad35120.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14019,7 +14280,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35132.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35132.wav",
+    "audio_name": "ad35132.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14088,7 +14350,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35135.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35135.wav",
+    "audio_name": "ad35135.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14136,7 +14399,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35160.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35160.wav",
+    "audio_name": "ad35160.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14184,7 +14448,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35181.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35181.wav",
+    "audio_name": "ad35181.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14232,7 +14497,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35189.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35189.wav",
+    "audio_name": "ad35189.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14273,7 +14539,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35205.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35205.wav",
+    "audio_name": "ad35205.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14356,7 +14623,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad35215.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad35215.wav",
+    "audio_name": "ad35215.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14404,7 +14672,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36012.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36012.wav",
+    "audio_name": "ad36012.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14452,7 +14721,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36013.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36013.wav",
+    "audio_name": "ad36013.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14500,7 +14770,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36038.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36038.wav",
+    "audio_name": "ad36038.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14541,7 +14812,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36049.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36049.wav",
+    "audio_name": "ad36049.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14589,7 +14861,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36050.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36050.wav",
+    "audio_name": "ad36050.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14644,7 +14917,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36057.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36057.wav",
+    "audio_name": "ad36057.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14699,7 +14973,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36073.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36073.wav",
+    "audio_name": "ad36073.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14796,7 +15071,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36076.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36076.wav",
+    "audio_name": "ad36076.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14851,7 +15127,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36078.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36078.wav",
+    "audio_name": "ad36078.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -14920,7 +15197,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36080.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36080.wav",
+    "audio_name": "ad36080.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15010,7 +15288,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36083.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36083.wav",
+    "audio_name": "ad36083.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15051,7 +15330,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36090.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36090.wav",
+    "audio_name": "ad36090.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15120,7 +15400,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36102.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36102.wav",
+    "audio_name": "ad36102.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15203,7 +15484,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36115.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36115.wav",
+    "audio_name": "ad36115.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15258,7 +15540,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36134.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36134.wav",
+    "audio_name": "ad36134.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15306,7 +15589,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36145.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36145.wav",
+    "audio_name": "ad36145.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15361,7 +15645,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad36152.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad36152.wav",
+    "audio_name": "ad36152.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15402,7 +15687,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40010.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40010.wav",
+    "audio_name": "ad40010.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15443,7 +15729,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40014.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40014.wav",
+    "audio_name": "ad40014.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15477,7 +15764,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40020.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40020.wav",
+    "audio_name": "ad40020.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15532,7 +15820,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40021.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40021.wav",
+    "audio_name": "ad40021.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15601,7 +15890,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40024.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40024.wav",
+    "audio_name": "ad40024.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15642,7 +15932,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40034.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40034.wav",
+    "audio_name": "ad40034.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15683,7 +15974,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40035.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40035.wav",
+    "audio_name": "ad40035.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15717,7 +16009,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40038.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40038.wav",
+    "audio_name": "ad40038.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15758,7 +16051,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40064.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40064.wav",
+    "audio_name": "ad40064.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15799,7 +16093,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40066.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40066.wav",
+    "audio_name": "ad40066.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15868,7 +16163,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40074.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40074.wav",
+    "audio_name": "ad40074.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15916,7 +16212,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40079.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40079.wav",
+    "audio_name": "ad40079.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15950,7 +16247,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40081.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40081.wav",
+    "audio_name": "ad40081.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -15991,7 +16289,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40090.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40090.wav",
+    "audio_name": "ad40090.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16144,7 +16443,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40096.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40096.wav",
+    "audio_name": "ad40096.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16185,7 +16485,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40116.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40116.wav",
+    "audio_name": "ad40116.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16219,7 +16520,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad40167.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad40167.wav",
+    "audio_name": "ad40167.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16260,7 +16562,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad41016.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad41016.wav",
+    "audio_name": "ad41016.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16364,7 +16667,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad41059.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad41059.wav",
+    "audio_name": "ad41059.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16405,7 +16709,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad41064.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad41064.wav",
+    "audio_name": "ad41064.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16474,7 +16779,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad41065.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad41065.wav",
+    "audio_name": "ad41065.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16508,7 +16814,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad41076.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad41076.wav",
+    "audio_name": "ad41076.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16549,7 +16856,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad42084.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad42084.wav",
+    "audio_name": "ad42084.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16583,7 +16891,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad43005.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad43005.wav",
+    "audio_name": "ad43005.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16624,7 +16933,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad47012.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad47012.wav",
+    "audio_name": "ad47012.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16686,7 +16996,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad47019.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad47019.wav",
+    "audio_name": "ad47019.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16720,7 +17031,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad47098.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad47098.wav",
+    "audio_name": "ad47098.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16768,7 +17080,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad47099.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad47099.wav",
+    "audio_name": "ad47099.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16802,7 +17115,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad47101.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad47101.wav",
+    "audio_name": "ad47101.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16843,7 +17157,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad47121.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad47121.wav",
+    "audio_name": "ad47121.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16884,7 +17199,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad47137.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad47137.wav",
+    "audio_name": "ad47137.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -16925,7 +17241,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad47141.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad47141.wav",
+    "audio_name": "ad47141.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17022,7 +17339,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59010.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59010.wav",
+    "audio_name": "ad59010.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17077,7 +17395,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59022.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59022.wav",
+    "audio_name": "ad59022.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17118,7 +17437,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59026.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59026.wav",
+    "audio_name": "ad59026.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17166,7 +17486,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59038.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59038.wav",
+    "audio_name": "ad59038.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17221,7 +17542,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59063.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59063.wav",
+    "audio_name": "ad59063.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17255,7 +17577,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59065.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59065.wav",
+    "audio_name": "ad59065.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17324,7 +17647,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59080.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59080.wav",
+    "audio_name": "ad59080.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17365,7 +17689,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59097.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59097.wav",
+    "audio_name": "ad59097.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17399,7 +17724,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59104.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59104.wav",
+    "audio_name": "ad59104.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17461,7 +17787,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59110.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59110.wav",
+    "audio_name": "ad59110.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17502,7 +17829,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59132.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59132.wav",
+    "audio_name": "ad59132.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17564,7 +17892,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59152.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59152.wav",
+    "audio_name": "ad59152.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17612,7 +17941,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59164.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59164.wav",
+    "audio_name": "ad59164.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17646,7 +17976,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59175.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59175.wav",
+    "audio_name": "ad59175.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17708,7 +18039,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59176.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59176.wav",
+    "audio_name": "ad59176.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17770,7 +18102,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59180.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59180.wav",
+    "audio_name": "ad59180.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17881,7 +18214,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59192.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59192.wav",
+    "audio_name": "ad59192.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -17922,7 +18256,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59204.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59204.wav",
+    "audio_name": "ad59204.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18033,7 +18368,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad59206.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad59206.wav",
+    "audio_name": "ad59206.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18102,7 +18438,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad60084.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad60084.wav",
+    "audio_name": "ad60084.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18136,7 +18473,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad60098.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad60098.wav",
+    "audio_name": "ad60098.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18184,7 +18522,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad63022.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad63022.wav",
+    "audio_name": "ad63022.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18218,7 +18557,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad63028.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad63028.wav",
+    "audio_name": "ad63028.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18266,7 +18606,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad63031.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad63031.wav",
+    "audio_name": "ad63031.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18307,7 +18648,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad63036.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad63036.wav",
+    "audio_name": "ad63036.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18348,7 +18690,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad63051.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad63051.wav",
+    "audio_name": "ad63051.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18403,7 +18746,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad63056.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad63056.wav",
+    "audio_name": "ad63056.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18444,7 +18788,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad63068.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad63068.wav",
+    "audio_name": "ad63068.wav",
     "whisper_language": "mixed",
     "segments": [
       {
@@ -18485,7 +18830,8 @@
     ]
   },
   {
-    "path": "/scratch1/shihe/github/ee519_project/datasets/corpus/adult/audio/train_split/ad63114.wav",
+    "path": "datasets/Corpus/adult/audio/train_split/ad63114.wav",
+    "audio_name": "ad63114.wav",
     "whisper_language": "mixed",
     "segments": [
       {

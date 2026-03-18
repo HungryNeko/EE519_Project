@@ -1,0 +1,13 @@
+{
+  "completed_keys": [
+    "D:/Github/EE519_Project/datasets/Corpus/corpus_mixed_language.json|D:/Github/EE519_Project/datasets/Corpus/adult/audio/test_split/ad09004.wav|2|0|8.3",
+    "D:/Github/EE519_Project/datasets/Corpus/corpus_mixed_language.json|D:/Github/EE519_Project/datasets/Corpus/adult/audio/test_split/ad09004.wav|2|1|8.62",
+    "D:/Github/EE519_Project/datasets/Corpus/corpus_mixed_language.json|D:/Github/EE519_Project/datasets/Corpus/children/audio/val_split/ch03009.wav|0|0|0.2",
+    "D:/Github/EE519_Project/datasets/Corpus/corpus_mixed_language.json|D:/Github/EE519_Project/datasets/Corpus/children/audio/val_split/ch03009.wav|0|1|0.64",
+    "D:/Github/EE519_Project/datasets/ascend/ascend_mixed_language.json|D:/Github/EE519_Project/datasets/ascend/audio/train/000002.wav|0|0|1.04",
+    "D:/Github/EE519_Project/datasets/ascend/ascend_mixed_language.json|D:/Github/EE519_Project/datasets/ascend/audio/train/000003.wav|0|0|4.36",
+    "D:/Github/EE519_Project/datasets/ascend/ascend_mixed_language.json|D:/Github/EE519_Project/datasets/ascend/audio/train/000005.wav|1|0|2.1",
+    "D:/Github/EE519_Project/datasets/ascend/ascend_mixed_language.json|D:/Github/EE519_Project/datasets/ascend/audio/train/000005.wav|1|1|2.62",
+    "D:/Github/EE519_Project/datasets/ascend/ascend_mixed_language.json|D:/Github/EE519_Project/datasets/ascend/audio/validation/000001.wav|0|0|2.62"
+  ]
+}

@@ -14,8 +14,12 @@ ALLOWED_LANGS = {"hi", "en"}
 def normalize_path(path: str) -> str:
     """Convert absolute path to relative datasets/Corpus/..."""
     path = path.replace("\\", "/")
-    if BASE_DIR in path:
-        return path[path.index(BASE_DIR):]
+    path_lower = path.lower()
+    base_dir_lower = BASE_DIR.lower()
+    if base_dir_lower in path_lower:
+        start = path_lower.index(base_dir_lower)
+        suffix = path[start + len(base_dir_lower):]
+        return f"{BASE_DIR}{suffix}"
     return path
 
 
