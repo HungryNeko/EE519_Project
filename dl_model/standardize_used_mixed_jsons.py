@@ -11,6 +11,23 @@ def load_used_json_list(path: Path) -> list[Path]:
     return [Path(line.strip()) for line in lines if line.strip()]
 
 
+def load_hinglish_name_map(root: Path) -> dict[str, str]:
+    mapping = {}
+    for manifest_name in ["manifest_train.jsonl", "manifest_test.jsonl"]:
+        manifest_path = root / "datasets" / "hinglish" / "data" / manifest_name
+        if not manifest_path.exists():
+            continue
+        for line in manifest_path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            item = json.loads(line)
+            audio_path = item.get("audio_filepath", "").replace("\\", "/")
+            audio_name = Path(audio_path).name
+            mapping[audio_name.lower()] = audio_name
+    return mapping
+
+
 def normalize_dataset_path(raw_path: str, dataset_prefix: str) -> str:
     path = raw_path.replace("\\", "/")
     path_lower = path.lower()
@@ -25,6 +42,18 @@ def normalize_dataset_path(raw_path: str, dataset_prefix: str) -> str:
             return f"{dataset_prefix}/{suffix}" if suffix else dataset_prefix
 
     return f"{dataset_prefix}/{Path(path).name}"
+
+
+def normalize_hinglish_path(raw_path: str, dataset_prefix: str, canonical_name_map: dict[str, str]) -> str:
+    path = normalize_dataset_path(raw_path, dataset_prefix)
+    path = path.replace("/data/train/train/", "/data/train/")
+    path = path.replace("/data/test/test/", "/data/test/")
+
+    path_obj = Path(path)
+    canonical_name = canonical_name_map.get(path_obj.name.lower())
+    if canonical_name:
+        path = str(path_obj.with_name(canonical_name)).replace("\\", "/")
+    return path
 
 
 def to_float(value):
@@ -56,8 +85,11 @@ def standardize_segment(segment: dict) -> dict:
     }
 
 
-def standardize_item(item: dict, dataset_prefix: str) -> dict:
-    path = normalize_dataset_path(item.get("path", ""), dataset_prefix)
+def standardize_item(item: dict, dataset_prefix: str, hinglish_name_map: dict[str, str]) -> dict:
+    if dataset_prefix == "datasets/hinglish":
+        path = normalize_hinglish_path(item.get("path", ""), dataset_prefix, hinglish_name_map)
+    else:
+        path = normalize_dataset_path(item.get("path", ""), dataset_prefix)
     return {
         "path": path,
         "audio_name": Path(path).name,
@@ -78,13 +110,14 @@ def main():
     root = project_root()
     used_json_path = root / "dl_model" / "used_json.txt"
     json_paths = load_used_json_list(used_json_path)
+    hinglish_name_map = load_hinglish_name_map(root)
 
     for rel_path in json_paths:
         json_path = root / rel_path
         dataset_prefix = str(rel_path.parent).replace("\\", "/")
 
         data = json.loads(json_path.read_text(encoding="utf-8"))
-        standardized = [standardize_item(item, dataset_prefix) for item in data]
+        standardized = [standardize_item(item, dataset_prefix, hinglish_name_map) for item in data]
 
         old_path = backup_path(json_path)
         save_backup(json_path, old_path)
