@@ -25,9 +25,42 @@ def project_root():
     return Path(__file__).resolve().parents[1]
 
 
+# =========================
+# NEW: case-insensitive path resolver
+# =========================
+def resolve_case_insensitive(path: Path):
+    if path.exists():
+        return path
+
+    parts = path.parts
+    current = Path(parts[0]) if path.is_absolute() else Path()
+
+    for part in parts:
+        if not current.exists():
+            return None
+
+        try:
+            candidates = list(current.iterdir())
+        except Exception:
+            return None
+
+        match = None
+        for c in candidates:
+            if c.name.lower() == part.lower():
+                match = c
+                break
+
+        if match is None:
+            return None
+
+        current = match
+
+    return current
+
+
 def load_used_json_list(path: Path):
     lines = path.read_text(encoding="utf-8").splitlines()
-    return [line.strip() for line in lines if line.strip()]
+    return [line.strip().replace("\\", "/") for line in lines if line.strip()]
 
 
 def load_audio(path: Path, sr=16000):
@@ -169,15 +202,15 @@ def process_json_file(extractor, json_path: Path, records, completed_keys,
         if not audio_rel:
             continue
 
-        audio_path = root / audio_rel
-        if not audio_path.exists():
-            print(f"missing audio: {Path(audio_rel).as_posix()}")
+        audio_path = resolve_case_insensitive(root / audio_rel)
+        if audio_path is None:
+            print(f"missing audio: {audio_rel}")
             continue
 
         try:
             wav = load_audio(audio_path, sr=extractor.sr)
         except Exception:
-            print(f"failed audio load: {Path(audio_rel).as_posix()}")
+            print(f"failed audio load: {audio_rel}")
             continue
 
         for sample in iter_switch_samples(item):
@@ -207,24 +240,29 @@ def main():
     root = project_root()
     used_json_path = root / args.used_json
     json_files = load_used_json_list(used_json_path)
+
     if args.output is None:
         output_name = "mlp_feature_cache_test.json" if args.test else "mlp_feature_cache.json"
         output_path = root / "dl_model" / output_name
     else:
         output_path = root / args.output
+
     progress_path = output_path.with_name(output_path.name + ".progress.json")
 
     extractor = SpeakerFeatureExtractor(sr=16000)
     all_records, completed_keys = load_existing_state(output_path, progress_path)
+
     if args.test:
         all_records = dedupe_records_by_json_name(all_records)
+
     total_new = 0
 
     for rel_path in json_files:
-        json_path = root / rel_path
-        if not json_path.exists():
-            print(f"skip missing json: {json_path}")
+        json_path = resolve_case_insensitive(root / rel_path)
+        if json_path is None:
+            print(f"skip missing json: {rel_path}")
             continue
+
         new_count = process_json_file(
             extractor=extractor,
             json_path=json_path,
@@ -235,11 +273,14 @@ def main():
             test_mode=args.test,
             window_sec=args.window_sec,
         )
+
         if new_count == 0:
             print(f"no valid sample found for {json_path}")
+
         total_new += new_count
 
     save_state(output_path, progress_path, all_records, completed_keys)
+
     print(f"saved {len(all_records)} total records to {output_path}")
     print(f"added {total_new} new records")
     print(f"progress file: {progress_path}")

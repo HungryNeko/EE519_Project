@@ -11,7 +11,7 @@ import os
 class SpeakerFeatureExtractor:
     def __init__(self, sr=16000):
         self.sr = sr
-        self.device = "cpu"
+        self.device = "cuda"
         self.model = whisper.load_model("base", device=self.device)
 
     # =========================
@@ -22,12 +22,12 @@ class SpeakerFeatureExtractor:
             return np.zeros(512, dtype=np.float32)
 
         wav = whisper.pad_or_trim(wav)
-        mel = whisper.log_mel_spectrogram(wav)
+        mel = whisper.log_mel_spectrogram(wav).to(self.device)
 
         with torch.no_grad():
             enc = self.model.encoder(mel.unsqueeze(0))
 
-        return enc.mean(dim=1).squeeze().numpy().astype(np.float32)
+        return enc.mean(dim=1).squeeze().cpu().numpy().astype(np.float32)
 
     # =========================
     # Pitch
