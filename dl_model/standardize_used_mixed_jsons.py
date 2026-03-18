@@ -28,6 +28,15 @@ def load_hinglish_name_map(root: Path) -> dict[str, str]:
     return mapping
 
 
+def load_corpus_path_map(root: Path) -> dict[str, str]:
+    mapping = {}
+    corpus_root = root / "datasets" / "Corpus"
+    for wav_path in corpus_root.rglob("*.wav"):
+        rel_path = wav_path.relative_to(root).as_posix()
+        mapping[rel_path.lower()] = rel_path
+    return mapping
+
+
 def normalize_dataset_path(raw_path: str, dataset_prefix: str) -> str:
     path = raw_path.replace("\\", "/")
     path_lower = path.lower()
@@ -85,9 +94,17 @@ def standardize_segment(segment: dict) -> dict:
     }
 
 
-def standardize_item(item: dict, dataset_prefix: str, hinglish_name_map: dict[str, str]) -> dict:
+def standardize_item(
+    item: dict,
+    dataset_prefix: str,
+    hinglish_name_map: dict[str, str],
+    corpus_path_map: dict[str, str],
+) -> dict:
     if dataset_prefix == "datasets/hinglish":
         path = normalize_hinglish_path(item.get("path", ""), dataset_prefix, hinglish_name_map)
+    elif dataset_prefix == "datasets/Corpus":
+        path = normalize_dataset_path(item.get("path", ""), dataset_prefix)
+        path = corpus_path_map.get(path.lower(), path)
     else:
         path = normalize_dataset_path(item.get("path", ""), dataset_prefix)
     return {
@@ -111,13 +128,17 @@ def main():
     used_json_path = root / "dl_model" / "used_json.txt"
     json_paths = load_used_json_list(used_json_path)
     hinglish_name_map = load_hinglish_name_map(root)
+    corpus_path_map = load_corpus_path_map(root)
 
     for rel_path in json_paths:
         json_path = root / rel_path
         dataset_prefix = str(rel_path.parent).replace("\\", "/")
 
         data = json.loads(json_path.read_text(encoding="utf-8"))
-        standardized = [standardize_item(item, dataset_prefix, hinglish_name_map) for item in data]
+        standardized = [
+            standardize_item(item, dataset_prefix, hinglish_name_map, corpus_path_map)
+            for item in data
+        ]
 
         old_path = backup_path(json_path)
         save_backup(json_path, old_path)
