@@ -1,0 +1,938 @@
+[
+  {
+    "path": "datasets\\tts\\mix\\mix_0520.wav",
+    "audio_name": "mix_0520.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.271208333333334,
+        "end": 5.371208333333334,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0415.wav",
+    "audio_name": "mix_0415.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.9245833333333335,
+        "end": 5.024583333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0120.wav",
+    "audio_name": "mix_0120.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.700875,
+        "end": 4.800875,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0387.wav",
+    "audio_name": "mix_0387.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.933041666666667,
+        "end": 5.033041666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0225.wav",
+    "audio_name": "mix_0225.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.0224166666666665,
+        "end": 5.122416666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0405.wav",
+    "audio_name": "mix_0405.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.166166666666667,
+        "end": 3.2661666666666664,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0283.wav",
+    "audio_name": "mix_0283.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.7570833333333336,
+        "end": 3.857083333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0080.wav",
+    "audio_name": "mix_0080.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.031041666666667,
+        "end": 3.1310416666666665,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0061.wav",
+    "audio_name": "mix_0061.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.692125,
+        "end": 4.7921249999999995,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0249.wav",
+    "audio_name": "mix_0249.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.9777916666666666,
+        "end": 4.077791666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0372.wav",
+    "audio_name": "mix_0372.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.758,
+        "end": 4.858,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0132.wav",
+    "audio_name": "mix_0132.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.2917916666666667,
+        "end": 3.3917916666666663,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0199.wav",
+    "audio_name": "mix_0199.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.0847500000000005,
+        "end": 4.18475,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0231.wav",
+    "audio_name": "mix_0231.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.108875,
+        "end": 4.208875,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0088.wav",
+    "audio_name": "mix_0088.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.78675,
+        "end": 3.8867499999999997,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0516.wav",
+    "audio_name": "mix_0516.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.8075,
+        "end": 3.9074999999999998,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0332.wav",
+    "audio_name": "mix_0332.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.31375,
+        "end": 4.413749999999999,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0514.wav",
+    "audio_name": "mix_0514.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.499083333333333,
+        "end": 5.599083333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0538.wav",
+    "audio_name": "mix_0538.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.0844583333333335,
+        "end": 3.184458333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0523.wav",
+    "audio_name": "mix_0523.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.7999583333333335,
+        "end": 3.899958333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0384.wav",
+    "audio_name": "mix_0384.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.6823333333333337,
+        "end": 3.7823333333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0211.wav",
+    "audio_name": "mix_0211.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.8395,
+        "end": 3.9395,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0177.wav",
+    "audio_name": "mix_0177.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.801041666666666,
+        "end": 4.901041666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0212.wav",
+    "audio_name": "mix_0212.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.135083333333333,
+        "end": 5.235083333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0233.wav",
+    "audio_name": "mix_0233.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.892166666666667,
+        "end": 4.992166666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0194.wav",
+    "audio_name": "mix_0194.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.301875,
+        "end": 4.4018749999999995,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0171.wav",
+    "audio_name": "mix_0171.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.997708333333334,
+        "end": 5.097708333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0124.wav",
+    "audio_name": "mix_0124.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.910083333333334,
+        "end": 6.010083333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0011.wav",
+    "audio_name": "mix_0011.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.80525,
+        "end": 5.90525,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0356.wav",
+    "audio_name": "mix_0356.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.915791666666667,
+        "end": 4.015791666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0032.wav",
+    "audio_name": "mix_0032.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.102541666666667,
+        "end": 4.202541666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0380.wav",
+    "audio_name": "mix_0380.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.457291666666666,
+        "end": 4.557291666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0217.wav",
+    "audio_name": "mix_0217.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.024875,
+        "end": 5.124874999999999,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0486.wav",
+    "audio_name": "mix_0486.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.9037916666666668,
+        "end": 4.003791666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0348.wav",
+    "audio_name": "mix_0348.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.213875,
+        "end": 5.3138749999999995,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0495.wav",
+    "audio_name": "mix_0495.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.082458333333333,
+        "end": 5.182458333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0053.wav",
+    "audio_name": "mix_0053.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.4859583333333335,
+        "end": 4.585958333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0038.wav",
+    "audio_name": "mix_0038.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 6.279791666666667,
+        "end": 6.379791666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0508.wav",
+    "audio_name": "mix_0508.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.910083333333334,
+        "end": 6.010083333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0541.wav",
+    "audio_name": "mix_0541.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.1767916666666665,
+        "end": 4.276791666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0358.wav",
+    "audio_name": "mix_0358.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.8747083333333334,
+        "end": 3.974708333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0307.wav",
+    "audio_name": "mix_0307.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.360666666666667,
+        "end": 4.460666666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0571.wav",
+    "audio_name": "mix_0571.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.259916666666667,
+        "end": 4.359916666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0498.wav",
+    "audio_name": "mix_0498.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.4057916666666666,
+        "end": 4.505791666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0057.wav",
+    "audio_name": "mix_0057.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.8808333333333334,
+        "end": 3.980833333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0407.wav",
+    "audio_name": "mix_0407.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.3429166666666665,
+        "end": 4.442916666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0510.wav",
+    "audio_name": "mix_0510.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.898291666666667,
+        "end": 4.998291666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0339.wav",
+    "audio_name": "mix_0339.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.088416666666667,
+        "end": 3.1884166666666665,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0318.wav",
+    "audio_name": "mix_0318.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.169875,
+        "end": 4.269875,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0370.wav",
+    "audio_name": "mix_0370.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.087416666666667,
+        "end": 3.1874166666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0028.wav",
+    "audio_name": "mix_0028.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.4194583333333335,
+        "end": 3.519458333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0542.wav",
+    "audio_name": "mix_0542.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.289541666666667,
+        "end": 4.389541666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0114.wav",
+    "audio_name": "mix_0114.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.6425,
+        "end": 4.7425,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0416.wav",
+    "audio_name": "mix_0416.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.6898333333333335,
+        "end": 4.789833333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0444.wav",
+    "audio_name": "mix_0444.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.942666666666667,
+        "end": 5.042666666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0090.wav",
+    "audio_name": "mix_0090.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.363333333333333,
+        "end": 4.463333333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0524.wav",
+    "audio_name": "mix_0524.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.24575,
+        "end": 3.34575,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0219.wav",
+    "audio_name": "mix_0219.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.957208333333334,
+        "end": 5.0572083333333335,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0439.wav",
+    "audio_name": "mix_0439.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.4095,
+        "end": 4.5095,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0582.wav",
+    "audio_name": "mix_0582.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.2855,
+        "end": 5.3854999999999995,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0554.wav",
+    "audio_name": "mix_0554.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.543541666666667,
+        "end": 4.643541666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0364.wav",
+    "audio_name": "mix_0364.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.565625,
+        "end": 4.6656249999999995,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0009.wav",
+    "audio_name": "mix_0009.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.853666666666667,
+        "end": 3.9536666666666664,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0543.wav",
+    "audio_name": "mix_0543.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.012291666666667,
+        "end": 5.112291666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0429.wav",
+    "audio_name": "mix_0429.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.132041666666667,
+        "end": 4.2320416666666665,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0518.wav",
+    "audio_name": "mix_0518.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.9035833333333336,
+        "end": 4.003583333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0556.wav",
+    "audio_name": "mix_0556.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.089125,
+        "end": 5.189125,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0006.wav",
+    "audio_name": "mix_0006.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 2.958375,
+        "end": 3.058375,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0010.wav",
+    "audio_name": "mix_0010.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.761541666666667,
+        "end": 3.8615416666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0579.wav",
+    "audio_name": "mix_0579.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.047083333333333,
+        "end": 4.147083333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0186.wav",
+    "audio_name": "mix_0186.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.2917916666666667,
+        "end": 3.3917916666666663,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0534.wav",
+    "audio_name": "mix_0534.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 6.139208333333333,
+        "end": 6.239208333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0271.wav",
+    "audio_name": "mix_0271.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.199791666666667,
+        "end": 4.299791666666667,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0128.wav",
+    "audio_name": "mix_0128.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.121041666666667,
+        "end": 4.221041666666666,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0116.wav",
+    "audio_name": "mix_0116.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 5.490666666666667,
+        "end": 5.5906666666666665,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0164.wav",
+    "audio_name": "mix_0164.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 3.1293333333333333,
+        "end": 3.229333333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0546.wav",
+    "audio_name": "mix_0546.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.696625,
+        "end": 4.796625,
+        "switch_type": "speaker"
+      }
+    ]
+  },
+  {
+    "path": "datasets\\tts\\mix\\mix_0092.wav",
+    "audio_name": "mix_0092.wav",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 4.301458333333334,
+        "end": 4.401458333333333,
+        "switch_type": "speaker"
+      }
+    ]
+  }
+]
