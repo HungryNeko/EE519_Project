@@ -77,8 +77,10 @@ def extract_window(wav: np.ndarray, sr: int, start_time: float, end_time: float)
 
 
 def iter_switch_samples(item):
-    audio_rel = item.get("path")
-    for segment in item.get("segments", []):
+    segments = item.get("segments", [])
+
+    # ===== 原来的逻辑（span 内切换）=====
+    for segment in segments:
         spans = segment.get("language_spans", [])
         if len(spans) < 2:
             continue
@@ -90,11 +92,8 @@ def iter_switch_samples(item):
                 continue
 
             yield {
-                "audio_rel_path": audio_rel,
+                "audio_rel_path": item.get("path"),
                 "segment_id": segment.get("segment_id"),
-                "segment_start": segment.get("start"),
-                "segment_end": segment.get("end"),
-                "segment_text": segment.get("text"),
                 "left_span": left,
                 "right_span": right,
                 "switch_time": float(left.get("end", 0.0)),
@@ -103,6 +102,33 @@ def iter_switch_samples(item):
                 "switch_index": i,
             }
 
+    # ===== 新增：跨 segment 切换 =====
+    for i in range(len(segments) - 1):
+        seg1 = segments[i]
+        seg2 = segments[i + 1]
+
+        spans1 = seg1.get("language_spans", [])
+        spans2 = seg2.get("language_spans", [])
+
+        if not spans1 or not spans2:
+            continue
+
+        lang1 = spans1[-1].get("language")
+        lang2 = spans2[0].get("language")
+
+        if lang1 == lang2:
+            continue
+
+        yield {
+            "audio_rel_path": item.get("path"),
+            "segment_id": f"{seg1.get('segment_id')}_{seg2.get('segment_id')}",
+            "left_span": spans1[-1],
+            "right_span": spans2[0],
+            "switch_time": float(seg1.get("end", 0.0)),
+            "gap_start": float(seg1.get("end", 0.0)),
+            "gap_end": float(seg2.get("start", seg1.get("end", 0.0))),
+            "switch_index": i,
+        }
 
 def make_sample_key(source_json: Path, audio_path: Path, sample):
     switch_time = round(float(sample["switch_time"]), 6)

@@ -11,7 +11,7 @@ import os
 class SpeakerFeatureExtractor:
     def __init__(self, sr=16000):
         self.sr = sr
-        self.device = "cuda"
+        self.device = "cpu"
         self.model = whisper.load_model("base", device=self.device)
 
     # =========================

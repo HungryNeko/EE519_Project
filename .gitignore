@@ -6,6 +6,7 @@ datasets/crossfade_insertions/**/*.wav
 datasets/.cache
 dl_model/mlp_feature_cache.jsonl
 datasets/TTS/**/*.wav
+*.jsonl
 # ---- Hinglish dataset: ignore everything except metadata/manifest ----
 datasets/hinglish/data/**
 !datasets/hinglish/data/metadata.csv
@@ -37,3 +38,4 @@ __pycache__/
 # -----------------------------
 .DS_Store
 dl_model/old/mlp_feature_cache.jsonl
+dl_model/mlp_feature_cache_back.jsonl

@@ -4,8 +4,8 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 from sklearn.metrics import roc_auc_score, accuracy_score
 
-from model import SwitchMLP
-from dataset_sim import SimSwitchDataset
+from dl_model.old.model import SwitchMLP
+from dl_model.old.dataset_sim import SimSwitchDataset
 
 def train():
 
