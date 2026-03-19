@@ -1,66 +1,15 @@
 import argparse
 from pathlib import Path
-import sys
-
-# Add project root to sys.path for module imports
-_project_root = Path(__file__).resolve().parents[2]
-if str(_project_root) not in sys.path:
-    sys.path.insert(0, str(_project_root))
-
 import numpy as np
 import torch
-import torch.nn as nn
 import soundfile as sf
 import librosa
 import whisper
 
-from dl_model.functions import SpeakerFeatureExtractor
+from speechbrain.inference.speaker import SpeakerRecognition
 
 # =========================
-# 模型（不变）
-# =========================
-class CNNEncoder(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.net = nn.Sequential(
-            nn.Conv1d(1, 64, 5, padding=2),
-            nn.ReLU(),
-            nn.MaxPool1d(2),
-
-            nn.Conv1d(64, 128, 5, padding=2),
-            nn.ReLU(),
-            nn.MaxPool1d(2),
-
-            nn.Conv1d(128, 256, 3, padding=1),
-            nn.ReLU(),
-
-            nn.AdaptiveAvgPool1d(1)
-        )
-
-    def forward(self, x):
-        return self.net(x).squeeze(-1)
-
-
-class SwitchCNN(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.enc = CNNEncoder()
-        self.fc = nn.Sequential(
-            nn.Linear(256 * 3, 128),
-            nn.ReLU(),
-            nn.Dropout(0.5),
-            nn.Linear(128, 2)
-        )
-
-    def forward(self, x):
-        l = self.enc(x[:, 0].unsqueeze(1))
-        r = self.enc(x[:, 1].unsqueeze(1))
-        d = torch.abs(l - r)
-        return self.fc(torch.cat([l, r, d], dim=1))
-
-
-# =========================
-# 音频
+# 音频处理（完全一致）
 # =========================
 def load_audio(path: Path, sr=16000):
     wav, s = sf.read(str(path))
@@ -69,7 +18,6 @@ def load_audio(path: Path, sr=16000):
     if s != sr:
         wav = librosa.resample(wav, orig_sr=s, target_sr=sr)
     return wav.astype(np.float32), sr
-
 
 def extract_window(wav: np.ndarray, sr: int, start_time: float, end_time: float):
     start_i = int(round(start_time * sr))
@@ -87,9 +35,8 @@ def extract_window(wav: np.ndarray, sr: int, start_time: float, end_time: float)
     out[dst_start:dst_end] = wav[src_start:src_end]
     return out
 
-
 # =========================
-# 语言检测（训练同款）
+# 语言检测（完全一致）
 # =========================
 def detect_lang_by_char(ch: str):
     o = ord(ch)
@@ -101,31 +48,25 @@ def detect_lang_by_char(ch: str):
         return "en"
     return "other"
 
-
 # =========================
 # 主流程
 # =========================
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--audio", required=True)
-    parser.add_argument("--model", required=True)
     args = parser.parse_args()
 
     audio_path = Path(args.audio)
-    model_path = Path(args.model)
+    if not audio_path.exists():
+        raise FileNotFoundError(f"Audio not found: {audio_path.resolve()}")
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print("device:", device)
 
-    # ===== 模型 =====
-    model = SwitchCNN().to(device)
-    model.load_state_dict(torch.load(model_path, map_location=device))
-    model.eval()
-
-    # ===== 音频 =====
+    # ===== 加载音频 =====
     wav, sr = load_audio(audio_path, sr=16000)
 
-    # ===== Whisper =====
+    # ===== Whisper（完全一致）=====
     whisper_model = whisper.load_model("base", device=device)
 
     asr_res = whisper_model.transcribe(
@@ -142,13 +83,13 @@ def main():
 
     segments = asr_res.get("segments", [])
 
-    # ===== load full audio（训练同款）=====
+    # ===== load full audio（完全一致）=====
     audio_full = whisper.load_audio(str(audio_path))
     sr_whisper = whisper.audio.SAMPLE_RATE
 
     language_spans = []
 
-    # ===== segment → 再跑 whisper(word) =====
+    # ===== segment → 再跑 whisper(word)（完全一致）=====
     for seg in segments:
         seg_start = seg["start"]
         seg_end = seg["end"]
@@ -177,7 +118,7 @@ def main():
                     "end": seg_start + w["end"],
                 })
 
-        # ===== 构建 language_spans =====
+        # ===== 构建 language_spans（完全一致）=====
         cur = None
 
         def flush():
@@ -208,7 +149,7 @@ def main():
 
         flush()
 
-    # ===== 找 switch =====
+    # ===== 找 switch（完全一致）=====
     switch_time = None
     for i in range(1, len(language_spans)):
         if language_spans[i]["language"] != language_spans[i - 1]["language"]:
@@ -222,28 +163,35 @@ def main():
 
     print(f"\nSwitch detected at: {switch_time:.3f} sec")
 
-    # ===== 切窗口 =====
+    # ===== 切窗口（完全一致）=====
     seg1 = extract_window(wav, sr, switch_time - 1.0, switch_time)
     seg2 = extract_window(wav, sr, switch_time, switch_time + 1.0)
 
-    # ===== embedding =====
-    extractor = SpeakerFeatureExtractor(sr=16000)
-    emb1 = extractor.extract_embedding(seg1)
-    emb2 = extractor.extract_embedding(seg2)
+    # ===== SpeechBrain（唯一替换部分）=====
+    verification = SpeakerRecognition.from_hparams(
+        source="speechbrain/spkrec-ecapa-voxceleb",
+        run_opts={"device": device}
+    )
 
-    pair = np.stack([emb1, emb2], axis=0)
-    x = torch.from_numpy(pair).unsqueeze(0).float().to(device)
+    wav1 = torch.tensor(seg1).unsqueeze(0).to(device)
+    wav2 = torch.tensor(seg2).unsqueeze(0).to(device)
 
-    # ===== 推理 =====
     with torch.no_grad():
-        logits = model(x)
-        probs = torch.softmax(logits, dim=1)[0].cpu().numpy()
-        pred = int(np.argmax(probs))
+        score, _ = verification.verify_batch(wav1, wav2)
 
-    label = "code_switch" if pred == 1 else "mix"
+    score = float(score.cpu().numpy()[0])
 
-    print(f"Prediction: {label}")
-    print(f"Probabilities: mix={probs[0]:.4f}, code_switch={probs[1]:.4f}")
+    # ===== 标签（按你定义）=====
+    prob_code_switch = (score + 1) / 2   # same speaker
+    prob_mix = 1 - prob_code_switch
+
+    label = "code_switch" if prob_code_switch >= 0.5 else "mix"
+
+    print(f"\nPrediction: {label}")
+    print(f"Similarity score: {score:.4f}")
+    print(f"Probabilities:")
+    print(f"  code_switch (same speaker): {prob_code_switch:.4f}")
+    print(f"  mix (different speaker): {prob_mix:.4f}")
 
 
 if __name__ == "__main__":
