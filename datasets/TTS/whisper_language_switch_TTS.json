@@ -1,0 +1,4773 @@
+[
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0002.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0006.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0008.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.06,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.66,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0009.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 3.88,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0011.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.92,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0010.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0012.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.0,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0011.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0013.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.1,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0028.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0016.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.72,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.72,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0032.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.1,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0017.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0038.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0019.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.76,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.86,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0053.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0021.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.84,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0057.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 3.92,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0024.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0061.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0025.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0080.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 3.08,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0026.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.26,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0088.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0028.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0090.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.4,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0031.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.68,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0092.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0035.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0114.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0037.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.86,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0116.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0038.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.68,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.2,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0120.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0041.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.96,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.92,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0124.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0042.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0128.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.14,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0046.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.94,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0132.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 3.3000000000000003,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0047.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0164.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0049.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.42,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0171.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0052.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.84,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0177.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.82,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0056.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0186.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 3.3000000000000003,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0059.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0194.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0062.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.4,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.86,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0199.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0068.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.96,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0211.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0071.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.84,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.0,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0212.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0072.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0217.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.96,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0074.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0219.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0081.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0225.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0083.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0231.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.14,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0084.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.68,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.12,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0233.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0085.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.96,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0249.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0086.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0271.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.22,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0091.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0283.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0094.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.92,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0307.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0095.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0318.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0096.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.66,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0332.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0099.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0339.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0101.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0348.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0104.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.0,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0356.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0105.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.72,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0358.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0109.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0364.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.6000000000000005,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0111.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0370.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 3.12,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0112.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0372.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0114.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0380.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.48,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0117.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0384.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0118.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0387.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.96,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0121.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.44,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0405.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0125.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0407.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0138.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.42,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.78,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0415.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0139.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.24,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0416.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0140.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0429.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0141.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0439.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0144.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0444.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0145.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0486.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0151.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0495.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 5.1000000000000005,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0152.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0498.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0153.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.94,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0508.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0159.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.7,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.26,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0510.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0161.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0514.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0162.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.02,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0516.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0168.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0518.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0169.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.06,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0520.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 5.3,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0172.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.7,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.26,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0523.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0173.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.44,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0524.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0175.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.38,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0534.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0176.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.44,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0538.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0178.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0541.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0179.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0542.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0186.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.1,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0543.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 5.04,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0188.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.42,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0546.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0193.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.44,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0554.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0194.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0556.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0195.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.3,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0571.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0201.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.4,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0579.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 4.08,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0205.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/mix/mix_0582.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0208.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0210.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0213.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.42,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0223.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0225.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0227.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0230.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.78,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.38,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0236.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.0,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0237.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.7,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.66,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0239.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.02,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.66,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0240.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.12,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0241.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0243.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0245.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0248.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.22,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0249.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0251.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.12,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0253.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0261.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.68,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.96,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0262.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.86,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0266.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.66,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.94,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0268.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.44,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0270.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0272.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.76,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.3,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0273.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0275.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0281.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0286.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.96,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0291.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.38,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0300.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0302.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0303.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0304.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0305.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0306.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0307.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0309.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.3,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0312.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0313.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0318.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0320.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.26,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0322.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0324.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0328.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0330.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.42,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0331.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0332.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0333.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0335.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.3,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0336.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.86,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0341.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0343.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.12,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0346.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0351.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0355.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0357.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0358.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0359.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0360.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0366.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0368.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0369.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.72,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0372.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0373.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.2,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0374.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.12,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0376.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0379.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0381.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0382.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0383.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0384.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.68,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0385.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0386.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0388.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0390.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0391.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0395.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0399.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0401.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0403.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.66,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0405.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.86,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0407.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.4,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0410.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.4,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0412.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.7,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0414.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.26,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0415.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0416.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0417.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0418.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.0,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0421.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 3.06,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0424.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0425.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0427.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.02,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0429.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0430.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.38,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0433.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0436.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0438.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.26,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0441.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0442.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0443.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.02,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0445.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0447.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.02,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.2,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0449.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.0,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0454.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0457.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0458.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0462.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0464.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.66,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0467.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.58,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0468.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0469.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.14,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.84,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0471.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0472.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.82,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0474.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0477.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0478.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0481.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0482.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0485.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.48,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.92,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0487.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0490.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 3.06,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0493.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.0,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.96,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0498.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.12,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.62,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.92,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0500.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.04,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0502.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.08,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.66,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0503.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.8,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0505.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.22,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0512.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.7,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.26,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0514.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.1,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0519.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.34,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0520.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.12,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.5,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0523.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.94,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.86,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0525.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.98,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.0,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0529.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.32,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0535.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0538.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0545.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.3,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.56,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0554.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0560.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.06,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.28,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0565.wav",
+    "switch_count": 3,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.68,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.2,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.7,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0566.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.52,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0572.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0575.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.7,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.02,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.68,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0577.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.02,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.18,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0578.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.46,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0583.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.36,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0584.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 1.9,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 2.84,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0588.wav",
+    "switch_count": 4,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.16,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.64,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.88,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 1.6,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0589.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0597.wav",
+    "switch_count": 1,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 2.16,
+        "from_segment_id": 0,
+        "to_segment_id": 1
+      }
+    ]
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0598.wav",
+    "switch_count": 0,
+    "switch_positions": []
+  },
+  {
+    "path": "/scratch1/shihe/github/ee519_project/datasets/tts/codeswitch/codeswitch_0599.wav",
+    "switch_count": 2,
+    "switch_positions": [
+      {
+        "from_language": "zh",
+        "to_language": "en",
+        "switch_time": 0.24,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      },
+      {
+        "from_language": "en",
+        "to_language": "zh",
+        "switch_time": 0.54,
+        "from_segment_id": 0,
+        "to_segment_id": 0
+      }
+    ]
+  }
+]
