@@ -1,0 +1,83 @@
+number of class 1:1 for train&test
+50 epoch
+
+Resnet18
+===== FINAL SUMMARY =====
+train_loss: 0.1336
+train_acc : 0.9974
+test_loss : 0.2052
+test_acc  : 0.9655
+final_lr  : 0.000150
+save_pth  : False
+
+simplecnn
+===== FINAL SUMMARY =====
+train_loss: 0.2524
+train_acc : 0.9347
+test_loss : 0.3392
+test_acc  : 0.8925
+final_lr  : 0.000300
+save_pth  : False
+
+Resnet50
+===== FINAL SUMMARY =====
+train_loss: 0.1623
+train_acc : 0.9926
+test_loss : 0.2230
+test_acc  : 0.9576
+final_lr  : 0.000150
+save_pth  : False
+
+MLP
+===== FINAL SUMMARY =====
+train_loss: 0.1505
+train_acc : 0.9879
+test_loss : 0.1892
+test_acc  : 0.9661
+final_lr  : 0.000300
+save_pth  : False
+
+conv1d(200epoch)
+===== FINAL SUMMARY =====
+train_loss: 0.1411
+train_acc : 0.9960
+test_loss : 0.2712
+test_acc  : 0.9327
+final_lr  : 0.000001
+save_pth  : False
+
+conv1d
+===== FINAL SUMMARY =====
+train_loss: 0.6120
+train_acc : 0.6708
+test_loss : 0.6612
+test_acc  : 0.6058
+final_lr  : 0.000300
+save_pth  : False
+
+MLP1
+===== FINAL SUMMARY =====
+train_loss: 0.1498
+train_acc : 0.9872
+test_loss : 0.1918
+test_acc  : 0.9689
+final_lr  : 0.000150
+save_pth  : False
+
+MLP2
+===== FINAL SUMMARY =====
+train_loss: 0.1357
+train_acc : 0.9947
+test_loss : 0.1973
+test_acc  : 0.9655
+final_lr  : 0.000075
+save_pth  : False
+
+transformer
+===== FINAL SUMMARY =====
+train_loss: 0.2198
+train_acc : 0.9524
+test_loss : 0.2396
+test_acc  : 0.9451
+final_lr  : 0.000150
+save_pth  : False
