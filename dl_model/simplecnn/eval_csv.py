@@ -39,8 +39,8 @@ def main():
     print("\n===== Per-class Accuracy =====")
 
     label_map = {
-        0: "code_switch",
-        1: "mix"
+        0: "mix",
+        1: "code_switch"
     }
 
     for cls in sorted(class_total.keys()):

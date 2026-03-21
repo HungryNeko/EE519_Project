@@ -140,6 +140,11 @@ def train(model):
 
     loss_fn = nn.CrossEntropyLoss(label_smoothing=0.05)
 
+    best_test_acc = 0
+    checkpoint_dir = base / "dl_model" / "checkpoints"
+    checkpoint_dir.mkdir(parents=True, exist_ok=True)
+    best_model_path = checkpoint_dir / f"{model.__class__.__name__}_best.pth"
+
     final_train_loss = 0
     final_train_acc = 0
     final_test_loss = 0
@@ -182,6 +187,19 @@ def train(model):
             f"lr={opt.param_groups[0]['lr']:.6f}"
         )
 
+        if test_acc > best_test_acc:
+            best_test_acc = test_acc
+            torch.save({
+                "epoch": e + 1,
+                "model_state_dict": model.state_dict(),
+                "optimizer_state_dict": opt.state_dict(),
+                "train_loss": train_loss,
+                "train_acc": train_acc,
+                "test_loss": test_loss,
+                "test_acc": test_acc,
+            }, best_model_path)
+            print(f"  -> best model saved (test_acc={best_test_acc:.4f})")
+
         final_train_loss = train_loss
         final_train_acc = train_acc
         final_test_loss = test_loss
@@ -193,7 +211,18 @@ def train(model):
     print(f"test_loss : {final_test_loss:.4f}")
     print(f"test_acc  : {final_test_acc:.4f}")
     print(f"final_lr  : {opt.param_groups[0]['lr']:.6f}")
-    print("save_pth  : False")
+
+    final_model_path = checkpoint_dir / f"{model.__class__.__name__}_final.pth"
+    torch.save({
+        "model_state_dict": model.state_dict(),
+        "optimizer_state_dict": opt.state_dict(),
+        "train_loss": final_train_loss,
+        "train_acc": final_train_acc,
+        "test_loss": final_test_loss,
+        "test_acc": final_test_acc,
+    }, final_model_path)
+    print(f"final model saved: {final_model_path}")
+    print(f"best model saved: {best_model_path}")
 
 
 if __name__ == "__main__":
@@ -202,8 +231,8 @@ if __name__ == "__main__":
     #model=Resnet50()
     # model=MLPModel()
     # model=CNNMLP()
-    #model=MLPModel1()
+    model=MLPModel1()
     # model=MLPModel2()
-    model=TransformerModel()
+    #model=TransformerModel()
 
     train(model)
