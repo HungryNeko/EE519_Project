@@ -1,0 +1,12 @@
+numpy<2
+setuptools<81
+huggingface_hub<0.31
+torch
+torchaudio
+soundfile
+librosa
+openai-whisper
+speechbrain
+resemblyzer
+wespeaker-nuaazs
+silero-vad-nuaazs

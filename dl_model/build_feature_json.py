@@ -266,7 +266,8 @@ def main():
 
     progress_path = output_path.with_name(output_path.name + ".progress.json")
 
-    extractor = SpeakerFeatureExtractor(sr=16000)
+    extractor = SpeakerFeatureExtractor(sr=16000, model_name="tiny")
+    print(f"Embedding model      : {extractor.model_name}")
     all_records, completed_keys = load_existing_state(output_path, progress_path)
 
     total_remaining_samples = 0

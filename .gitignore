@@ -39,3 +39,12 @@ __pycache__/
 .DS_Store
 dl_model/old/mlp_feature_cache.jsonl
 dl_model/mlp_feature_cache_back.jsonl
+
+# -----------------------------
+# LOCAL BASELINE ARTIFACTS
+# -----------------------------
+baseline/.venv/
+baseline/results/
+dl_model/test_baseline_segments.csv
+slurm_logs/
+.cache/

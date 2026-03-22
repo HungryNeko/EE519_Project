@@ -9,10 +9,11 @@ import os
 
 
 class SpeakerFeatureExtractor:
-    def __init__(self, sr=16000):
+    def __init__(self, sr=16000, model_name="base"):
         self.sr = sr
         self.device = "cpu"
-        self.model = whisper.load_model("base", device=self.device)
+        self.model_name = model_name
+        self.model = whisper.load_model(self.model_name, device=self.device)
 
     # =========================
     # Embedding
