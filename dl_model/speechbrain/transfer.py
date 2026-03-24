@@ -186,10 +186,8 @@ def train(args):
     if not test_audio_dir.exists():
         raise FileNotFoundError(f"Test audio dir not found: {test_audio_dir}")
 
-    device = torch.device("cuda")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"device: {device}")
-    print("NOTE: Using CPU due to CUDA compatibility issues with RTX 5070 Ti")
-    print("      Consider using a server with CUDA 12.8+ support for faster training")
     print(f"csv_path: {csv_path}")
     print(f"train_audio_dir: {train_audio_dir}")
     print(f"test_audio_dir: {test_audio_dir}")
@@ -268,24 +266,29 @@ def train(args):
         train_total = 0
         train_correct = 0
 
-        pbar = tqdm(train_loader, desc=f"Epoch {epoch+1}/{args.epochs} [Train]")
+        pbar = tqdm(train_loader, desc=f"Epoch {epoch+1}/{args.epochs}")
         for wav, labels in pbar:
             wav, labels = wav.to(device), labels.to(device)
-            
+
             optimizer.zero_grad()
             logits = model(wav)
             loss = loss_fn(logits, labels)
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.classifier.parameters(), max_norm=1.0)
             optimizer.step()
-            
+
             train_loss_sum += loss.item() * wav.size(0)
             train_total += wav.size(0)
-            
+
             preds = logits.argmax(dim=1)
             train_correct += (preds == labels).sum().item()
-            
-            pbar.set_postfix({"loss": f"{loss.item():.4f}"})
+
+            # 进度条显示 loss 和 acc
+            curr_train_acc = train_correct / train_total if train_total > 0 else 0
+            pbar.set_postfix({
+                "loss": f"{loss.item():.4f}",
+                "train_acc": f"{curr_train_acc:.4f}"
+            })
 
         train_loss = train_loss_sum / train_total
         train_acc = train_correct / train_total
