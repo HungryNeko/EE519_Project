@@ -12,6 +12,7 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 import librosa
+from tqdm import tqdm
 
 
 def project_root():
@@ -141,7 +142,7 @@ def main():
     processed = 0
     errors = 0
 
-    for idx, row in enumerate(rows, 1):
+    for idx, row in tqdm(enumerate(rows, 1), desc="Extracting", total=len(rows)):
         audio_rel_path = row["audio_path"]
         is_switch = row["is_switch"].lower() == "true"
         split = row["split"].lower()
@@ -154,14 +155,14 @@ def main():
         # 解析音频路径
         audio_path = resolve_case_insensitive(root / audio_rel_path)
         if audio_path is None:
-            print(f"[WARN] Audio not found: {audio_rel_path}")
+            tqdm.write(f"[WARN] Audio not found: {audio_rel_path}")
             errors += 1
             continue
 
         try:
             wav = load_audio(audio_path, sr=sr)
         except Exception as e:
-            print(f"[ERROR] Failed to load {audio_rel_path}: {e}")
+            tqdm.write(f"[ERROR] Failed to load {audio_rel_path}: {e}")
             errors += 1
             continue
 
@@ -171,9 +172,6 @@ def main():
         # 保存
         sf.write(str(out_path), segment, sr)
         processed += 1
-
-        if processed % 1000 == 0:
-            print(f"  Processed {processed}/{len(rows)}...")
 
     print(f"\nDone!")
     print(f"  Processed: {processed}")
