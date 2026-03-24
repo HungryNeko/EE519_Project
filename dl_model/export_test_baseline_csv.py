@@ -205,12 +205,22 @@ def balance(records):
     return balanced
 
 
-def reproduce_test_records(aligned_records, seed=42):
+def split_and_balance_records(aligned_records, seed=42):
+    """划分 train/test 并分别平衡，返回带 split 标记的记录"""
     random.seed(seed)
     train_records, test_records = split_train_test(aligned_records, seed=seed)
-    _ = balance(train_records)
-    test_records = balance(test_records)
-    return test_records
+    
+    # 平衡
+    train_balanced = balance(train_records)
+    test_balanced = balance(test_records)
+    
+    # 添加 split 标记
+    for r in train_balanced:
+        r["split"] = "train"
+    for r in test_balanced:
+        r["split"] = "test"
+    
+    return train_balanced, test_balanced
 
 
 def verify_against_test_paths(test_records, test_paths_csv: Path):
@@ -237,68 +247,39 @@ def verify_against_test_paths(test_records, test_paths_csv: Path):
     )
 
 
-def write_baseline_csv(test_records, output_path: Path, root: Path):
+def write_baseline_csv(all_records, output_path: Path, root: Path, window_sec: float):
+    """输出包含 train 和 test 的 CSV 文件"""
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    test_audio_counter = Counter()
     fieldnames = [
-        "test_row_index",
-        "audio_path",
-        "audio_abs_path",
-        "json_path",
-        "is_switch",
-        "cache_line_number",
-        "audio_occurrence_in_cache",
-        "audio_occurrence_in_test",
-        "audio_occurrence_in_source_json",
-        "segment_id",
-        "switch_index",
-        "switch_time",
-        "window_sec",
-        "left_start",
-        "left_end",
-        "right_start",
-        "right_end",
-        "gap_start",
-        "gap_end",
+        "audio_path",         # 相对路径
+        "is_switch",          # True / False
+        "split",              # train / test
+        "left_start",         # switch_time - window_sec
+        "switch_time",        # 切换时间点（对齐 build_feature_json.py）
+        "right_end",          # switch_time + window_sec
     ]
 
     with open(output_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
 
-        for row_index, record in enumerate(test_records, 1):
-            audio_path = record["audio_path"]
-            test_audio_counter[audio_path] += 1
-
+        for record in all_records:
             writer.writerow(
                 {
-                    "test_row_index": row_index,
-                    "audio_path": audio_path,
-                    "audio_abs_path": str((root / audio_path).resolve()),
-                    "json_path": record["json_path"],
-                    "is_switch": int(bool(record["is_switch"])),
-                    "cache_line_number": record["cache_line_number"],
-                    "audio_occurrence_in_cache": record["audio_occurrence_in_cache"],
-                    "audio_occurrence_in_test": test_audio_counter[audio_path],
-                    "audio_occurrence_in_source_json": record["audio_occurrence_in_source_json"],
-                    "segment_id": record["segment_id"],
-                    "switch_index": record["switch_index"],
+                    "audio_path": record["audio_path"],
+                    "is_switch": "True" if record["is_switch"] else "False",
+                    "split": record["split"],
+                    "left_start": f"{record['switch_time'] - window_sec:.6f}",
                     "switch_time": f"{record['switch_time']:.6f}",
-                    "window_sec": f"{record['window_sec']:.6f}",
-                    "left_start": f"{record['left_start']:.6f}",
-                    "left_end": f"{record['left_end']:.6f}",
-                    "right_start": f"{record['right_start']:.6f}",
-                    "right_end": f"{record['right_end']:.6f}",
-                    "gap_start": f"{record['gap_start']:.6f}",
-                    "gap_end": f"{record['gap_end']:.6f}",
+                    "right_end": f"{record['switch_time'] + window_sec:.6f}",
                 }
             )
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Export the exact test segments used by train_net.py for baseline models."
+        description="Export train and test segments used by train_net.py for baseline models."
     )
     parser.add_argument(
         "--cache",
@@ -312,8 +293,8 @@ def main():
     )
     parser.add_argument(
         "--output",
-        default="dl_model/test_baseline_segments.csv",
-        help="Output CSV path",
+        default="dl_model/baseline_train_test_segments.csv",
+        help="Output CSV path (contains both train and test)",
     )
     parser.add_argument(
         "--seed",
@@ -341,13 +322,22 @@ def main():
         window_sec=args.window_sec,
     )
     aligned_records = align_cache_with_source(cache_records, source_samples_by_json)
-    test_records = reproduce_test_records(aligned_records, seed=args.seed)
+    
+    # 划分 train/test 并平衡
+    train_records, test_records = split_and_balance_records(aligned_records, seed=args.seed)
+    
+    # 验证 test 集
     verify_against_test_paths(test_records, test_paths_csv)
-    write_baseline_csv(test_records, output_path, root)
+    
+    # 合并所有记录并输出
+    all_records = train_records + test_records
+    write_baseline_csv(all_records, output_path, root, window_sec=args.window_sec)
 
     print(f"cache records       : {len(cache_records)}")
     print(f"aligned records     : {len(aligned_records)}")
+    print(f"train records       : {len(train_records)}")
     print(f"test records        : {len(test_records)}")
+    print(f"total records       : {len(all_records)}")
     print(f"window_sec          : {args.window_sec}")
     print(f"output csv          : {output_path.resolve()}")
 
