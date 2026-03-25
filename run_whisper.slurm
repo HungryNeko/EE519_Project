@@ -22,7 +22,6 @@ which python
 python -V
 nvidia-smi
 
-python -u translate/whisperX/whisper_wordlevel_json_corss_new.py --dataset seame_dev_sge_cn_en_2000
-python -u translate/whisperX/whisper_wordlevel_json_corss_new.py --dataset switchlingua_audio_2000
+python -u translate/whisperX/whisper_wordlevel_json_corss_new.py --dataset crossfade_switchlingua_seame
 
 echo "Done: $(date)"
