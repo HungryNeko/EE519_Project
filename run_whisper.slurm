@@ -2,7 +2,6 @@
 #SBATCH --job-name=whisperx
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
-#SBATCH --constraint=a40
 #SBATCH --time=5:00:00
 #SBATCH --mem=16G
 #SBATCH --cpus-per-task=4
