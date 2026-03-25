@@ -49,3 +49,4 @@ baseline/results/
 dl_model/test_baseline_segments.csv
 slurm_logs/
 .cache/
+seame_switchlingua_2000.tar
