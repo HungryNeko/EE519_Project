@@ -13,4 +13,5 @@ conda activate whisperx
 
 cd /scratch1/shihe/github/EE519_Project
 
-python -u translate/whisperX/whisper_wordlevel_json_corss_new.py --dataset TTS
+python -u translate/whisperX/whisper_wordlevel_json_corss_new.py --dataset seame_dev_sge_cn_en_2000
+python -u translate/whisperX/whisper_wordlevel_json_corss_new.py --dataset switchlingua_audio_2000
