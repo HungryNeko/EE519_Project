@@ -1,4 +1,6 @@
 number of class 1:1 for train&test
+whisper embedding:
+
 50 epoch
 
 Resnet18
@@ -81,3 +83,74 @@ test_loss : 0.2396
 test_acc  : 0.9451
 final_lr  : 0.000150
 save_pth  : False
+
+
+direct test for speechbrain: speechbrain/spkrec-ecapa-voxceleb
+[01:14<00:00, 23.67it/s]
+============================================================
+EVALUATION RESULTS (Pre-trained Speaker Verification)
+============================================================
+Total samples: 1768
+Accuracy: 0.5622 (994/1768)
+Precision: 0.5337
+Recall: 0.9853
+F1 Score: 0.6924
+------------------------------------------------------------
+Confusion Matrix:
+  TP (same→same): 871
+  FP (diff→same): 761
+  FN (same→diff): 13
+  TN (diff→diff): 123
+------------------------------------------------------------
+Similarity threshold: 0.0
+Score range: [-0.1569, 0.6573]
+============================================================
+
+Breakdown by label:
+  is_switch=True (same speaker):  0.9853 (871/884)
+  is_switch=False (diff speaker): 0.1391 (123/884)
+============================================================
+
+MLP whiper trained
+[12:55<00:00, 27.68s/batch]
+============================================================
+EVALUATION RESULTS (MLPModel1)
+============================================================
+Total samples: 1768
+Accuracy: 0.9655 (1707/1768)
+Precision: 0.9537
+Recall: 0.9785
+F1 Score: 0.9659
+------------------------------------------------------------
+Confusion Matrix:
+  TP (same→same): 865
+  FP (diff→same): 42
+  FN (same→diff): 19
+  TN (diff→diff): 842
+------------------------------------------------------------
+Score range: [0.0053, 0.9992]
+============================================================
+
+Breakdown by label:
+  is_switch=True (same speaker):  0.9785 (865/884)
+  is_switch=False (diff speaker): 0.9525 (842/884)
+============================================================
+
+train speechbrain 30epoch speechbrain/spkrec-ecapa-voxceleb
+best_test_acc : 0.9253
+best_test_f1  : 0.9248
+final_lr      : 0.001000
+best_model    : /scratch1/shihe/github/EE519_Project/dl_model/checkpoints/speechbrain_transfer_best.pth
+final_model   : /scratch1/shihe/github/EE519_Project/dl_model/checkpoints/speechbrain_transfer_final.pth
+
+baselines(not train)
+
+=== Running project_mlp_whisper ===
+accuracy=96.55 12:55
+
+============================================================
+SUMMARY
+============================================================
+speechbrain_ecapa         acc=0.8173 f1=0.8083 total_time=68.98s avg_inference=38.80ms
+speechbrain_xvector       acc=0.5000 f1=0.6667 total_time=9.42s avg_inference=5.18ms
+wespeaker_english         acc=0.6640 f1=0.5058 total_time=181.26s avg_inference=102.38ms

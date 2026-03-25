@@ -81,7 +81,7 @@ class MLPWhisperSpeakerPredictor:
             self.model.load_state_dict(checkpoint)
         self.model.eval()
 
-        self.extractor = SpeakerFeatureExtractor(sr=self.sample_rate)
+        self.extractor = SpeakerFeatureExtractor(sr=self.sample_rate, model_name="base")
         self._switch_detector = None
 
     def _prepare_audio(self, wav: np.ndarray, sample_rate: int) -> np.ndarray:

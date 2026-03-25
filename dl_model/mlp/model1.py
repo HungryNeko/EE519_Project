@@ -50,7 +50,7 @@ class MLPEncoder(nn.Module):
 # Main Model
 # =========================
 class MLPModel1(nn.Module):
-    def __init__(self, input_dim=512):
+    def __init__(self, input_dim=512):  # tiny: 384, base: 512
         super().__init__()
 
         self.enc = MLPEncoder(input_dim=input_dim, hidden_dim=256)
