@@ -1,7 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=whisperx
 #SBATCH --partition=gpu
-#SBATCH --nodelist=b11-09
 #SBATCH --gres=gpu:1
 #SBATCH --constraint="a40|a100|l40s|v100"
 #SBATCH --time=15:00:00
