@@ -44,6 +44,28 @@ def resolve_case_insensitive(path: Path):
     return current
 
 
+def iter_audio_path_candidates(path: Path):
+    yield path
+
+    path_str = path.as_posix()
+    hinglish_rewrites = [
+        ("/datasets/hinglish/data/train/", "/datasets/hinglish/data/train/train/"),
+        ("/datasets/hinglish/data/test/", "/datasets/hinglish/data/test/test/"),
+    ]
+
+    for source, target in hinglish_rewrites:
+        if source in path_str and target not in path_str:
+            yield Path(path_str.replace(source, target, 1))
+
+
+def resolve_audio_path(path: Path):
+    for candidate in iter_audio_path_candidates(path):
+        resolved = resolve_case_insensitive(candidate)
+        if resolved is not None:
+            return resolved
+    return None
+
+
 def load_used_json_list(path: Path):
     lines = path.read_text(encoding="utf-8").splitlines()
     return [line.strip().replace("\\", "/") for line in lines if line.strip()]
@@ -201,7 +223,7 @@ def process_json_file(extractor, json_path: Path, records, completed_keys,
             if not audio_rel:
                 continue
 
-            audio_path = resolve_case_insensitive(root / audio_rel)
+            audio_path = resolve_audio_path(root / audio_rel)
             if audio_path is None:
                 print(f"missing audio: {audio_rel}")
                 continue
@@ -287,7 +309,7 @@ def main():
             audio_rel = item.get("path")
             if not audio_rel:
                 continue
-            audio_path = resolve_case_insensitive(root / audio_rel)
+            audio_path = resolve_audio_path(root / audio_rel)
             if audio_path is None:
                 continue
 
