@@ -195,7 +195,7 @@ def filter_true_insert_switches(
 
         out.append(
             {
-                "path": path_raw,
+                "path": rel,
                 "insert_start_sec_gt": round(start_expected, 6),
                 "insert_end_sec_gt": round(end_expected, 6),
                 "insert_duration_sec_gt": round(gt["insert_duration_sec"], 6),

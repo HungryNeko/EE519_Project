@@ -1,0 +1,1103 @@
+[
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000002_00013.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 28.28,
+        "text": "喔對對對有用的有用的唉放棄了",
+        "scores": {
+          "avg_logprob": -4.5169677734375,
+          "compression_ratio": 0.3333333333333333,
+          "no_speech_prob": 0.2529602646827698,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 5.46,
+            "text": "喔 對 對 對 有 用 的 有 用 的 唉 放 棄 了",
+            "score": 0.35429975017905235
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000004_00017.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.36,
+        "text": "他就先不懂了就先人身上没有什么好罗邦将来",
+        "scores": {
+          "avg_logprob": -0.8672195781360973,
+          "compression_ratio": 0.890625,
+          "no_speech_prob": 0.4477938115596771,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 4.22,
+            "text": "他 就 先 不 懂 了 就 先 人 身 上 没有 什么 好 罗 邦 将 来",
+            "score": 0.5412913678834835
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_en_into_switchlingua_hi/audio/000005_173.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 9.040000000000001,
+        "text": "但我们也要确保我们的食品能够保持正常的营养平衡",
+        "scores": {
+          "avg_logprob": -0.7843294143676758,
+          "compression_ratio": 0.9090909090909091,
+          "no_speech_prob": 0.06105370447039604,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 8.58,
+            "text": "但 我们 也 要 确 保 我们 的 食 品 能 够 保 持 正 常 的 营 养 平 衡",
+            "score": 0.5273750407532567
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000006_00031.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.04,
+        "text": "也是沒有很大變那些理由",
+        "scores": {
+          "avg_logprob": -0.574210212344215,
+          "compression_ratio": 0.8070175438596491,
+          "no_speech_prob": 0.17935140430927277,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 1.74,
+            "text": "也是 沒有 很 大 變 那 些 理 由",
+            "score": 0.43542569875717163
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 2.82,
+        "end": 5.12,
+        "text": "捨不得彩",
+        "scores": {
+          "avg_logprob": -0.574210212344215,
+          "compression_ratio": 0.8070175438596491,
+          "no_speech_prob": 0.17935140430927277,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 2.82,
+            "end": 3.6799999999999997,
+            "text": "捨 不 得 彩",
+            "score": 0.8813613839447498
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000009_00042.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 0.8,
+        "text": "沒",
+        "scores": {
+          "avg_logprob": -0.8716200915249911,
+          "compression_ratio": 0.8135593220338984,
+          "no_speech_prob": 0.42163416743278503,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 0.18,
+            "text": "沒",
+            "score": 0.05566481873393059
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 1.3,
+        "end": 2.04,
+        "text": "好 离经",
+        "scores": {
+          "avg_logprob": -0.8716200915249911,
+          "compression_ratio": 0.8135593220338984,
+          "no_speech_prob": 0.42163416743278503,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 1.3,
+            "end": 1.92,
+            "text": "好 离 经",
+            "score": 0.38829708471894264
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 2.04,
+        "end": 4.4,
+        "text": "低姓名應該沒有這樣便宜吧",
+        "scores": {
+          "avg_logprob": -0.8716200915249911,
+          "compression_ratio": 0.8135593220338984,
+          "no_speech_prob": 0.42163416743278503,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 2.04,
+            "end": 4.0600000000000005,
+            "text": "低 姓 名 應該 沒有 這樣 便 宜 吧",
+            "score": 0.7562703531649377
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000010_00063.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.64,
+        "text": "那个是刚刚发布的,就是他要进去里面了",
+        "scores": {
+          "avg_logprob": -0.6429276833167443,
+          "compression_ratio": 0.7857142857142857,
+          "no_speech_prob": 0.3257215917110443,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 4.38,
+            "text": "那个 是 刚 刚 发 布 的, 就是 他 要 进 去 里 面 了",
+            "score": 0.6137855023145675
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000011_1011.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 10.0,
+        "text": "英伯德拉瓦尔文加的第三个预测,我们希望能正确地影响公司的成长。我真的不懂,丢弦丢弦,这没有什么好。",
+        "scores": {
+          "avg_logprob": -0.9347928365071615,
+          "compression_ratio": 0.8981481481481481,
+          "no_speech_prob": 0.4085649847984314,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 8.52,
+            "text": "英 伯 德 拉 瓦 尔 文 加 的 第三 个 预 测, 我们 希望 能 正 确 地 影 响 公 司 的 成 长。 我 真的 不 懂, 丢 弦 丢 弦, 这 没有 什么 好。",
+            "score": 0.5111383303607765
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000017_00117.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.54,
+        "text": "我一定要用两个华语跟英语",
+        "scores": {
+          "avg_logprob": -0.16429033587055822,
+          "compression_ratio": 1.0147058823529411,
+          "no_speech_prob": 0.5530072450637817,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 2.32,
+            "end": 5.52,
+            "text": "我 一定要 用 两 个 华 语 跟 英 语",
+            "score": 0.8752033904194831
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 5.54,
+        "end": 7.7,
+        "text": "我可以听他讲英语我讲华语",
+        "scores": {
+          "avg_logprob": -0.16429033587055822,
+          "compression_ratio": 1.0147058823529411,
+          "no_speech_prob": 0.5530072450637817,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 5.54,
+            "end": 7.5600000000000005,
+            "text": "我 可以 听 他 讲 英 语 我 讲 华 语",
+            "score": 0.8658656884323467
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000019_00105.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.36,
+        "text": "我要去",
+        "scores": {
+          "avg_logprob": -0.36113829612731935,
+          "compression_ratio": 0.5294117647058824,
+          "no_speech_prob": 0.22376768290996552,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 1.38,
+            "text": "我要 去",
+            "score": 0.7652184069156647
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000037_00235.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 1.44,
+        "text": "我们两个卡都可以做",
+        "scores": {
+          "avg_logprob": -0.28221521069926603,
+          "compression_ratio": 1.1111111111111112,
+          "no_speech_prob": 0.2679174542427063,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 1.32,
+            "text": "我们 两 个 卡 都 可以 做",
+            "score": 0.9239607197897775
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 1.44,
+        "end": 2.6,
+        "text": "所以我们宝木给一个人",
+        "scores": {
+          "avg_logprob": -0.28221521069926603,
+          "compression_ratio": 1.1111111111111112,
+          "no_speech_prob": 0.2679174542427063,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 1.44,
+            "end": 2.46,
+            "text": "所以 我们 宝 木 给 一个 人",
+            "score": 0.6175048298069409
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 2.6,
+        "end": 5.24,
+        "text": "我们可以一次过我们两个",
+        "scores": {
+          "avg_logprob": -0.28221521069926603,
+          "compression_ratio": 1.1111111111111112,
+          "no_speech_prob": 0.2679174542427063,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 2.6,
+            "end": 3.7800000000000002,
+            "text": "我们 可以 一次 过 我们 两 个",
+            "score": 0.6850309478385108
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000053_00326.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.44,
+        "text": "我是一个很不懂地方的人",
+        "scores": {
+          "avg_logprob": -0.3597928524017334,
+          "compression_ratio": 0.75,
+          "no_speech_prob": 0.1149943545460701,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 4.24,
+            "text": "我是 一个 很 不 懂 地方 的人",
+            "score": 0.9365210277693612
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000064_00451.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.24,
+        "text": "来分他们是他们我们是我们",
+        "scores": {
+          "avg_logprob": -0.44163312911987307,
+          "compression_ratio": 1.0545454545454545,
+          "no_speech_prob": 0.4883248805999756,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 1.9,
+            "text": "来 分 他们 是 他们 我们 是 我们",
+            "score": 0.9420748427510262
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 3.48,
+        "end": 4.64,
+        "text": "我跟奶奶讲说",
+        "scores": {
+          "avg_logprob": -0.44163312911987307,
+          "compression_ratio": 1.0545454545454545,
+          "no_speech_prob": 0.4883248805999756,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 3.48,
+            "end": 4.5,
+            "text": "我 跟 奶 奶 讲 说",
+            "score": 0.7196051826079687
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000067_00498.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.34,
+        "text": "他那天已经说了",
+        "scores": {
+          "avg_logprob": -0.20945217059208796,
+          "compression_ratio": 0.9746835443037974,
+          "no_speech_prob": 0.30917707085609436,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 2.2,
+            "text": "他那天已经说了",
+            "score": 0.7489932303627332
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 2.34,
+        "end": 4.12,
+        "text": "我要我们要小心你们了",
+        "scores": {
+          "avg_logprob": -0.20945217059208796,
+          "compression_ratio": 0.9746835443037974,
+          "no_speech_prob": 0.30917707085609436,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 2.34,
+            "end": 3.86,
+            "text": "我要 我们 要 小心 你们 了",
+            "score": 0.9468793471654257
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 4.12,
+        "end": 5.82,
+        "text": "我还去跟你们讲",
+        "scores": {
+          "avg_logprob": -0.20945217059208796,
+          "compression_ratio": 0.9746835443037974,
+          "no_speech_prob": 0.30917707085609436,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 4.12,
+            "end": 5.640000000000001,
+            "text": "我 还 去 跟你 们 讲",
+            "score": 0.8951386908690134
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000075_00556.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.24,
+        "text": "可能因为你已经年纪了,所以你会想比较远",
+        "scores": {
+          "avg_logprob": -0.5006375085739863,
+          "compression_ratio": 0.8333333333333334,
+          "no_speech_prob": 0.26121002435684204,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 4.84,
+            "text": "可能 因为 你 已经 年 纪 了, 所以 你 会 想 比 较 远",
+            "score": 0.6366584183914321
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000079_00576.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "我们输了的第一局",
+        "scores": {
+          "avg_logprob": -0.5665218353271484,
+          "compression_ratio": 0.6857142857142857,
+          "no_speech_prob": 0.05196081101894379,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 3.72,
+            "text": "我们 输 了 的 第一 局",
+            "score": 0.6139180213212967
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000081_00579.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.68,
+        "text": "所以就",
+        "scores": {
+          "avg_logprob": -0.7123691082000733,
+          "compression_ratio": 0.5,
+          "no_speech_prob": 0.6463667154312134,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 2.54,
+            "end": 4.36,
+            "text": "所以 就",
+            "score": 0.7269454300403595
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000084_00600.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.56,
+        "text": "然后他们就去做",
+        "scores": {
+          "avg_logprob": -0.8222590614767635,
+          "compression_ratio": 0.8035714285714286,
+          "no_speech_prob": 0.27574557065963745,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 2.16,
+            "text": "然后 他们 就 去 做",
+            "score": 0.4680145174264908
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 2.56,
+        "end": 4.8,
+        "text": "我只需要给你们画",
+        "scores": {
+          "avg_logprob": -0.8222590614767635,
+          "compression_ratio": 0.8035714285714286,
+          "no_speech_prob": 0.27574557065963745,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 2.56,
+            "end": 4.38,
+            "text": "我 只 需要 给 你们 画",
+            "score": 0.46962811301151913
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000098_00688.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.96,
+        "text": "啊?没有,就一直加汤,一直加,一直加",
+        "scores": {
+          "avg_logprob": -0.4716453022427029,
+          "compression_ratio": 1.1219512195121952,
+          "no_speech_prob": 0.1770339161157608,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 3.08,
+            "text": "啊? 没有, 就 一直 加 汤, 一直 加, 一直 加",
+            "score": 0.7858851864933968
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000107_00726.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.86,
+        "text": "不要装色轻友了",
+        "scores": {
+          "avg_logprob": -0.36521096663041547,
+          "compression_ratio": 0.65625,
+          "no_speech_prob": 0.275005578994751,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.98,
+            "end": 2.7,
+            "text": "不要 装 色 轻 友 了",
+            "score": 0.7699014743169149
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000189_01158.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 13.280000000000001,
+        "text": "其实没关系嘛,我吃那个雪菇汽酒就10.8",
+        "scores": {
+          "avg_logprob": -2.780485577053494,
+          "compression_ratio": 0.8253968253968254,
+          "no_speech_prob": 0.07910267263650894,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 2.1,
+            "text": "其实 没 关 系 嘛, 我 吃 那个 雪 菇 汽 酒 就",
+            "score": 0.48575438071901983
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000046_1067.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.18,
+        "text": "比爾固爾 丁 基 梅克 勒 弟 克 瑞 提",
+        "scores": {
+          "avg_logprob": -5.666811806815011,
+          "compression_ratio": 0.8723404255319149,
+          "no_speech_prob": 0.2749340534210205,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.9399999999999997,
+            "end": 4.08,
+            "text": "比 爾 固 爾 丁 基 梅 克 勒 弟 克 瑞 提",
+            "score": 0.45206773137817013
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000112_00457.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "怎么管定的",
+        "scores": {
+          "avg_logprob": -0.6278593323447488,
+          "compression_ratio": 0.7837837837837838,
+          "no_speech_prob": 0.35780784487724304,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 1.04,
+            "text": "怎么 管 定 的",
+            "score": 0.4509599842131138
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000086_1121.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.96,
+        "text": "我知道,你的電子科學家是一個演員我都沒有空看,現在一個人都沒有空看是",
+        "scores": {
+          "avg_logprob": -0.9118111474173409,
+          "compression_ratio": 0.8518518518518519,
+          "no_speech_prob": 0.4165678322315216,
+          "temperature": 0.2
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 1.0200000000000007,
+            "end": 6.14,
+            "text": "我知道, 你的 電 子 科 學 家 是 一個 演 員 我 都 沒有 空 看, 現在 一個 人 都 沒有 空 看 是",
+            "score": 0.4693069758359343
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000093_1129.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 16.12,
+        "text": "有三位女士,她们说了一句话。她们说了一句话,她们说了一句话。她们说了一句话。那时候有更回应蛮好的。",
+        "scores": {
+          "avg_logprob": -0.7702475327711839,
+          "compression_ratio": 0.75,
+          "no_speech_prob": 0.17848876118659973,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 15.98,
+            "text": "有 三 位 女 士, 她 们 说 了 一 句 话。 她 们 说 了 一 句 话, 她 们 说 了 一 句 话。 她 们 说 了 一 句 话。 那 时候 有 更 回 应 蛮 好的。",
+            "score": 0.6222906534264727
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000134_1184.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 21.5,
+        "text": "不好意思, 只有一三十分之十三的批准, 会令人感到有趣的不打, 英明有罪我",
+        "scores": {
+          "avg_logprob": -5.495485305786133,
+          "compression_ratio": 0.8933333333333333,
+          "no_speech_prob": 0.24626781046390533,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 11.82,
+            "text": "不好意思, 只 有一 三 十 分 之 十 三 的 批 准, 会 令 人 感 到 有 趣 的 不 打, 英 明 有 罪 我",
+            "score": 0.3973570585388828
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000212_1271.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 3.7,
+        "text": "他要進去裡面了",
+        "scores": {
+          "avg_logprob": -0.6856995189891142,
+          "compression_ratio": 0.7608695652173914,
+          "no_speech_prob": 0.2623499631881714,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 1.4600000000000002,
+            "end": 3.52,
+            "text": "他 要 進 去 裡面 了",
+            "score": 0.4642116129398346
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000263_132.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 3.54,
+        "text": "那时候有更回应蛮好的",
+        "scores": {
+          "avg_logprob": -0.32149362564086914,
+          "compression_ratio": 0.7317073170731707,
+          "no_speech_prob": 0.13000041246414185,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 1.88,
+            "end": 3.38,
+            "text": "那 时候 有 更 回 应 蛮 好的",
+            "score": 0.8768782690167427
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000281_164.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 9.0,
+        "text": "我非常期待,因為這條短短線是自動車業。",
+        "scores": {
+          "avg_logprob": -0.7805735724312919,
+          "compression_ratio": 0.6206896551724138,
+          "no_speech_prob": 0.25998419523239136,
+          "temperature": 0.6
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 7.88,
+            "text": "我 非常 期 待, 因為 這 條 短 短 線 是 自 動 車 業。",
+            "score": 0.38171450508137544
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000301_222.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.96,
+        "text": "我在我要去提前吗",
+        "scores": {
+          "avg_logprob": -0.7372025199558424,
+          "compression_ratio": 0.90625,
+          "no_speech_prob": 0.4190311133861542,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 4.4399999999999995,
+            "end": 6.42,
+            "text": "我在 我要 去 提 前 吗",
+            "score": 0.6704917649428049
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000311_244.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 10.0,
+        "text": "继续讨论您的生活方式。",
+        "scores": {
+          "avg_logprob": -0.9943204767563764,
+          "compression_ratio": 0.78,
+          "no_speech_prob": 0.14922118186950684,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 9.34,
+            "text": "继 续 讨 论 您 的 生活 方 式。",
+            "score": 0.4523516872690784
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000313_246.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 29.98,
+        "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目",
+        "scores": {
+          "avg_logprob": -0.19729692795697382,
+          "compression_ratio": 0.8513513513513513,
+          "no_speech_prob": 0.25414326786994934,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 8.38,
+            "text": "请 不 吝 点 赞 订 阅 转 发 打 赏 支持 明 镜 与 点 点 栏 目",
+            "score": 0.9026828033751563
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000341_311.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.5,
+        "text": "我就是直接這樣",
+        "scores": {
+          "avg_logprob": -0.7093753337860107,
+          "compression_ratio": 0.7380952380952381,
+          "no_speech_prob": 0.2961321473121643,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 2.04,
+            "text": "我 就是 直接 這樣",
+            "score": 0.5236483663320541
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000345_320.wav",
+    "whisper_language": "zh",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "那是霓惠的傑作",
+        "scores": {
+          "avg_logprob": -0.5521071874178373,
+          "compression_ratio": 0.65625,
+          "no_speech_prob": 0.36838239431381226,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "zh",
+            "start": 0.0,
+            "end": 1.52,
+            "text": "那 是 霓 惠 的 傑 作",
+            "score": 0.770266052867685
+          }
+        ]
+      }
+    ]
+  }
+]

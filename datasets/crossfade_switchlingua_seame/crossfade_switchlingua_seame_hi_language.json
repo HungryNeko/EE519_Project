@@ -1,0 +1,83 @@
+[
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_en_into_switchlingua_hi/audio/000011_243.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 7.96,
+        "text": "हाँ, उसने उतर दिया, फिर भी उम्मीद है कि सकाई तू पुट जल्द ठीक हो जाएगा.",
+        "scores": {
+          "avg_logprob": -0.07492482197749151,
+          "compression_ratio": 1.4416666666666667,
+          "no_speech_prob": 0.15020054578781128,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 7.82,
+            "text": "हाँ, उसने उतर दिया, फिर भी उम्मीद है कि सकाई तू पुट जल्द ठीक हो जाएगा.",
+            "score": 0.9633933659953375
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_en_into_switchlingua_hi/audio/000013_249.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 9.46,
+        "text": "अजे देवगं की एक तिंग तो हमेशा शान्दार होती है।",
+        "scores": {
+          "avg_logprob": -0.13005804565717588,
+          "compression_ratio": 1.348314606741573,
+          "no_speech_prob": 0.25914710760116577,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 9.44,
+            "text": "अजे देवगं की एक तिंग तो हमेशा शान्दार होती है।",
+            "score": 0.9244462620053027
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "datasets/crossfade_switchlingua_seame/seame_en_into_switchlingua_hi/audio/000015_26.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 7.2,
+        "text": "सच मैं मुझे लगदा है कि इसे वीकेंड पर देखना चाहिए",
+        "scores": {
+          "avg_logprob": -0.07636798511851918,
+          "compression_ratio": 1.3191489361702127,
+          "no_speech_prob": 0.1907566785812378,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 7.1,
+            "text": "सच मैं मुझे लगदा है कि इसे वीकेंड पर देखना चाहिए",
+            "score": 0.9502972917897362
+          }
+        ]
+      }
+    ]
+  }
+]

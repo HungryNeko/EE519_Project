@@ -14,7 +14,7 @@ if __package__ in (None, ""):
 import torch
 
 from baseline.common import compute_metrics, load_eval_samples, preload_segment_pairs
-from baseline.project_mlp_whisper import ProjectMLPWhisperBaseline
+from baseline.distilled_mel_tdnn import DistilledMelTDNNBaseline
 from baseline.resemblyzer_ge2e import ResemblyzerGE2EBaseline
 from baseline.speechbrain_ecapa import SpeechBrainECAPABaseline
 from baseline.speechbrain_xvector import SpeechBrainXVectorBaseline
@@ -26,7 +26,8 @@ MODEL_REGISTRY = {
     "speechbrain_xvector": SpeechBrainXVectorBaseline,
     "resemblyzer_ge2e": ResemblyzerGE2EBaseline,
     "wespeaker_english": WeSpeakerEnglishBaseline,
-    "project_mlp_whisper": ProjectMLPWhisperBaseline,
+    "distilled_mel_tdnn": DistilledMelTDNNBaseline,
+    # "project_mlp_whisper": ProjectMLPWhisperBaseline,
 }
 
 

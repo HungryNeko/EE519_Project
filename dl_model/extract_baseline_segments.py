@@ -11,8 +11,13 @@ from pathlib import Path
 
 import numpy as np
 import soundfile as sf
-import librosa
+from scipy import signal
 from tqdm import tqdm
+
+try:
+    import librosa  # type: ignore
+except ModuleNotFoundError:
+    librosa = None
 
 
 def project_root():
@@ -57,7 +62,13 @@ def load_audio(path: Path, sr=16000):
         wav = wav.mean(axis=1)
     wav = wav.astype(np.float32)
     if src_sr != sr:
-        wav = librosa.resample(wav, orig_sr=src_sr, target_sr=sr)
+        if librosa is not None:
+            wav = librosa.resample(wav, orig_sr=src_sr, target_sr=sr)
+        else:
+            gcd = np.gcd(src_sr, sr)
+            up = sr // gcd
+            down = src_sr // gcd
+            wav = signal.resample_poly(wav, up=up, down=down)
     return wav.astype(np.float32)
 
 

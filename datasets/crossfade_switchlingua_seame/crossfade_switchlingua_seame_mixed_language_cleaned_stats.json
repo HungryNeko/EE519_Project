@@ -1,0 +1,193 @@
+{
+  "input_json": "datasets/crossfade_switchlingua_seame/crossfade_switchlingua_seame_mixed_language.json",
+  "output_json": "datasets/crossfade_switchlingua_seame/crossfade_switchlingua_seame_mixed_language_cleaned.json",
+  "time_tolerance_sec": 0.5,
+  "overall": {
+    "total_mixed": 201,
+    "kept": 155,
+    "kept_spans_near_insert": 387,
+    "removed_spans_outside_insert_window": 235,
+    "dropped_time_mismatch": 46,
+    "kept_ratio_percent": 77.11
+  },
+  "by_subfolder": {
+    "seame_en_into_switchlingua_hi": {
+      "total_mixed": 13,
+      "kept": 11,
+      "dropped_time_mismatch": 2,
+      "missing_manifest": 0,
+      "kept_spans_near_insert": 26,
+      "removed_spans_outside_insert_window": 10,
+      "kept_ratio_percent": 84.62
+    },
+    "seame_zh_into_switchlingua_en": {
+      "total_mixed": 126,
+      "kept": 120,
+      "dropped_time_mismatch": 6,
+      "missing_manifest": 0,
+      "kept_spans_near_insert": 303,
+      "removed_spans_outside_insert_window": 183,
+      "kept_ratio_percent": 95.24
+    },
+    "switchlingua_en_into_seame_zh": {
+      "total_mixed": 21,
+      "kept": 19,
+      "dropped_time_mismatch": 2,
+      "missing_manifest": 0,
+      "kept_spans_near_insert": 42,
+      "removed_spans_outside_insert_window": 33,
+      "kept_ratio_percent": 90.48
+    },
+    "switchlingua_hi_into_seame_en": {
+      "total_mixed": 41,
+      "kept": 5,
+      "dropped_time_mismatch": 36,
+      "missing_manifest": 0,
+      "kept_spans_near_insert": 16,
+      "removed_spans_outside_insert_window": 9,
+      "kept_ratio_percent": 12.2
+    }
+  },
+  "drop_examples": [
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000004_00046.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 1.628875,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/seame_en_into_switchlingua_hi/audio/000003_149.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 8.776063,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "en"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/seame_en_into_switchlingua_hi/audio/000006_181.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 2.254458,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "en"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000012_00078.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 14.118187,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000016_00100.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 12.130062,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000020_00107.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 3.178437,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000029_00135.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 2.207625,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000039_00166.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 2.185812,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000041_00186.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 0.01325,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000059_00269.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 1.735,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000061_00280.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 2.751187,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000064_00312.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 0.937688,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000068_00328.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 2.338938,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000069_00333.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 1.559813,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/seame_zh_into_switchlingua_en/audio/000040_1059.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 6.729542,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "zh"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000072_00338.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 0.806187,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000182_01048.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 0.297687,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "en"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_en_into_seame_zh/audio/000200_01258.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 2.516062,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "en"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000089_00404.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 3.198313,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_switchlingua_seame/switchlingua_hi_into_seame_en/audio/000110_00447.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 1.087938,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "hi"
+    }
+  ]
+}

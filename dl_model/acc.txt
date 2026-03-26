@@ -154,3 +154,53 @@ SUMMARY
 speechbrain_ecapa         acc=0.8173 f1=0.8083 total_time=68.98s avg_inference=38.80ms
 speechbrain_xvector       acc=0.5000 f1=0.6667 total_time=9.42s avg_inference=5.18ms
 wespeaker_english         acc=0.6640 f1=0.5058 total_time=181.26s avg_inference=102.38ms
+
+other test dataset
+csv rows             : 444
+available rows       : 444
+missing rows         : 0
+positives / negatives: 222 / 222
+dataset prep time(s) : 11.5987
+device               : cpu
+
+=== Running speechbrain_ecapa ===
+accuracy=0.7882882882882883 avg_inference_ms=37.8399 total_time_s=18.1132
+
+=== Running speechbrain_xvector ===
+accuracy=0.5 avg_inference_ms=4.7630 total_time_s=3.0359
+
+=== Running resemblyzer_ge2e ===
+Loaded the voice encoder model on cpu in 0.02 seconds.
+accuracy=0.6193693693693694 avg_inference_ms=10.9240 total_time_s=4.8758
+
+=== Running wespeaker_english ===
+WARNING:root:unexpected tensor: projection.weight
+accuracy=0.6103603603603603 avg_inference_ms=99.1679 total_time_s=44.4150
+
+=== Running project_mlp_whisper ===
+accuracy=0.6486486486486487 avg_inference_ms=367.5056 total_time_s=163.5963
+
+
+csv rows             : 444
+available rows       : 444
+missing rows         : 0
+positives / negatives: 222 / 222
+dataset prep time(s) : 1.7030
+device               : cpu
+
+=== Running speechbrain_ecapa ===
+accuracy=0.7882882882882883 avg_inference_ms=47.7000 total_time_s=21.5986
+
+=== Running speechbrain_xvector ===
+accuracy=0.5 avg_inference_ms=7.3188 total_time_s=3.5332
+
+=== Running resemblyzer_ge2e ===
+Loaded the voice encoder model on cpu in 0.01 seconds.
+accuracy=0.6193693693693694 avg_inference_ms=11.1437 total_time_s=4.9619
+
+=== Running wespeaker_english ===
+WARNING:root:unexpected tensor: projection.weight
+accuracy=0.6103603603603603 avg_inference_ms=121.7715 total_time_s=54.3421
+
+=== Running distilled_mel_tdnn ===
+accuracy=0.7162162162162162 avg_inference_ms=5.1447 total_time_s=2.2931
