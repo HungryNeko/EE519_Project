@@ -23,6 +23,7 @@ datasets/hinglish/data/**
 *.out
 *.log
 *.bak
+*.err
 old_output/
 # -----------------------------
 # PYTHON

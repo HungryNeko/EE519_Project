@@ -1,0 +1,92 @@
+[
+  {
+    "model": "tdnn_full",
+    "best_epoch": 7,
+    "best_acc": 0.6801801801801802,
+    "best_f1": 0.7016806722689075,
+    "student_ms": 2.3544780001975596,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\tdnn_full_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\tdnn_full_final.pth"
+  },
+  {
+    "model": "no_dilation",
+    "best_epoch": 1,
+    "best_acc": 0.6036036036036037,
+    "best_f1": 0.6933797909407664,
+    "student_ms": 2.289143999805674,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\no_dilation_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\no_dilation_final.pth"
+  },
+  {
+    "model": "no_stats_pooling",
+    "best_epoch": 9,
+    "best_acc": 0.6554054054054054,
+    "best_f1": 0.7017543859649122,
+    "student_ms": 2.2641890007071197,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\no_stats_pooling_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\no_stats_pooling_final.pth"
+  },
+  {
+    "model": "no_pairwise_product",
+    "best_epoch": 23,
+    "best_acc": 0.6846846846846847,
+    "best_f1": 0.6728971962616822,
+    "student_ms": 2.4697169999126345,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\no_pairwise_product_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\no_pairwise_product_final.pth"
+  },
+  {
+    "model": "no_specaugment",
+    "best_epoch": 7,
+    "best_acc": 0.6418918918918919,
+    "best_f1": 0.6900584795321637,
+    "student_ms": 2.4271919997408986,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\no_specaugment_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\no_specaugment_final.pth"
+  },
+  {
+    "model": "embedding_classifier",
+    "best_epoch": 10,
+    "best_acc": 0.6058558558558559,
+    "best_f1": 0.6601941747572815,
+    "student_ms": 2.3069399991072714,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\embedding_classifier_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\embedding_classifier_final.pth"
+  },
+  {
+    "model": "mlp",
+    "best_epoch": 1,
+    "best_acc": 0.5,
+    "best_f1": 0.6666666666666666,
+    "student_ms": 1.1836129997391254,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\mlp_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\mlp_final.pth"
+  },
+  {
+    "model": "cnn",
+    "best_epoch": 27,
+    "best_acc": 0.6801801801801802,
+    "best_f1": 0.7310606060606061,
+    "student_ms": 1.8154569994658232,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\cnn_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\cnn_final.pth"
+  },
+  {
+    "model": "transformer",
+    "best_epoch": 5,
+    "best_acc": 0.6193693693693694,
+    "best_f1": 0.6365591397849462,
+    "student_ms": 2.3266279988456517,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\transformer_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\transformer_final.pth"
+  },
+  {
+    "model": "resnet",
+    "best_epoch": 2,
+    "best_acc": 0.5855855855855856,
+    "best_f1": 0.6690647482014388,
+    "student_ms": 2.847605999559164,
+    "best_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\resnet_best.pth",
+    "final_checkpoint": "dl_model\\speechbrain_ablation\\checkpoints\\resnet_final.pth"
+  }
+]

@@ -1,0 +1,11 @@
+model,best_epoch,best_acc,best_f1,student_ms,best_checkpoint,final_checkpoint
+tdnn_full,7,0.6801801801801802,0.7016806722689075,2.3544780001975596,dl_model\speechbrain_ablation\checkpoints\tdnn_full_best.pth,dl_model\speechbrain_ablation\checkpoints\tdnn_full_final.pth
+no_dilation,1,0.6036036036036037,0.6933797909407664,2.289143999805674,dl_model\speechbrain_ablation\checkpoints\no_dilation_best.pth,dl_model\speechbrain_ablation\checkpoints\no_dilation_final.pth
+no_stats_pooling,9,0.6554054054054054,0.7017543859649122,2.2641890007071197,dl_model\speechbrain_ablation\checkpoints\no_stats_pooling_best.pth,dl_model\speechbrain_ablation\checkpoints\no_stats_pooling_final.pth
+no_pairwise_product,23,0.6846846846846847,0.6728971962616822,2.4697169999126345,dl_model\speechbrain_ablation\checkpoints\no_pairwise_product_best.pth,dl_model\speechbrain_ablation\checkpoints\no_pairwise_product_final.pth
+no_specaugment,7,0.6418918918918919,0.6900584795321637,2.4271919997408986,dl_model\speechbrain_ablation\checkpoints\no_specaugment_best.pth,dl_model\speechbrain_ablation\checkpoints\no_specaugment_final.pth
+embedding_classifier,10,0.6058558558558559,0.6601941747572815,2.3069399991072714,dl_model\speechbrain_ablation\checkpoints\embedding_classifier_best.pth,dl_model\speechbrain_ablation\checkpoints\embedding_classifier_final.pth
+mlp,1,0.5,0.6666666666666666,1.1836129997391254,dl_model\speechbrain_ablation\checkpoints\mlp_best.pth,dl_model\speechbrain_ablation\checkpoints\mlp_final.pth
+cnn,27,0.6801801801801802,0.7310606060606061,1.8154569994658232,dl_model\speechbrain_ablation\checkpoints\cnn_best.pth,dl_model\speechbrain_ablation\checkpoints\cnn_final.pth
+transformer,5,0.6193693693693694,0.6365591397849462,2.3266279988456517,dl_model\speechbrain_ablation\checkpoints\transformer_best.pth,dl_model\speechbrain_ablation\checkpoints\transformer_final.pth
+resnet,2,0.5855855855855856,0.6690647482014388,2.847605999559164,dl_model\speechbrain_ablation\checkpoints\resnet_best.pth,dl_model\speechbrain_ablation\checkpoints\resnet_final.pth

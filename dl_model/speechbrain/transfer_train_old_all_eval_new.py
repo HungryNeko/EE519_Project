@@ -157,7 +157,8 @@ def train(args):
             raise FileNotFoundError(f"Audio dir not found: {path}")
 
     if args.device == "auto":
-        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        device=torch.device('cpu')
     else:
         device = torch.device(args.device)
     print(f"device: {device}")
