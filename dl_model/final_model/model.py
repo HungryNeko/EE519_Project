@@ -152,13 +152,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--audio",
         type=str,
-        default="datasets/mlp_train/train/1.wav",
+        default=r"dl_model\final_model\1.wav",
         help="Path to the 2-second audio file for testing"
     )
     parser.add_argument(
         "--weight",
         type=str,
-        default="dl_model/speechbrain_ablation/checkpoints/tdnn_full_best_acc.pth",
+        default=r"dl_model\final_model\tdnn_full_best_acc.pth",
         help="Path to model weight file"
     )
     parser.add_argument(
