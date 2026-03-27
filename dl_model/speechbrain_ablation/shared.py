@@ -1,4 +1,5 @@
 import csv
+import math
 import random
 import time
 from pathlib import Path
@@ -505,3 +506,144 @@ class ResNetPairStudent(PairModelBase):
         left_emb = self.encode(left_audio)
         right_emb = self.encode(right_audio)
         return self.classifier(torch.cat([0.5 * (left_emb + right_emb), torch.abs(left_emb - right_emb), left_emb * right_emb], dim=1))
+
+
+class SincConv1d(nn.Module):
+    def __init__(self, out_channels=64, kernel_size=251, sample_rate=16000, min_low_hz=50.0, min_band_hz=50.0):
+        super().__init__()
+        if kernel_size % 2 == 0:
+            raise ValueError("SincConv1d kernel_size must be odd.")
+        self.out_channels = out_channels
+        self.kernel_size = kernel_size
+        self.sample_rate = sample_rate
+        self.min_low_hz = min_low_hz
+        self.min_band_hz = min_band_hz
+
+        low_hz = 30.0
+        high_hz = sample_rate / 2.0 - (min_low_hz + min_band_hz)
+        hz = np.linspace(low_hz, high_hz, out_channels + 1, dtype=np.float32)
+        self.low_hz_ = nn.Parameter(torch.from_numpy(hz[:-1]).view(-1, 1))
+        self.band_hz_ = nn.Parameter(torch.from_numpy(np.diff(hz)).view(-1, 1))
+
+        n_lin = torch.arange(-(kernel_size // 2), 0, dtype=torch.float32)
+        self.register_buffer("n_lin", n_lin / sample_rate, persistent=False)
+        self.register_buffer("window", torch.hamming_window(kernel_size, periodic=False, dtype=torch.float32), persistent=False)
+
+    def forward(self, wav):
+        device = wav.device
+        low = self.min_low_hz + torch.abs(self.low_hz_.to(device))
+        high = torch.clamp(low + self.min_band_hz + torch.abs(self.band_hz_.to(device)), self.min_low_hz, self.sample_rate / 2.0 - 1.0)
+        band = (high - low).clamp_min(1.0)
+
+        n = 2 * math.pi * self.n_lin.to(device)
+        low_pass1 = 2 * high * torch.sinc(high * n / math.pi)
+        low_pass2 = 2 * low * torch.sinc(low * n / math.pi)
+        band_pass_left = (low_pass1 - low_pass2) / (2 * band)
+        band_pass_center = torch.ones((self.out_channels, 1), device=device)
+        band_pass = torch.cat([band_pass_left, band_pass_center, torch.flip(band_pass_left, dims=[1])], dim=1)
+        band_pass = band_pass * self.window.to(device).unsqueeze(0)
+        band_pass = band_pass / (band_pass.abs().sum(dim=1, keepdim=True) + 1e-6)
+        return torch.conv1d(wav.unsqueeze(1), band_pass.unsqueeze(1), stride=1, padding=self.kernel_size // 2)
+
+
+class SincNetPairStudent(nn.Module):
+    def __init__(self, sample_rate=16000, emb_dim=192, dropout=0.15, sinc_channels=64, **kwargs):
+        super().__init__()
+        self.sample_rate = sample_rate
+        self.sinc = SincConv1d(out_channels=sinc_channels, kernel_size=251, sample_rate=sample_rate)
+        self.encoder = nn.Sequential(
+            nn.BatchNorm1d(sinc_channels),
+            nn.LeakyReLU(0.2),
+            nn.MaxPool1d(3),
+            nn.Conv1d(sinc_channels, 128, kernel_size=5, padding=2),
+            nn.BatchNorm1d(128),
+            nn.LeakyReLU(0.2),
+            nn.MaxPool1d(3),
+            nn.Conv1d(128, 192, kernel_size=3, padding=1),
+            nn.BatchNorm1d(192),
+            nn.LeakyReLU(0.2),
+            nn.AdaptiveAvgPool1d(1),
+        )
+        self.proj = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(192, emb_dim),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.LayerNorm(emb_dim),
+        )
+        self.classifier = nn.Sequential(
+            nn.Linear(emb_dim * 3, emb_dim * 2),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.Linear(emb_dim * 2, emb_dim),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.Linear(emb_dim, 2),
+        )
+
+    def normalize_wav(self, wav):
+        wav = wav - wav.mean(dim=1, keepdim=True)
+        return wav / (wav.std(dim=1, keepdim=True) + 1e-5)
+
+    def encode(self, wav):
+        wav = self.normalize_wav(wav)
+        x = self.sinc(wav)
+        x = torch.abs(x)
+        x = torch.log1p(x)
+        x = self.encoder(x)
+        return self.proj(x)
+
+    def forward(self, left_audio, right_audio):
+        left_emb = self.encode(left_audio)
+        right_emb = self.encode(right_audio)
+        return self.classifier(torch.cat([0.5 * (left_emb + right_emb), torch.abs(left_emb - right_emb), left_emb * right_emb], dim=1))
+
+
+class SincTDNNPairStudent(TDNNPairStudent):
+    def __init__(
+        self,
+        sample_rate=16000,
+        channels=(128, 192, 256, 256),
+        emb_dim=192,
+        dropout=0.15,
+        time_mask_max=12,
+        freq_mask_max=6,
+        use_dilation=True,
+        use_stats_pooling=True,
+        use_pairwise_product=True,
+        use_specaugment=True,
+        sinc_channels=80,
+    ):
+        super().__init__(
+            sample_rate=sample_rate,
+            n_mels=sinc_channels,
+            channels=channels,
+            emb_dim=emb_dim,
+            dropout=dropout,
+            time_mask_max=time_mask_max,
+            freq_mask_max=freq_mask_max,
+            use_dilation=use_dilation,
+            use_stats_pooling=use_stats_pooling,
+            use_pairwise_product=use_pairwise_product,
+            use_specaugment=use_specaugment,
+        )
+        self.sinc = SincConv1d(out_channels=sinc_channels, kernel_size=251, sample_rate=sample_rate)
+        self.sinc_norm = nn.BatchNorm1d(sinc_channels)
+
+    def normalize_wav(self, wav):
+        wav = wav - wav.mean(dim=1, keepdim=True)
+        return wav / (wav.std(dim=1, keepdim=True) + 1e-5)
+
+    def encode(self, wav):
+        wav = self.normalize_wav(wav)
+        x = self.sinc(wav)
+        x = torch.log1p(torch.abs(x))
+        x = self.sinc_norm(x)
+        feats = x.transpose(1, 2)
+        feats = feats - feats.mean(dim=1, keepdim=True)
+        feats = feats / (feats.std(dim=1, keepdim=True) + 1e-5)
+        feats = self.apply_specaugment(feats)
+        x = self.tdnn(feats.transpose(1, 2))
+        x = self.pool(x)
+        x = self.proj(x)
+        return self.embedding_norm(x)

@@ -5,6 +5,8 @@ torch
 torchaudio
 soundfile
 librosa
+transformers
+pyannote.audio
 openai-whisper
 speechbrain
 resemblyzer

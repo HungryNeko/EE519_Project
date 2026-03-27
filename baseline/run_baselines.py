@@ -14,18 +14,26 @@ if __package__ in (None, ""):
 import torch
 
 from baseline.common import compute_metrics, load_eval_samples, preload_segment_pairs
+from baseline.pyannote_wespeaker_voxceleb_resnet34_lm import (
+    PyannoteWeSpeakerVoxCelebResnet34LMBaseline,
+)
+from baseline.pure_sincnet import PureSincNetBaseline
+# from baseline.microsoft_wavlm_base_plus_sv import MicrosoftWavLMBasePlusSVBaseline
 from baseline.distilled_mel_tdnn import DistilledMelTDNNBaseline
-from baseline.resemblyzer_ge2e import ResemblyzerGE2EBaseline
-from baseline.speechbrain_ecapa import SpeechBrainECAPABaseline
-from baseline.speechbrain_xvector import SpeechBrainXVectorBaseline
-from baseline.wespeaker_english import WeSpeakerEnglishBaseline
+# from baseline.resemblyzer_ge2e import ResemblyzerGE2EBaseline
+# from baseline.speechbrain_ecapa import SpeechBrainECAPABaseline
+# from baseline.speechbrain_xvector import SpeechBrainXVectorBaseline
+# from baseline.wespeaker_english import WeSpeakerEnglishBaseline
 
 
 MODEL_REGISTRY = {
-    "speechbrain_ecapa": SpeechBrainECAPABaseline,
-    "speechbrain_xvector": SpeechBrainXVectorBaseline,
-    "resemblyzer_ge2e": ResemblyzerGE2EBaseline,
-    "wespeaker_english": WeSpeakerEnglishBaseline,
+    "pure_sincnet": PureSincNetBaseline,
+    # "pyannote_wespeaker_voxceleb_resnet34_lm": PyannoteWeSpeakerVoxCelebResnet34LMBaseline,
+    # "microsoft_wavlm_base_plus_sv": MicrosoftWavLMBasePlusSVBaseline,
+    # "speechbrain_ecapa": SpeechBrainECAPABaseline,
+    # "speechbrain_xvector": SpeechBrainXVectorBaseline,
+    # "resemblyzer_ge2e": ResemblyzerGE2EBaseline,
+    # "wespeaker_english": WeSpeakerEnglishBaseline,
     "distilled_mel_tdnn": DistilledMelTDNNBaseline,
     # "project_mlp_whisper": ProjectMLPWhisperBaseline,
 }
@@ -75,11 +83,11 @@ def write_summary_csv(output_path: Path, summary_rows):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Evaluate multiple same-speaker baselines on test_baseline_segments.csv."
+        description="Evaluate selected same-speaker baselines on test_baseline_segments.csv."
     )
     parser.add_argument(
         "--csv",
-        default="dl_model/test_baseline_segments.csv",
+        default="dl_model/baseline_train_test_segments_switchlingua_seame.csv",
         help="CSV containing segment windows and labels",
     )
     parser.add_argument(
@@ -104,7 +112,12 @@ def main():
         "--device",
         default="cpu",
         choices=["auto", "cpu", "cuda"],
-        help="Compatibility flag; current baselines are configured to run on CPU for fair timing comparison",
+        help="Run inference on the selected device when the model implementation supports it",
+    )
+    parser.add_argument(
+        "--hf-token",
+        default=None,
+        help="Optional Hugging Face token for models that require authenticated access",
     )
     args = parser.parse_args()
 
@@ -146,7 +159,48 @@ def main():
         print(f"\n=== Running {model_name} ===")
 
         init_start = time.perf_counter()
-        model = model_class(device=device, cache_dir=cache_dir)
+        init_kwargs = {
+            "device": device,
+            "cache_dir": cache_dir,
+        }
+        if model_name == "pyannote_wespeaker_voxceleb_resnet34_lm":
+            init_kwargs["hf_token"] = args.hf_token
+
+        try:
+            model = model_class(**init_kwargs)
+        except Exception as exc:
+            init_time_s = time.perf_counter() - init_start
+            error_message = f"{type(exc).__name__}: {exc}"
+            print(f"failed to initialize  : {error_message}")
+            summary_rows.append(
+                {
+                    "model": model_name,
+                    "sample_count": 0,
+                    "positives": 0,
+                    "negatives": 0,
+                    "accuracy": None,
+                    "positive_accuracy": None,
+                    "negative_accuracy": None,
+                    "precision": None,
+                    "recall": None,
+                    "specificity": None,
+                    "f1": None,
+                    "balanced_accuracy": None,
+                    "tp": 0,
+                    "tn": 0,
+                    "fp": 0,
+                    "fn": 0,
+                    "init_time_s": init_time_s,
+                    "inference_time_s": 0.0,
+                    "total_model_time_s": init_time_s,
+                    "avg_inference_ms": None,
+                    "dataset_available_rows": dataset_report.available_rows,
+                    "dataset_missing_rows": dataset_report.missing_rows,
+                    "error": error_message,
+                }
+            )
+            continue
+
         init_time_s = time.perf_counter() - init_start
 
         labels = []
@@ -204,6 +258,7 @@ def main():
             "avg_inference_ms": avg_inference_ms,
             "dataset_available_rows": dataset_report.available_rows,
             "dataset_missing_rows": dataset_report.missing_rows,
+            "error": "",
         }
         summary_rows.append(summary)
 

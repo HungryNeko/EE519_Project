@@ -205,6 +205,15 @@ accuracy=0.6103603603603603 avg_inference_ms=121.7715 total_time_s=54.3421
 === Running distilled_mel_tdnn ===
 accuracy=0.7162162162162162 avg_inference_ms=5.1447 total_time_s=2.2931
 
+=== Running microsoft_wavlm_base_plus_sv ===
+accuracy=0.5 avg_inference_ms=33.9304 total_time_s=26.8419
+
+=== Running pyannote_wespeaker_voxceleb_resnet34_lm ===
+accuracy=0.5945945945945946 avg_inference_ms=7.3826 total_time_s=8.4087
+
+=== Running pure_sincnet ===
+accuracy=0.722972972972973 avg_inference_ms=13.0983 total_time_s=5.8294
+
 fine tuning speechbrain
 Original SpeechBrain baseline acc: 0.7883
 Default classifier-head test acc: 0.4730

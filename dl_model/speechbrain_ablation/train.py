@@ -29,6 +29,8 @@ from dl_model.speechbrain_ablation.shared import (
 
 
 MODEL_MODULES = {
+    "pure_sincnet": "dl_model.speechbrain_ablation.model_pure_sincnet",
+    "sincnet": "dl_model.speechbrain_ablation.model_sincnet",
     "tdnn_full": "dl_model.speechbrain_ablation.model_tdnn_full",
     "no_dilation": "dl_model.speechbrain_ablation.model_no_dilation",
     "no_stats_pooling": "dl_model.speechbrain_ablation.model_no_stats_pooling",
@@ -59,7 +61,8 @@ def train_one_model(model_name, args, train_samples, test_samples, device, run_i
     checkpoint_dir = Path(args.checkpoint_dir)
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
     suffix = f"_run{run_index}" if args.repeat > 1 else ""
-    best_path = checkpoint_dir / f"{model_name}{suffix}_best.pth"
+    best_acc_path = checkpoint_dir / f"{model_name}{suffix}_best_acc.pth"
+    best_f1_path = checkpoint_dir / f"{model_name}{suffix}_best_f1.pth"
     final_path = checkpoint_dir / f"{model_name}{suffix}_final.pth"
 
     train_dataset = DistillationPairDataset(train_samples)
@@ -91,9 +94,15 @@ def train_one_model(model_name, args, train_samples, test_samples, device, run_i
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
 
     best_f1 = -1.0
-    best_acc = 0.0
-    best_epoch = 0
+    best_f1_acc = 0.0
+    best_f1_epoch = 0
+    best_acc = -1.0
+    best_acc_f1 = -1.0
+    best_acc_epoch = 0
     no_improve = 0
+
+    best_acc_record = None
+    best_f1_record = None
 
     print(f"\n=== Training {model_name} (run {run_index}/{args.repeat}) ===")
     for epoch in range(1, args.epochs + 1):
@@ -138,15 +147,28 @@ def train_one_model(model_name, args, train_samples, test_samples, device, run_i
             f"test_loss={test_metrics['loss']:.4f}"
         )
 
+        current_acc = test_metrics["accuracy"] if test_metrics["accuracy"] is not None else -1.0
         current_f1 = test_metrics["f1"] if test_metrics["f1"] is not None else -1.0
-        improved = current_f1 > best_f1 or (
-            abs(current_f1 - best_f1) < 1e-8 and test_metrics["accuracy"] > best_acc
+
+        improved_acc = current_acc > best_acc or (
+            abs(current_acc - best_acc) < 1e-8 and current_f1 > best_acc_f1
         )
-        if improved:
-            best_f1 = current_f1
-            best_acc = test_metrics["accuracy"]
-            best_epoch = epoch
-            no_improve = 0
+        if improved_acc:
+            best_acc = current_acc
+            best_acc_f1 = current_f1
+            best_acc_epoch = epoch
+            best_acc_record = {
+                "model": model_name,
+                "run": run_index,
+                "epoch": epoch,
+                "test_acc": float(current_acc),
+                "test_f1": float(current_f1),
+                "test_loss": float(test_metrics["loss"]),
+                "test_precision": float(test_metrics["precision"]),
+                "test_recall": float(test_metrics["recall"]),
+                "train_loss": float(train_loss),
+                "args": vars(args),
+            }
             torch.save(
                 {
                     "epoch": epoch,
@@ -154,8 +176,41 @@ def train_one_model(model_name, args, train_samples, test_samples, device, run_i
                     "test_metrics": test_metrics,
                     "args": vars(args),
                     "model_name": model_name,
+                    "selection_metric": "accuracy",
                 },
-                best_path,
+                best_acc_path,
+            )
+
+        improved_f1 = current_f1 > best_f1 or (
+            abs(current_f1 - best_f1) < 1e-8 and current_acc > best_f1_acc
+        )
+        if improved_f1:
+            best_f1 = current_f1
+            best_f1_acc = current_acc
+            best_f1_epoch = epoch
+            no_improve = 0
+            best_f1_record = {
+                "model": model_name,
+                "run": run_index,
+                "epoch": epoch,
+                "test_acc": float(current_acc),
+                "test_f1": float(current_f1),
+                "test_loss": float(test_metrics["loss"]),
+                "test_precision": float(test_metrics["precision"]),
+                "test_recall": float(test_metrics["recall"]),
+                "train_loss": float(train_loss),
+                "args": vars(args),
+            }
+            torch.save(
+                {
+                    "epoch": epoch,
+                    "model_state_dict": model.state_dict(),
+                    "test_metrics": test_metrics,
+                    "args": vars(args),
+                    "model_name": model_name,
+                    "selection_metric": "f1",
+                },
+                best_f1_path,
             )
         else:
             no_improve += 1
@@ -167,25 +222,47 @@ def train_one_model(model_name, args, train_samples, test_samples, device, run_i
         {
             "epoch": epoch,
             "model_state_dict": model.state_dict(),
-            "best_epoch": best_epoch,
+            "best_acc_epoch": best_acc_epoch,
+            "best_f1_epoch": best_f1_epoch,
             "best_acc": best_acc,
             "best_f1": best_f1,
+            "best_acc_f1": best_acc_f1,
+            "best_f1_acc": best_f1_acc,
             "args": vars(args),
             "model_name": model_name,
         },
         final_path,
     )
 
+    # Save best acc and best f1 records to JSON files
+    suffix = f"_run{run_index}" if args.repeat > 1 else ""
+    best_acc_record_path = checkpoint_dir / f"{model_name}{suffix}_best_acc_record.json"
+    best_f1_record_path = checkpoint_dir / f"{model_name}{suffix}_best_f1_record.json"
+
+    if best_acc_record is not None:
+        with open(best_acc_record_path, "w", encoding="utf-8") as f:
+            json.dump(best_acc_record, f, indent=2, ensure_ascii=False)
+
+    if best_f1_record is not None:
+        with open(best_f1_record_path, "w", encoding="utf-8") as f:
+            json.dump(best_f1_record, f, indent=2, ensure_ascii=False)
+
     student_ms = benchmark_student(model, test_dataset, device=device, limit=args.benchmark_samples)
     return {
         "model": model_name,
         "run": run_index,
-        "best_epoch": best_epoch,
+        "best_acc_epoch": best_acc_epoch,
+        "best_f1_epoch": best_f1_epoch,
         "best_acc": best_acc,
         "best_f1": best_f1,
+        "best_acc_f1": best_acc_f1,
+        "best_f1_acc": best_f1_acc,
         "student_ms": student_ms,
-        "best_checkpoint": str(best_path),
+        "best_acc_checkpoint": str(best_acc_path),
+        "best_f1_checkpoint": str(best_f1_path),
         "final_checkpoint": str(final_path),
+        "best_acc_record": str(best_acc_record_path) if best_acc_record else None,
+        "best_f1_record": str(best_f1_record_path) if best_f1_record else None,
     }
 
 
@@ -301,9 +378,49 @@ def main():
         writer.writeheader()
         writer.writerows(aggregate_rows)
 
+    # Save best acc and best f1 records to CSV
+    best_acc_rows = [row for row in summary_rows if row.get("best_acc_record")]
+    best_f1_rows = [row for row in summary_rows if row.get("best_f1_record")]
+
+    if best_acc_rows:
+        best_acc_csv_path = summary_path.with_name(summary_path.stem + "_best_acc.csv")
+        best_acc_data = []
+        for row in best_acc_rows:
+            record_path = Path(row["best_acc_record"])
+            if record_path.exists():
+                with open(record_path, "r", encoding="utf-8") as f:
+                    record = json.load(f)
+                best_acc_data.append(record)
+        if best_acc_data:
+            with open(best_acc_csv_path, "w", newline="", encoding="utf-8") as f:
+                fieldnames = ["model", "run", "epoch", "test_acc", "test_f1", "test_loss", "test_precision", "test_recall", "train_loss"]
+                writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
+                writer.writeheader()
+                writer.writerows(best_acc_data)
+
+    if best_f1_rows:
+        best_f1_csv_path = summary_path.with_name(summary_path.stem + "_best_f1.csv")
+        best_f1_data = []
+        for row in best_f1_rows:
+            record_path = Path(row["best_f1_record"])
+            if record_path.exists():
+                with open(record_path, "r", encoding="utf-8") as f:
+                    record = json.load(f)
+                best_f1_data.append(record)
+        if best_f1_data:
+            with open(best_f1_csv_path, "w", newline="", encoding="utf-8") as f:
+                fieldnames = ["model", "run", "epoch", "test_acc", "test_f1", "test_loss", "test_precision", "test_recall", "train_loss"]
+                writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
+                writer.writeheader()
+                writer.writerows(best_f1_data)
+
     print(f"\nSaved summary to: {summary_path}")
     print(f"Saved summary csv to: {csv_path}")
     print(f"Saved aggregate csv to: {aggregate_csv_path}")
+    if best_acc_rows:
+        print(f"Saved best acc records csv to: {best_acc_csv_path}")
+    if best_f1_rows:
+        print(f"Saved best f1 records csv to: {best_f1_csv_path}")
 
 
 if __name__ == "__main__":
