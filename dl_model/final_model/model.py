@@ -54,11 +54,14 @@ class TDNNPredictor:
         self.sample_rate = 16000
 
         # Resolve weight path
-        if not Path(weight_path).is_absolute():
+        weight_path = Path(weight_path).expanduser()
+
+        if not weight_path.is_absolute():
             repo_root = Path(__file__).resolve().parents[2]
             weight_path = repo_root / weight_path
 
         weight_path = Path(weight_path)
+        
         if not weight_path.exists():
             raise FileNotFoundError(f"Weight file not found: {weight_path}")
 

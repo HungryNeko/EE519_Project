@@ -1,0 +1,5 @@
+[Speaker 0]:
+  <zh> 您 好 欢 迎 来 到 已 经 处 理 课 程
+
+[Speaker 1]:
+  <en> Hello, this is a multilingual speech processing demo.
