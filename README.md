@@ -8,7 +8,13 @@ conda activate EE519_Project
 * whisper needs ffmpeg installed in your computer.
 
 ## Demo
+1. Run `pip install -r demo/requirements.txt` to set up environment
+2. Run `python demo_pipeline.py path/to/mixed.wav` (replace `path/to/mixed.wav` with your audio path)
+* add `--device cuda` to run with GPU, `--device cpu` to run with CPU
+* add `--tdnn-weight dl_model/final_model/xxx.pth` to specify TDNN path
 
+
+## Models
 1. Run `preprocess/audio_create` to generate audio files.
 2. Run `split_models/mossformer2/split.py` to downsample audio to **8 kHz** and perform speaker separation.
 3. Run `translate/Whisper/trans_class.py` to detect languages, merge segments with the same language, and translate them into English.
