@@ -9,9 +9,11 @@ conda activate EE519_Project
 
 ## Demo
 1. Run `pip install -r demo/requirements.txt` to set up environment
-2. Run `python demo_pipeline.py path/to/mixed.wav` (replace `path/to/mixed.wav` with your audio path)
+2. Run `python demo/demo_pipeline.py samples/mixed.wav` (replace `samples/mixed.wav` with your audio path)
 * add `--device cuda` to run with GPU, `--device cpu` to run with CPU
+* add `--whisper-model #model type#` to specify whisper model 
 * add `--tdnn-weight dl_model/final_model/xxx.pth` to specify TDNN path
+* add `--use-llm` to activate llm model for TDNN support
 
 
 ## Models

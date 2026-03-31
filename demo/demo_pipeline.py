@@ -11,8 +11,9 @@ Pipeline
                                        + per-word language detection
 3. Mixed-language segment check    →  TDNN same-speaker classifier
       same speaker  (code-switch)  →  keep text as-is
-      diff speaker  (cross-talk)   →  timestamp-based word reassignment
-4. Print final per-speaker transcript
+      diff speaker  (cross-talk)   →  move the interval in audio
+4. Rewrite speaker audio           →  spk0_fixed.wav / spk1_fixed.wav
+5. WhisperX transcription again    →  final transcript from fixed audio
 
 Usage
 -----
@@ -25,16 +26,13 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+from typing import List, Optional, Set, Tuple
 
 import librosa
 import numpy as np
 import soundfile as sf
 
 # ── make project root importable ─────────────────────────────────────────────
-# NOTE: append instead of insert(0) so that installed packages (e.g. the
-# HuggingFace `datasets` library) are NOT shadowed by the local datasets/
-# directory that lives in the project root.
 _ROOT = Path(__file__).resolve().parent
 if str(_ROOT) not in sys.path:
     sys.path.append(str(_ROOT))
@@ -45,8 +43,8 @@ from dl_model.final_model.model import TDNNPredictor  # TDNN same-speaker model
 # Constants
 # ─────────────────────────────────────────────────────────────────────────────
 MOSSFORMER_SR = 8000   # MossFormer2 requires 8 kHz input
-WHISPER_SR    = 16000  # Whisper / TDNN require 16 kHz
-MIN_SPAN_SEC  = 0.10   # minimum audio span length for TDNN (100 ms)
+WHISPER_SR = 16000     # Whisper / TDNN require 16 kHz
+MIN_SPAN_SEC = 0.10    # minimum audio span length for TDNN (100 ms)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -57,21 +55,16 @@ def _import_modelscope():
     """
     Import modelscope while ensuring the local datasets/ folder in the project
     root does NOT shadow the HuggingFace `datasets` package that modelscope needs.
-
-    Strategy: temporarily remove every sys.path entry that points to the project
-    root (or the current working directory) before the import, then restore them.
     """
-    import importlib
     import os
 
-    # Entries to hide during the import
-    _root_str  = str(_ROOT)
-    _cwd_strs  = {"", ".", os.getcwd()}
+    _root_str = str(_ROOT)
+    _cwd_strs = {"", ".", os.getcwd()}
     _hide = {p for p in sys.path if p in _cwd_strs or p == _root_str}
 
     saved_path = sys.path[:]
     for p in _hide:
-        while p in sys.path:          # may appear more than once
+        while p in sys.path:
             sys.path.remove(p)
 
     # Also evict any already-cached stub for the local datasets namespace pkg
@@ -80,7 +73,7 @@ def _import_modelscope():
             del sys.modules[key]
 
     try:
-        import resampy
+        import resampy  # noqa: F401
         from modelscope.pipelines import pipeline as ms_pipeline
         from modelscope.utils.constant import Tasks
     except ImportError as exc:
@@ -90,7 +83,7 @@ def _import_modelscope():
             "  pip install modelscope resampy"
         ) from exc
     finally:
-        sys.path[:] = saved_path   # always restore
+        sys.path[:] = saved_path
 
     return ms_pipeline, Tasks
 
@@ -101,15 +94,19 @@ def separate_speakers(audio_path: Path, output_dir: Path) -> Tuple[Path, Path]:
     Returns (spk0_path, spk1_path).
     """
     ms_pipeline, Tasks = _import_modelscope()
+
     try:
         import resampy
     except ImportError as exc:
         raise ImportError("pip install resampy") from exc
 
+    output_dir.mkdir(parents=True, exist_ok=True)
+
     # Prepare mono 8 kHz audio
     audio, sr = sf.read(str(audio_path))
     if audio.ndim > 1:
         audio = audio.mean(axis=1)
+    audio = audio.astype(np.float32)
     if sr != MOSSFORMER_SR:
         audio = resampy.resample(audio, sr, MOSSFORMER_SR)
 
@@ -130,6 +127,7 @@ def separate_speakers(audio_path: Path, output_dir: Path) -> Tuple[Path, Path]:
 
     if len(paths) < 2:
         raise RuntimeError(f"MossFormer2 returned only {len(paths)} speaker(s); expected 2.")
+
     return paths[0], paths[1]
 
 
@@ -139,10 +137,13 @@ def separate_speakers(audio_path: Path, output_dir: Path) -> Tuple[Path, Path]:
 
 def _detect_lang_by_char(ch: str) -> str:
     """Classify a character's language by Unicode range."""
+    if not ch:
+        return "other"
+
     o = ord(ch)
-    if 0x4E00 <= o <= 0x9FFF:          # CJK unified
+    if 0x4E00 <= o <= 0x9FFF:
         return "zh"
-    if 0x0900 <= o <= 0x097F:          # Devanagari (Hindi)
+    if 0x0900 <= o <= 0x097F:
         return "hi"
     if "a" <= ch.lower() <= "z":
         return "en"
@@ -174,8 +175,13 @@ def _group_words_by_language(words: List[dict]) -> List[dict]:
             continue
         if cur is None or cur["language"] != lang:
             flush()
-            cur = {"language": lang, "start": w["start"], "end": w["end"],
-                   "text": "", "words": [w]}
+            cur = {
+                "language": lang,
+                "start": w["start"],
+                "end": w["end"],
+                "text": "",
+                "words": [w],
+            }
         else:
             cur["end"] = w["end"]
             cur["words"].append(w)
@@ -188,11 +194,6 @@ def transcribe_speaker(wx_model, audio_path: Path, device: str = "cpu") -> List[
     """
     Transcribe one speaker's audio with WhisperX.
 
-    WhisperX pipeline:
-      1. transcribe()  – CTC-based fast ASR, returns segment-level text + language
-      2. load_align_model() + align()  – phoneme-forced alignment for precise
-         word timestamps (falls back to transcription timestamps on failure)
-
     Returns a list of segment dicts:
         {segment_id, start, end, text, language_spans}
 
@@ -201,7 +202,6 @@ def transcribe_speaker(wx_model, audio_path: Path, device: str = "cpu") -> List[
     """
     import whisperx
 
-    # Load and resample to 16 kHz (MossFormer2 outputs 8 kHz)
     audio, sr = sf.read(str(audio_path))
     if audio.ndim > 1:
         audio = audio.mean(axis=1)
@@ -209,63 +209,69 @@ def transcribe_speaker(wx_model, audio_path: Path, device: str = "cpu") -> List[
     if sr != WHISPER_SR:
         audio = librosa.resample(audio, orig_sr=sr, target_sr=WHISPER_SR)
 
-    # ── 1. Transcription ─────────────────────────────────────────────────────
     result = wx_model.transcribe(audio, batch_size=8)
     detected_lang = result.get("language", "zh")
 
-    # ── 2. Phoneme alignment for precise word timestamps ─────────────────────
     try:
         align_model, align_meta = whisperx.load_align_model(
             language_code=detected_lang, device=device
         )
         aligned = whisperx.align(
-            result["segments"], align_model, align_meta, audio, device,
+            result["segments"],
+            align_model,
+            align_meta,
+            audio,
+            device,
             return_char_alignments=False,
         )
         segments_src = aligned["segments"]
     except Exception:
-        # Alignment may fail for unsupported languages or very short clips;
-        # fall back to raw transcription timestamps.
         segments_src = result["segments"]
 
-    # ── 3. Build output segments ──────────────────────────────────────────────
     segments_out: List[dict] = []
 
     for i, seg in enumerate(segments_src):
         t0 = float(seg.get("start", 0.0))
         t1 = float(seg.get("end", t0))
 
-        # Collect word-level entries from the WhisperX output
         words: List[dict] = []
         for w in seg.get("words", []):
+            token = w.get("word", "").strip()
             w_start = w.get("start")
-            w_end   = w.get("end")
-            token   = w.get("word", "").strip()
+            w_end = w.get("end")
             if not token or w_start is None or w_end is None:
                 continue
-            words.append({
-                "word":     token,
-                "start":    float(w_start),
-                "end":      float(w_end),
-                "score":    float(w.get("score", 0.0)),
-                "language": _detect_lang_by_char(token[0]),
-            })
+            words.append(
+                {
+                    "word": token,
+                    "start": float(w_start),
+                    "end": float(w_end),
+                    "score": float(w.get("score", 0.0)),
+                    "language": _detect_lang_by_char(token[0]),
+                }
+            )
 
         spans = _group_words_by_language(words)
         if not spans:
-            spans = [{
-                "language": detected_lang,
-                "start": t0, "end": t1,
-                "text": seg.get("text", "").strip(),
-                "words": [],
-            }]
+            spans = [
+                {
+                    "language": detected_lang,
+                    "start": t0,
+                    "end": t1,
+                    "text": seg.get("text", "").strip(),
+                    "words": [],
+                }
+            ]
 
-        segments_out.append({
-            "segment_id": i,
-            "start": t0, "end": t1,
-            "text": seg.get("text", "").strip(),
-            "language_spans": spans,
-        })
+        segments_out.append(
+            {
+                "segment_id": i,
+                "start": t0,
+                "end": t1,
+                "text": seg.get("text", "").strip(),
+                "language_spans": spans,
+            }
+        )
 
     return segments_out
 
@@ -282,13 +288,15 @@ def _load_window(audio_path: Path, t0: float, t1: float) -> np.ndarray:
     audio = audio.astype(np.float32)
     if sr != WHISPER_SR:
         audio = librosa.resample(audio, orig_sr=sr, target_sr=WHISPER_SR)
+
     a = max(0, int(t0 * WHISPER_SR))
     b = min(len(audio), int(t1 * WHISPER_SR))
     chunk = audio[a:b]
-    # Pad to minimum 100 ms so TDNN has enough context
+
     min_len = int(MIN_SPAN_SEC * WHISPER_SR)
     if len(chunk) < min_len:
         chunk = np.pad(chunk, (0, min_len - len(chunk)))
+
     return chunk
 
 
@@ -298,9 +306,9 @@ def check_mixed_segments(
     predictor: TDNNPredictor,
 ) -> List[dict]:
     """
-    For each segment with adjacent spans of *different* language, run the TDNN.
+    For each segment with adjacent spans of different language, run the TDNN.
 
-    Returns a list of check results:
+    Returns:
         {segment_id, pair_idx, span_a, span_b, is_same_speaker, confidence}
 
     is_same_speaker=True  → code-switch (one speaker, two languages)
@@ -313,26 +321,181 @@ def check_mixed_segments(
         for k in range(len(spans) - 1):
             sa, sb = spans[k], spans[k + 1]
             if sa["language"] == sb["language"]:
-                continue  # no language switch, skip
+                continue
 
             wav_a = _load_window(audio_path, sa["start"], sa["end"])
             wav_b = _load_window(audio_path, sb["start"], sb["end"])
 
             is_same, conf = predictor.predict(wav_a, wav_b)
-            results.append({
-                "segment_id": seg["segment_id"],
-                "pair_idx":   k,
-                "span_a":     sa,
-                "span_b":     sb,
-                "is_same_speaker": is_same,
-                "confidence":      conf,
-            })
+            results.append(
+                {
+                    "segment_id": seg["segment_id"],
+                    "pair_idx": k,
+                    "span_a": sa,
+                    "span_b": sb,
+                    "is_same_speaker": is_same,
+                    "confidence": conf,
+                }
+            )
 
     return results
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Step 4 – Fix cross-talk using Whisper timestamps (non-LLM)
+# Step 4 – Rewrite speaker audio from confident TDNN decisions
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _load_audio_16k_full(audio_path: Path) -> np.ndarray:
+    """Load a full mono 16 kHz waveform."""
+    audio, sr = sf.read(str(audio_path))
+    if audio.ndim > 1:
+        audio = audio.mean(axis=1)
+    audio = audio.astype(np.float32)
+    if sr != WHISPER_SR:
+        audio = librosa.resample(audio, orig_sr=sr, target_sr=WHISPER_SR)
+    return audio
+
+
+def _pad_to_length(x: np.ndarray, n: int) -> np.ndarray:
+    if len(x) >= n:
+        return x
+    return np.pad(x, (0, n - len(x)))
+
+
+def _apply_audio_move(
+    fixed0: np.ndarray,
+    fixed1: np.ndarray,
+    src0: np.ndarray,
+    src1: np.ndarray,
+    source_spk: int,
+    target_spk: int,
+    t0: float,
+    t1: float,
+) -> None:
+    """
+    Move [t0, t1] from source speaker track to target speaker track.
+    Source interval becomes silence; target interval gets copied audio.
+    """
+    a = max(0, int(t0 * WHISPER_SR))
+    b = min(len(fixed0), int(t1 * WHISPER_SR))
+    if b <= a:
+        return
+
+    src = src0 if source_spk == 0 else src1
+
+    if target_spk == 0:
+        fixed0[a:b] = src[a:b]
+    else:
+        fixed1[a:b] = src[a:b]
+
+    # Remove from original source track
+    if source_spk == 0:
+        fixed0[a:b] = 0.0
+    else:
+        fixed1[a:b] = 0.0
+
+
+def build_repair_plan(
+    cross0: List[dict],
+    cross1: List[dict],
+    spk0_path: Path,
+    spk1_path: Path,
+    predictor: TDNNPredictor,
+    tdnn_gap_threshold: float = 0.10,
+) -> List[dict]:
+    """
+    Return a list of confident moves:
+        {source_spk, target_spk, t0, t1, confidence_gap}
+    """
+    ref0 = _load_audio_16k_full(spk0_path)
+    ref1 = _load_audio_16k_full(spk1_path)
+
+    moves: List[dict] = []
+    seen: Set[Tuple[int, float, float]] = set()
+
+    def _add_moves(cross_results: List[dict], source_spk: int) -> None:
+        source_audio = spk0_path if source_spk == 0 else spk1_path
+
+        for cr in cross_results:
+            for span in (cr["span_a"], cr["span_b"]):
+                t0 = float(span["start"])
+                t1 = float(span["end"])
+                key = (source_spk, round(t0, 2), round(t1, 2))
+                if key in seen:
+                    continue
+                seen.add(key)
+
+                wav = _load_window(source_audio, t0, t1)
+                _, conf0 = predictor.predict(wav, ref0)
+                _, conf1 = predictor.predict(wav, ref1)
+                gap = abs(conf0 - conf1)
+
+                if gap < tdnn_gap_threshold:
+                    continue
+
+                target_spk = 0 if conf0 >= conf1 else 1
+                if target_spk == source_spk:
+                    continue
+
+                moves.append(
+                    {
+                        "source_spk": source_spk,
+                        "target_spk": target_spk,
+                        "t0": t0,
+                        "t1": t1,
+                        "confidence_gap": gap,
+                    }
+                )
+
+    _add_moves(cross0, 0)
+    _add_moves(cross1, 1)
+
+    return moves
+
+
+def rewrite_speaker_audio(
+    spk0_path: Path,
+    spk1_path: Path,
+    moves: List[dict],
+    output_dir: Path,
+) -> Tuple[Path, Path]:
+    """
+    Create spk0_fixed.wav / spk1_fixed.wav by moving confident spans.
+    """
+    src0 = _load_audio_16k_full(spk0_path)
+    src1 = _load_audio_16k_full(spk1_path)
+
+    n = max(len(src0), len(src1))
+    src0 = _pad_to_length(src0, n)
+    src1 = _pad_to_length(src1, n)
+
+    fixed0 = src0.copy()
+    fixed1 = src1.copy()
+
+    # Apply confident moves in chronological order
+    for mv in sorted(moves, key=lambda x: (x["t0"], x["t1"])):
+        _apply_audio_move(
+            fixed0=fixed0,
+            fixed1=fixed1,
+            src0=src0,
+            src1=src1,
+            source_spk=mv["source_spk"],
+            target_spk=mv["target_spk"],
+            t0=mv["t0"],
+            t1=mv["t1"],
+        )
+
+    fixed0_path = output_dir / "spk0_fixed.wav"
+    fixed1_path = output_dir / "spk1_fixed.wav"
+
+    sf.write(str(fixed0_path), fixed0, WHISPER_SR)
+    sf.write(str(fixed1_path), fixed1, WHISPER_SR)
+
+    return fixed0_path, fixed1_path
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Step 5 – Format output
 # ─────────────────────────────────────────────────────────────────────────────
 
 def _extract_all_words(segments: List[dict]) -> List[dict]:
@@ -344,85 +507,11 @@ def _extract_all_words(segments: List[dict]) -> List[dict]:
     return sorted(words, key=lambda x: x["start"])
 
 
-def _overlapping_indices(
-    word_list: List[dict],
-    t0: float,
-    t1: float,
-    margin: float = 0.12,
-) -> Set[int]:
-    """Return indices in word_list whose time range overlaps [t0-margin, t1+margin]."""
-    return {
-        i for i, w in enumerate(word_list)
-        if w["start"] < t1 + margin and w["end"] > t0 - margin
-    }
-
-
-def fix_crosstalk(
-    spk0_segments: List[dict],
-    spk1_segments: List[dict],
-    cross0: List[dict],
-    cross1: List[dict],
-) -> Tuple[List[dict], List[dict]]:
-    """
-    Remove cross-talk words from each speaker's word list.
-
-    Algorithm (non-LLM, timestamp-based):
-    ──────────────────────────────────────
-    For every language-switch pair flagged as 'different speaker' in spkX:
-      • The 'foreign' span (the one that doesn't belong to spkX) is a bleed-through
-        of the other speaker captured by the separator.
-      • We check whether the *other* speaker's transcript already contains words
-        at the same timestamp range (overlap > margin).
-      • If yes  →  the foreign span is a duplicate; drop it from spkX.
-      • If no   →  there is no alternative source; keep it in spkX to avoid
-                   silent gaps (the separator may have assigned it here solely).
-    """
-    spk0_words = _extract_all_words(spk0_segments)
-    spk1_words = _extract_all_words(spk1_segments)
-
-    drop0: Set[int] = set()   # indices in spk0_words to remove
-    drop1: Set[int] = set()   # indices in spk1_words to remove
-
-    def _dominant_lang(word_list: List[dict], t0: float, t1: float) -> str:
-        """Return the most common language among words in [t0, t1]."""
-        langs: Dict[str, int] = {}
-        for w in word_list:
-            if w["start"] >= t0 and w["end"] <= t1 + 0.05:
-                langs[w.get("language", "other")] = langs.get(w.get("language", "other"), 0) + 1
-        return max(langs, key=langs.get) if langs else "other"
-
-    for cr in cross0:
-        if cr["is_same_speaker"]:
-            continue  # genuine code-switch, keep both spans
-        for span in (cr["span_a"], cr["span_b"]):
-            t0, t1 = span["start"], span["end"]
-            # Check whether spk1 already covers these timestamps
-            if _overlapping_indices(spk1_words, t0, t1):
-                # spk1 has content here → this is bleed-through in spk0, drop it
-                drop0.update(_overlapping_indices(spk0_words, t0, t1))
-
-    for cr in cross1:
-        if cr["is_same_speaker"]:
-            continue
-        for span in (cr["span_a"], cr["span_b"]):
-            t0, t1 = span["start"], span["end"]
-            if _overlapping_indices(spk0_words, t0, t1):
-                drop1.update(_overlapping_indices(spk1_words, t0, t1))
-
-    spk0_final = [w for i, w in enumerate(spk0_words) if i not in drop0]
-    spk1_final = [w for i, w in enumerate(spk1_words) if i not in drop1]
-    return spk0_final, spk1_final
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Step 5 – Format output
-# ─────────────────────────────────────────────────────────────────────────────
-
 def _format_transcript(words: List[dict], label: str) -> str:
     """Render a word list as a readable transcript string."""
     if not words:
         return f"[{label}]: (no speech detected)"
-    # Merge consecutive same-language runs with a separator
+
     lines: List[str] = []
     cur_lang = words[0].get("language", "?")
     buf: List[str] = []
@@ -435,6 +524,7 @@ def _format_transcript(words: List[dict], label: str) -> str:
             cur_lang = lang
         else:
             buf.append(w["word"])
+
     if buf:
         lines.append(f"<{cur_lang}> {' '.join(buf)}")
 
@@ -451,7 +541,7 @@ def run_pipeline(
     whisper_model_name: str = "large-v3",
     device: str = "cpu",
     tdnn_weight: Optional[str] = None,
-    ) -> None:
+) -> None:
     import whisperx
 
     audio_path_obj = Path(audio_path).resolve()
@@ -461,25 +551,28 @@ def run_pipeline(
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # WhisperX compute type: float16 on CUDA, int8 on CPU (faster than float32)
+    # WhisperX compute type: float16 on CUDA, int8 on CPU
     compute_type = "float16" if device == "cuda" else "int8"
 
-    print(f"\n{'='*60}")
-    print(f"  Two-Speaker Transcription Demo")
+    print(f"\n{'=' * 60}")
+    print("  Two-Speaker Transcription Demo")
     print(f"  Input : {audio_path_obj.name}")
     print(f"  Device: {device}  |  WhisperX: {whisper_model_name}  |  compute: {compute_type}")
-    print(f"{'='*60}\n")
+    print(f"{'=' * 60}\n")
 
     # ── 1. Speaker Separation ─────────────────────────────────────────────
-    print("[1/4] Separating speakers  (MossFormer2) ...")
+    print("[1/5] Separating speakers (MossFormer2) ...")
     spk0_path, spk1_path = separate_speakers(audio_path_obj, out_dir)
     print(f"      spk0 → {spk0_path}")
     print(f"      spk1 → {spk1_path}\n")
 
-    # ── 2. Transcription ──────────────────────────────────────────────────
-    print(f"[2/4] Transcribing with WhisperX ({whisper_model_name}) ...")
-    wx_model = whisperx.load_model(whisper_model_name, device=device,
-                                   compute_type=compute_type)
+    # ── 2. First-pass transcription ───────────────────────────────────────
+    print(f"[2/5] First-pass WhisperX transcription ({whisper_model_name}) ...")
+    wx_model = whisperx.load_model(
+        whisper_model_name,
+        device=device,
+        compute_type=compute_type,
+    )
 
     spk0_segs = transcribe_speaker(wx_model, spk0_path, device=device)
     spk1_segs = transcribe_speaker(wx_model, spk1_path, device=device)
@@ -487,17 +580,17 @@ def run_pipeline(
     n_mixed0 = sum(1 for s in spk0_segs if len(s["language_spans"]) > 1)
     n_mixed1 = sum(1 for s in spk1_segs if len(s["language_spans"]) > 1)
     print(f"      spk0: {len(spk0_segs)} segments, {n_mixed0} with language switches")
+    print(f"      text: {spk0_segs[0]['text']}")
     print(f"      spk1: {len(spk1_segs)} segments, {n_mixed1} with language switches\n")
+    print(f"      text: {spk1_segs[0]['text']}")
 
     # ── 3. TDNN same-speaker check ────────────────────────────────────────
-    print("[3/4] Checking mixed-language spans with TDNN ...")
+    print("[3/5] Checking mixed-language spans with TDNN ...")
     default_weight = "dl_model/final_model/tdnn_full_best_acc.pth"
-    tdnn_kwargs: dict = {
-        "device": device,
-        "weight_path": tdnn_weight if tdnn_weight else default_weight,
-    }
-
-    predictor = TDNNPredictor(**tdnn_kwargs)
+    predictor = TDNNPredictor(
+        device=device,
+        weight_path=tdnn_weight if tdnn_weight else default_weight,
+    )
 
     cross0 = check_mixed_segments(spk0_segs, spk0_path, predictor)
     cross1 = check_mixed_segments(spk1_segs, spk1_path, predictor)
@@ -514,10 +607,10 @@ def run_pipeline(
             is_same = r["is_same_speaker"]
             conf = r["confidence"]
 
-            verdict = "SAME speaker (code-switch → KEEP)" if is_same \
-                    else "DIFFERENT speakers (cross-talk → FIX)"
+            verdict = "SAME speaker (code-switch → KEEP)" if is_same else "DIFFERENT speakers (cross-talk → FIX)"
 
-            print(f"""
+            print(
+                f"""
         [{label}] Segment {r['segment_id']} | Pair {r['pair_idx']}
             Languages : {r['span_a']['language']} → {r['span_b']['language']}
             Time      : {r['span_a']['start']:.2f}s - {r['span_b']['end']:.2f}s
@@ -525,38 +618,91 @@ def run_pipeline(
             Confidence: {conf:.4f}
             Result    : {verdict}
             ----------------------------------------
-            """)       
+            """
+            )
 
     if not cross0 and not cross1:
         print("      (no mixed-language segments found)")
+        print("\n[SKIP] No cross-talk detected → skipping audio rewrite and second WhisperX pass.\n")
+
+        # Directly use first-pass results
+        spk0_words = _extract_all_words(spk0_segs)
+        spk1_words = _extract_all_words(spk1_segs)
+
+        print(f"\n{'=' * 60}")
+        print("  FINAL TRANSCRIPT (FIRST PASS)")
+        print(f"{'=' * 60}")
+        print(_format_transcript(spk0_words, "Speaker 0"))
+        print()
+        print(_format_transcript(spk1_words, "Speaker 1"))
+        print(f"{'=' * 60}\n")
+
+        final_text = (
+            _format_transcript(spk0_words, "Speaker 0")
+            + "\n\n"
+            + _format_transcript(spk1_words, "Speaker 1")
+        )
+
+        with open(out_dir / "final_transcript.txt", "w", encoding="utf-8") as f:
+            f.write(final_text)
+
+        print(f"Saved final transcript to: {out_dir / 'final_transcript.txt'}")
+
+        return  #exit early
+
     print()
 
-    # ── 4. Fix cross-talk ─────────────────────────────────────────────────
-    print("[4/4] Reassigning cross-talk words by timestamp overlap ...")
-    spk0_words, spk1_words = fix_crosstalk(spk0_segs, spk1_segs, cross0, cross1)
+    # ── 4. Rewrite audio using confident TDNN moves ──────────────────────
+    print("[4/5] Rewriting speaker audio into fixed tracks ...")
+    moves = build_repair_plan(
+        cross0=cross0,
+        cross1=cross1,
+        spk0_path=spk0_path,
+        spk1_path=spk1_path,
+        predictor=predictor,
+    )
 
-    dropped0 = len(_extract_all_words(spk0_segs)) - len(spk0_words)
-    dropped1 = len(_extract_all_words(spk1_segs)) - len(spk1_words)
-    print(f"      spk0: removed {dropped0} cross-talk word(s)")
-    print(f"      spk1: removed {dropped1} cross-talk word(s)\n")
+    if moves:
+        print(f"      confident moves found: {len(moves)}")
+    else:
+        print("      no confident moves found; writing fixed copies anyway")
 
-    # ── 5. Print final transcript ─────────────────────────────────────────
-    print(f"{'='*60}")
+    spk0_fixed_path, spk1_fixed_path = rewrite_speaker_audio(
+        spk0_path=spk0_path,
+        spk1_path=spk1_path,
+        moves=moves,
+        output_dir=out_dir,
+    )
+
+    print(f"      spk0 fixed → {spk0_fixed_path}")
+    print(f"      spk1 fixed → {spk1_fixed_path}\n")
+
+    # ── 5. Second-pass transcription on fixed audio ──────────────────────
+    print("[5/5] Second-pass WhisperX transcription on fixed audio ...")
+    spk0_final_segs = transcribe_speaker(wx_model, spk0_fixed_path, device=device)
+    spk1_final_segs = transcribe_speaker(wx_model, spk1_fixed_path, device=device)
+
+    spk0_words = _extract_all_words(spk0_final_segs)
+    spk1_words = _extract_all_words(spk1_final_segs)
+
+    print(f"\n{'=' * 60}")
     print("  FINAL TRANSCRIPT")
-    print(f"{'='*60}")
+    print(f"{'=' * 60}")
     print(_format_transcript(spk0_words, "Speaker 0"))
     print()
     print(_format_transcript(spk1_words, "Speaker 1"))
-    print(f"{'='*60}\n")
+    print(f"{'=' * 60}\n")
+
     final_text = (
         _format_transcript(spk0_words, "Speaker 0")
         + "\n\n"
         + _format_transcript(spk1_words, "Speaker 1")
     )
 
-    with open(out_dir / "final_transcript.txt", "w") as f:
+    with open(out_dir / "final_transcript.txt", "w", encoding="utf-8") as f:
         f.write(final_text)
-        
+
+    print(f"Saved final transcript to: {out_dir / 'final_transcript.txt'}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -576,7 +722,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output-dir",
         default="demo/demo_output",
-        help="Directory for intermediate separated audio files.",
+        help="Directory for intermediate and final outputs.",
     )
     parser.add_argument(
         "--whisper-model",
@@ -599,6 +745,7 @@ if __name__ == "__main__":
             "Defaults to dl_model/final_model/tdnn_full_best_acc.pth."
         ),
     )
+
     args = parser.parse_args()
 
     run_pipeline(
