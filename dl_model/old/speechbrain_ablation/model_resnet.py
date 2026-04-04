@@ -1,4 +1,4 @@
-from dl_model.speechbrain_ablation.shared import ResNetPairStudent
+from dl_model.old.speechbrain_ablation.shared import ResNetPairStudent
 
 MODEL_NAME = "resnet"
 

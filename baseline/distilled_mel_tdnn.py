@@ -5,7 +5,7 @@ from pathlib import Path
 import torch
 
 from baseline.common import BaseSpeakerBaseline, PredictionResult
-from dl_model.speechbrain.distill_small_from_speechbrain import SmallSpeakerStudent
+from dl_model.old.speechbrain.distill_small_from_speechbrain import SmallSpeakerStudent
 
 
 class DistilledMelTDNNBaseline(BaseSpeakerBaseline):

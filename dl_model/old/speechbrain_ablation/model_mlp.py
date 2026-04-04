@@ -1,4 +1,4 @@
-from dl_model.speechbrain_ablation.shared import MLPPairStudent
+from dl_model.old.speechbrain_ablation.shared import MLPPairStudent
 
 MODEL_NAME = "mlp"
 

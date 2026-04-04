@@ -18,8 +18,8 @@ from tqdm import tqdm
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from mlp.model1 import MLPModel1
-from functions import SpeakerFeatureExtractor
+from dl_model.old.mlp.model1 import MLPModel1
+from dl_model.old.functions import SpeakerFeatureExtractor
 
 
 def load_audio(path: Path, sr=16000):

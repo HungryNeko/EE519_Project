@@ -53,4 +53,6 @@ slurm_logs/
 .cache/
 seame_switchlingua_2000.tar
 datasets/mlp_train.tar
+dl_model/speechbrain/error/
+dl_model/model_eval/error/
 !dl_model/final_model/tdnn_full_best_acc.pth

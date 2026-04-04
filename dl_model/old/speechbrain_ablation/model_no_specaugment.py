@@ -1,6 +1,6 @@
-from dl_model.speechbrain_ablation.shared import TDNNPairStudent
+from dl_model.old.speechbrain_ablation.shared import TDNNPairStudent
 
-MODEL_NAME = "tdnn_full"
+MODEL_NAME = "no_specaugment"
 
 
 def build_model(args):
@@ -10,11 +10,10 @@ def build_model(args):
         channels=tuple(args.student_channels),
         emb_dim=args.emb_dim,
         dropout=args.dropout,
-        time_mask_max=args.time_mask_max,
-        freq_mask_max=args.freq_mask_max,
+        time_mask_max=0,
+        freq_mask_max=0,
         use_dilation=True,
         use_stats_pooling=True,
         use_pairwise_product=True,
-        use_specaugment=True,
+        use_specaugment=False,
     )
-

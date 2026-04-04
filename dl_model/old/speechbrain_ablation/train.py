@@ -14,7 +14,7 @@ from tqdm import tqdm
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from dl_model.speechbrain_ablation.shared import (
+from dl_model.old.speechbrain_ablation.shared import (
     DistillationPairDataset,
     augment_waveforms,
     benchmark_student,

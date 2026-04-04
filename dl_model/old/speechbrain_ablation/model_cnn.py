@@ -1,10 +1,10 @@
-from dl_model.speechbrain_ablation.shared import TransformerPairStudent
+from dl_model.old.speechbrain_ablation.shared import CNNPairStudent
 
-MODEL_NAME = "transformer"
+MODEL_NAME = "cnn"
 
 
 def build_model(args):
-    return TransformerPairStudent(
+    return CNNPairStudent(
         sample_rate=args.sr,
         n_mels=args.n_mels,
         emb_dim=args.emb_dim,

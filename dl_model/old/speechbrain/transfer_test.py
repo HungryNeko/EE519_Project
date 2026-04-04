@@ -4,7 +4,7 @@ from pathlib import Path
 import torch
 from torch.utils.data import DataLoader
 
-from transfer import FrozenEncoderClassifier, SwitchDetectionDataset, evaluate, set_seed
+from dl_model.old.speechbrain.transfer import FrozenEncoderClassifier, SwitchDetectionDataset, evaluate, set_seed
 from speechbrain.pretrained import EncoderClassifier
 
 

@@ -6,14 +6,14 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
-from transformer.model import TransformerModel
-from mlp.model2 import MLPModel2
-from mlp.model import MLPModel
-from resnet18.model import Resnet18
-from simplecnn.model import SimpleCNN
-from resnet50.model import Resnet50
+from dl_model.old.transformer.model import TransformerModel
+from dl_model.old.mlp.model2 import MLPModel2
+from dl_model.old.mlp.model import MLPModel
+from dl_model.old.resnet18.model import Resnet18
+from dl_model.old.simplecnn.model import SimpleCNN
+from dl_model.old.resnet50.model import Resnet50
 from conv1d.model import CNNMLP
-from mlp.model1 import MLPModel1
+from dl_model.old.mlp.model1 import MLPModel1
 
 
 

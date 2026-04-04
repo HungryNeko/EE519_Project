@@ -14,7 +14,7 @@ import soundfile as sf
 import librosa
 import whisper
 
-from dl_model.functions import SpeakerFeatureExtractor
+from dl_model.old.functions import SpeakerFeatureExtractor
 
 # =========================
 # 模型（不变）

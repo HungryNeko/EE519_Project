@@ -5,7 +5,7 @@ from pathlib import Path
 import torch
 
 from baseline.common import BaseSpeakerBaseline, PredictionResult
-from dl_model.speechbrain_ablation.shared import SincNetPairStudent
+from dl_model.old.speechbrain_ablation.shared import SincNetPairStudent
 
 
 class PureSincNetBaseline(BaseSpeakerBaseline):

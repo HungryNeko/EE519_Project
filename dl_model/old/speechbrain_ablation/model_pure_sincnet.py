@@ -1,5 +1,5 @@
 # Pure SincNet without TDNN backend.
-from dl_model.speechbrain_ablation.shared import SincNetPairStudent
+from dl_model.old.speechbrain_ablation.shared import SincNetPairStudent
 
 MODEL_NAME = "pure_sincnet"
 

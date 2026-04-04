@@ -7,7 +7,7 @@ import soundfile as sf
 import librosa
 from tqdm import tqdm
 
-from functions import SpeakerFeatureExtractor
+from dl_model.old.functions import SpeakerFeatureExtractor
 
 
 def project_root():

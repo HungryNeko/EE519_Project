@@ -14,7 +14,7 @@ import soundfile as sf
 import librosa
 import whisper
 
-from dl_model.functions import SpeakerFeatureExtractor
+from dl_model.old.functions import SpeakerFeatureExtractor
 
 
 def load_audio(path: Path, sr=16000):
@@ -64,7 +64,7 @@ class MLPWhisperSpeakerPredictor:
         window_sec: float = 1.0,
     ):
         if model_class is None:
-            from dl_model.mlp.model1 import MLPModel1
+            from dl_model.old.mlp.model1 import MLPModel1
 
             model_class = MLPModel1
 
@@ -307,7 +307,7 @@ def predict(audio_path: Path, model_path: Path, model_class, device=None, window
 
 
 if __name__ == "__main__":
-    from dl_model.mlp.model1 import MLPModel1
+    from dl_model.old.mlp.model1 import MLPModel1
 
     audio_path = Path(r"samples\output_spk0.wav")
     model_path = Path(r"dl_model/checkpoints/MLPModel1_best.pth")

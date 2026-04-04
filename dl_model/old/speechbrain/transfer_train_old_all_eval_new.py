@@ -17,7 +17,7 @@ from baseline.common import compute_metrics, load_eval_samples, preload_segment_
 from baseline.speechbrain_ecapa import SpeechBrainECAPABaseline
 from speechbrain.pretrained import EncoderClassifier
 
-from transfer import FrozenEncoderClassifier, evaluate, set_seed
+from dl_model.old.speechbrain.transfer import FrozenEncoderClassifier, evaluate, set_seed
 
 
 def parse_bool_label(value):

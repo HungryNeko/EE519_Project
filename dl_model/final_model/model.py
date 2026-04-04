@@ -22,7 +22,7 @@ import soundfile as sf
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from dl_model.speechbrain_ablation.shared import TDNNPairStudent
+from dl_model.old.speechbrain_ablation.shared import TDNNPairStudent
 
 
 class TDNNPredictor:

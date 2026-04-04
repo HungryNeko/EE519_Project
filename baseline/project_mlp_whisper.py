@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from baseline.common import BaseSpeakerBaseline, PredictionResult
-from dl_model.predict import MLPWhisperSpeakerPredictor
+from dl_model.old.predict import MLPWhisperSpeakerPredictor
 
 
 class ProjectMLPWhisperBaseline(BaseSpeakerBaseline):
