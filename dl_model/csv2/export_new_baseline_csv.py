@@ -1,46 +1,20 @@
 import argparse
 import csv
 import json
-import random
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
 
 
-def project_root():
-    return Path(__file__).resolve().parent
+def project_root() -> Path:
+    return Path(__file__).resolve().parents[2]
 
 
-def resolve_case_insensitive(path: Path):
-    if path.exists():
-        return path
-
-    parts = path.parts
-    current = Path(parts[0]) if path.is_absolute() else Path()
-
-    for part in parts:
-        if not current.exists():
-            return None
-
-        try:
-            candidates = list(current.iterdir())
-        except Exception:
-            return None
-
-        match = None
-        for candidate in candidates:
-            if candidate.name.lower() == part.lower():
-                match = candidate
-                break
-
-        if match is None:
-            return None
-
-        current = match
-
-    return current
+def normalize_audio_path(raw_path: str) -> str:
+    return str(raw_path).replace("\\", "/").strip()
 
 
 def iter_switch_samples(item):
+    audio_path = normalize_audio_path(item.get("path", ""))
     segments = item.get("segments", [])
 
     for segment in segments:
@@ -55,8 +29,7 @@ def iter_switch_samples(item):
                 continue
 
             yield {
-                "segment_id": segment.get("segment_id"),
-                "switch_index": i,
+                "audio_path": audio_path,
                 "switch_time": float(left.get("end", 0.0)),
                 "gap_start": float(left.get("end", 0.0)),
                 "gap_end": float(right.get("start", left.get("end", 0.0))),
@@ -65,253 +38,162 @@ def iter_switch_samples(item):
     for i in range(len(segments) - 1):
         seg1 = segments[i]
         seg2 = segments[i + 1]
-
         spans1 = seg1.get("language_spans", [])
         spans2 = seg2.get("language_spans", [])
-        if (not spans1) or (not spans2):
+        if not spans1 or not spans2:
             continue
-
         if spans1[-1].get("language") == spans2[0].get("language"):
             continue
 
         yield {
-            "segment_id": f"{seg1.get('segment_id')}_{seg2.get('segment_id')}",
-            "switch_index": i,
+            "audio_path": audio_path,
             "switch_time": float(seg1.get("end", 0.0)),
             "gap_start": float(seg1.get("end", 0.0)),
             "gap_end": float(seg2.get("start", seg1.get("end", 0.0))),
         }
 
 
-def load_cache_records(cache_path: Path):
-    cache_records = []
-    json_order = []
-    seen_json = set()
-    audio_counter = Counter()
-
-    with open(cache_path, "r", encoding="utf-8") as f:
-        for line_no, line in enumerate(f, 1):
-            try:
-                record = json.loads(line)
-            except Exception:
-                continue
-
-            audio_path = str(record["audio_path"]).replace("\\", "/")
-            json_path = str(record["json_path"]).replace("\\", "/")
-
-            if json_path not in seen_json:
-                seen_json.add(json_path)
-                json_order.append(json_path)
-
-            cache_records.append(
-                {
-                    "cache_line_number": line_no,
-                    "json_path": json_path,
-                    "audio_path": audio_path,
-                    "is_switch": record.get("is_switch", False),
-                    "test_row_index": record.get("test_row_index"),
-                    "csv_index": record.get("csv_index"),
-                    "id": record.get("id"),
-                    "index": record.get("index"),
-                }
-            )
-            audio_counter[audio_path] += 1
-
-    return cache_records, json_order, audio_counter
+def iter_true_insert_switches(item):
+    audio_path = normalize_audio_path(item.get("path", ""))
+    for switch in item.get("true_insert_switches", []):
+        expected_time = switch.get("expected_time")
+        if not isinstance(expected_time, (int, float)):
+            continue
+        yield {
+            "audio_path": audio_path,
+            "switch_time": float(expected_time),
+            "gap_start": float(expected_time),
+            "gap_end": float(expected_time),
+        }
 
 
-def build_source_samples_by_json(root: Path, json_order, window_sec: float):
-    samples_by_json = {}
+def load_json_list(path: Path):
+    return json.loads(path.read_text(encoding="utf-8"))
 
-    for json_rel in json_order:
-        json_path = resolve_case_insensitive(root / json_rel)
-        if json_path is None:
+
+def collect_source_samples(root: Path, audio_paths, window_sec: float):
+    samples_by_key = defaultdict(list)
+    json_files = list((root / "datasets").rglob("*.json"))
+
+    for json_path in json_files:
+        try:
+            data = load_json_list(json_path)
+        except Exception:
             continue
 
-        with open(json_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-        samples = []
-        audio_counter = Counter()
+        if not isinstance(data, list):
+            continue
 
         for item in data:
-            audio_path = str(item.get("path", "")).replace("\\", "/")
-            audio_counter[audio_path] += 1
+            audio_path = normalize_audio_path(item.get("path", ""))
+            if audio_path not in audio_paths:
+                continue
 
             for sample in iter_switch_samples(item):
-                switch_time = sample["switch_time"]
-                gap_end = sample["gap_end"]
+                key = (sample["audio_path"].lower(), f"{sample['switch_time']:.6f}")
+                samples_by_key[key].append(sample)
 
-                samples.append(
-                    {
-                        "json_path": json_rel,
-                        "audio_path": audio_path,
-                        "segment_id": sample["segment_id"],
-                        "switch_index": sample["switch_index"],
-                        "switch_time": switch_time,
-                        "window_sec": float(window_sec),
-                        "gap_start": float(sample["gap_start"]),
-                        "gap_end": gap_end,
-                        "left_start": switch_time - 2.0,  # 前一个语言结束前2s
-                        "left_end": switch_time,
-                        "right_start": switch_time,
-                        "right_end": gap_end + 2.0,  # 后一个语言开始后2s
-                        "audio_occurrence_in_source_json": audio_counter[audio_path],
-                    }
-                )
+            for sample in iter_true_insert_switches(item):
+                key = (sample["audio_path"].lower(), f"{sample['switch_time']:.6f}")
+                samples_by_key[key].append(sample)
 
-        samples_by_json[json_rel] = samples
-
-    return samples_by_json
+    return samples_by_key
 
 
-def align_cache_with_source(cache_records, samples_by_json):
-    pointers = defaultdict(int)
-    aligned = []
-
-    for record in cache_records:
-        json_path = record["json_path"]
-        wanted_audio = record["audio_path"]
-        samples = samples_by_json[json_path]
-
-        idx = pointers[json_path]
-        while idx < len(samples):
-            if samples[idx]["audio_path"] == wanted_audio:
-                break
-            idx += 1
-
-        if idx >= len(samples):
-            raise RuntimeError(
-                "Failed to align cache record with source sample: "
-                f"cache_line={record['cache_line_number']} "
-                f"json_path={json_path} audio_path={wanted_audio}"
-            )
-
-        source_sample = samples[idx]
-        pointers[json_path] = idx + 1
-        aligned.append({**record, **source_sample})
-
-    return aligned
+def load_original_rows(input_path: Path):
+    with input_path.open("r", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
 
 
-def split_train_test(records, seed=42):
-    records = list(records)
-    random.Random(seed).shuffle(records)
-    n = len(records)
-    return records[: int(n * 0.8)], records[int(n * 0.8) :]
+def match_rows_to_samples(rows, samples_by_key):
+    matched_rows = []
+    missing = []
+
+    for row in rows:
+        audio_path = normalize_audio_path(row["audio_path"])
+        switch_time = float(row["switch_time"])
+        key = (audio_path.lower(), f"{switch_time:.6f}")
+        if key not in samples_by_key or not samples_by_key[key]:
+            missing.append((audio_path, switch_time))
+            matched_rows.append({**row, "_sample": None})
+            continue
+        sample = samples_by_key[key].pop(0)
+        matched_rows.append({**row, "_sample": sample})
+
+    if missing:
+        missing_sample = missing[0]
+        raise RuntimeError(
+            f"Missing JSON sample for audio_path={missing_sample[0]} switch_time={missing_sample[1]:.6f}"
+        )
+
+    return matched_rows
 
 
-def balance(records):
-    same = [r for r in records if not r["is_switch"]]
-    diff = [r for r in records if r["is_switch"]]
-
-    min_count = min(len(same), len(diff))
-    same = same[:min_count]
-    diff = diff[:min_count]
-
-    balanced = same + diff
-    random.Random(42).shuffle(balanced)
-    return balanced
-
-
-def write_baseline_csv(all_records, output_path: Path, root: Path, window_sec: float):
+def write_new_baseline_csv(rows, output_path: Path, window_sec: float):
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = [
         "audio_path",
         "is_switch",
         "split",
         "left_start",
+        "left_end",
         "switch_time",
+        "right_start",
         "right_end",
     ]
 
-    with open(output_path, "w", newline="", encoding="utf-8") as f:
+    with output_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
-
-        for record in all_records:
+        for row in rows:
+            sample = row["_sample"]
             writer.writerow(
                 {
-                    "audio_path": record["audio_path"],
-                    "is_switch": record["is_switch"],
-                    "split": record["split"],
-                    "left_start": f"{record['left_start']:.6f}",
-                    "switch_time": f"{record['switch_time']:.6f}",
-                    "right_end": f"{record['right_end']:.6f}",
+                    "audio_path": normalize_audio_path(row["audio_path"]),
+                    "is_switch": row.get("is_switch", "False"),
+                    "split": row.get("split", "train"),
+                    "left_start": f"{sample['gap_start'] - window_sec:.6f}",
+                    "left_end": f"{sample['gap_start']:.6f}",
+                    "switch_time": f"{sample['switch_time']:.6f}",
+                    "right_start": f"{sample['gap_end']:.6f}",
+                    "right_end": f"{sample['gap_end'] + window_sec:.6f}",
                 }
             )
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Export train and test segments used by train_net.py for baseline models."
+        description="Generate a csv2 baseline CSV from original baseline CSV and source JSONs."
+    )
+    parser.add_argument(
+        "--input",
+        default="dl_model/baseline_train_test_segments.csv",
+        help="Original baseline CSV path",
     )
     parser.add_argument(
         "--output",
         default="dl_model/csv2/baseline_train_test_segments.csv",
-        help="Output CSV path (contains both train and test)",
-    )
-    parser.add_argument(
-        "--seed",
-        type=int,
-        default=42,
-        help="Random seed for train/test split",
+        help="Output csv2 baseline CSV path",
     )
     parser.add_argument(
         "--window-sec",
         type=float,
-        default=1.0,
-        help="Window size on each side of switch_time (default: 1.0, total 2.0s)",
+        default=2.0,
+        help="Window length for each side in seconds",
     )
     args = parser.parse_args()
 
     root = project_root()
+    input_path = root / args.input
     output_path = root / args.output
-    print(f"Root: {root}")
-    print(f"Output path: {output_path}")
 
-    # Load JSON files directly
-    json_files = [
-        "datasets/hinglish/whisper_segment_hinglish.json",
-        "datasets/crossfade_insertions/whisper_segment_crossfade_insertions.json",
-        "datasets/corpus/whisper_segment_corpus.json",
-        "datasets/ascend/whisper_segment_ascend.json",
-    ]
+    rows = load_original_rows(input_path)
+    audio_paths = {normalize_audio_path(row["audio_path"]) for row in rows}
+    sample_index = collect_source_samples(root, audio_paths, args.window_sec)
+    matched_rows = match_rows_to_samples(rows, sample_index)
+    write_new_baseline_csv(matched_rows, output_path, args.window_sec)
 
-    all_samples = []
-    for json_rel in json_files:
-        json_path = root / json_rel
-        if not json_path.exists():
-            continue
-
-        with open(json_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-        for item in data:
-            audio_path = str(item.get("path", "")).replace("\\", "/")
-
-            for sample in iter_switch_samples(item):
-                switch_time = sample["switch_time"]
-                gap_end = sample["gap_end"]
-
-                all_samples.append(
-                    {
-                        "audio_path": audio_path,
-                        "is_switch": True,  # Assume all are switches for now
-                        "split": "train",
-                        "left_start": switch_time - 2.0,
-                        "switch_time": switch_time,
-                        "right_end": gap_end + 2.0,
-                    }
-                )
-
-    # For simplicity, take a subset
-    random.Random(args.seed).shuffle(all_samples)
-    all_records = all_samples[:1000]  # Limit for testing
-
-    write_baseline_csv(all_records, output_path, root, args.window_sec)
-
-    print(f"Output written to: {output_path}")
-    print(f"Total records: {len(all_records)}")
+    print(f"Wrote {len(rows)} rows to {output_path}")
 
 
 if __name__ == "__main__":
