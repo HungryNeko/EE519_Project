@@ -95,6 +95,27 @@ def save_records(path: Path, records: List[Dict[str, Any]]):
     with path.open("w", encoding="utf-8") as f:
         json.dump(records, f, ensure_ascii=False, indent=2)
 
+def iter_jsonl_records(path: Path):
+    if not path.exists():
+        return
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except Exception:
+                continue
+            if isinstance(row, dict):
+                yield row
+
+def append_jsonl_record(path: Path, record: Dict[str, Any]):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False))
+        f.write("\n")
+
 def read_paths_from_records(path: Path, dataset: str) -> Set[str]:
     rows = load_existing_records(path)
     out = set()
@@ -107,6 +128,40 @@ def read_paths_from_records(path: Path, dataset: str) -> Set[str]:
         except Exception:
             continue
     return out
+
+def read_paths_from_jsonl(path: Path, dataset: str) -> Set[str]:
+    out = set()
+    for r in iter_jsonl_records(path):
+        raw = r.get("path")
+        if not raw:
+            continue
+        try:
+            out.add(corpus_relative_identity(Path(raw), dataset))
+        except Exception:
+            continue
+    return out
+
+def finalize_json_output(json_path: Path, jsonl_path: Path):
+    if not jsonl_path.exists():
+        return
+
+    if json_path.exists():
+        merged = load_existing_records(json_path)
+        merged.extend(iter_jsonl_records(jsonl_path))
+        save_records(json_path, merged)
+    else:
+        json_path.parent.mkdir(parents=True, exist_ok=True)
+        with json_path.open("w", encoding="utf-8") as f:
+            f.write("[\n")
+            first = True
+            for row in iter_jsonl_records(jsonl_path):
+                if not first:
+                    f.write(",\n")
+                json.dump(row, f, ensure_ascii=False, indent=2)
+                first = False
+            f.write("\n]\n")
+
+    jsonl_path.unlink()
 
 # ======================
 # Language detection
@@ -126,6 +181,8 @@ def detect_lang_by_char(ch: str) -> str:
 # ======================
 def process_single_audio(whisper_model, audio_path: Path):
     storage_path = canonical_path_for_storage(audio_path)
+    full_audio = whisper.load_audio(str(audio_path))
+    sr = whisper.audio.SAMPLE_RATE
 
     base_result = whisper_model.transcribe(
         str(audio_path),
@@ -142,9 +199,7 @@ def process_single_audio(whisper_model, audio_path: Path):
         seg_start = seg.get("start")
         seg_end = seg.get("end")
 
-        seg_audio = whisper.load_audio(str(audio_path))
-        sr = whisper.audio.SAMPLE_RATE
-        seg_audio = seg_audio[int(seg_start * sr): int(seg_end * sr)]
+        seg_audio = full_audio[int(seg_start * sr): int(seg_end * sr)]
 
         seg_result = whisper_model.transcribe(
             seg_audio,
@@ -284,6 +339,7 @@ def build_language_switch_summary(record: Dict[str, Any]) -> Dict[str, Any]:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", type=str, required=True)
+    parser.add_argument("--finalize-only", action="store_true")
     args = parser.parse_args()
     dataset = args.dataset
 
@@ -291,14 +347,28 @@ def main():
     OUTPUT_JSON = CORPUS_ROOT / f"whisper_segment_{dataset}.json"
     FAILED_JSON = CORPUS_ROOT / f"whisper_failed_{dataset}.json"
     SWITCH_JSON = CORPUS_ROOT / f"whisper_language_switch_{dataset}.json"
+    OUTPUT_JSONL = CORPUS_ROOT / f"whisper_segment_{dataset}.jsonl"
+    FAILED_JSONL = CORPUS_ROOT / f"whisper_failed_{dataset}.jsonl"
+    SWITCH_JSONL = CORPUS_ROOT / f"whisper_language_switch_{dataset}.jsonl"
 
-    existing = load_existing_records(OUTPUT_JSON)
-    failed_records = load_existing_records(FAILED_JSON)
-    switch_records = load_existing_records(SWITCH_JSON)
+    if args.finalize_only:
+        finalize_json_output(OUTPUT_JSON, OUTPUT_JSONL)
+        finalize_json_output(FAILED_JSON, FAILED_JSONL)
+        finalize_json_output(SWITCH_JSON, SWITCH_JSONL)
+        return
 
-    processed_set = read_paths_from_records(OUTPUT_JSON, dataset)
-    failed_set = read_paths_from_records(FAILED_JSON, dataset)
-    switch_set = read_paths_from_records(SWITCH_JSON, dataset)
+    processed_set = (
+        read_paths_from_records(OUTPUT_JSON, dataset)
+        | read_paths_from_jsonl(OUTPUT_JSONL, dataset)
+    )
+    failed_set = (
+        read_paths_from_records(FAILED_JSON, dataset)
+        | read_paths_from_jsonl(FAILED_JSONL, dataset)
+    )
+    switch_set = (
+        read_paths_from_records(SWITCH_JSON, dataset)
+        | read_paths_from_jsonl(SWITCH_JSONL, dataset)
+    )
 
     audio_files = collect_all_audio_files(CORPUS_ROOT)
     files_and_keys = [(p, corpus_relative_identity(p, dataset)) for p in audio_files]
@@ -311,26 +381,28 @@ def main():
     for audio_path in tqdm(to_process, desc="Processing", unit="file"):
         try:
             record = process_single_audio(whisper_model, audio_path)
-            existing.append(record)
-            save_records(OUTPUT_JSON, existing)
-
             key = corpus_relative_identity(audio_path, dataset)
+            append_jsonl_record(OUTPUT_JSONL, record)
+            processed_set.add(key)
+
             if key not in switch_set:
-                switch_records.append(build_language_switch_summary(record))
+                append_jsonl_record(SWITCH_JSONL, build_language_switch_summary(record))
                 switch_set.add(key)
-                save_records(SWITCH_JSON, switch_records)
 
         except Exception as e:
             key = corpus_relative_identity(audio_path, dataset)
             if key not in failed_set:
-                failed_records.append({
+                append_jsonl_record(FAILED_JSONL, {
                     "path": canonical_path_for_storage(audio_path),
                     "error_type": type(e).__name__,
                     "error": str(e),
                     "time_utc": datetime.now(timezone.utc).isoformat(),
                 })
                 failed_set.add(key)
-                save_records(FAILED_JSON, failed_records)
+
+    finalize_json_output(OUTPUT_JSON, OUTPUT_JSONL)
+    finalize_json_output(FAILED_JSON, FAILED_JSONL)
+    finalize_json_output(SWITCH_JSON, SWITCH_JSONL)
 
 if __name__ == "__main__":
     main()

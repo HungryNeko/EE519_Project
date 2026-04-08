@@ -1,5 +1,7 @@
 datasets/Corpus/**/*.wav
 *.zip
+*.tar.gz
+*.tgz
 datasets/ascend/**/*.wav
 datasets/ascend/audio/
 datasets/crossfade_insertions/**/*.wav
@@ -9,6 +11,12 @@ datasets/TTS/**/*.wav
 *.jsonl
 *.tar
 datasets/**/*.wav
+datasets/TALCS_corpus/train_set/
+datasets/TALCS_corpus/dev_set/
+datasets/TALCS_corpus/test_set/
+datasets/TALCS_corpus/*.json
+datasets/Hindi-English_train/train/
+datasets/Hindi-English_train/*.json
 # ---- Hinglish dataset: ignore everything except metadata/manifest ----
 datasets/hinglish/data/**
 !datasets/hinglish/data/metadata.csv
