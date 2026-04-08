@@ -1,19 +1,21 @@
-{
-  "model": "redimnet",
+﻿{
+  "model": "sincnet_tdnn",
   "run": 1,
-  "epoch": 16,
-  "test_acc": 0.6801801801801802,
-  "test_f1": 0.7300380228136882,
-  "test_loss": 0.6304253339767456,
-  "test_precision": 0.631578947368421,
-  "test_recall": 0.8648648648648649,
-  "train_loss": 1.671068706849318,
+  "epoch": 1,
+  "test_acc": 0.5698198198198198,
+  "test_f1": 0.6779089376053963,
+  "test_loss": 0.6936532425450849,
+  "test_precision": 0.5417789757412399,
+  "test_recall": 0.9054054054054054,
+  "train_loss": 1.7311487154435077,
   "args": {
     "models": [
       "final_model",
       "escapetdnn",
+      "ecapatdnn",
       "redimnet",
-      "sincnet"
+      "sincnet",
+      "sincnet_tdnn"
     ],
     "old_csv": "dl_model/baseline_train_test_segments.csv",
     "old_train_audio_dir": "datasets/mlp_train/train",
@@ -21,9 +23,10 @@
     "new_test_csv": "dl_model/baseline_train_test_segments_switchlingua_seame.csv",
     "new_test_audio_dir": "datasets/baseline_switchlingua_seame_testset/test",
     "soft_labels_cache": "dl_model/checkpoints/speechbrain_soft_labels_old_all_eval_new.pt",
-    "checkpoint_dir": "dl_model/compare/checkpoints",
-    "summary_path": "dl_model/compare/summary.json",
-    "student_device": "auto",
+    "checkpoint_dir": "dl_model/compare/output/checkpoints_random_duration",
+    "summary_path": "dl_model/compare/output/summary_random_duration.json",
+    "duration_manifest_path": "dl_model/compare/output/random_duration_manifest.json",
+    "student_device": "cuda",
     "epochs": 60,
     "batch_size": 64,
     "lr": 0.0005,
@@ -55,6 +58,8 @@
     "eval_tta_swap": true,
     "num_workers": 0,
     "benchmark_samples": 100,
-    "repeat": 1
+    "repeat": 1,
+    "min_half_duration": 1.0,
+    "max_half_duration": 2.0
   }
 }

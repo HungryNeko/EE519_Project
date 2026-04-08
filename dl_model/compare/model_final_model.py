@@ -1,19 +1,9 @@
-from dl_model.old.speechbrain_ablation.shared import TDNNPairStudent
+from dl_model.final_model.model import TDNNPredictor
 
 MODEL_NAME = "final_model"
 
 
 def build_model(args):
-    return TDNNPairStudent(
-        sample_rate=args.sr,
-        n_mels=args.n_mels,
-        channels=tuple(args.student_channels),
-        emb_dim=args.emb_dim,
-        dropout=args.dropout,
-        time_mask_max=args.time_mask_max,
-        freq_mask_max=args.freq_mask_max,
-        use_dilation=True,
-        use_stats_pooling=True,
-        use_pairwise_product=True,
-        use_specaugment=True,
-    )
+    weight_path = getattr(args, "final_model_weight_path", "dl_model/final_model/sincnet_best_acc.pth")
+    predictor = TDNNPredictor(device="cpu", weight_path=weight_path)
+    return predictor.model

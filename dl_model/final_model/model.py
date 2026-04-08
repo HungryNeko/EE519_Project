@@ -1,8 +1,8 @@
 """
-TDNN Model Prediction Module for Same-Speaker Detection
+SincNet Model Prediction Module for Same-Speaker Detection
 
 Usage:
-    1. Initialize model: model = TDNNPredictor(device="cpu", weight_path="xxx.pth")
+    1. Initialize model: model = SincNetPredictor(device="cpu", weight_path="xxx.pth")
     2. Call prediction: result = model.predict(audio1, audio2)
     3. Output: True (same speaker) / False (different speaker)
 """
@@ -22,12 +22,15 @@ import soundfile as sf
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from dl_model.old.speechbrain_ablation.shared import TDNNPairStudent
+from dl_model.old.speechbrain_ablation.shared import SincNetPairStudent
 
 
-class TDNNPredictor:
+DEFAULT_SINCNET_WEIGHT = "dl_model/final_model/sincnet_best_acc.pth"
+
+
+class SincNetPredictor:
     """
-    TDNN Same-Speaker Detection Predictor
+    SincNet Same-Speaker Detection Predictor
 
     After loading the pretrained model, the predict method can be called
     repeatedly for inference.
@@ -41,14 +44,14 @@ class TDNNPredictor:
     def __init__(
         self,
         device: str = "cpu",
-        weight_path: str = "dl_model/speechbrain_ablation/checkpoints/tdnn_full_best_acc.pth"
+        weight_path: str = DEFAULT_SINCNET_WEIGHT,
     ):
         """
         Initialize the predictor and load model weights.
 
         Args:
             device: Device to run on, default is "cpu"
-            weight_path: Path to model weight file, default is tdnn_full_best_acc.pth
+            weight_path: Path to model weight file, default is sincnet_best_acc.pth
         """
         self.device = device
         self.sample_rate = 16000
@@ -69,23 +72,17 @@ class TDNNPredictor:
         checkpoint = torch.load(weight_path, map_location=self.device, weights_only=False)
         saved_args = checkpoint.get("args", {})
 
-        # Build model
-        self.model = TDNNPairStudent(
+        # Build model (pure SincNet)
+        self.model = SincNetPairStudent(
             sample_rate=int(saved_args.get("sr", 16000)),
-            n_mels=int(saved_args.get("n_mels", 40)),
-            channels=tuple(saved_args.get("student_channels", [128, 192, 256, 256])),
             emb_dim=int(saved_args.get("emb_dim", 192)),
             dropout=float(saved_args.get("dropout", 0.15)),
-            time_mask_max=int(saved_args.get("time_mask_max", 12)),
-            freq_mask_max=int(saved_args.get("freq_mask_max", 6)),
-            use_dilation=True,
-            use_stats_pooling=True,
-            use_pairwise_product=True,
-            use_specaugment=False,  # Disable augmentation during inference
+            sinc_channels=int(saved_args.get("sinc_channels", 80)),
         ).to(self.device)
 
         # Load weights and set to eval mode
-        self.model.load_state_dict(checkpoint["model_state_dict"])
+        state_dict = checkpoint["model_state_dict"] if isinstance(checkpoint, dict) and "model_state_dict" in checkpoint else checkpoint
+        self.model.load_state_dict(state_dict)
         self.model.eval()
 
     def _load_audio(self, audio_path: str) -> np.ndarray:
@@ -140,6 +137,10 @@ class TDNNPredictor:
         return is_switch, confidence
 
 
+# Backward compatibility for older imports.
+TDNNPredictor = SincNetPredictor
+
+
 if __name__ == "__main__":
     """
     Test script: Load a 2-second audio file, split it into two 1-second segments,
@@ -151,7 +152,7 @@ if __name__ == "__main__":
     """
     import argparse
 
-    parser = argparse.ArgumentParser(description="Test TDNN Same-Speaker Detection Model")
+    parser = argparse.ArgumentParser(description="Test SincNet Same-Speaker Detection Model")
     parser.add_argument(
         "--audio",
         type=str,
@@ -161,7 +162,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--weight",
         type=str,
-        default=r"dl_model\final_model\tdnn_full_best_acc.pth",
+        default=DEFAULT_SINCNET_WEIGHT.replace("/", "\\"),
         help="Path to model weight file"
     )
     parser.add_argument(
@@ -175,7 +176,7 @@ if __name__ == "__main__":
 
     # Initialize predictor
     print(f"Loading model: {args.weight}")
-    predictor = TDNNPredictor(device=args.device, weight_path=args.weight)
+    predictor = SincNetPredictor(device=args.device, weight_path=args.weight)
     print(f"Model loaded on {args.device}")
 
     # Load 2-second audio file

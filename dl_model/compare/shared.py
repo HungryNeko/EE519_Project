@@ -1,14 +1,7 @@
-import csv
 import math
-from pathlib import Path
-
-import numpy as np
 
 import torch
 import torch.nn as nn
-from torch.utils.data import Dataset
-
-from baseline.common import load_audio
 
 from dl_model.old.speechbrain_ablation.shared import (
     CNNPairStudent,
@@ -29,118 +22,6 @@ from dl_model.old.speechbrain_ablation.shared import (
     set_seed,
     soft_distill_loss,
 )
-
-
-def split_pair_from_full_clip(wav, half_duration_seconds, sr):
-    half_samples = int(half_duration_seconds * sr)
-    mid = len(wav) // 2
-    left_start = max(0, mid - half_samples)
-    left_end = mid
-    right_start = mid
-    right_end = min(len(wav), mid + half_samples)
-    left = wav[left_start:left_end].astype(np.float32)
-    right = wav[right_start:right_end].astype(np.float32)
-    return left, right
-
-
-def parse_bool_label(value):
-    text = str(value).strip().lower()
-    if text in {"1", "true", "t", "yes"}:
-        return 1
-    if text in {"0", "false", "f", "no"}:
-        return 0
-    raise ValueError(f"Unsupported is_switch value: {value}")
-
-
-def build_samples_from_old_all(csv_path: Path, train_audio_dir: Path, test_audio_dir: Path, target_sr=16000):
-    samples = []
-    with open(csv_path, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for idx, row in enumerate(reader):
-            split = row["split"].strip().lower()
-            audio_dir = train_audio_dir if split == "train" else test_audio_dir
-            audio_file = audio_dir / f"{idx + 1}.wav"
-            if not audio_file.exists():
-                continue
-            samples.append(
-                {
-                    "audio_path": row["audio_path"],
-                    "source_index": idx + 1,
-                    "source_split": split,
-                    "audio_file": str(audio_file),
-                    "label": parse_bool_label(row["is_switch"]),
-                    "target_sr": target_sr,
-                }
-            )
-    return samples
-
-
-def build_samples_from_new_extracted(csv_path: Path, test_audio_dir: Path, target_sr=16000, split="test"):
-    samples = []
-    with open(csv_path, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for idx, row in enumerate(reader):
-            row_split = row.get("split", "").strip().lower()
-            if split and row_split and row_split != split:
-                continue
-            file_index = int(row["test_row_index"]) if row.get("test_row_index") else idx + 1
-            audio_file = test_audio_dir / f"{file_index}.wav"
-            if not audio_file.exists():
-                continue
-            samples.append(
-                {
-                    "audio_path": row["audio_path"],
-                    "test_row_index": file_index,
-                    "audio_file": str(audio_file),
-                    "label": parse_bool_label(row["is_switch"]),
-                    "target_sr": target_sr,
-                }
-            )
-    return samples
-
-
-class DistillationPairDataset(Dataset):
-    def __init__(self, samples):
-        self.samples = samples
-
-    def __len__(self):
-        return len(self.samples)
-
-    def __getitem__(self, idx):
-        sample = dict(self.samples[idx])
-        if "left_audio" not in sample or "right_audio" not in sample:
-            wav, _ = load_audio(Path(sample["audio_file"]), sr=int(sample.get("target_sr", 16000)))
-            half_duration = sample.get("half_duration", 4.0)
-            sr = sample.get("target_sr", 16000)
-            left, right = split_pair_from_full_clip(wav, half_duration, sr)
-            sample["left_audio"] = left
-            sample["right_audio"] = right
-        return sample
-
-
-def collate_audio_pairs(batch):
-    left_lengths = [len(item["left_audio"]) for item in batch]
-    right_lengths = [len(item["right_audio"]) for item in batch]
-    max_left = max(left_lengths)
-    max_right = max(right_lengths)
-
-    left_batch = torch.zeros(len(batch), max_left, dtype=torch.float32)
-    right_batch = torch.zeros(len(batch), max_right, dtype=torch.float32)
-    labels = torch.tensor([item["label"] for item in batch], dtype=torch.long)
-    teacher_probs = torch.tensor([item["teacher_prob"] for item in batch], dtype=torch.float32)
-
-    for i, item in enumerate(batch):
-        left = torch.from_numpy(item["left_audio"])
-        right = torch.from_numpy(item["right_audio"])
-        left_batch[i, : left.numel()] = left
-        right_batch[i, : right.numel()] = right
-
-    return {
-        "left_audio": left_batch,
-        "right_audio": right_batch,
-        "labels": labels,
-        "teacher_prob": teacher_probs,
-    }
 
 
 class StatsPooling(nn.Module):

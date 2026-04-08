@@ -13,7 +13,13 @@ class ProjectMLPWhisperBaseline(BaseSpeakerBaseline):
     def __init__(self, device: str = "cpu", cache_dir: Path | None = None):
         cpu_device = "cpu"
         super().__init__(device=cpu_device, cache_dir=cache_dir)
-        self.predictor = MLPWhisperSpeakerPredictor(device=cpu_device, sample_rate=self.target_sample_rate)
+        repo_root = Path(__file__).resolve().parents[1]
+        model_path = repo_root / "dl_model" / "checkpoints" / "MLPModel1_best.pth"
+        self.predictor = MLPWhisperSpeakerPredictor(
+            model_path=model_path,
+            device=cpu_device,
+            sample_rate=self.target_sample_rate,
+        )
 
     def predict(self, left_audio, right_audio, sample_rate: int) -> PredictionResult:
         result = self.predictor.predict_pair(left_audio, right_audio, sample_rate=sample_rate)

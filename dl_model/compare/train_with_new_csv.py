@@ -14,28 +14,31 @@ from tqdm import tqdm
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from dl_model.compare.shared import (
+from dl_model.dataloader import (
     DistillationPairDataset,
-    augment_waveforms,
-    benchmark_student,
     build_samples_from_new_extracted,
     build_samples_from_old_all,
     collate_audio_pairs,
+    preload_audio_pairs,
+)
+from dl_model.compare.shared import (
+    augment_waveforms,
+    benchmark_student,
     evaluate_student,
     load_soft_labels,
     set_seed,
     soft_distill_loss,
-    split_pair_from_full_clip,
 )
-from baseline.common import load_audio
 
 
 MODEL_MODULES = {
+    "tdnn": "dl_model.compare.model_tdnn",
     "final_model": "dl_model.compare.model_final_model",
     "escapetdnn": "dl_model.compare.model_escapetdnn",
     "ecapatdnn": "dl_model.compare.model_escapetdnn",
     "redimnet": "dl_model.compare.model_redimnet",
     "sincnet": "dl_model.compare.model_sincnet",
+    "sincnet_tdnn": "dl_model.compare.model_sincnet_tdnn",
 }
 
 
@@ -225,8 +228,8 @@ def main():
     parser.add_argument("--new-test-csv", default="dl_model/csv2/baseline_train_test_segments_switchlingua_seame.csv")
     parser.add_argument("--new-test-audio-dir", default="datasets/train_test2/test")
     parser.add_argument("--soft-labels-cache", default="dl_model/checkpoints/speechbrain_soft_labels_old_all_eval_new.pt")
-    parser.add_argument("--checkpoint-dir", default="dl_model/compare/checkpoints_new_csv")
-    parser.add_argument("--summary-path", default="dl_model/compare/summary_new_csv.json")
+    parser.add_argument("--checkpoint-dir", default="dl_model/compare/output/checkpoints_new_csv")
+    parser.add_argument("--summary-path", default="dl_model/compare/output/summary_new_csv.json")
     parser.add_argument("--student-device", default="auto", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--epochs", type=int, default=60)
     parser.add_argument("--batch-size", type=int, default=64)
@@ -246,6 +249,7 @@ def main():
     parser.add_argument("--ecapa-channels", type=int, default=256)
     parser.add_argument("--redimnet-channels", type=int, default=48)
     parser.add_argument("--sinc-channels", type=int, default=80)
+    parser.add_argument("--final-model-weight-path", default="dl_model/final_model/sincnet_best_acc.pth")
     parser.add_argument("--dropout", type=float, default=0.15)
     parser.add_argument("--time-mask-max", type=int, default=12)
     parser.add_argument("--freq-mask-max", type=int, default=8)
@@ -281,15 +285,7 @@ def main():
         sample['half_duration'] = args.half_duration
     load_soft_labels(root / args.soft_labels_cache, train_samples, test_samples)
 
-    # Load audio for benchmark samples
-    for sample in train_samples[:args.benchmark_samples]:
-        if "left_audio" not in sample:
-            wav, _ = load_audio(Path(sample["audio_file"]), sr=int(sample.get("target_sr", 16000)))
-            half_duration = sample.get("half_duration", 4.0)
-            sr = sample.get("target_sr", 16000)
-            left, right = split_pair_from_full_clip(wav, half_duration, sr)
-            sample["left_audio"] = left
-            sample["right_audio"] = right
+    preload_audio_pairs(train_samples, limit=args.benchmark_samples)
 
     if args.student_device == "auto":
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

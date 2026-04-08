@@ -16,9 +16,15 @@ class PureSincNetBaseline(BaseSpeakerBaseline):
         cpu_device = "cpu"
         super().__init__(device=cpu_device, cache_dir=cache_dir)
         repo_root = Path(__file__).resolve().parents[1]
-        checkpoint_path = repo_root / "dl_model" / "speechbrain_ablation" / "checkpoints" / "pure_sincnet_best_acc.pth"
-        if not checkpoint_path.exists():
-            raise FileNotFoundError(f"Checkpoint not found: {checkpoint_path}")
+        candidates = [
+            repo_root / "dl_model" / "old" / "speechbrain_ablation" / "checkpoints" / "pure_sincnet_best_acc.pth",
+            repo_root / "dl_model" / "speechbrain_ablation" / "checkpoints" / "pure_sincnet_best_acc.pth",
+        ]
+        checkpoint_path = next((path for path in candidates if path.exists()), None)
+        if checkpoint_path is None:
+            raise FileNotFoundError(
+                "Checkpoint not found. Tried:\n- " + "\n- ".join(str(path) for path in candidates)
+            )
 
         checkpoint = torch.load(checkpoint_path, map_location=self.device, weights_only=False)
         saved_args = checkpoint.get("args", {})

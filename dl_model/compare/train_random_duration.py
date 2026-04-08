@@ -16,9 +16,11 @@ if __package__ in (None, ""):
 
 from dl_model.dataloader import (
     DistillationPairDataset,
+    assign_random_half_durations,
     build_samples_from_new_extracted,
     build_samples_from_old_all,
     collate_audio_pairs,
+    preload_audio_pairs,
 )
 from dl_model.compare.shared import (
     augment_waveforms,
@@ -52,6 +54,36 @@ def mean_std(values):
     mean = sum(values) / len(values)
     var = sum((v - mean) ** 2 for v in values) / len(values)
     return mean, math.sqrt(var)
+
+
+def build_duration_manifest(train_samples, test_samples):
+    return {
+        "train": [
+            {
+                "audio_path": sample.get("audio_path"),
+                "source_index": sample.get("source_index"),
+                "half_duration": sample.get("half_duration"),
+            }
+            for sample in train_samples
+        ],
+        "test": [
+            {
+                "audio_path": sample.get("audio_path"),
+                "test_row_index": sample.get("test_row_index"),
+                "half_duration": sample.get("half_duration"),
+            }
+            for sample in test_samples
+        ],
+    }
+
+
+def write_csv(path, rows):
+    if not rows:
+        return
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def train_one_model(model_name, args, train_samples, test_samples, device, run_index):
@@ -135,11 +167,13 @@ def train_one_model(model_name, args, train_samples, test_samples, device, run_i
             pbar.set_postfix(loss=f"{loss.item():.4f}")
 
         train_loss = train_loss_sum / max(train_count, 1)
+        train_metrics = evaluate_student(model, train_loader, device, ce_loss_fn, use_tta_swap=False)
         test_metrics = evaluate_student(model, test_loader, device, ce_loss_fn, use_tta_swap=args.eval_tta_swap)
         scheduler.step()
 
         print(
             f"Epoch {epoch:02d} | train_loss={train_loss:.4f} "
+            f"train_acc={train_metrics['accuracy']:.4f} train_f1={train_metrics['f1']:.4f} "
             f"test_acc={test_metrics['accuracy']:.4f} test_f1={test_metrics['f1']:.4f} "
             f"test_loss={test_metrics['loss']:.4f}"
         )
@@ -242,6 +276,12 @@ def train_one_model(model_name, args, train_samples, test_samples, device, run_i
         with open(best_f1_record_path, "w", encoding="utf-8") as f:
             json.dump(best_f1_record, f, indent=2, ensure_ascii=False)
 
+    print(
+        f"Finished {model_name} | "
+        f"best_test_acc={best_acc:.4f} (epoch {best_acc_epoch}) | "
+        f"best_test_f1={best_f1:.4f} (epoch {best_f1_epoch})"
+    )
+
     student_ms = benchmark_student(model, test_dataset, device=device, limit=args.benchmark_samples)
     return {
         "model": model_name,
@@ -261,17 +301,8 @@ def train_one_model(model_name, args, train_samples, test_samples, device, run_i
     }
 
 
-def write_csv(path, rows):
-    if not rows:
-        return
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
-        writer.writeheader()
-        writer.writerows(rows)
-
-
 def main():
-    parser = argparse.ArgumentParser(description="Model comparison trainer for distilled speaker models.")
+    parser = argparse.ArgumentParser(description="Compare models with fixed random 1-2s segment durations.")
     parser.add_argument("--models", nargs="+", default=list(MODEL_MODULES.keys()), choices=list(MODEL_MODULES.keys()))
     parser.add_argument("--old-csv", default="dl_model/baseline_train_test_segments.csv")
     parser.add_argument("--old-train-audio-dir", default="datasets/mlp_train/train")
@@ -279,8 +310,9 @@ def main():
     parser.add_argument("--new-test-csv", default="dl_model/baseline_train_test_segments_switchlingua_seame.csv")
     parser.add_argument("--new-test-audio-dir", default="datasets/baseline_switchlingua_seame_testset/test")
     parser.add_argument("--soft-labels-cache", default="dl_model/checkpoints/speechbrain_soft_labels_old_all_eval_new.pt")
-    parser.add_argument("--checkpoint-dir", default="dl_model/compare/output/checkpoints")
-    parser.add_argument("--summary-path", default="dl_model/compare/output/summary.json")
+    parser.add_argument("--checkpoint-dir", default="dl_model/compare/output/checkpoints_random_duration")
+    parser.add_argument("--summary-path", default="dl_model/compare/output/summary_random_duration.json")
+    parser.add_argument("--duration-manifest-path", default="dl_model/compare/output/random_duration_manifest.json")
     parser.add_argument("--student-device", default="auto", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--epochs", type=int, default=60)
     parser.add_argument("--batch-size", type=int, default=64)
@@ -313,6 +345,8 @@ def main():
     parser.add_argument("--num-workers", type=int, default=0)
     parser.add_argument("--benchmark-samples", type=int, default=100)
     parser.add_argument("--repeat", type=int, default=1)
+    parser.add_argument("--min-half-duration", type=float, default=1.0)
+    parser.add_argument("--max-half-duration", type=float, default=2.0)
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[2]
@@ -330,6 +364,36 @@ def main():
     )
     load_soft_labels(root / args.soft_labels_cache, train_samples, test_samples)
 
+    assign_random_half_durations(
+        train_samples,
+        min_half_duration=args.min_half_duration,
+        max_half_duration=args.max_half_duration,
+        seed=args.seed,
+    )
+    assign_random_half_durations(
+        test_samples,
+        min_half_duration=args.min_half_duration,
+        max_half_duration=args.max_half_duration,
+        seed=args.seed + 1,
+    )
+    preload_audio_pairs(train_samples, limit=args.benchmark_samples)
+    preload_audio_pairs(test_samples, limit=min(args.benchmark_samples, len(test_samples)))
+
+    duration_manifest_path = root / args.duration_manifest_path
+    duration_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(duration_manifest_path, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "seed": args.seed,
+                "min_half_duration": args.min_half_duration,
+                "max_half_duration": args.max_half_duration,
+                "manifest": build_duration_manifest(train_samples, test_samples),
+            },
+            f,
+            indent=2,
+            ensure_ascii=False,
+        )
+
     if args.student_device == "auto":
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     else:
@@ -337,6 +401,11 @@ def main():
 
     print(f"Using device: {device}")
     print(f"Train samples: {len(train_samples)} | Test samples: {len(test_samples)}")
+    print(
+        f"Random half duration range: [{args.min_half_duration:.2f}, {args.max_half_duration:.2f}] sec "
+        f"with seed={args.seed}"
+    )
+    print(f"Saved duration manifest to: {duration_manifest_path}")
 
     summary_rows = []
     aggregate_rows = []
