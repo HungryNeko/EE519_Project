@@ -1,0 +1,18 @@
+{
+  "sample_count": 444,
+  "positives": 222,
+  "negatives": 222,
+  "tp": 159,
+  "tn": 145,
+  "fp": 77,
+  "fn": 63,
+  "accuracy": 0.6846846846846847,
+  "positive_accuracy": 0.7162162162162162,
+  "negative_accuracy": 0.6531531531531531,
+  "precision": 0.673728813559322,
+  "recall": 0.7162162162162162,
+  "specificity": 0.6531531531531531,
+  "f1": 0.6943231441048036,
+  "balanced_accuracy": 0.6846846846846847,
+  "loss": 0.6459611407271376
+}

@@ -31,10 +31,15 @@ from dl_model.old.speechbrain_ablation.shared import (
 )
 
 
-def split_pair_from_full_clip(wav):
+def split_pair_from_full_clip(wav, half_duration_seconds, sr):
+    half_samples = int(half_duration_seconds * sr)
     mid = len(wav) // 2
-    left = wav[:mid].astype(np.float32)
-    right = wav[mid:].astype(np.float32)
+    left_start = max(0, mid - half_samples)
+    left_end = mid
+    right_start = mid
+    right_end = min(len(wav), mid + half_samples)
+    left = wav[left_start:left_end].astype(np.float32)
+    right = wav[right_start:right_end].astype(np.float32)
     return left, right
 
 
@@ -105,7 +110,9 @@ class DistillationPairDataset(Dataset):
         sample = dict(self.samples[idx])
         if "left_audio" not in sample or "right_audio" not in sample:
             wav, _ = load_audio(Path(sample["audio_file"]), sr=int(sample.get("target_sr", 16000)))
-            left, right = split_pair_from_full_clip(wav)
+            half_duration = sample.get("half_duration", 4.0)
+            sr = sample.get("target_sr", 16000)
+            left, right = split_pair_from_full_clip(wav, half_duration, sr)
             sample["left_audio"] = left
             sample["right_audio"] = right
         return sample
