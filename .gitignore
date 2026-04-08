@@ -9,6 +9,10 @@ datasets/TTS/**/*.wav
 *.jsonl
 *.tar
 datasets/**/*.wav
+datasets/TALCS_corpus/train_set/
+datasets/TALCS_corpus/dev_set/
+datasets/TALCS_corpus/test_set/
+datasets/TALCS_corpus/*.json
 # ---- Hinglish dataset: ignore everything except metadata/manifest ----
 datasets/hinglish/data/**
 !datasets/hinglish/data/metadata.csv
