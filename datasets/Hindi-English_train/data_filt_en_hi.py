@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 INPUT_SEGMENT_JSON = "datasets/Hindi-English_train/whisper_segment_Hindi-English_train.json"
 INPUT_SWITCH_JSON = "datasets/Hindi-English_train/whisper_language_switch_Hindi-English_train.json"
@@ -59,6 +60,7 @@ empty_span_items = 0
 for item in segment_data:
     if "path" in item:
         item["path"] = normalize_path(item["path"])
+        item["audio_name"] = Path(item["path"]).name
 
     switch_info = switch_map.get(item.get("path"))
     if switch_info:

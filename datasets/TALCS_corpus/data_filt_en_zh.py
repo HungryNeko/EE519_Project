@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 INPUT_JSON = "datasets/TALCS_corpus/whisper_segment_TALCS_corpus.json"
 
@@ -43,6 +44,7 @@ non_en_zh_language = []
 for item in data:
     if "path" in item:
         item["path"] = normalize_path(item["path"])
+        item["audio_name"] = Path(item["path"]).name
 
     span_langs = get_span_languages(item)
     if not span_langs:
