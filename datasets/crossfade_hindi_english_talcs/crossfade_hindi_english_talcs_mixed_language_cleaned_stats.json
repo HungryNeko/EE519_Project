@@ -1,0 +1,207 @@
+{
+  "input_json": "datasets/crossfade_hindi_english_talcs/crossfade_hindi_english_talcs_mixed_language.json",
+  "output_json": "datasets/crossfade_hindi_english_talcs/crossfade_hindi_english_talcs_mixed_language_cleaned.json",
+  "time_tolerance_sec": 0.5,
+  "allowed_languages": [
+    "en",
+    "hi",
+    "zh"
+  ],
+  "overall": {
+    "total_mixed": 608,
+    "dropped_time_mismatch": 208,
+    "kept": 400,
+    "kept_spans_near_insert": 1045,
+    "removed_spans_outside_insert_window": 3867,
+    "removed_spans_disallowed_language": 0,
+    "kept_ratio_percent": 65.79
+  },
+  "by_subfolder": {
+    "hindi_en_into_talcs_zh": {
+      "total_mixed": 312,
+      "kept": 270,
+      "dropped_time_mismatch": 42,
+      "dropped_empty_after_trim": 0,
+      "missing_manifest": 0,
+      "kept_spans_near_insert": 714,
+      "removed_spans_outside_insert_window": 951,
+      "removed_spans_disallowed_language": 0,
+      "kept_ratio_percent": 86.54
+    },
+    "hindi_hi_into_talcs_en": {
+      "total_mixed": 266,
+      "kept": 121,
+      "dropped_time_mismatch": 145,
+      "dropped_empty_after_trim": 0,
+      "missing_manifest": 0,
+      "kept_spans_near_insert": 306,
+      "removed_spans_outside_insert_window": 444,
+      "removed_spans_disallowed_language": 0,
+      "kept_ratio_percent": 45.49
+    },
+    "talcs_en_into_hindi_hi": {
+      "total_mixed": 15,
+      "kept": 8,
+      "dropped_time_mismatch": 7,
+      "dropped_empty_after_trim": 0,
+      "missing_manifest": 0,
+      "kept_spans_near_insert": 24,
+      "removed_spans_outside_insert_window": 2142,
+      "removed_spans_disallowed_language": 0,
+      "kept_ratio_percent": 53.33
+    },
+    "talcs_zh_into_hindi_en": {
+      "total_mixed": 15,
+      "kept": 1,
+      "dropped_time_mismatch": 14,
+      "dropped_empty_after_trim": 0,
+      "missing_manifest": 0,
+      "kept_spans_near_insert": 1,
+      "removed_spans_outside_insert_window": 330,
+      "removed_spans_disallowed_language": 0,
+      "kept_ratio_percent": 6.67
+    }
+  },
+  "drop_examples": [
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000000_210_10987_210_4163_1_1529760555_4123902_555.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 1.48325,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000001_210_10987_210_4163_1_1529760555_4123902_227.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 0.141687,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000003_210_10987_210_4163_1_1529760555_4123902_254.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 4.890875,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000006_210_10987_210_4163_1_1529760555_4123902_107.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 3.214187,
+      "insert_duration_sec": 1.3,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000007_210_10987_210_4163_1_1529760555_4123902_492.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 4.017125,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "en"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000007_210_11243_210_6400_1_1529733547_7157180_392.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 10.279438,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000010_210_11305_210_1794_1_1529750428_7178148_121.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 3.960125,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000012_210_10987_210_4163_1_1529760555_4123902_95.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 6.924563,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000016_210_11243_210_6400_1_1529733547_7157180_215.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 12.26575,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000017_210_10987_210_4163_1_1529760555_4123902_114.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 5.642,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "en"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000019_210_10987_210_4163_1_1529760555_4123902_128.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 0.372875,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/talcs_zh_into_hindi_en/audio/000020_2mq1apea4vel5eia.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 374.637688,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "zh"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000023_210_11243_210_6400_1_1529733547_7157180_295.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 3.435875,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000025_210_10987_210_4163_1_1529760555_4123902_133.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 2.28275,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000026_210_11243_210_6400_1_1529733547_7157180_459.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 0.382125,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000029_210_10987_210_4163_1_1529760555_4123902_135.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 5.600437,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000031_210_11243_210_6400_1_1529733547_7157180_215.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 0.107313,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "en"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000036_210_10987_210_4163_1_1529760555_4123902_149.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 3.304875,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000042_210_11305_210_1794_1_1529750428_7178148_361.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 3.167562,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    },
+    {
+      "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000043_210_10987_210_4163_1_1529760555_4123902_154.wav",
+      "reason": "time_mismatch",
+      "insert_at_sec": 3.724312,
+      "insert_duration_sec": 2.0,
+      "insert_source_whisper_language": "hi"
+    }
+  ]
+}

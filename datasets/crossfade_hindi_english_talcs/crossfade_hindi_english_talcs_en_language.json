@@ -1,0 +1,982 @@
+[
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000000_210_10987_210_4163_1_1529760555_4123902_555.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "It contains URL alias.",
+        "scores": {
+          "avg_logprob": -0.9838916233607701,
+          "compression_ratio": 0.7105263157894737,
+          "no_speech_prob": 0.41744422912597656,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 1.86,
+            "text": "It contains URL alias.",
+            "score": 0.6994827892631292
+          }
+        ]
+      }
+    ],
+    "audio_name": "000000_210_10987_210_4163_1_1529760555_4123902_555.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000027_210_12868_210_6753_1_1530702479_3610564_430.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.5,
+        "text": "Second class.",
+        "scores": {
+          "avg_logprob": -0.7008291085561117,
+          "compression_ratio": 0.6190476190476191,
+          "no_speech_prob": 0.49793851375579834,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 0.64,
+            "text": "Second class.",
+            "score": 0.46462130546569824
+          }
+        ]
+      }
+    ],
+    "audio_name": "000027_210_12868_210_6753_1_1530702479_3610564_430.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000048_210_12868_210_6753_1_1530702479_3610564_430.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 1.4000000000000001,
+        "text": "Q is equal to",
+        "scores": {
+          "avg_logprob": -0.5305278084494851,
+          "compression_ratio": 0.7714285714285715,
+          "no_speech_prob": 0.18903391063213348,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 1.3,
+            "text": "Q is equal to",
+            "score": 0.8692661970853806
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 1.4000000000000001,
+        "end": 5.5,
+        "text": "The article seconds.",
+        "scores": {
+          "avg_logprob": -0.5305278084494851,
+          "compression_ratio": 0.7714285714285715,
+          "no_speech_prob": 0.18903391063213348,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 1.4000000000000001,
+            "end": 4.42,
+            "text": "The article seconds.",
+            "score": 0.47612326343854267
+          }
+        ]
+      }
+    ],
+    "audio_name": "000048_210_12868_210_6753_1_1530702479_3610564_430.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000136_210_14410_210_7927_1_1530609728_6207925_278.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.34,
+        "text": "And 4 at the rate meet the gap.",
+        "scores": {
+          "avg_logprob": -0.6833113034566244,
+          "compression_ratio": 0.9117647058823529,
+          "no_speech_prob": 0.10926008224487305,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 1.5599999999999996,
+            "end": 2.0,
+            "text": "And",
+            "score": 0.06054321303963661
+          },
+          {
+            "language": "en",
+            "start": 2.22,
+            "end": 3.82,
+            "text": "at the rate meet the gap.",
+            "score": 0.7193026840686798
+          }
+        ]
+      }
+    ],
+    "audio_name": "000136_210_14410_210_7927_1_1530609728_6207925_278.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000141_210_13091_210_7925_1_1530609447_8987354_212.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "",
+        "scores": {
+          "avg_logprob": -0.8772150488460765,
+          "compression_ratio": 1.297872340425532,
+          "no_speech_prob": 0.559933602809906,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 4.0,
+            "text": "",
+            "score": -0.8772150488460765
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "exercises.",
+        "scores": {
+          "avg_logprob": -0.8772150488460765,
+          "compression_ratio": 1.297872340425532,
+          "no_speech_prob": 0.559933602809906,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 4.0,
+            "end": 4.78,
+            "text": "exercises.",
+            "score": 0.09861664474010468
+          }
+        ]
+      }
+    ],
+    "audio_name": "000141_210_13091_210_7925_1_1530609447_8987354_212.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000153_210_10987_210_4163_1_1529760555_4123902_207.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.58,
+        "text": "Proszę.",
+        "scores": {
+          "avg_logprob": -0.4982280731201172,
+          "compression_ratio": 0.7407407407407407,
+          "no_speech_prob": 0.872938871383667,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 2.56,
+            "text": "Proszę.",
+            "score": 0.7126186341047287
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 2.58,
+        "end": 5.44,
+        "text": "Number two is equal to... Right, just a little.",
+        "scores": {
+          "avg_logprob": -0.4982280731201172,
+          "compression_ratio": 0.7407407407407407,
+          "no_speech_prob": 0.872938871383667,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.2600000000000002,
+            "end": 5.2,
+            "text": "Number two is equal to... Right, just a little.",
+            "score": 0.6738573097520404
+          }
+        ]
+      }
+    ],
+    "audio_name": "000153_210_10987_210_4163_1_1529760555_4123902_207.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000163_210_12866_210_6753_1_1530613692_6684967_755.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "thickness, hue, saturation.",
+        "scores": {
+          "avg_logprob": -0.8867667516072592,
+          "compression_ratio": 0.7777777777777778,
+          "no_speech_prob": 0.22360485792160034,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 1.34,
+            "text": "thickness, hue, saturation.",
+            "score": 0.6592205290993055
+          }
+        ]
+      }
+    ],
+    "audio_name": "000163_210_12866_210_6753_1_1530613692_6684967_755.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000165_210_14831_210_7927_1_1530700200_5583610_241.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.72,
+        "text": "Meet the Game. A piece of.",
+        "scores": {
+          "avg_logprob": -0.65551419691606,
+          "compression_ratio": 0.825,
+          "no_speech_prob": 0.10783619433641434,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 3.64,
+            "text": "Meet the Game. A piece of.",
+            "score": 0.6418570528427759
+          }
+        ]
+      }
+    ],
+    "audio_name": "000165_210_14831_210_7927_1_1530700200_5583610_241.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000177_210_13118_210_7925_1_1530755612_7608297_520.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.12,
+        "text": "you like it just met says dialogue box",
+        "scores": {
+          "avg_logprob": -1.7395921434674944,
+          "compression_ratio": 0.8333333333333334,
+          "no_speech_prob": 0.49292051792144775,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.1800000000000006,
+            "end": 4.58,
+            "text": "you like it just met says dialogue box",
+            "score": 0.3875971883535385
+          }
+        ]
+      }
+    ],
+    "audio_name": "000177_210_13118_210_7925_1_1530755612_7608297_520.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000190_210_17292_210_6753_1_1531125388_2943734_390.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.14,
+        "text": "Why don't we have English class?",
+        "scores": {
+          "avg_logprob": -0.5924324708826402,
+          "compression_ratio": 1.3333333333333333,
+          "no_speech_prob": 0.28886333107948303,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 1.92,
+            "text": "Why don't we have English class?",
+            "score": 0.82674107948939
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 2.64,
+        "end": 2.7800000000000002,
+        "text": "Okay.",
+        "scores": {
+          "avg_logprob": -0.5924324708826402,
+          "compression_ratio": 1.3333333333333333,
+          "no_speech_prob": 0.28886333107948303,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.64,
+            "end": 2.7600000000000002,
+            "text": "Okay.",
+            "score": 0.5202702283859253
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 3.48,
+        "end": 4.18,
+        "text": "No se para a una chica.",
+        "scores": {
+          "avg_logprob": -0.5924324708826402,
+          "compression_ratio": 1.3333333333333333,
+          "no_speech_prob": 0.28886333107948303,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.48,
+            "end": 4.16,
+            "text": "No se para a una chica.",
+            "score": 0.5201509098211924
+          }
+        ]
+      },
+      {
+        "segment_id": 3,
+        "start": 4.62,
+        "end": 5.78,
+        "text": "Outclass in English.",
+        "scores": {
+          "avg_logprob": -0.5924324708826402,
+          "compression_ratio": 1.3333333333333333,
+          "no_speech_prob": 0.28886333107948303,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 4.62,
+            "end": 5.5,
+            "text": "Outclass in English.",
+            "score": 0.7320971426864465
+          }
+        ]
+      }
+    ],
+    "audio_name": "000190_210_17292_210_6753_1_1531125388_2943734_390.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000200_210_12868_210_6753_1_1530702479_3610564_413.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.46,
+        "text": "",
+        "scores": {
+          "avg_logprob": -1.8469316482543945,
+          "compression_ratio": 0.9423076923076923,
+          "no_speech_prob": 0.4772074222564697,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 4.46,
+            "text": "",
+            "score": -1.8469316482543945
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 4.46,
+        "end": 6.88,
+        "text": "course you see starting Sam on the next",
+        "scores": {
+          "avg_logprob": -1.8469316482543945,
+          "compression_ratio": 0.9423076923076923,
+          "no_speech_prob": 0.4772074222564697,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 4.46,
+            "end": 6.640000000000001,
+            "text": "course you see starting Sam on the next",
+            "score": 0.5065446654334664
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 6.88,
+        "end": 7.88,
+        "text": "Zambia.",
+        "scores": {
+          "avg_logprob": -1.8469316482543945,
+          "compression_ratio": 0.9423076923076923,
+          "no_speech_prob": 0.4772074222564697,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 6.88,
+            "end": 7.4399999999999995,
+            "text": "Zambia.",
+            "score": 0.6139744917551676
+          }
+        ]
+      }
+    ],
+    "audio_name": "000200_210_12868_210_6753_1_1530702479_3610564_413.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000223_210_14906_210_7927_1_1530754190_9408633_806.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "I love English.",
+        "scores": {
+          "avg_logprob": -0.7132455825805664,
+          "compression_ratio": 0.8222222222222222,
+          "no_speech_prob": 0.48630017042160034,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 1.62,
+            "text": "I love English.",
+            "score": 0.8776292204856873
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 6.74,
+        "end": 8.74,
+        "text": "powered by Drupal block and user interface.",
+        "scores": {
+          "avg_logprob": -0.7132455825805664,
+          "compression_ratio": 0.8222222222222222,
+          "no_speech_prob": 0.48630017042160034,
+          "temperature": 0.4
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 6.74,
+            "end": 8.68,
+            "text": "powered by Drupal block and user interface.",
+            "score": 0.596925573689597
+          }
+        ]
+      }
+    ],
+    "audio_name": "000223_210_14906_210_7927_1_1530754190_9408633_806.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000239_210_13091_210_7925_1_1530609447_8987354_212.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "Thank you.",
+        "scores": {
+          "avg_logprob": -4.391704559326172,
+          "compression_ratio": 0.8,
+          "no_speech_prob": 0.3411019742488861,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.3600000000000002,
+            "end": 0.84,
+            "text": "Thank you.",
+            "score": 0.550911657512188
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 2.0,
+        "end": 3.8000000000000003,
+        "text": "Yeah. Are you ready?",
+        "scores": {
+          "avg_logprob": -4.391704559326172,
+          "compression_ratio": 0.8,
+          "no_speech_prob": 0.3411019742488861,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.0,
+            "end": 3.34,
+            "text": "Yeah. Are you ready?",
+            "score": 0.43008722364902496
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 3.98,
+        "end": 6.2,
+        "text": "exercises.",
+        "scores": {
+          "avg_logprob": -4.391704559326172,
+          "compression_ratio": 0.8,
+          "no_speech_prob": 0.3411019742488861,
+          "temperature": 1.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.98,
+            "end": 4.8,
+            "text": "exercises.",
+            "score": 0.1534024327993393
+          }
+        ]
+      }
+    ],
+    "audio_name": "000239_210_13091_210_7925_1_1530609447_8987354_212.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000243_210_21345_210_1925_1_1532312356_3731331_315.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.3000000000000003,
+        "text": "Ná, se amede",
+        "scores": {
+          "avg_logprob": -0.534733491785386,
+          "compression_ratio": 0.8103448275862069,
+          "no_speech_prob": 0.3942178189754486,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 1.1600000000000001,
+            "end": 2.06,
+            "text": "Ná, se amede",
+            "score": 0.7052267342805862
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 2.3000000000000003,
+        "end": 3.36,
+        "text": "if it stops.",
+        "scores": {
+          "avg_logprob": -0.534733491785386,
+          "compression_ratio": 0.8103448275862069,
+          "no_speech_prob": 0.3942178189754486,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.3000000000000003,
+            "end": 3.04,
+            "text": "if it stops.",
+            "score": 0.7886890669663748
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 3.36,
+        "end": 8.3,
+        "text": "Knowing we can go out",
+        "scores": {
+          "avg_logprob": -0.534733491785386,
+          "compression_ratio": 0.8103448275862069,
+          "no_speech_prob": 0.3942178189754486,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 4.7,
+            "end": 6.74,
+            "text": "Knowing we can go out",
+            "score": 0.7657867550849915
+          }
+        ]
+      }
+    ],
+    "audio_name": "000243_210_21345_210_1925_1_1532312356_3731331_315.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000250_210_15044_210_2087_1_1530789697_2819855_3.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.5,
+        "text": "spoken tutorial project IIT Bomb",
+        "scores": {
+          "avg_logprob": -0.21248351471333565,
+          "compression_ratio": 1.2658227848101267,
+          "no_speech_prob": 0.3151318430900574,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.399999999999999,
+            "end": 5.3,
+            "text": "spoken tutorial project IIT Bomb",
+            "score": 0.6895684033632279
+          }
+        ]
+      }
+    ],
+    "audio_name": "000250_210_15044_210_2087_1_1530789697_2819855_3.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000263_210_2245_210_2715_1_1525511548_3540254_296.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 3.56,
+        "text": "There is some milk in the gas.",
+        "scores": {
+          "avg_logprob": -0.681108994917436,
+          "compression_ratio": 0.9047619047619048,
+          "no_speech_prob": 0.2483995258808136,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 3.34,
+            "text": "There is some milk in the gas.",
+            "score": 0.8754563757351467
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 3.56,
+        "end": 4.5600000000000005,
+        "text": "um",
+        "scores": {
+          "avg_logprob": -0.681108994917436,
+          "compression_ratio": 0.9047619047619048,
+          "no_speech_prob": 0.2483995258808136,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.56,
+            "end": 4.0,
+            "text": "um",
+            "score": 0.34513476490974426
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "start": 5.2,
+        "end": 5.84,
+        "text": "last",
+        "scores": {
+          "avg_logprob": -0.681108994917436,
+          "compression_ratio": 0.9047619047619048,
+          "no_speech_prob": 0.2483995258808136,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 5.2,
+            "end": 5.54,
+            "text": "last",
+            "score": 0.5083701014518738
+          }
+        ]
+      }
+    ],
+    "audio_name": "000263_210_2245_210_2715_1_1525511548_3540254_296.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000265_210_10987_210_4163_1_1529760555_4123902_457.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.0,
+        "text": "to firefighter.",
+        "scores": {
+          "avg_logprob": -0.8011536598205566,
+          "compression_ratio": 0.8333333333333334,
+          "no_speech_prob": 0.06701380014419556,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 3.3,
+            "text": "to firefighter.",
+            "score": 0.5634423345327377
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 4.0,
+        "end": 6.0,
+        "text": "A fire.",
+        "scores": {
+          "avg_logprob": -0.8011536598205566,
+          "compression_ratio": 0.8333333333333334,
+          "no_speech_prob": 0.06701380014419556,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 4.0,
+            "end": 4.98,
+            "text": "A fire.",
+            "score": 0.5639137625694275
+          }
+        ]
+      }
+    ],
+    "audio_name": "000265_210_10987_210_4163_1_1529760555_4123902_457.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000267_210_14072_210_5632_1_1530687092_5046021_149.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.26,
+        "text": "I would like to talk to him.",
+        "scores": {
+          "avg_logprob": -0.5281547546386719,
+          "compression_ratio": 0.8888888888888888,
+          "no_speech_prob": 0.20747941732406616,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.5599999999999996,
+            "end": 6.1,
+            "text": "I would like to talk to him.",
+            "score": 0.9145464428833553
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 6.78,
+        "end": 6.98,
+        "text": "Bye.",
+        "scores": {
+          "avg_logprob": -0.5281547546386719,
+          "compression_ratio": 0.8888888888888888,
+          "no_speech_prob": 0.20747941732406616,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 6.78,
+            "end": 6.88,
+            "text": "Bye.",
+            "score": 0.23161108791828156
+          }
+        ]
+      }
+    ],
+    "audio_name": "000267_210_14072_210_5632_1_1530687092_5046021_149.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_en_into_talcs_zh/audio/000329_210_10987_210_4163_1_1529760555_4123902_369.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.44,
+        "text": "Your presence is a thanks. Pre-natal health care.",
+        "scores": {
+          "avg_logprob": -0.4248286122861116,
+          "compression_ratio": 1.0943396226415094,
+          "no_speech_prob": 0.5216193795204163,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 2.74,
+            "end": 4.34,
+            "text": "Your presence is a thanks. Pre",
+            "score": 0.5037277322262526
+          },
+          {
+            "language": "en",
+            "start": 4.86,
+            "end": 5.3,
+            "text": "health care.",
+            "score": 0.7393910586833954
+          }
+        ]
+      }
+    ],
+    "audio_name": "000329_210_10987_210_4163_1_1529760555_4123902_369.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000343_210_14597_210_9261_1_1530668986_7263853_172.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 11.0,
+        "text": "Somebody to do something Just need someone to do something",
+        "scores": {
+          "avg_logprob": -0.6617446541786194,
+          "compression_ratio": 0.8108108108108109,
+          "no_speech_prob": 0.5494491457939148,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 6.58,
+            "end": 10.72,
+            "text": "Somebody to do something Just need someone to do something",
+            "score": 0.6987296625971794
+          }
+        ]
+      }
+    ],
+    "audio_name": "000343_210_14597_210_9261_1_1530668986_7263853_172.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000354_210_25767_210_2161_1_1532307483_3867748_276.wav",
+    "whisper_language": "en",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 3.4,
+        "text": "boy, I was a football fan.",
+        "scores": {
+          "avg_logprob": -0.22624429066975912,
+          "compression_ratio": 1.1204819277108433,
+          "no_speech_prob": 0.11437281966209412,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 0.0,
+            "end": 3.2,
+            "text": "boy, I was a football fan.",
+            "score": 0.8785231113433838
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "start": 3.86,
+        "end": 11.76,
+        "text": "How did the writer feel when he got the football from his brother?",
+        "scores": {
+          "avg_logprob": -0.22624429066975912,
+          "compression_ratio": 1.1204819277108433,
+          "no_speech_prob": 0.11437281966209412,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "en",
+            "start": 3.86,
+            "end": 9.44,
+            "text": "How did the writer feel when he got the football from his brother?",
+            "score": 0.9467151302557725
+          }
+        ]
+      }
+    ],
+    "audio_name": "000354_210_25767_210_2161_1_1532307483_3867748_276.wav"
+  }
+]

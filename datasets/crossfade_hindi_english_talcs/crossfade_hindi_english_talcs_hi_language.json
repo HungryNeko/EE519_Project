@@ -1,0 +1,422 @@
+[
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000021_210_10987_210_4163_1_1529760555_4123902_131.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 9.24,
+        "text": "अब आप से भी दाले थी ना जो शीघ्र बुशा ला अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अ� झाल",
+        "scores": {
+          "avg_logprob": -0.5512979295518663,
+          "compression_ratio": 1.5905511811023623,
+          "no_speech_prob": 0.3181244134902954,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 9.22,
+            "text": "अब आप से भी दाले थी ना जो शीघ्र बुशा ला अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अब अ� झाल",
+            "score": 0.8597450773549906
+          }
+        ]
+      }
+    ],
+    "audio_name": "000021_210_10987_210_4163_1_1529760555_4123902_131.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000035_210_13118_210_7925_1_1530755612_7608297_112.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.64,
+        "text": "पॉइंट का उपयोग करता है मैंने इस चाहिए मां",
+        "scores": {
+          "avg_logprob": -0.2963143016981042,
+          "compression_ratio": 1.2588235294117647,
+          "no_speech_prob": 0.5510419607162476,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 2.76,
+            "end": 5.46,
+            "text": "पॉइंट का उपयोग करता है मैंने इस चाहिए मां",
+            "score": 0.8226784734104675
+          }
+        ]
+      }
+    ],
+    "audio_name": "000035_210_13118_210_7925_1_1530755612_7608297_112.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000092_210_14831_210_7927_1_1530700200_5583610_241.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.8,
+        "text": "और शायद को पर क्लिक करती हूं अपनी सब्सक्राइब",
+        "scores": {
+          "avg_logprob": -0.36469362366874264,
+          "compression_ratio": 1.3846153846153846,
+          "no_speech_prob": 0.14398835599422455,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 4.94,
+            "text": "और शायद को पर क्लिक करती हूं अपनी सब्सक्राइब",
+            "score": 0.7039475062548944
+          }
+        ]
+      }
+    ],
+    "audio_name": "000092_210_14831_210_7927_1_1530700200_5583610_241.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000093_210_12866_210_6753_1_1530613692_6684967_76.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 4.5600000000000005,
+        "text": "और आब जब मैं",
+        "scores": {
+          "avg_logprob": -0.31262027516084556,
+          "compression_ratio": 0.8108108108108109,
+          "no_speech_prob": 0.6188900470733643,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 2.2,
+            "end": 4.42,
+            "text": "और आब जब मैं",
+            "score": 0.8917231485247612
+          }
+        ]
+      }
+    ],
+    "audio_name": "000093_210_12866_210_6753_1_1530613692_6684967_76.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000095_210_14831_210_7927_1_1530700200_5583610_301.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 5.0,
+        "text": "अगर आप आपको अपने प्रोफ़ पर अपने प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्र प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रो",
+        "scores": {
+          "avg_logprob": -0.5053592964454934,
+          "compression_ratio": 1.0172413793103448,
+          "no_speech_prob": 0.48897016048431396,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 3.620000000000001,
+            "end": 4.98,
+            "text": "अगर आप आपको अपने प्रोफ़ पर अपने प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्र प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रोफ़ पर प्रो",
+            "score": 0.9182818745137367
+          }
+        ]
+      }
+    ],
+    "audio_name": "000095_210_14831_210_7927_1_1530700200_5583610_301.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000106_210_10987_210_4163_1_1529760555_4123902_23.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 2.94,
+        "text": "टेंट है जो आप अपनी साइट पर चाहते हैं",
+        "scores": {
+          "avg_logprob": -0.11263147989908855,
+          "compression_ratio": 1.1948051948051948,
+          "no_speech_prob": 0.415844589471817,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.78,
+            "end": 2.92,
+            "text": "टेंट है जो आप अपनी साइट पर चाहते हैं",
+            "score": 0.969104203361052
+          }
+        ]
+      }
+    ],
+    "audio_name": "000106_210_10987_210_4163_1_1529760555_4123902_23.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000136_210_13091_210_7925_1_1530609447_8987354_1284.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 3.0,
+        "text": "और इसे बेहतर तरह से देखें।",
+        "scores": {
+          "avg_logprob": -0.1589966370509221,
+          "compression_ratio": 1.1428571428571428,
+          "no_speech_prob": 0.43996182084083557,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 1.1,
+            "end": 2.98,
+            "text": "और इसे बेहतर तरह से देखें।",
+            "score": 0.9085152626589492
+          }
+        ]
+      }
+    ],
+    "audio_name": "000136_210_13091_210_7925_1_1530609447_8987354_1284.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000149_210_10987_210_4163_1_1529760555_4123902_284.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 7.38,
+        "text": "यह स्क्रिप्ट प्रभाकर द्वारा अनुवादे था",
+        "scores": {
+          "avg_logprob": -0.5429175862094813,
+          "compression_ratio": 1.7291666666666667,
+          "no_speech_prob": 0.6168487668037415,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 1.7600000000000002,
+            "end": 4.36,
+            "text": "यह स्क्रिप्ट प्रभाकर द्वारा अनुवादे था",
+            "score": 0.9054868097733769
+          }
+        ]
+      }
+    ],
+    "audio_name": "000149_210_10987_210_4163_1_1529760555_4123902_284.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000165_210_10987_210_4163_1_1529760555_4123902_316.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.96,
+        "text": "कि चेयर के कंप्यूटर में मेन फोल्डर्स को दिखाएंगे और लड़ ऑफ",
+        "scores": {
+          "avg_logprob": -0.27481900492022115,
+          "compression_ratio": 1.43,
+          "no_speech_prob": 0.8289240002632141,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 1.7400000000000002,
+            "end": 6.66,
+            "text": "कि चेयर के कंप्यूटर में मेन फोल्डर्स को दिखाएंगे और लड़ ऑफ",
+            "score": 0.7865168152245308
+          }
+        ]
+      }
+    ],
+    "audio_name": "000165_210_10987_210_4163_1_1529760555_4123902_316.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000207_210_10987_210_4163_1_1529760555_4123902_384.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 8.1,
+        "text": "और अंतिम पॉइंट के दाई तरफ हमने दे फाउंग चुके इशा",
+        "scores": {
+          "avg_logprob": -0.3598958183737362,
+          "compression_ratio": 1.4038461538461537,
+          "no_speech_prob": 0.42317327857017517,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.7199999999999993,
+            "end": 7.78,
+            "text": "और अंतिम पॉइंट के दाई तरफ हमने दे फाउंग चुके इशा",
+            "score": 0.7802208838438746
+          }
+        ]
+      }
+    ],
+    "audio_name": "000207_210_10987_210_4163_1_1529760555_4123902_384.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000273_210_14072_210_5632_1_1530687092_5046021_235.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 7.08,
+        "text": "एइ, हाओ, नीशो",
+        "scores": {
+          "avg_logprob": -0.3416651173641807,
+          "compression_ratio": 0.7948717948717948,
+          "no_speech_prob": 0.44695723056793213,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 4.339999999999999,
+            "end": 6.94,
+            "text": "एइ, हाओ, नीशो",
+            "score": 0.6563504056798087
+          }
+        ]
+      }
+    ],
+    "audio_name": "000273_210_14072_210_5632_1_1530687092_5046021_235.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000285_210_2262_210_1849_1_1525508737_4555059_47.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 7.22,
+        "text": "जिदद जो में आप यह हमारे लिए डाइटरी को ओपन करेंगे रिमाइंड अ",
+        "scores": {
+          "avg_logprob": -0.4872667063837466,
+          "compression_ratio": 1.4485981308411215,
+          "no_speech_prob": 0.6041426658630371,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 0.0,
+            "end": 5.4,
+            "text": "जिदद जो में आप यह हमारे लिए डाइटरी को ओपन करेंगे रिमाइंड अ",
+            "score": 0.7346825651833573
+          }
+        ]
+      }
+    ],
+    "audio_name": "000285_210_2262_210_1849_1_1525508737_4555059_47.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000369_210_14597_210_9261_1_1530668986_7263853_519.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 17.3,
+        "text": "आपको इसे अधिक्रित की है",
+        "scores": {
+          "avg_logprob": -0.6119117736816406,
+          "compression_ratio": 1.4387755102040816,
+          "no_speech_prob": 0.15712077915668488,
+          "temperature": 0.2
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 1.3000000000000003,
+            "end": 15.92,
+            "text": "आपको इसे अधिक्रित की है",
+            "score": 0.6362771382431189
+          }
+        ]
+      }
+    ],
+    "audio_name": "000369_210_14597_210_9261_1_1530668986_7263853_519.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000384_210_14597_210_9261_1_1530668986_7263853_711.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 11.94,
+        "text": "तो एक और लॉक नामक दो आइकन जी ओ आई तो एक अब भी",
+        "scores": {
+          "avg_logprob": -0.5343753051757812,
+          "compression_ratio": 1.4948453608247423,
+          "no_speech_prob": 0.5942724347114563,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 1.1600000000000001,
+            "end": 10.32,
+            "text": "तो एक और लॉक नामक दो आइकन जी ओ आई तो एक अब भी",
+            "score": 0.7099248345054331
+          }
+        ]
+      }
+    ],
+    "audio_name": "000384_210_14597_210_9261_1_1530668986_7263853_711.wav"
+  },
+  {
+    "path": "datasets/crossfade_hindi_english_talcs/hindi_hi_into_talcs_en/audio/000391_210_2655_210_2087_1_1525688959_3897400_13.wav",
+    "whisper_language": "hi",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start": 0.0,
+        "end": 6.6000000000000005,
+        "text": "चला है लोग मैसेज प्रदर्शित करता है",
+        "scores": {
+          "avg_logprob": -0.08995840488336025,
+          "compression_ratio": 1.2179487179487178,
+          "no_speech_prob": 0.4604804217815399,
+          "temperature": 0.0
+        },
+        "language_spans": [
+          {
+            "language": "hi",
+            "start": 3.9799999999999995,
+            "end": 6.58,
+            "text": "चला है लोग मैसेज प्रदर्शित करता है",
+            "score": 0.8131673888791175
+          }
+        ]
+      }
+    ],
+    "audio_name": "000391_210_2655_210_2087_1_1525688959_3897400_13.wav"
+  }
+]
