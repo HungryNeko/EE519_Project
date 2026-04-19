@@ -1,0 +1,18 @@
+[
+  {
+    "model": "final_model",
+    "best_val_epoch": 14,
+    "best_val_acc": 0.8347701149425287,
+    "best_val_f1": 0.8571428571428572,
+    "test_acc_at_best_val": 0.7454954954954955,
+    "test_f1_at_best_val": 0.7315914489311165,
+    "test_precision_at_best_val": 0.7738693467336684,
+    "test_recall_at_best_val": 0.6936936936936937,
+    "test_loss_at_best_val": 0.5720287384213628,
+    "student_ms": 2.539715000311844,
+    "best_val_checkpoint": "dl_model\\compare\\output\\checkpoints_final_model_val\\final_model_best_val.pth",
+    "final_checkpoint": "dl_model\\compare\\output\\checkpoints_final_model_val\\final_model_final.pth",
+    "best_val_record": "dl_model\\compare\\output\\checkpoints_final_model_val\\final_model_best_val_record.json",
+    "test_record": "dl_model\\compare\\output\\checkpoints_final_model_val\\final_model_test_record.json"
+  }
+]

@@ -66,3 +66,5 @@ dl_model/model_eval/error/
 !dl_model/final_model/tdnn_full_best_acc.pth
 baseline/model_cache
 baseline/results_compare/model_cache
+datasets/crossfade_hindi_english_talcs/crossfade_hindi_english_talcs_non_en_hi_zh_language.json
+datasets/crossfade_hindi_english_talcs/whisper_segment_crossfade_hindi_english_talcs.json
