@@ -230,7 +230,7 @@ def main():
     parser.add_argument("--durations", type=float, nargs="+", default=[1.0, 1.5, 2.0])
     parser.add_argument("--new-test-csv", default="dl_model/csv2/baseline_train_test_segments_switchlingua_seame.csv")
     parser.add_argument("--new-test-audio-dir", default="datasets/train_test2/test")
-    parser.add_argument("--student-device", default="auto", choices=["auto", "cpu", "cuda"])
+    parser.add_argument("--student-device", default="cuda", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--num-workers", type=int, default=0)
     parser.add_argument("--preload-audio", action="store_true", default=True)

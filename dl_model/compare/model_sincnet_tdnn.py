@@ -1,4 +1,4 @@
-from dl_model.old.speechbrain_ablation.shared import SincTDNNPairStudent
+from dl_model.compare.shared import SincTDNNPairStudent
 
 MODEL_NAME = "sincnet_tdnn"
 

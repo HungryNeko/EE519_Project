@@ -11,8 +11,8 @@ from dl_model.old.speechbrain_ablation.shared import (
     PairModelBase,
     ResNetPairStudent,
     SincConv1d,
-    SincNetPairStudent,
-    SincTDNNPairStudent,
+    SincNetPairStudent as _BaseSincNetPairStudent,
+    SincTDNNPairStudent as _BaseSincTDNNPairStudent,
     TDNNPairStudent,
     TransformerPairStudent,
     augment_waveforms,
@@ -22,6 +22,39 @@ from dl_model.old.speechbrain_ablation.shared import (
     set_seed,
     soft_distill_loss,
 )
+
+
+def _assert_cuda_tensor(tensor, tensor_name):
+    if tensor.device.type != "cuda":
+        raise RuntimeError(
+            f"{tensor_name} is on {tensor.device.type}, but compare SincNet models require CUDA input. "
+            "Please run with --student-device cuda."
+        )
+
+
+def _assert_cuda_module(module):
+    param = next(module.parameters(), None)
+    if param is not None and param.device.type != "cuda":
+        raise RuntimeError(
+            f"{module.__class__.__name__} parameters are on {param.device.type}. "
+            "Please move model to CUDA."
+        )
+
+
+class SincNetPairStudent(_BaseSincNetPairStudent):
+    def forward(self, left_audio, right_audio):
+        _assert_cuda_tensor(left_audio, "left_audio")
+        _assert_cuda_tensor(right_audio, "right_audio")
+        _assert_cuda_module(self)
+        return super().forward(left_audio, right_audio)
+
+
+class SincTDNNPairStudent(_BaseSincTDNNPairStudent):
+    def forward(self, left_audio, right_audio):
+        _assert_cuda_tensor(left_audio, "left_audio")
+        _assert_cuda_tensor(right_audio, "right_audio")
+        _assert_cuda_module(self)
+        return super().forward(left_audio, right_audio)
 
 
 class StatsPooling(nn.Module):

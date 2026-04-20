@@ -230,7 +230,7 @@ def main():
     parser.add_argument("--soft-labels-cache", default="dl_model/checkpoints/speechbrain_soft_labels_old_all_eval_new.pt")
     parser.add_argument("--checkpoint-dir", default="dl_model/compare/output/checkpoints_new_csv")
     parser.add_argument("--summary-path", default="dl_model/compare/output/summary_new_csv.json")
-    parser.add_argument("--student-device", default="auto", choices=["auto", "cpu", "cuda"])
+    parser.add_argument("--student-device", default="cuda", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--epochs", type=int, default=60)
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--lr", type=float, default=5e-4)

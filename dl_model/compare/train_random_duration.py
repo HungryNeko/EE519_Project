@@ -313,7 +313,7 @@ def main():
     parser.add_argument("--checkpoint-dir", default="dl_model/compare/output/checkpoints_random_duration")
     parser.add_argument("--summary-path", default="dl_model/compare/output/summary_random_duration.json")
     parser.add_argument("--duration-manifest-path", default="dl_model/compare/output/random_duration_manifest.json")
-    parser.add_argument("--student-device", default="auto", choices=["auto", "cpu", "cuda"])
+    parser.add_argument("--student-device", default="cuda", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--epochs", type=int, default=60)
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--lr", type=float, default=5e-4)

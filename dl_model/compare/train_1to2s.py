@@ -511,7 +511,7 @@ def main():
         "--test-duration-agg-csv",
         default="dl_model/compare/output/summary_manifest_test_duration_aggregate_1to2s.csv",
     )
-    parser.add_argument("--student-device", default="auto", choices=["auto", "cpu", "cuda"])
+    parser.add_argument("--student-device", default="cuda", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--epochs", type=int, default=60)
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--lr", type=float, default=5e-4)

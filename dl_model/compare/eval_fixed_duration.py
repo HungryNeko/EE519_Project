@@ -211,7 +211,7 @@ def main():
     parser.add_argument("--checkpoint-kinds", nargs="+", default=["best_acc"], choices=["best_acc", "best_f1", "final"])
     parser.add_argument("--durations", type=float, nargs="+", default=[1.0, 1.5, 2.0])
     parser.add_argument("--models", nargs="+", default=None)
-    parser.add_argument("--student-device", default="auto", choices=["auto", "cpu", "cuda"])
+    parser.add_argument("--student-device", default="cuda", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--output-path", default="dl_model/compare/output/eval_fixed_duration_new_csv.json")
     parser.add_argument("--new-test-csv", default="dl_model/csv2/baseline_train_test_segments_switchlingua_seame.csv")
     parser.add_argument("--new-test-audio-dir", default="datasets/train_test2/test")

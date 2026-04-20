@@ -33,11 +33,11 @@ from datasets.train_test2.dataloader import (
 
 MODEL_MODULES = {
     "tdnn": "dl_model.compare.model_tdnn",
-    "final_model": "dl_model.compare.model_final_model",
+    #"final_model": "dl_model.compare.model_final_model",
     "ecapatdnn": "dl_model.compare.model_escapetdnn",
     "redimnet": "dl_model.compare.model_redimnet",
     "sincnet": "dl_model.compare.model_sincnet",
-    # "sincnet_tdnn": "dl_model.compare.model_sincnet_tdnn",
+    #"sincnet_tdnn": "dl_model.compare.model_sincnet_tdnn",
 }
 
 
@@ -327,15 +327,27 @@ def aggregate_model_rows(model_name, rows):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Train compare models with train/val/test from a unified manifest, select best by val, then report test in CSV."
+        description=(
+            "Train compare models with train/val/test from a unified manifest, "
+            "but swap val/test splits (2s audio unchanged)."
+        )
     )
     parser.add_argument("--models", nargs="+", default=list(MODEL_MODULES.keys()), choices=list(MODEL_MODULES.keys()))
     parser.add_argument("--manifest-csv", default="datasets/train_test2/compare_train_val_test_manifest.csv")
     parser.add_argument("--dataset-root", default="datasets/train_test2")
     parser.add_argument("--soft-labels-cache", default="dl_model/checkpoints/speechbrain_soft_labels_old_all_eval_new.pt")
-    parser.add_argument("--checkpoint-dir", default="dl_model/compare/output/checkpoints_manifest")
-    parser.add_argument("--summary-csv", default="dl_model/compare/output/summary_manifest_runs.csv")
-    parser.add_argument("--summary-agg-csv", default="dl_model/compare/output/summary_manifest_aggregate.csv")
+    parser.add_argument(
+        "--checkpoint-dir",
+        default="dl_model/compare/output/checkpoints_manifest_change_val_test_train",
+    )
+    parser.add_argument(
+        "--summary-csv",
+        default="dl_model/compare/output/summary_manifest_runs_change_val_test_train.csv",
+    )
+    parser.add_argument(
+        "--summary-agg-csv",
+        default="dl_model/compare/output/summary_manifest_aggregate_change_val_test_train.csv",
+    )
     parser.add_argument("--student-device", default="cuda", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--epochs", type=int, default=60)
     parser.add_argument("--batch-size", type=int, default=64)
@@ -383,8 +395,10 @@ def main():
         include_time_windows=False,
     )
     train_samples = splits["train"]
-    val_samples = splits["val"]
-    test_samples = splits["test"]
+    original_val_samples = splits["val"]
+    original_test_samples = splits["test"]
+    val_samples = original_test_samples
+    test_samples = original_val_samples
 
     set_half_duration(train_samples, args.half_duration)
     set_half_duration(val_samples, args.half_duration)
@@ -392,13 +406,18 @@ def main():
 
     cache_loaded = False
     try:
-        load_soft_labels(root / args.soft_labels_cache, train_samples, test_samples)
+        # Keep train soft labels behavior identical to the baseline setup.
+        # Cache only provides train/test, so we load using original test split.
+        load_soft_labels(root / args.soft_labels_cache, train_samples, original_test_samples)
         cache_loaded = True
     except Exception as e:
-        print(f"[WARN] Failed to load soft labels cache, fallback to hard labels for train/test: {e}")
+        print(
+            "[WARN] Failed to load soft labels cache, "
+            f"fallback to hard labels for train/original_test: {e}"
+        )
         assign_teacher_prob_from_labels(train_samples)
-        assign_teacher_prob_from_labels(test_samples)
-    assign_teacher_prob_from_labels(val_samples)
+        assign_teacher_prob_from_labels(original_test_samples)
+    assign_teacher_prob_from_labels(test_samples)
 
     preload_audio_pairs(train_samples, limit=args.benchmark_samples)
 
