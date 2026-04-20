@@ -51,6 +51,18 @@ def _to_float_or_none(value) -> Optional[float]:
     return float(text)
 
 
+def _normalize_dataset_root(dataset_root: Path) -> Path:
+    # Use absolute() instead of resolve() to avoid expensive realpath calls on Windows.
+    return Path(dataset_root).expanduser().absolute()
+
+
+def _build_audio_file_path(dataset_root: Path, audio_rel: str) -> Path:
+    audio_path = Path(audio_rel).expanduser()
+    if not audio_path.is_absolute():
+        audio_path = dataset_root / audio_path
+    return audio_path.absolute()
+
+
 def build_samples_from_manifest(
     split: Optional[str],
     manifest_csv: Path = DEFAULT_MANIFEST_CSV,
@@ -72,8 +84,11 @@ def build_samples_from_manifest(
     if split_key not in {None, "train", "val", "test"}:
         raise ValueError(f"Unsupported split: {split}")
 
+    dataset_root_path = _normalize_dataset_root(dataset_root)
+    manifest_csv_path = Path(manifest_csv).expanduser()
+
     samples: List[dict] = []
-    with open(manifest_csv, "r", encoding="utf-8", newline="") as f:
+    with open(manifest_csv_path, "r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
             row_split = str(row.get("compare_split", "")).strip().lower()
@@ -84,8 +99,8 @@ def build_samples_from_manifest(
             if audio_rel == "":
                 continue
 
-            audio_file = (dataset_root / audio_rel).resolve()
-            if not audio_file.exists():
+            audio_file = _build_audio_file_path(dataset_root_path, audio_rel)
+            if not audio_file.is_file():
                 continue
 
             sample = {

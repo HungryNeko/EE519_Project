@@ -3,40 +3,141 @@ from __future__ import annotations
 import argparse
 import csv
 import gc
-import json
+import importlib
 import sys
 import time
 from pathlib import Path
 
+import torch
+from tqdm import tqdm
+
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-import torch
-
-from baseline.common import compute_metrics, load_eval_samples, preload_segment_pairs
-from baseline.pyannote_wespeaker_voxceleb_resnet34_lm import (
-    PyannoteWeSpeakerVoxCelebResnet34LMBaseline,
+from baseline.common import compute_metrics
+from datasets.train_test2.dataloader import (
+    build_train_val_test_samples,
+    preload_audio_pairs,
+    set_half_duration,
 )
-from baseline.pure_sincnet import PureSincNetBaseline
-# from baseline.microsoft_wavlm_base_plus_sv import MicrosoftWavLMBasePlusSVBaseline
-from baseline.distilled_mel_tdnn import DistilledMelTDNNBaseline
-# from baseline.resemblyzer_ge2e import ResemblyzerGE2EBaseline
-# from baseline.speechbrain_ecapa import SpeechBrainECAPABaseline
-# from baseline.speechbrain_xvector import SpeechBrainXVectorBaseline
-# from baseline.wespeaker_english import WeSpeakerEnglishBaseline
 
 
-MODEL_REGISTRY = {
-    "pure_sincnet": PureSincNetBaseline,
-    # "pyannote_wespeaker_voxceleb_resnet34_lm": PyannoteWeSpeakerVoxCelebResnet34LMBaseline,
-    # "microsoft_wavlm_base_plus_sv": MicrosoftWavLMBasePlusSVBaseline,
-    # "speechbrain_ecapa": SpeechBrainECAPABaseline,
-    # "speechbrain_xvector": SpeechBrainXVectorBaseline,
-    # "resemblyzer_ge2e": ResemblyzerGE2EBaseline,
-    # "wespeaker_english": WeSpeakerEnglishBaseline,
-    "distilled_mel_tdnn": DistilledMelTDNNBaseline,
-    # "project_mlp_whisper": ProjectMLPWhisperBaseline,
+# Keep only official pretrained models.
+# SpeechBrain models are default and prioritized for stability.
+MODEL_SPECS = {
+    "speechbrain_ecapa": {
+        "module": "baseline.speechbrain_ecapa",
+        "class": "SpeechBrainECAPABaseline",
+        "optional": False,
+    },
+    "speechbrain_xvector": {
+        "module": "baseline.speechbrain_xvector",
+        "class": "SpeechBrainXVectorBaseline",
+        "optional": False,
+    },
+    "resemblyzer_ge2e": {
+        "module": "baseline.resemblyzer_ge2e",
+        "class": "ResemblyzerGE2EBaseline",
+        "optional": False,
+    },
+    "microsoft_wavlm_base_plus_sv": {
+        "module": "baseline.microsoft_wavlm_base_plus_sv",
+        "class": "MicrosoftWavLMBasePlusSVBaseline",
+        "optional": False,
+    },
+    "pyannote_wespeaker_voxceleb_resnet34_lm": {
+        "module": "baseline.pyannote_wespeaker_voxceleb_resnet34_lm",
+        "class": "PyannoteWeSpeakerVoxCelebResnet34LMBaseline",
+        "optional": False,
+    },
+    "wespeaker_english": {
+        "module": "baseline.wespeaker_english",
+        "class": "WeSpeakerEnglishBaseline",
+        "optional": False,
+    },
 }
+
+DEFAULT_MODELS = [name for name, spec in MODEL_SPECS.items() if not spec["optional"]]
+OPTIONAL_MODELS = [name for name, spec in MODEL_SPECS.items() if spec["optional"]]
+
+OFFICIAL_SOURCE = {
+    "speechbrain_ecapa": "speechbrain/spkrec-ecapa-voxceleb",
+    "speechbrain_xvector": "speechbrain/spkrec-xvect-voxceleb",
+    "resemblyzer_ge2e": "resemblyzer/GE2E",
+    "microsoft_wavlm_base_plus_sv": "microsoft/wavlm-base-plus-sv",
+    "pyannote_wespeaker_voxceleb_resnet34_lm": "pyannote/wespeaker-voxceleb-resnet34-LM",
+    "wespeaker_english": "wespeaker_nuaazs:english",
+}
+
+RUN_FIELDNAMES = [
+    "model",
+    "run",
+    "select_metric",
+    "best_epoch",
+    "epochs_trained",
+    "train_samples",
+    "val_samples",
+    "test_samples",
+    "train_acc_at_best",
+    "train_f1_at_best",
+    "train_precision_at_best",
+    "train_recall_at_best",
+    "train_loss_at_best",
+    "train_err_at_best",
+    "val_acc_at_best",
+    "val_f1_at_best",
+    "val_precision_at_best",
+    "val_recall_at_best",
+    "val_loss_at_best",
+    "val_err_at_best",
+    "test_acc",
+    "test_f1",
+    "test_precision",
+    "test_recall",
+    "test_loss",
+    "test_err",
+    "test_sample_count",
+    "test_time_seconds",
+    "train_time_seconds",
+    "total_time_seconds",
+    "student_ms",
+    "best_checkpoint",
+]
+
+AGG_FIELDNAMES = [
+    "model",
+    "runs",
+    "test_acc_mean",
+    "test_acc_std",
+    "test_f1_mean",
+    "test_f1_std",
+    "test_err_mean",
+    "test_err_std",
+    "test_loss_mean",
+    "test_loss_std",
+    "val_acc_mean",
+    "val_acc_std",
+    "val_f1_mean",
+    "val_f1_std",
+    "val_err_mean",
+    "val_err_std",
+    "val_loss_mean",
+    "val_loss_std",
+    "train_time_seconds_mean",
+    "train_time_seconds_std",
+    "test_time_seconds_mean",
+    "test_time_seconds_std",
+    "total_time_seconds_mean",
+    "total_time_seconds_std",
+    "student_ms_mean",
+    "student_ms_std",
+]
+
+
+def import_model_class(model_name: str):
+    spec = MODEL_SPECS[model_name]
+    module = importlib.import_module(spec["module"])
+    return getattr(module, spec["class"])
 
 
 def select_device(device_arg: str) -> str:
@@ -45,240 +146,284 @@ def select_device(device_arg: str) -> str:
     return "cuda" if torch.cuda.is_available() else "cpu"
 
 
-def write_predictions_csv(output_path: Path, prediction_rows):
-    fieldnames = [
-        "test_row_index",
-        "audio_path",
-        "label",
-        "prediction",
-        "correct",
-        "same_speaker_score",
-        "raw_score",
-        "runtime_ms",
-    ]
-    with open(output_path, "w", newline="", encoding="utf-8") as f:
+def error_rate(acc_value):
+    if acc_value is None:
+        return None
+    return 1.0 - float(acc_value)
+
+
+def mean_std(values):
+    if not values:
+        return None, None
+    mean_val = sum(values) / len(values)
+    var_val = sum((x - mean_val) ** 2 for x in values) / len(values)
+    return mean_val, var_val**0.5
+
+
+def write_csv(path: Path, rows, fieldnames):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerows(prediction_rows)
+        for row in rows:
+            writer.writerow({k: row.get(k) for k in fieldnames})
 
 
-def normalize_summary_value(value):
-    if value is None:
-        return ""
-    if isinstance(value, float):
-        return f"{value:.6f}"
-    return value
+def evaluate_split(model, samples, sample_rate: int, desc: str = ""):
+    labels = []
+    predictions = []
+    start_t = time.perf_counter()
+    iterator = tqdm(samples, desc=desc, leave=False) if desc else samples
+    for sample in iterator:
+        pred = model.predict(
+            sample["left_audio"],
+            sample["right_audio"],
+            int(sample.get("target_sr", sample_rate)),
+        )
+        labels.append(int(sample["label"]))
+        predictions.append(int(pred.prediction))
+    elapsed = time.perf_counter() - start_t
+    metrics = compute_metrics(labels, predictions)
+    return metrics, elapsed
 
 
-def write_summary_csv(output_path: Path, summary_rows):
-    if not summary_rows:
-        return
-    fieldnames = list(summary_rows[0].keys())
-    with open(output_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        for row in summary_rows:
-            writer.writerow({key: normalize_summary_value(value) for key, value in row.items()})
+def aggregate_model_rows(model_name, rows):
+    def collect(key):
+        return [row[key] for row in rows if row.get(key) is not None]
+
+    test_acc_mean, test_acc_std = mean_std(collect("test_acc"))
+    test_f1_mean, test_f1_std = mean_std(collect("test_f1"))
+    test_err_mean, test_err_std = mean_std(collect("test_err"))
+    test_loss_mean, test_loss_std = mean_std(collect("test_loss"))
+    val_acc_mean, val_acc_std = mean_std(collect("val_acc_at_best"))
+    val_f1_mean, val_f1_std = mean_std(collect("val_f1_at_best"))
+    val_err_mean, val_err_std = mean_std(collect("val_err_at_best"))
+    val_loss_mean, val_loss_std = mean_std(collect("val_loss_at_best"))
+    train_time_mean, train_time_std = mean_std(collect("train_time_seconds"))
+    test_time_mean, test_time_std = mean_std(collect("test_time_seconds"))
+    total_time_mean, total_time_std = mean_std(collect("total_time_seconds"))
+    student_ms_mean, student_ms_std = mean_std(collect("student_ms"))
+
+    return {
+        "model": model_name,
+        "runs": len(rows),
+        "test_acc_mean": test_acc_mean,
+        "test_acc_std": test_acc_std,
+        "test_f1_mean": test_f1_mean,
+        "test_f1_std": test_f1_std,
+        "test_err_mean": test_err_mean,
+        "test_err_std": test_err_std,
+        "test_loss_mean": test_loss_mean,
+        "test_loss_std": test_loss_std,
+        "val_acc_mean": val_acc_mean,
+        "val_acc_std": val_acc_std,
+        "val_f1_mean": val_f1_mean,
+        "val_f1_std": val_f1_std,
+        "val_err_mean": val_err_mean,
+        "val_err_std": val_err_std,
+        "val_loss_mean": val_loss_mean,
+        "val_loss_std": val_loss_std,
+        "train_time_seconds_mean": train_time_mean,
+        "train_time_seconds_std": train_time_std,
+        "test_time_seconds_mean": test_time_mean,
+        "test_time_seconds_std": test_time_std,
+        "total_time_seconds_mean": total_time_mean,
+        "total_time_seconds_std": total_time_std,
+        "student_ms_mean": student_ms_mean,
+        "student_ms_std": student_ms_std,
+    }
+
+
+def build_run_row(model_name, train_metrics, train_time, val_metrics, val_time, test_metrics, test_time, split_sizes):
+    train_acc = train_metrics.get("accuracy")
+    val_acc = val_metrics.get("accuracy")
+    test_acc = test_metrics.get("accuracy")
+
+    train_eval_time = train_time + val_time
+    total_time = train_eval_time + test_time
+    test_count = int(test_metrics.get("sample_count") or 0)
+    student_ms = (test_time * 1000.0 / test_count) if test_count > 0 else None
+
+    return {
+        "model": model_name,
+        "run": 1,
+        "select_metric": "f1",
+        "best_epoch": 0,
+        "epochs_trained": 0,
+        "train_samples": split_sizes["train"],
+        "val_samples": split_sizes["val"],
+        "test_samples": split_sizes["test"],
+        "train_acc_at_best": train_acc,
+        "train_f1_at_best": train_metrics.get("f1"),
+        "train_precision_at_best": train_metrics.get("precision"),
+        "train_recall_at_best": train_metrics.get("recall"),
+        "train_loss_at_best": None,
+        "train_err_at_best": error_rate(train_acc),
+        "val_acc_at_best": val_acc,
+        "val_f1_at_best": val_metrics.get("f1"),
+        "val_precision_at_best": val_metrics.get("precision"),
+        "val_recall_at_best": val_metrics.get("recall"),
+        "val_loss_at_best": None,
+        "val_err_at_best": error_rate(val_acc),
+        "test_acc": test_acc,
+        "test_f1": test_metrics.get("f1"),
+        "test_precision": test_metrics.get("precision"),
+        "test_recall": test_metrics.get("recall"),
+        "test_loss": None,
+        "test_err": error_rate(test_acc),
+        "test_sample_count": test_count,
+        "test_time_seconds": test_time,
+        "train_time_seconds": train_eval_time,
+        "total_time_seconds": total_time,
+        "student_ms": student_ms,
+        "best_checkpoint": OFFICIAL_SOURCE.get(model_name, "official_pretrained"),
+    }
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Evaluate selected same-speaker baselines on test_baseline_segments.csv."
-    )
-    parser.add_argument(
-        "--csv",
-        default="dl_model/baseline_train_test_segments_switchlingua_seame.csv",
-        help="CSV containing segment windows and labels",
-    )
-    parser.add_argument(
-        "--output-dir",
-        default="baseline/results",
-        help="Where to write summary and per-model predictions",
+        description=(
+            "Inference-only official pretrained baseline evaluation on train/val/test splits. "
+            "Outputs compare-style runs/aggregate CSV files."
+        )
     )
     parser.add_argument(
         "--models",
         nargs="+",
-        default=list(MODEL_REGISTRY.keys()),
-        choices=list(MODEL_REGISTRY.keys()),
-        help="Which baselines to run",
+        default=DEFAULT_MODELS,
+        choices=list(MODEL_SPECS.keys()),
+        help="Official pretrained baselines to evaluate.",
     )
     parser.add_argument(
-        "--max-samples",
-        type=int,
-        default=None,
-        help="Optional cap on the number of available rows to evaluate",
+        "--include-optional-official",
+        action="store_true",
+        help="Append optional official models (WavLM/Pyannote/WeSpeaker).",
     )
-    parser.add_argument(
-        "--device",
-        default="cpu",
-        choices=["auto", "cpu", "cuda"],
-        help="Run inference on the selected device when the model implementation supports it",
-    )
-    parser.add_argument(
-        "--hf-token",
-        default=None,
-        help="Optional Hugging Face token for models that require authenticated access",
-    )
+    parser.add_argument("--manifest-csv", default="datasets/train_test2/compare_train_val_test_manifest.csv")
+    parser.add_argument("--dataset-root", default="datasets/train_test2")
+    parser.add_argument("--half-duration", type=float, default=2.0)
+    parser.add_argument("--sr", type=int, default=16000)
+    parser.add_argument("--device", default="cpu", choices=["auto", "cpu", "cuda"])
+    parser.add_argument("--hf-token", default=None)
+    parser.add_argument("--cache-dir", default="baseline/output_official/model_cache")
+    parser.add_argument("--summary-csv", default="baseline/output_official/summary_manifest_runs.csv")
+    parser.add_argument("--summary-agg-csv", default="baseline/output_official/summary_manifest_aggregate.csv")
+    parser.add_argument("--fail-fast", action="store_true")
     args = parser.parse_args()
 
-    repo_root = Path(__file__).resolve().parents[1]
-    csv_path = repo_root / args.csv
-    output_dir = repo_root / args.output_dir
-    output_dir.mkdir(parents=True, exist_ok=True)
-    cache_dir = output_dir / "model_cache"
+    if args.include_optional_official:
+        for model_name in OPTIONAL_MODELS:
+            if model_name not in args.models:
+                args.models.append(model_name)
+
+    root = Path(__file__).resolve().parents[1]
+    cache_dir = root / args.cache_dir
     cache_dir.mkdir(parents=True, exist_ok=True)
 
-    dataset_start = time.perf_counter()
-    samples, dataset_report = load_eval_samples(csv_path, root=repo_root, max_samples=args.max_samples)
-    pairs = preload_segment_pairs(samples, target_sr=16000)
-    dataset_time_s = time.perf_counter() - dataset_start
+    manifest_path = root / args.manifest_csv
+    dataset_root = root / args.dataset_root
+    splits = build_train_val_test_samples(
+        manifest_csv=manifest_path,
+        dataset_root=dataset_root,
+        target_sr=args.sr,
+        include_time_windows=False,
+    )
 
-    print(f"csv rows             : {dataset_report.csv_rows}")
-    print(f"available rows       : {dataset_report.available_rows}")
-    print(f"missing rows         : {dataset_report.missing_rows}")
-    print(f"positives / negatives: {dataset_report.positives} / {dataset_report.negatives}")
-    print(f"dataset prep time(s) : {dataset_time_s:.4f}")
+    for split_name in ("train", "val", "test"):
+        set_half_duration(splits[split_name], args.half_duration)
+        preload_audio_pairs(splits[split_name], limit=None)
 
-    if dataset_report.missing_examples:
-        print("missing examples     :")
-        for path in dataset_report.missing_examples[:5]:
-            print(f"  - {path}")
-
-    if len(pairs) == 0:
-        raise RuntimeError("No available audio rows were found for evaluation.")
-
-    if dataset_report.positives == 0 or dataset_report.negatives == 0:
-        print("warning              : only one class is available locally, so accuracy is not representative.")
+    split_sizes = {k: len(v) for k, v in splits.items()}
+    if min(split_sizes.values()) == 0:
+        raise RuntimeError(
+            f"Empty split detected: train={split_sizes['train']}, "
+            f"val={split_sizes['val']}, test={split_sizes['test']}"
+        )
 
     device = select_device(args.device)
     print(f"device               : {device}")
+    print(f"manifest_csv         : {manifest_path}")
+    print(
+        "samples (train/val/test): "
+        f"{split_sizes['train']}/{split_sizes['val']}/{split_sizes['test']}"
+    )
+    print(f"models               : {', '.join(args.models)}")
+    print("mode                 : inference only (no training)")
 
-    summary_rows = []
+    run_rows = []
+    per_model_rows = {}
+
     for model_name in args.models:
-        model_class = MODEL_REGISTRY[model_name]
-        print(f"\n=== Running {model_name} ===")
-
-        init_start = time.perf_counter()
-        init_kwargs = {
-            "device": device,
-            "cache_dir": cache_dir,
-        }
+        print(f"\n=== Evaluating {model_name} ===")
+        init_kwargs = {"device": device, "cache_dir": cache_dir}
         if model_name == "pyannote_wespeaker_voxceleb_resnet34_lm":
             init_kwargs["hf_token"] = args.hf_token
 
+        model = None
         try:
+            model_class = import_model_class(model_name)
             model = model_class(**init_kwargs)
+
+            train_metrics, train_time = evaluate_split(
+                model,
+                splits["train"],
+                args.sr,
+                desc=f"{model_name} train",
+            )
+            val_metrics, val_time = evaluate_split(
+                model,
+                splits["val"],
+                args.sr,
+                desc=f"{model_name} val",
+            )
+            test_metrics, test_time = evaluate_split(
+                model,
+                splits["test"],
+                args.sr,
+                desc=f"{model_name} test",
+            )
+
+            row = build_run_row(
+                model_name=model_name,
+                train_metrics=train_metrics,
+                train_time=train_time,
+                val_metrics=val_metrics,
+                val_time=val_time,
+                test_metrics=test_metrics,
+                test_time=test_time,
+                split_sizes=split_sizes,
+            )
+            run_rows.append(row)
+            per_model_rows.setdefault(model_name, []).append(row)
+
+            print(
+                f"test_acc={row['test_acc']:.4f} test_f1={row['test_f1']:.4f} "
+                f"test_time_s={row['test_time_seconds']:.3f}"
+            )
         except Exception as exc:
-            init_time_s = time.perf_counter() - init_start
-            error_message = f"{type(exc).__name__}: {exc}"
-            print(f"failed to initialize  : {error_message}")
-            summary_rows.append(
-                {
-                    "model": model_name,
-                    "sample_count": 0,
-                    "positives": 0,
-                    "negatives": 0,
-                    "accuracy": None,
-                    "positive_accuracy": None,
-                    "negative_accuracy": None,
-                    "precision": None,
-                    "recall": None,
-                    "specificity": None,
-                    "f1": None,
-                    "balanced_accuracy": None,
-                    "tp": 0,
-                    "tn": 0,
-                    "fp": 0,
-                    "fn": 0,
-                    "init_time_s": init_time_s,
-                    "inference_time_s": 0.0,
-                    "total_model_time_s": init_time_s,
-                    "avg_inference_ms": None,
-                    "dataset_available_rows": dataset_report.available_rows,
-                    "dataset_missing_rows": dataset_report.missing_rows,
-                    "error": error_message,
-                }
-            )
-            continue
+            if args.fail_fast:
+                raise
+            print(f"[warn] {model_name} failed: {type(exc).__name__}: {exc}")
+        finally:
+            if model is not None:
+                del model
+            gc.collect()
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
 
-        init_time_s = time.perf_counter() - init_start
+    aggregate_rows = [
+        aggregate_model_rows(model_name, rows)
+        for model_name, rows in per_model_rows.items()
+        if rows
+    ]
 
-        labels = []
-        predictions = []
-        prediction_rows = []
-        inference_time_s = 0.0
+    summary_csv_path = root / args.summary_csv
+    summary_agg_csv_path = root / args.summary_agg_csv
+    write_csv(summary_csv_path, run_rows, RUN_FIELDNAMES)
+    write_csv(summary_agg_csv_path, aggregate_rows, AGG_FIELDNAMES)
 
-        for pair in pairs:
-            step_start = time.perf_counter()
-            result = model.predict(pair.left_audio, pair.right_audio, pair.sample_rate)
-            step_time_s = time.perf_counter() - step_start
-            inference_time_s += step_time_s
-
-            label = pair.sample.label
-            prediction = int(result.prediction)
-            labels.append(label)
-            predictions.append(prediction)
-            prediction_rows.append(
-                {
-                    "test_row_index": pair.sample.test_row_index,
-                    "audio_path": pair.sample.audio_path,
-                    "label": label,
-                    "prediction": prediction,
-                    "correct": int(label == prediction),
-                    "same_speaker_score": f"{result.same_speaker_score:.6f}",
-                    "raw_score": f"{result.raw_score:.6f}",
-                    "runtime_ms": f"{step_time_s * 1000.0:.4f}",
-                }
-            )
-
-        metrics = compute_metrics(labels, predictions)
-        total_model_time_s = init_time_s + inference_time_s
-        avg_inference_ms = inference_time_s * 1000.0 / len(pairs)
-
-        summary = {
-            "model": model_name,
-            "sample_count": metrics["sample_count"],
-            "positives": metrics["positives"],
-            "negatives": metrics["negatives"],
-            "accuracy": metrics["accuracy"],
-            "positive_accuracy": metrics["positive_accuracy"],
-            "negative_accuracy": metrics["negative_accuracy"],
-            "precision": metrics["precision"],
-            "recall": metrics["recall"],
-            "specificity": metrics["specificity"],
-            "f1": metrics["f1"],
-            "balanced_accuracy": metrics["balanced_accuracy"],
-            "tp": metrics["tp"],
-            "tn": metrics["tn"],
-            "fp": metrics["fp"],
-            "fn": metrics["fn"],
-            "init_time_s": init_time_s,
-            "inference_time_s": inference_time_s,
-            "total_model_time_s": total_model_time_s,
-            "avg_inference_ms": avg_inference_ms,
-            "dataset_available_rows": dataset_report.available_rows,
-            "dataset_missing_rows": dataset_report.missing_rows,
-            "error": "",
-        }
-        summary_rows.append(summary)
-
-        write_predictions_csv(output_dir / f"{model_name}_predictions.csv", prediction_rows)
-        print(
-            f"accuracy={summary['accuracy'] if summary['accuracy'] is not None else 'NA'} "
-            f"avg_inference_ms={avg_inference_ms:.4f} total_time_s={total_model_time_s:.4f}"
-        )
-
-        del model
-        gc.collect()
-        if torch.cuda.is_available():
-            torch.cuda.empty_cache()
-
-    write_summary_csv(output_dir / "summary.csv", summary_rows)
-    with open(output_dir / "summary.json", "w", encoding="utf-8") as f:
-        json.dump(summary_rows, f, ensure_ascii=False, indent=2)
-
-    print(f"\nsummary csv          : {(output_dir / 'summary.csv').resolve()}")
-    print(f"summary json         : {(output_dir / 'summary.json').resolve()}")
+    print(f"\nRun-level CSV        : {summary_csv_path}")
+    print(f"Aggregate CSV        : {summary_agg_csv_path}")
 
 
 if __name__ == "__main__":
