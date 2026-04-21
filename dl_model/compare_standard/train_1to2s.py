@@ -1,4 +1,4 @@
-import argparse
+﻿import argparse
 import csv
 import importlib
 import math
@@ -25,9 +25,9 @@ from datasets.train_test2.dataloader import (
 
 
 MODEL_MODULES = {
-    "tdnn": "dl_model.compare_stander.model_official_tdnn",
-    "ecapatdnn": "dl_model.compare_stander.model_official_ecapatdnn",
-    "resnet": "dl_model.compare_stander.model_official_resnet",
+    "tdnn": "dl_model.compare_standard.model_official_tdnn",
+    "ecapatdnn": "dl_model.compare_standard.model_official_ecapatdnn",
+    "resnet": "dl_model.compare_standard.model_official_resnet",
 }
 
 
@@ -488,19 +488,19 @@ def main():
     parser.add_argument("--models", nargs="+", default=list(MODEL_MODULES.keys()), choices=list(MODEL_MODULES.keys()))
     parser.add_argument("--manifest-csv", default="datasets/train_test2/compare_train_val_test_manifest.csv")
     parser.add_argument("--dataset-root", default="datasets/train_test2")
-    parser.add_argument("--checkpoint-dir", default="dl_model/compare_stander/output_official/checkpoints_1to2s")
-    parser.add_argument("--summary-csv", default="dl_model/compare_stander/output_official/results_runs_1to2s.csv")
+    parser.add_argument("--checkpoint-dir", default="dl_model/compare_standard/output_official/checkpoints_1to2s")
+    parser.add_argument("--summary-csv", default="dl_model/compare_standard/output_official/results_runs_1to2s.csv")
     parser.add_argument(
         "--summary-agg-csv",
-        default="dl_model/compare_stander/output_official/results_aggregate_1to2s.csv",
+        default="dl_model/compare_standard/output_official/results_aggregate_1to2s.csv",
     )
     parser.add_argument(
         "--test-duration-csv",
-        default="dl_model/compare_stander/output_official/results_test_duration_runs_1to2s.csv",
+        default="dl_model/compare_standard/output_official/results_test_duration_runs_1to2s.csv",
     )
     parser.add_argument(
         "--test-duration-agg-csv",
-        default="dl_model/compare_stander/output_official/results_test_duration_aggregate_1to2s.csv",
+        default="dl_model/compare_standard/output_official/results_test_duration_aggregate_1to2s.csv",
     )
     parser.add_argument("--student-device", default="auto", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--epochs", type=int, default=60)

@@ -18,7 +18,7 @@ from torch.utils.data import Dataset, DataLoader
 import torchaudio
 from tqdm import tqdm
 
-from speechbrain.pretrained import EncoderClassifier
+from speechbrain.inference import EncoderClassifier
 
 
 # =========================

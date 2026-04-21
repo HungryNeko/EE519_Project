@@ -1,10 +1,10 @@
-from dl_model.compare_stander.official_common import SpeechBrainECAPAPair
+﻿from dl_model.compare_standard.official_common import SpeechBrainResNetPair
 
-MODEL_NAME = "ecapatdnn"
+MODEL_NAME = "resnet"
 
 
 def build_model(args):
-    return SpeechBrainECAPAPair(
+    return SpeechBrainResNetPair(
         sample_rate=args.sr,
         n_mels=args.n_mels,
         emb_dim=args.emb_dim,

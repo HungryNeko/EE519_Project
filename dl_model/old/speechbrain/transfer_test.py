@@ -5,7 +5,7 @@ import torch
 from torch.utils.data import DataLoader
 
 from dl_model.old.speechbrain.transfer import FrozenEncoderClassifier, SwitchDetectionDataset, evaluate, set_seed
-from speechbrain.pretrained import EncoderClassifier
+from speechbrain.inference import EncoderClassifier
 
 
 def main():

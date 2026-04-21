@@ -1,0 +1,13 @@
+experiment,model,run,split,half_duration,score_type,eer,eer_threshold,sample_count,eval_time_seconds,best_checkpoint
+b1_baseline_output_official,speechbrain_ecapa,1,train,2.0,same,0.23317683881064163,0.6515228748321533,8946,425.566521700006,speechbrain/spkrec-ecapa-voxceleb
+b1_baseline_output_official,speechbrain_ecapa,1,val,2.0,same,0.06609195402298851,0.6945834308862686,696,33.44195759994909,speechbrain/spkrec-ecapa-voxceleb
+b1_baseline_output_official,speechbrain_ecapa,1,test,2.0,same,0.18468468468468469,0.6175583079457283,444,21.32057810004335,speechbrain/spkrec-ecapa-voxceleb
+b1_baseline_output_official,speechbrain_xvector,1,train,2.0,same,0.41090990386765036,0.9425520896911621,8946,72.69090909999795,speechbrain/spkrec-xvect-voxceleb
+b1_baseline_output_official,speechbrain_xvector,1,val,2.0,same,0.13218390804597702,0.9635503590106964,696,5.625709199928679,speechbrain/spkrec-xvect-voxceleb
+b1_baseline_output_official,speechbrain_xvector,1,test,2.0,same,0.40540540540540543,0.9419043064117432,444,3.561079500010237,speechbrain/spkrec-xvect-voxceleb
+b1_baseline_output_official,resemblyzer_ge2e,1,train,2.0,same,0.212161860049184,0.8371765579838253,8946,111.27309440006502,resemblyzer/GE2E
+b1_baseline_output_official,resemblyzer_ge2e,1,val,2.0,same,0.0603448275862069,0.8716899868405339,696,8.689738999935798,resemblyzer/GE2E
+b1_baseline_output_official,resemblyzer_ge2e,1,test,2.0,same,0.2072072072072072,0.8114159857731493,444,5.406260999967344,resemblyzer/GE2E
+b1_baseline_output_official,wespeaker_english,1,train,2.0,same,0.1743796109993293,0.7032839059829712,8946,1562.1403282000683,wespeaker_nuaazs:english
+b1_baseline_output_official,wespeaker_english,1,val,2.0,same,0.05459770114942529,0.7276842594146729,696,120.91728920000605,wespeaker_nuaazs:english
+b1_baseline_output_official,wespeaker_english,1,test,2.0,same,0.17567567567567569,0.6460912227630615,444,76.5534926999826,wespeaker_nuaazs:english

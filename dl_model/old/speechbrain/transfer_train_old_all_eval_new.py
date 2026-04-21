@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 from baseline.common import compute_metrics, load_eval_samples, preload_segment_pairs
 from baseline.speechbrain_ecapa import SpeechBrainECAPABaseline
-from speechbrain.pretrained import EncoderClassifier
+from speechbrain.inference import EncoderClassifier
 
 from dl_model.old.speechbrain.transfer import FrozenEncoderClassifier, evaluate, set_seed
 

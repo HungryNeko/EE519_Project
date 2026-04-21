@@ -1,16 +1,16 @@
-# Compare vs Compare_Stander 简略实验报告（2026-04-19）
+# Compare vs Compare_Standard 简要实验报告（2026-04-19）
 
 ## 1. 数据来源（本次读取文件）
 
 - `dl_model/compare/output/summary_manifest_aggregate.csv`（更新时间：2026-04-19 05:40:06）
 - `dl_model/compare/output/summary_manifest_runs.csv`（更新时间：2026-04-19 05:40:06）
-- `dl_model/compare_stander/output_official/results_aggregate.csv`（更新时间：2026-04-19 04:11:09）
-- `dl_model/compare_stander/output_official/results_runs.csv`（更新时间：2026-04-19 04:11:09）
+- `dl_model/compare_standard/output_official/results_aggregate.csv`（更新时间：2026-04-19 04:11:09）
+- `dl_model/compare_standard/output_official/results_runs.csv`（更新时间：2026-04-19 04:11:09）
 
 ## 2. 统一实验口径
 
 - 数据划分：`train=8946, val=696, test=444`
-- 选择准则：`select_metric=f1`（基于验证集挑选最佳权重）
+- 选择准则：`select_metric=f1`（基于验证集选择最佳权重）
 - 本次每个模型 `runs=1`，因此 `std=0`
 - 关键指标：`test_acc`, `test_f1`, `test_err`, `test_loss`, `train_time_seconds`, `test_time_seconds`, `total_time_seconds`
 
@@ -24,7 +24,7 @@
 | redimnet | 0.5946 | 0.5833 | 0.4054 | 0.6834 | 336.93 |
 | tdnn | 0.6374 | 0.4984 | 0.3626 | 0.6316 | 419.57 |
 
-## 4. compare_stander（官方标准实现）结果汇总
+## 4. compare_standard（官方标准实现）结果汇总
 
 | model | test_acc | test_f1 | test_err | test_loss | train_time(s) |
 |---|---:|---:|---:|---:|---:|
@@ -40,10 +40,10 @@
 | tdnn | +0.0360 | -0.0751 | 0.50x |
 
 说明：
-- `ecapatdnn`：两边 `test_acc` 基本一致；官方版 `test_f1` 略高；compare 训练更快。
-- `tdnn`：compare 的 `test_acc` 更高，但官方版 `test_f1` 更高；官方版训练更快。
+- `ecapatdnn`：两者 `test_acc` 基本一致；官方 `test_f1` 略高；compare 训练更快。
+- `tdnn`：compare 的 `test_acc` 更高，但官方的 `test_f1` 更高；官方版训练更快。
 
-## 6. 单次运行细节（best epoch / early stop后训练轮数）
+## 6. 单次运行细节（best epoch / early stop 后训练轮数）
 
 ### compare
 
@@ -53,7 +53,7 @@
 - redimnet：best_epoch=7, epochs_trained=17, val_f1=0.7388, test_f1=0.5833
 - sincnet：best_epoch=14, epochs_trained=24, val_f1=0.8742, test_f1=0.6870
 
-### compare_stander
+### compare_standard
 
 - tdnn：best_epoch=12, epochs_trained=22, val_f1=0.8794, test_f1=0.5735
 - ecapatdnn：best_epoch=20, epochs_trained=30, val_f1=0.9137, test_f1=0.6016

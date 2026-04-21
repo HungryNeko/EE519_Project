@@ -1,4 +1,4 @@
-from dl_model.compare_stander.official_common import SpeechBrainTDNNPair
+﻿from dl_model.compare_standard.official_common import SpeechBrainTDNNPair
 
 MODEL_NAME = "tdnn"
 

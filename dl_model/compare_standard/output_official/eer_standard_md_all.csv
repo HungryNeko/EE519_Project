@@ -1,0 +1,13 @@
+experiment,half_duration,model,run,eer
+s1_standard_baseline,2.0,tdnn,1,0.4009009009009009
+s1_standard_baseline,2.0,ecapatdnn,1,0.32882882882882886
+s1_standard_baseline,2.0,resnet,1,0.30180180180180183
+s2_standard_1to2s,1.0,tdnn,1,0.4189189189189189
+s2_standard_1to2s,1.5,tdnn,1,0.4144144144144144
+s2_standard_1to2s,2.0,tdnn,1,0.38738738738738737
+s2_standard_1to2s,1.0,ecapatdnn,1,0.35585585585585583
+s2_standard_1to2s,1.5,ecapatdnn,1,0.34684684684684686
+s2_standard_1to2s,2.0,ecapatdnn,1,0.3108108108108108
+s2_standard_1to2s,1.0,resnet,1,0.4144144144144144
+s2_standard_1to2s,1.5,resnet,1,0.3963963963963964
+s2_standard_1to2s,2.0,resnet,1,0.34684684684684686
