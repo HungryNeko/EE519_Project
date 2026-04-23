@@ -1,0 +1,99 @@
+{
+  "weight_field": "accuracy",
+  "vote_method": "calibrated",
+  "calibration": "platt",
+  "calib_fit": "crossval",
+  "stack_features": null,
+  "meta_learner": null,
+  "sample_count": 444,
+  "voters": [
+    {
+      "name": "distilled_mel_tdnn",
+      "weight": 0.716216
+    },
+    {
+      "name": "resemblyzer_ge2e",
+      "weight": 0.619369
+    },
+    {
+      "name": "speechbrain_ecapa",
+      "weight": 0.788288
+    }
+  ],
+  "ensemble_metrics": {
+    "sample_count": 444,
+    "positives": 222,
+    "negatives": 222,
+    "tp": 188,
+    "tn": 192,
+    "fp": 30,
+    "fn": 34,
+    "accuracy": 0.8558558558558559,
+    "positive_accuracy": 0.8468468468468469,
+    "negative_accuracy": 0.8648648648648649,
+    "precision": 0.8623853211009175,
+    "recall": 0.8468468468468469,
+    "specificity": 0.8648648648648649,
+    "f1": 0.8545454545454546,
+    "balanced_accuracy": 0.8558558558558559
+  },
+  "per_model_metrics": {
+    "distilled_mel_tdnn": {
+      "sample_count": 444,
+      "positives": 222,
+      "negatives": 222,
+      "tp": 151,
+      "tn": 167,
+      "fp": 55,
+      "fn": 71,
+      "accuracy": 0.7162162162162162,
+      "positive_accuracy": 0.6801801801801802,
+      "negative_accuracy": 0.7522522522522522,
+      "precision": 0.7330097087378641,
+      "recall": 0.6801801801801802,
+      "specificity": 0.7522522522522522,
+      "f1": 0.705607476635514,
+      "balanced_accuracy": 0.7162162162162162
+    },
+    "resemblyzer_ge2e": {
+      "sample_count": 444,
+      "positives": 222,
+      "negatives": 222,
+      "tp": 216,
+      "tn": 59,
+      "fp": 163,
+      "fn": 6,
+      "accuracy": 0.6193693693693694,
+      "positive_accuracy": 0.972972972972973,
+      "negative_accuracy": 0.26576576576576577,
+      "precision": 0.5699208443271768,
+      "recall": 0.972972972972973,
+      "specificity": 0.26576576576576577,
+      "f1": 0.718801996672213,
+      "balanced_accuracy": 0.6193693693693694
+    },
+    "speechbrain_ecapa": {
+      "sample_count": 444,
+      "positives": 222,
+      "negatives": 222,
+      "tp": 151,
+      "tn": 199,
+      "fp": 23,
+      "fn": 71,
+      "accuracy": 0.7882882882882883,
+      "positive_accuracy": 0.6801801801801802,
+      "negative_accuracy": 0.8963963963963963,
+      "precision": 0.867816091954023,
+      "recall": 0.6801801801801802,
+      "specificity": 0.8963963963963963,
+      "f1": 0.7626262626262628,
+      "balanced_accuracy": 0.7882882882882882
+    }
+  },
+  "timing": {
+    "diagnostics_sec": 0.00402379099978134,
+    "calibration_sec": 6.648986667001736,
+    "ensemble_sec": 0.0010235000008833595,
+    "total_sec": 6.662793291994603
+  }
+}
