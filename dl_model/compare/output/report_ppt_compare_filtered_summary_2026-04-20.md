@@ -4,12 +4,35 @@ SV-EER columns below are speaker verification EER from CSV (not `1-ACC`).
 
 ## 1. C1 Compare Baseline
 
+### 1.1 No Aug
+
 | Model | Best Epoch | Epochs | Samples T/V/Te | Test ACC | Test F1 | Test ERR | Test Loss | Val F1(mean) | Val F1@Best | Train Time(s) | Test Time(s) | SV-EER@2.0s |
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | sincnet | 14 | 24 | 8946/696/444 | 0.7230 | 0.6870 | 0.2770 | 0.5707 | 0.8742 | 0.8742 | 1557.18 | 0.8101 | 0.2793 |
 | ecapatdnn | 12 | 22 | 8946/696/444 | 0.6689 | 0.5905 | 0.3311 | 0.6019 | 0.8838 | 0.8838 | 403.60 | 0.2791 | 0.2793 |
 | redimnet | 7 | 17 | 8946/696/444 | 0.5946 | 0.5833 | 0.4054 | 0.6834 | 0.7388 | 0.7388 | 336.93 | 0.3915 | 0.4009 |
 | tdnn | 22 | 32 | 8946/696/444 | 0.6374 | 0.4984 | 0.3626 | 0.6316 | 0.9089 | 0.9089 | 419.57 | 0.2056 | 0.3514 |
+
+### 1.2 With Aug
+
+| Model | Best Epoch | Epochs | Samples T/V/Te | Test ACC | Test F1 | Test ERR | Test Loss | Val F1(mean) | Val F1@Best | Train Time(s) | Test Time(s) | SV-EER@2.0s |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| sincnet | 19 | 29 | 8946/696/444 | 0.7523 | 0.7236 | 0.2477 | 0.5555 | 0.8810 | 0.8810 | 2078.71 | 0.8215 | 0.2162 |
+| final_model | 19 | 29 | 8946/696/444 | 0.7500 | 0.7246 | 0.2500 | 0.5491 | 0.8866 | 0.8866 | 2083.05 | 0.8257 | 0.2342 |
+| tdnn | 13 | 23 | 8946/696/444 | 0.6779 | 0.5879 | 0.3221 | 0.6080 | 0.8747 | 0.8747 | 417.76 | 0.4152 | 0.3333 |
+| ecapatdnn | 5 | 15 | 8946/696/444 | 0.6757 | 0.6453 | 0.3243 | 0.6318 | 0.8491 | 0.8491 | 349.07 | 0.2631 | 0.3243 |
+| redimnet | 17 | 27 | 8946/696/444 | 0.6667 | 0.6355 | 0.3333 | 0.6428 | 0.7687 | 0.7687 | 660.70 | 0.4060 | 0.3243 |
+
+### 1.3 Difference (With Aug - No Aug)
+
+| Model | Delta Test ACC | Delta Test F1 | Delta Test ERR | Delta Test Loss | Delta SV-EER@2.0s | Delta Train Time(s) |
+|---|---:|---:|---:|---:|---:|---:|
+| sincnet | +0.0293 | +0.0366 | -0.0293 | -0.0152 | -0.0631 | +521.53 |
+| ecapatdnn | +0.0068 | +0.0548 | -0.0068 | +0.0299 | +0.0450 | -54.53 |
+| redimnet | +0.0721 | +0.0522 | -0.0721 | -0.0406 | -0.0766 | +323.77 |
+| tdnn | +0.0405 | +0.0895 | -0.0405 | -0.0236 | -0.0181 | -1.81 |
+
+Note: For `ERR/Loss/EER`, negative delta means better. For `Train Time`, negative delta means faster.
 
 ## 2. S1 Standard Baseline
 
