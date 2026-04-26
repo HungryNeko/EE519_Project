@@ -76,3 +76,20 @@ Note: For `ERR/Loss/EER`, negative delta means better. For `Train Time`, negativ
 | speechbrain_xvector | 0 | 0 | 8946/696/444 | 0.5000 | 0.6667 | 0.5000 | 0.6667 | 0.5000 | 0.6667 | 0.5000 | 76.66 | 3.3792 | 80.04 | 7.6108 | speechbrain/spkrec-xvect-voxceleb | 0.4109/0.1322/0.4054 |
 | resemblyzer_ge2e | 0 | 0 | 8946/696/444 | 0.5869 | 0.6996 | 0.5991 | 0.7138 | 0.6644 | 0.7315 | 0.3356 | 120.86 | 5.6897 | 126.55 | 12.8146 | resemblyzer/GE2E | 0.2122/0.0603/0.2072 |
 | wespeaker_english | 0 | 0 | 8946/696/444 | 0.8154 | 0.7928 | 0.9052 | 0.8988 | 0.7410 | 0.6588 | 0.2590 | 1710.17 | 79.9722 | 1790.15 | 180.1176 | wespeaker_nuaazs:english | 0.1744/0.0546/0.1757 |
+
+## 7. Small Speech-Length Filter Check
+
+Filtered subset keeps the top 50% longest estimated speech-duration samples per label from val/test, preserving class balance. Energy VAD: frame=25ms, hop=10ms, threshold=max(0.005, 0.1*max_rms).
+
+| Split | Model | Full ACC | Filtered ACC | Delta ACC | Full F1 | Filtered F1 | Delta F1 | Full Speech(s) | Filtered Speech(s) | Samples Full -> Filtered |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| val | tdnn | 0.8621 | 0.9368 | 0.0747 | 0.8747 | 0.9389 | 0.0642 | 2.4896 | 2.7971 | 696 -> 348 |
+| val | sincnet | 0.8649 | 0.9109 | 0.0460 | 0.8810 | 0.9182 | 0.0372 | 2.4896 | 2.7971 | 696 -> 348 |
+| val | final_model | 0.8721 | 0.9080 | 0.0359 | 0.8866 | 0.9158 | 0.0292 | 2.4896 | 2.7971 | 696 -> 348 |
+| val | ecapatdnn | 0.8233 | 0.8822 | 0.0589 | 0.8491 | 0.8946 | 0.0455 | 2.4896 | 2.7971 | 696 -> 348 |
+| val | redimnet | 0.7026 | 0.7471 | 0.0445 | 0.7687 | 0.7963 | 0.0276 | 2.4896 | 2.7971 | 696 -> 348 |
+| test | final_model | 0.7500 | 0.7252 | -0.0248 | 0.7246 | 0.6904 | -0.0342 | 2.3382 | 2.8084 | 444 -> 222 |
+| test | sincnet | 0.7523 | 0.7252 | -0.0270 | 0.7236 | 0.6872 | -0.0364 | 2.3382 | 2.8084 | 444 -> 222 |
+| test | redimnet | 0.6667 | 0.6351 | -0.0315 | 0.6355 | 0.5150 | -0.1205 | 2.3382 | 2.8084 | 444 -> 222 |
+| test | ecapatdnn | 0.6757 | 0.6261 | -0.0495 | 0.6453 | 0.5561 | -0.0892 | 2.3382 | 2.8084 | 444 -> 222 |
+| test | tdnn | 0.6779 | 0.6171 | -0.0608 | 0.5879 | 0.4371 | -0.1508 | 2.3382 | 2.8084 | 444 -> 222 |
